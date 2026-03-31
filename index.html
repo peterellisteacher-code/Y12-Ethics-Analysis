@@ -14,16 +14,45 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f0f1
 #printBtn{position:fixed;top:16px;left:16px;z-index:9999;background:linear-gradient(135deg,#c9a84c,#f0d78c);color:#1a1a2e;border:none;padding:10px 22px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 2px 12px rgba(201,168,76,.4);transition:transform .15s}
 #printBtn:hover{transform:scale(1.05)}
 @media print{
-  #printBtn,.nav-pills,.section-nav,button,.quiz-btn,.help-btn,.hub-btn-row,.adventure-card{display:none!important}
+  #printBtn,.nav-pills,.section-nav,button,.quiz-btn,.help-btn,.hub-btn-row,.adventure-card,.stepper-nav,.step-dots{display:none!important}
   body{background:#fff;color:#111;font-size:11pt}
   .page{background:#fff!important;border:none!important;box-shadow:none!important;padding:20px!important;margin:0!important;max-width:100%!important}
+  /* Show ALL pages when printing, not just the active one */
+  .page.print-show{display:block!important;page-break-before:always}
+  .page.print-show:first-of-type{page-break-before:auto}
+  /* Show all steps within each page */
+  .page.print-show .step{display:block!important}
+  /* Hide welcome and question-select pages in print (no student content) */
+  #page-welcome.print-show,#page-question.print-show{display:none!important}
   .user-answer{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;min-height:40px!important}
   .user-answer:empty::before{content:"(No response entered)";color:#999;font-style:italic}
-  .question-banner{background:#eee!important;color:#111!important}
-  h1,h2,h3{color:#111!important}
-  img{max-width:200px!important;height:auto!important}
-  .theory-infographic{background:#f5f5f5!important;color:#111!important}
+  textarea{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;min-height:40px!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  textarea:empty::before{content:"(No response entered)";color:#999;font-style:italic}
+  .question-banner{background:#eee!important;color:#111!important;border-color:#999!important}
+  .question-banner .label{color:#666!important}
+  h1,h2,h3,h4{color:#111!important;-webkit-text-fill-color:#111!important;background:none!important}
+  p,li,td,th,label,span,em,strong{color:#111!important}
+  .gold,.highlight{color:#333!important}
+  img{max-width:150px!important;height:auto!important}
+  .character{width:100px!important;height:100px!important;border-color:#999!important;box-shadow:none!important}
+  .theory-infographic{background:#f5f5f5!important;color:#111!important;border-color:#999!important}
   .theory-card-mini{background:#f0f0f0!important;color:#111!important;border:1px solid #ccc!important}
+  .card,.card-gold{background:#fff!important;border:1px solid #ccc!important;box-shadow:none!important}
+  .help-content.show{display:block!important;background:#f9f9f9!important;border:1px solid #ccc!important;color:#111!important}
+  .learning-box{background:#f0f8ff!important;border:1px solid #999!important;color:#111!important}
+  .learning-box .gold{color:#333!important}
+  .exemplar-box{background:#fff5f5!important;border-color:#999!important}
+  .flow-diagram{background:#f5f5f5!important;border-color:#999!important}
+  .flow-zone{color:#111!important}
+  .rubric-table th{background:#ddd!important;color:#111!important}
+  .rubric-table td{color:#111!important}
+  .print-section-header{display:block!important;text-align:center;font-size:18pt;font-weight:bold;color:#111;padding:20px 0 10px;border-bottom:2px solid #111;margin-bottom:16px}
+  select{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;-webkit-appearance:none}
+  input[type="checkbox"]{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  /* Readings section print */
+  .reading-card{background:#f9f9f9!important;border:1px solid #ccc!important;color:#111!important}
+  .reading-card h4{color:#111!important}
+  .reading-tag{background:#eee!important;color:#333!important;border:1px solid #ccc!important}
 }
 
 /* ===== NAVIGATION PILLS ===== */
@@ -157,6 +186,21 @@ em{color:#ccc;font-style:italic}
 @keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .page.active{animation:fadeIn .4s ease-out}
 
+/* ===== READING CARDS ===== */
+.reading-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.15);border-radius:12px;padding:20px;margin:14px 0;transition:all .2s}
+.reading-card:hover{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.04)}
+.reading-card h4{color:#f0d78c;margin-bottom:8px;font-size:1.05rem}
+.reading-card p{font-size:.92rem;margin-bottom:8px;color:#ccc}
+.reading-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.reading-tag{display:inline-block;padding:3px 10px;border-radius:12px;background:rgba(201,168,76,.12);color:#c9a84c;font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;border:1px solid rgba(201,168,76,.2)}
+.reading-use{background:rgba(76,175,80,.06);border-left:3px solid #4caf50;padding:8px 12px;border-radius:0 8px 8px 0;font-size:.88rem;margin-top:8px}
+.reading-use strong{color:#a5d6a7}
+.reading-link{display:inline-block;margin-top:10px;padding:8px 18px;background:rgba(201,168,76,.12);border:1px solid #c9a84c;border-radius:8px;color:#f0d78c;font-weight:600;font-size:.88rem;text-decoration:none;transition:all .2s}
+.reading-link:hover{background:#c9a84c;color:#1a1a2e}
+
+/* ===== LEARNING INTENTION BOX ===== */
+.learning-box{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:18px 22px;margin:16px 0 24px}
+
 /* ===== USER ANSWER DISPLAY (for print) ===== */
 .user-answer{min-height:30px;padding:8px 12px;background:rgba(255,255,255,.04);border-radius:6px;margin:4px 0 12px;white-space:pre-wrap;word-wrap:break-word}
 
@@ -172,7 +216,7 @@ em{color:#ccc;font-style:italic}
 </head>
 <body>
 
-<button id="printBtn" onclick="window.print()">Print / Save PDF</button>
+<button id="printBtn" onclick="printAll()">Print / Save PDF</button>
 
 <!-- NAVIGATION PILLS -->
 <div class="nav-pills" id="navPills">
@@ -181,6 +225,7 @@ em{color:#ccc;font-style:italic}
   <button class="nav-pill" onclick="goTo('trials')">TRIALS</button>
   <button class="nav-pill" onclick="goTo('theories')">THEORIES</button>
   <button class="nav-pill" onclick="goTo('drafting')">DRAFTING</button>
+  <button class="nav-pill" onclick="goTo('readings')">READINGS</button>
 </div>
 
 <!-- ============================================ -->
@@ -1553,6 +1598,143 @@ em{color:#ccc;font-style:italic}
 </div>
 
 <!-- ============================================ -->
+<!-- PAGE: READINGS & RESOURCES -->
+<!-- ============================================ -->
+<div class="page" id="page-readings">
+  <div class="question-banner visible" id="bannerReadings">
+    <div class="label">YOUR QUESTION</div>
+    <div id="bannerTextReadings"></div>
+  </div>
+
+  <img src="gorilla_reading.png" alt="Wise Gorilla reading" class="character character-small">
+  <h2>Readings &amp; Resources</h2>
+  <p class="subtitle">Primary sources to strengthen your Issues Analysis. Use these to deepen your understanding and find direct quotes for your essay.</p>
+
+  <!-- HEDONISM & DESIRE-SATISFACTION -->
+  <div class="card card-gold">
+    <h3>Hedonism &amp; Desire-Satisfaction Theory</h3>
+
+    <div class="reading-card">
+      <h4>Robert Nozick &mdash; &ldquo;The Experience Machine&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Critique</span></div>
+      <p>The classic thought experiment challenging hedonism: if you could plug into a machine that simulates a perfect life of pleasure, would you? Nozick argues most people wouldn&rsquo;t &mdash; suggesting we value things beyond mere pleasant experience, such as actually doing things, being a certain kind of person, and contact with reality.</p>
+      <p class="reading-use"><strong>Use for:</strong> Arguing against hedonism (CA). This is the single most important counter-argument to hedonism in your course.</p>
+      <a href="readings/Hedonism%20-%20Opposed%20-%20Nozick%20-%20The%20Experience%20Machine.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Fred Feldman &mdash; &ldquo;The Good Life: A Defence of Attitudinal Hedonism&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Defence</span></div>
+      <p>Feldman defends a refined version of hedonism &mdash; attitudinal hedonism &mdash; where pleasure is not a sensation but an attitude of enjoyment toward states of affairs. He uses thought experiments like &ldquo;Stoicus&rdquo; (a Stoic who claims to be happy despite suffering) and the &ldquo;deceived businessman&rdquo; to test both hedonism and desire-satisfaction theory. He also introduces DAIAH (Desert-Adjusted Intrinsic Attitudinal Hedonism).</p>
+      <p class="reading-use"><strong>Use for:</strong> Defending hedonism against standard objections (RA), or critiquing simpler versions of hedonism (CA). Shows how hedonism can be more sophisticated than &ldquo;just seek pleasure.&rdquo;</p>
+      <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Fred%20Feldman%20-%20The%20Good%20Life%20a%20Defence%20of%20Hedonism.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Derek Parfit &mdash; &ldquo;What Makes Someone&rsquo;s Life Go Best&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Objective List</span></div>
+      <p>Parfit&rsquo;s influential overview of three theories of well-being: hedonism, desire-fulfilment, and objective list theory. He introduces the &ldquo;Success Theory&rdquo; (informed desire satisfaction) and uses the case of the deceived businessman to show how desire theories can give counterintuitive results. A clear, analytical comparison of the major approaches.</p>
+      <p class="reading-use"><strong>Use for:</strong> Comparing theories directly (KU, RA). Excellent source for framing your overall argument and identifying the strengths and weaknesses of each approach.</p>
+      <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Parfit%20-%20What%20Makes%20Someones%20Life%20Go%20Best.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Aldous Huxley &mdash; <em>Brave New World</em>, Chapters 16 &amp; 17</h4>
+      <div class="reading-tags"><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Critique</span></div>
+      <p>In these pivotal chapters, the Savage (John) confronts World Controller Mustapha Mond about the engineered society where everyone&rsquo;s desires are satisfied by design. The dialogue raises fundamental questions: if people are conditioned to want only what they can have, are their desires truly &ldquo;satisfied&rdquo;? Can a life without struggle, art, or authentic choice be a good life?</p>
+      <p class="reading-use"><strong>Use for:</strong> Critiquing desire-satisfaction theory (CA). A powerful literary case study showing that satisfied desires aren&rsquo;t sufficient for a good life if the desires themselves are manipulated.</p>
+      <a href="readings/Desire%20Satisfaction%20Critique%20-%20Ch%2016%20and%2017%20Brave%20New%20World.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+  </div>
+
+  <!-- SPONTANEITY & WU WEI -->
+  <div class="card card-gold">
+    <h3>Spontaneity &amp; Wu Wei</h3>
+
+    <div class="reading-card">
+      <h4>Mihaly Csikszentmihalyi &mdash; &ldquo;Flow: The Psychology of Optimal Experience&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Flow</span></div>
+      <p>The foundational text on flow states &mdash; moments of complete absorption where challenge perfectly matches skill. Csikszentmihalyi argues that the best moments in life aren&rsquo;t passive or relaxing, but occur when we are stretched to our limits in a voluntary effort to accomplish something difficult and worthwhile. Covers the nine conditions of flow and the autotelic personality.</p>
+      <p class="reading-use"><strong>Use for:</strong> Explaining the psychological basis for spontaneity&rsquo;s contribution to the good life (KU, RA). Provides empirical evidence to support philosophical claims about wu wei.</p>
+      <a href="readings/Spontaneity%20-%20Csikszentmihalyi%20-%20Flow%20-%20the%20psych%20of%20optimal%20experience.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Edward Slingerland &mdash; &ldquo;Wu Wei as Conceptual Metaphor&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Wu Wei</span></div>
+      <p>Slingerland analyses wu wei (effortless action) across Chinese philosophical traditions, exploring how Confucians and Daoists both value spontaneous, unselfconscious action but disagree about how to achieve it. He examines the paradox of trying to not-try and the concept of <em>de</em> (charismatic power) that accompanies genuine wu wei.</p>
+      <p class="reading-use"><strong>Use for:</strong> Understanding the philosophical depth of wu wei beyond simple &ldquo;go with the flow&rdquo; (KU). Excellent for showing the tension between cultivation and naturalness in achieving the good life (RA).</p>
+      <a href="readings/Spontaneity%20-%20Slingerland%20-%20Wu%20Wei%20as%20Conceptual%20Metaphor.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+  </div>
+
+  <!-- VIRTUE ETHICS -->
+  <div class="card card-gold">
+    <h3>Virtue Ethics</h3>
+
+    <div class="reading-card">
+      <h4>Aristotle &mdash; &ldquo;The Nature of Moral Virtue&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Primary Source</span></div>
+      <p>From the <em>Nicomachean Ethics</em>. Aristotle explains that virtue is a state of character developed through habituation, not simply taught. He introduces the Doctrine of the Mean &mdash; virtue as the intermediate between excess and deficiency, determined by practical wisdom (<em>phronesis</em>). Includes the function argument: the good life is one where we fulfil our distinctly human function of rational activity.</p>
+      <p class="reading-use"><strong>Use for:</strong> The foundational account of virtue ethics (KU). Essential for explaining what eudaimonia actually means and how Aristotle thinks we achieve it (RA).</p>
+      <a href="readings/Virtue%20Ethics%20-%20Aristotle%20-%20The%20Nature%20of%20Moral%20Virtue.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Martha Nussbaum &mdash; &ldquo;Non-Relative Virtues: An Aristotelian Approach&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Defence</span></div>
+      <p>Nussbaum defends Aristotle against the charge of cultural relativism by arguing that virtues respond to universal human experiences (&ldquo;grounding experiences&rdquo;) &mdash; every culture faces mortality, distributes resources, and manages bodily appetites. She distinguishes between &ldquo;thin&rdquo; (universal) and &ldquo;thick&rdquo; (culturally specific) descriptions of virtues.</p>
+      <p class="reading-use"><strong>Use for:</strong> Defending virtue ethics against the objection that virtues are culturally relative (CA, RA). Shows how Aristotelian ethics can be universal without being rigid.</p>
+      <a href="readings/Virtue%20Ethics%20-%20Nussbaum%20-%20Non-Relative%20Virtues%20an%20Aristotelian%20Approach.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Alasdair MacIntyre &mdash; &ldquo;The Nature of the Virtues&rdquo; (Ch. 14, <em>After Virtue</em>)</h4>
+      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Practices</span></div>
+      <p>MacIntyre develops the concept of &ldquo;practices&rdquo; &mdash; complex cooperative activities with internal goods that can only be achieved by participating in the practice itself. He argues that virtues are the qualities needed to achieve these internal goods. This bridges desire-satisfaction theory (what we want) with virtue ethics (what kind of person we become).</p>
+      <p class="reading-use"><strong>Use for:</strong> A modern defence and development of virtue ethics (KU, RA). Particularly useful for connecting virtue ethics with other theories in your analysis.</p>
+      <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2014%20-%20The%20Nature%20of%20the%20Virtues.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Alasdair MacIntyre &mdash; &ldquo;The Nature of Human Life&rdquo; (Ch. 15, <em>After Virtue</em>)</h4>
+      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Narrative</span></div>
+      <p>MacIntyre argues that human life is best understood as a narrative &mdash; a story with a beginning, middle, and end. Virtues make sense only within the context of a whole life lived as a quest for the good. He critiques the modern tendency to fragment life into disconnected episodes and argues that the good life requires understanding yourself as part of ongoing traditions and communities.</p>
+      <p class="reading-use"><strong>Use for:</strong> Arguing that the good life requires narrative coherence, not just moment-to-moment satisfaction (RA, CA). A powerful counter to hedonism&rsquo;s focus on individual experiences.</p>
+      <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2015%20-%20The%20Nature%20of%20Human%20Life.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+  </div>
+
+  <!-- STOICISM -->
+  <div class="card card-gold">
+    <h3>Stoicism</h3>
+
+    <div class="reading-card">
+      <h4>Jim Stockdale &mdash; &ldquo;Arrian&rsquo;s Enchiridion and the Discourses of Epictetus&rdquo;</h4>
+      <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Applied</span></div>
+      <p>Admiral Stockdale&rsquo;s remarkable account of applying Stoic philosophy during seven years as a prisoner of war in Vietnam. He describes how Epictetus&rsquo; distinction between what is &ldquo;up to us&rdquo; and what is not literally saved his life and sanity. A powerful real-world test case for whether Stoic principles actually work under extreme conditions.</p>
+      <p class="reading-use"><strong>Use for:</strong> Providing vivid evidence that Stoicism can sustain a good life even through severe suffering (RA). Particularly relevant for Question 2 about suffering and the good life, and for your lived trials.</p>
+      <a href="readings/Stoicism%20-%20Stockdale%20-%20Arrians%20Enchiridion%20and%20the%20Discourses%20of%20Epictetus.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+
+    <div class="reading-card">
+      <h4>Marcus Aurelius &mdash; <em>Meditations</em>, Book 2</h4>
+      <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Primary Source</span></div>
+      <p>The private journal of the Roman Emperor &mdash; written not for publication but as a daily Stoic exercise. Book 2 includes reflections on mortality, the importance of focusing on what is within our control, and the discipline of seeing things as they truly are. A rare window into a philosopher actually practising what he preaches.</p>
+      <p class="reading-use"><strong>Use for:</strong> Primary source quotations from a key Stoic philosopher (KU). Shows Stoicism as a lived practice, not just abstract theory &mdash; connects well to your lived trials (RA).</p>
+      <a href="readings/Stoicism%20-Marcus-Aurelius-Meditations-Book-2-pdf.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center;margin-top:24px">
+    <img src="gorilla_teaching.png" alt="Wise Gorilla" class="character character-small" style="margin-bottom:12px">
+    <p><strong class="gold">Tip from the Wise Gorilla:</strong> You don&rsquo;t need to read every reading &mdash; focus on the two theories you&rsquo;re writing about. But dipping into a third theory&rsquo;s readings can give you excellent counter-arguments for your Critical Analysis (CA).</p>
+  </div>
+
+  <button class="btn btn-outline btn-center" onclick="goTo('hub')">&larr; Back to Hub</button>
+</div>
+
+<!-- ============================================ -->
 <!-- JAVASCRIPT -->
 <!-- ============================================ -->
 <script>
@@ -1624,6 +1806,7 @@ function goTo(pageId) {
     'trials': 'page-trials',
     'theories': 'page-theories',
     'drafting': 'page-drafting',
+    'readings': 'page-readings',
     'theory-hedonism': 'page-theory-hedonism',
     'theory-spontaneity': 'page-theory-spontaneity',
     'theory-virtue': 'page-theory-virtue',
@@ -1638,8 +1821,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerSpont','bannerVirt','bannerStoic','bannerDraft','bannerReadings'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft','bannerTextReadings'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;
@@ -1905,6 +2088,32 @@ setInterval(saveState, 10000);
 window.addEventListener('beforeunload', saveState);
 // Load on start
 document.addEventListener('DOMContentLoaded', loadState);
+
+// ===== PRINT ALL PAGES =====
+function printAll() {
+  // Show all pages so they all appear in print
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.add('print-show'));
+  // Show all steps within steppers
+  const steps = document.querySelectorAll('.step');
+  steps.forEach(s => s.classList.add('active'));
+  // Trigger print
+  window.print();
+  // Restore original state after printing
+  setTimeout(() => {
+    pages.forEach(p => p.classList.remove('print-show'));
+    // Restore step visibility — re-init steppers
+    steps.forEach(s => s.classList.remove('active'));
+    // Re-activate current steps
+    ['taskSteps','trialSteps','hedSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        const firstStep = el.querySelector('.step');
+        if (firstStep) firstStep.classList.add('active');
+      }
+    });
+  }, 500);
+}
 </script>
 
 </body>

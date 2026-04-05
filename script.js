@@ -150,7 +150,10 @@ function stepNav(containerId, dir) {
       window.scrollTo(0, 0);
       return;
     }
-    // For other steppers at end, just stay
+    if (containerId === 'taskOverviewSteps') {
+      goTo('task');
+      return;
+    }
     return;
   }
 

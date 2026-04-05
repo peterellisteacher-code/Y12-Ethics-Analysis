@@ -106,8 +106,7 @@ function submitQuestion() {
   updateBanners();
   document.getElementById('navPills').classList.add('visible');
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-theory-responses').classList.add('active');
-  initStepper('theoryPrompts', 'trDots');
+  document.getElementById('page-hub').classList.add('active');
   window.scrollTo(0, 0);
 }
 

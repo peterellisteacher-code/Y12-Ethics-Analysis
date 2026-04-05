@@ -46,76 +46,6 @@
   </div>
 </div>
 
-<!-- ============================================ -->
-<!-- PAGE 3: THEORY RESPONSES (5 prompts one at a time) -->
-<!-- ============================================ -->
-<div class="page" id="page-theory-responses">
-  <div class="question-banner visible" id="bannerTheoryResp">
-    <div class="label">Your Question</div>
-    <span id="bannerTextResp"></span>
-  </div>
-  <h2>How Would Each Theory Answer?</h2>
-  <p class="subtitle">Consider how each philosophical perspective would respond to your question.</p>
-  <div class="card" style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);margin-bottom:24px;padding:16px 20px">
-    <p style="margin:0;font-size:.9rem"><strong class="gold">Learning intention:</strong> Apply your understanding of each theory to your chosen question, identifying how each perspective would respond differently.</p>
-    <p style="margin:8px 0 0;font-size:.85rem;color:#aaa"><strong>Success:</strong> You can explain, in your own words, what each theory would say about your question and <em>why</em>.</p>
-  </div>
-
-  <div id="theoryPrompts">
-    <!-- Prompt 1: Hedonism -->
-    <div class="step active" data-step="0">
-      <div class="card card-gold">
-        <h3>1. Hedonism</h3>
-        <p>Hedonism holds that a good life is one containing as much pleasure and as little pain as possible. Epicurus refined this: the best pleasures are <span class="highlight">static pleasures</span> (tranquillity), and we should satisfy only <span class="highlight">natural and necessary desires</span>.</p>
-        <p><strong>How would a hedonist answer your question?</strong></p>
-        <textarea class="theory-resp" data-theory="Hedonism" placeholder="Think about what a hedonist would say..."></textarea>
-      </div>
-    </div>
-    <!-- Prompt 2: Desire-Satisfaction -->
-    <div class="step" data-step="1">
-      <div class="card card-gold">
-        <h3>2. Desire-Satisfaction Theory</h3>
-        <p>This theory says a good life is one where your desires are fulfilled. The <span class="highlight">informed desire</span> version says it's about what you'd want if you were fully informed. But what about people with harmful desires?</p>
-        <p><strong>How would a desire-satisfaction theorist answer your question?</strong></p>
-        <textarea class="theory-resp" data-theory="Desire-Satisfaction" placeholder="Think about what a desire theorist would say..."></textarea>
-      </div>
-    </div>
-    <!-- Prompt 3: Spontaneity -->
-    <div class="step" data-step="2">
-      <div class="card card-gold">
-        <h3>3. Spontaneity &amp; Wu Wei</h3>
-        <p>This approach values <span class="highlight">effortless action</span> (wu wei) and <span class="highlight">flow states</span>. A good life balances routine with improvisation, leading to authentic engagement where intention and action merge.</p>
-        <p><strong>How would a spontaneity theorist answer your question?</strong></p>
-        <textarea class="theory-resp" data-theory="Spontaneity" placeholder="Think about spontaneity and flow..."></textarea>
-      </div>
-    </div>
-    <!-- Prompt 4: Virtue Ethics -->
-    <div class="step" data-step="3">
-      <div class="card card-gold">
-        <h3>4. Virtue Ethics</h3>
-        <p>Aristotle argues the good life is about becoming the best person you can be by cultivating <span class="highlight">virtues</span> (excellences of character). The virtuous person hits the <span class="highlight">golden mean</span> between excess and deficiency.</p>
-        <p><strong>How would a virtue ethicist answer your question?</strong></p>
-        <textarea class="theory-resp" data-theory="Virtue Ethics" placeholder="Think about what Aristotle would say..."></textarea>
-      </div>
-    </div>
-    <!-- Prompt 5: Stoicism -->
-    <div class="step" data-step="4">
-      <div class="card card-gold">
-        <h3>5. Stoicism</h3>
-        <p>Stoics argue the good life depends <span class="highlight">only on the will</span>, not external circumstances. Master your emotions, focus on what you can control, and live according to reason and nature.</p>
-        <p><strong>How would a Stoic answer your question?</strong></p>
-        <textarea class="theory-resp" data-theory="Stoicism" placeholder="Think about what Epictetus or Marcus Aurelius would say..."></textarea>
-      </div>
-    </div>
-  </div>
-
-  <div class="stepper-nav">
-    <button class="btn btn-outline" id="trPrev" onclick="theoryRespNav(-1)" style="visibility:hidden">&larr; Previous</button>
-    <div class="step-dots" id="trDots"></div>
-    <button class="btn btn-gold" id="trNext" onclick="theoryRespNav(1)">Next Theory &rarr;</button>
-  </div>
-  <button class="btn btn-outline btn-center" onclick="goTo('hub')" style="margin-top:12px">SKIP TO MENU</button>
-</div>
 
 <!-- ============================================ -->
 <!-- PAGE 4: CHOOSE YOUR OWN ADVENTURE HUB -->
@@ -147,7 +77,7 @@
 </div>
 
 <!-- ============================================ -->
-<!-- PAGE 5: TASK EXPLANATION -->
+<!-- PAGE 5: TASK — LANDING -->
 <!-- ============================================ -->
 <div class="page" id="page-task">
   <div class="question-banner visible" id="bannerTask">
@@ -155,47 +85,57 @@
     <span id="bannerTextTask"></span>
   </div>
 
-  <img src="gorilla_teaching.png" alt="Gorilla teacher" class="character character-small">
-  <h2>Understanding Your Task</h2>
-  <p class="subtitle">Let the Wise Gorilla walk you through every step.</p>
-  <div class="card" style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);margin-bottom:24px;padding:16px 20px">
-    <p style="margin:0;font-size:.9rem"><strong class="gold">Learning intention:</strong> Understand exactly what you need to submit, what criteria you are being assessed against, and what distinguishes an A-grade Issues Analysis from a C-grade one.</p>
-    <p style="margin:8px 0 0;font-size:.85rem;color:#aaa"><strong>Success:</strong> You can describe the four assessment criteria, list the requirements of the final submission, and explain the structure of a strong response.</p>
+  <h2>Your Issues Analysis</h2>
+  <p class="subtitle">Here's what you need to know.</p>
+
+  <div class="card card-gold">
+    <h3>The Essentials</h3>
+    <p>You are writing an <span class="highlight">Issues Analysis</span> on the philosophy of the good life. In short, you need to:</p>
+    <ol style="margin:12px 0 16px 20px;color:#ccc;line-height:2.2">
+      <li><strong>Answer your chosen question</strong> using philosophical reasoning</li>
+      <li><strong>Explain at least two theories</strong> and why philosophers hold them</li>
+      <li><strong>Critically analyse</strong> the strengths and weaknesses of those theories</li>
+      <li><strong>Defend your own position</strong> with reasons and lived-trial evidence</li>
+      <li><strong>Do a 2&ndash;3 minute oral defence</strong> in class</li>
+    </ol>
+    <p>You may submit as <strong>written work</strong> (up to 1500 words), a <strong>multimodal piece</strong> (up to 10 minutes), or a <strong>hybrid</strong>.</p>
+    <p><strong>Due:</strong> Friday, Week 6.</p>
   </div>
 
-  <div id="taskSteps">
-    <!-- STEP 1: Rubric -->
+  <div class="hub-btn-row" style="grid-template-columns:1fr 1fr 1fr;margin-top:24px">
+    <div class="hub-btn" onclick="goTo('task-overview')">
+      <span class="icon">&#x1F4DD;</span>
+      Task Overview
+    </div>
+    <div class="hub-btn" onclick="goTo('task-criteria')">
+      <span class="icon">&#x1F4CA;</span>
+      Assessment Criteria
+    </div>
+    <div class="hub-btn" onclick="goTo('task-example')">
+      <span class="icon">&#x1F4C4;</span>
+      Task Example
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PAGE 5a: TASK OVERVIEW (detailed) -->
+<!-- ============================================ -->
+<div class="page" id="page-task-overview">
+  <div class="question-banner visible" id="bannerTaskOverview">
+    <div class="label">Your Question</div>
+    <span id="bannerTextTaskOverview"></span>
+  </div>
+
+  <img src="gorilla_teaching.png" alt="Gorilla teaching" class="character character-small">
+  <h2>Task Overview</h2>
+  <p class="subtitle">What you're actually doing, in detail.</p>
+
+  <div id="taskOverviewSteps">
+    <!-- Step 1: What You're Doing -->
     <div class="step active" data-step="0">
       <div class="card card-gold">
-        <img src="gorilla_reading.png" alt="Gorilla with scroll" class="character character-small">
-        <h3>Step 1: The Assessment Rubric</h3>
-        <p>You are being marked on <strong>four criteria</strong>:</p>
-        <table class="rubric-table">
-          <thead><tr><th>Criterion</th><th>What It Means</th><th>A-Grade Descriptor</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Knowledge &amp; Understanding (KU)</strong></td><td>Do you know the philosophical issues and positions?</td><td>Consistently clear and perceptive knowledge; insightful explanation of philosophical nature of issues</td></tr>
-            <tr><td><strong>Reasoning &amp; Argument (RA)</strong></td><td>Can you build logical arguments and defend your position?</td><td>Coherent and convincing formulation and defence of positions taken</td></tr>
-            <tr><td><strong>Critical Analysis (CA)</strong></td><td>Can you evaluate strengths and weaknesses of positions?</td><td>Discerning critical analysis of strengths and weaknesses</td></tr>
-            <tr><td><strong>Communication (C)</strong></td><td>Do you use philosophical language correctly and cite sources?</td><td>Accurate, consistent use of philosophical terminology with appropriate acknowledgment</td></tr>
-          </tbody>
-        </table>
-        <div class="divider"></div>
-        <p><strong>Quick check:</strong> Which criterion focuses on evaluating the strengths and weaknesses of philosophical positions?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Knowledge &amp; Understanding</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Reasoning &amp; Argument</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','task-q1')">Critical Analysis</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Communication</div>
-        </div>
-        <div class="quiz-feedback" id="task-q1"></div>
-      </div>
-    </div>
-
-    <!-- STEP 2: Task Overview -->
-    <div class="step" data-step="1">
-      <div class="card card-gold">
-        <img src="gorilla_teaching.png" alt="Gorilla teaching" class="character character-small">
-        <h3>Step 2: What You're Actually Doing</h3>
+        <h3>What You're Actually Doing</h3>
         <p>This is an <span class="highlight">Issues Analysis</span>. You've been building a portfolio all term with weekly entries. Your final submission <strong>synthesises</strong> this work into a position that answers your chosen question.</p>
         <p>You may submit as:</p>
         <ul style="margin:10px 0 10px 20px;color:#ccc">
@@ -217,11 +157,11 @@
       </div>
     </div>
 
-    <!-- STEP 3: Requirements -->
-    <div class="step" data-step="2">
+    <!-- Step 2: Requirements -->
+    <div class="step" data-step="1">
       <div class="card card-gold">
         <img src="gorilla_celebrating.png" alt="Gorilla celebrating" class="character character-small">
-        <h3>Step 3: What Your Final Piece Must Do</h3>
+        <h3>What Your Final Piece Must Do</h3>
         <p>Your submission must tick <strong>all</strong> of these boxes:</p>
         <ol style="margin:10px 0 16px 20px;color:#ccc;line-height:2">
           <li><span class="highlight">Define your question</span> and explain why it's a philosophical issue</li>
@@ -244,11 +184,11 @@
       </div>
     </div>
 
-    <!-- STEP 4: Oral Defence -->
-    <div class="step" data-step="3">
+    <!-- Step 3: Oral Defence -->
+    <div class="step" data-step="2">
       <div class="card card-gold">
         <img src="gorilla_reading.png" alt="Gorilla reading" class="character character-small">
-        <h3>Step 4: The Oral Defence</h3>
+        <h3>The Oral Defence</h3>
         <p>After submitting your written/multimodal piece, you'll do a <strong>2-3 minute oral defence</strong> in class.</p>
         <p>This means you need to be able to:</p>
         <ul style="margin:10px 0 10px 20px;color:#ccc">
@@ -266,48 +206,121 @@
         <div class="quiz-feedback" id="task-q4"></div>
       </div>
     </div>
-
-    <!-- STEP 5: AI Mock Exemplar -->
-    <div class="step" data-step="4">
-      <div class="card">
-        <h3>Step 5: What It Might Look Like</h3>
-        <div class="exemplar-box">
-          <div class="warning">AI MOCK-UP EXEMPLAR &mdash; ROUGH GUIDANCE ONLY</div>
-          <p style="font-style:italic;color:#aaa;font-size:.85rem;margin-bottom:16px">This is a rough structural example only. Your content, arguments, and voice should be entirely your own.</p>
-
-          <p><strong>Title:</strong> Can a life be good even when it involves significant suffering or loss?</p>
-          <div class="divider"></div>
-
-          <p><strong>Introduction (~200 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">The question of whether a good life can coexist with suffering is a central concern in the philosophy of happiness. Hedonists would argue that suffering is inherently opposed to the good life, as it diminishes pleasure. However, Stoic philosophers like Epictetus and Marcus Aurelius argue that suffering is external to the will, and therefore irrelevant to genuine flourishing. This essay will examine both positions, drawing on Epicurean hedonism and Stoic philosophy, before defending the view that suffering can be compatible with a good life when approached with the right disposition...</p>
-
-          <p><strong>Position 1: Hedonism (~350 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">Explain Epicurean hedonism: static vs moving pleasures, natural/necessary desires. Explain how suffering disrupts ataraxia. Reference Feldman's attitudinal hedonism as a refinement. Critically analyse: can attitudinal hedonism accommodate suffering better than sensory hedonism?</p>
-
-          <p><strong>Position 2: Stoicism (~350 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">Explain Stoic indifference to externals. Reference Epictetus on control, Stockdale's POW experience. Explain how suffering becomes an opportunity for virtue. Critically analyse: is the Stoic view psychologically realistic? What about the father who cannot mourn?</p>
-
-          <p><strong>Lived Trial Evidence (~200 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">Draw on at least two observations from your trials. E.g., "During the Stoic 'last-time' meditation trial, I noticed..." and "My hedonism trial revealed..."</p>
-
-          <p><strong>Defence of Own Position (~300 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">State your view clearly. E.g., "I argue that suffering is not inherently opposed to the good life, but only when..." Defend against the strongest objection to your view. Use philosophical reasoning and trial evidence together.</p>
-
-          <p><strong>Conclusion (~100 words)</strong></p>
-          <p style="color:#bbb;font-size:.9rem">Restate your position. Acknowledge what remains uncertain. End with a philosophical reflection.</p>
-
-          <p><strong>Bibliography</strong></p>
-          <p style="color:#bbb;font-size:.9rem">Aristotle, <em>Nicomachean Ethics</em>...<br>Epictetus, <em>Enchiridion</em>...<br>Feldman, F. (2004) <em>Pleasure and the Good Life</em>...<br>etc.</p>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="stepper-nav">
-    <button class="btn btn-outline" id="taskPrev" onclick="stepNav('taskSteps',-1)" style="visibility:hidden">&larr; Previous</button>
-    <div class="step-dots" id="taskDots"></div>
-    <button class="btn btn-gold" id="taskNext" onclick="stepNav('taskSteps',1)">Next Step &rarr;</button>
+    <button class="btn btn-outline" onclick="stepNav('taskOverviewSteps',-1)" style="visibility:hidden">&larr; Previous</button>
+    <div class="step-dots" id="taskOverviewDots"></div>
+    <button class="btn btn-gold" onclick="stepNav('taskOverviewSteps',1)">Next &rarr;</button>
   </div>
+  <button class="btn btn-outline btn-center" onclick="goTo('task')" style="margin-top:16px">&larr; Back to Task</button>
+</div>
+
+<!-- ============================================ -->
+<!-- PAGE 5b: ASSESSMENT CRITERIA -->
+<!-- ============================================ -->
+<div class="page" id="page-task-criteria">
+  <div class="question-banner visible" id="bannerTaskCriteria">
+    <div class="label">Your Question</div>
+    <span id="bannerTextTaskCriteria"></span>
+  </div>
+
+  <img src="gorilla_reading.png" alt="Gorilla with scroll" class="character character-small">
+  <h2>Assessment Criteria</h2>
+  <p class="subtitle">What you're being marked on, and what separates an A from a C.</p>
+
+  <div class="card card-gold">
+    <h3>The Rubric</h3>
+    <p>You are being marked on <strong>four criteria</strong>:</p>
+    <table class="rubric-table">
+      <thead><tr><th>Criterion</th><th>What It Means</th><th>A-Grade Descriptor</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Knowledge &amp; Understanding (KU)</strong></td><td>Do you know the philosophical issues and positions?</td><td>Consistently clear and perceptive knowledge; insightful explanation of philosophical nature of issues</td></tr>
+        <tr><td><strong>Reasoning &amp; Argument (RA)</strong></td><td>Can you build logical arguments and defend your position?</td><td>Coherent and convincing formulation and defence of positions taken</td></tr>
+        <tr><td><strong>Critical Analysis (CA)</strong></td><td>Can you evaluate strengths and weaknesses of positions?</td><td>Discerning critical analysis of strengths and weaknesses</td></tr>
+        <tr><td><strong>Communication (C)</strong></td><td>Do you use philosophical language correctly and cite sources?</td><td>Accurate, consistent use of philosophical terminology with appropriate acknowledgment</td></tr>
+      </tbody>
+    </table>
+    <div class="divider"></div>
+    <p><strong>Quick check:</strong> Which criterion focuses on evaluating the strengths and weaknesses of philosophical positions?</p>
+    <div class="quiz-options">
+      <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Knowledge &amp; Understanding</div>
+      <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Reasoning &amp; Argument</div>
+      <div class="quiz-opt" onclick="checkQuiz(this,'correct','task-q1')">Critical Analysis</div>
+      <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','task-q1')">Communication</div>
+    </div>
+    <div class="quiz-feedback" id="task-q1"></div>
+  </div>
+
+  <div class="card">
+    <h3>A-Grade Issues Analysis Checklist</h3>
+    <ul style="margin:8px 0 16px 20px;color:#ccc;line-height:2">
+      <li><strong>Define a clear philosophical issue as a question</strong> (not just a topic) and maintain focus throughout</li>
+      <li><strong>Present multiple positions with reasons</strong> &mdash; explain <em>why</em> each philosopher holds their view, not just what it is</li>
+      <li><strong>Critically analyse</strong> &mdash; evaluate strengths and weaknesses using your own reasoning, not just descriptions</li>
+      <li><strong>Defend your own position</strong> &mdash; state what you believe, justify it, and respond to the strongest objection</li>
+      <li><strong>Use accurate philosophical terminology</strong> consistently (e.g., 'ataraxia', 'eudaimonia', 'the dichotomy of control')</li>
+      <li><strong>Reference your lived trials</strong> &mdash; use at least two observations as evidence</li>
+      <li><strong>Include a full bibliography</strong></li>
+    </ul>
+
+    <h3 style="margin-top:24px">Common C-Grade Mistakes to Avoid</h3>
+    <ul style="margin:8px 0 8px 20px;color:#ef9a9a;line-height:2">
+      <li>Focusing on biography ("Aristotle was born in...") instead of arguments</li>
+      <li>Describing theories without analysing them</li>
+      <li>Not presenting your own position or not defending it</li>
+      <li>Weak or absent referencing</li>
+      <li>Treating it as a topic, not a question</li>
+    </ul>
+  </div>
+
+  <button class="btn btn-outline btn-center" onclick="goTo('task')" style="margin-top:16px">&larr; Back to Task</button>
+</div>
+
+<!-- ============================================ -->
+<!-- PAGE 5c: TASK EXAMPLE -->
+<!-- ============================================ -->
+<div class="page" id="page-task-example">
+  <div class="question-banner visible" id="bannerTaskExample">
+    <div class="label">Your Question</div>
+    <span id="bannerTextTaskExample"></span>
+  </div>
+
+  <h2>Task Example</h2>
+  <p class="subtitle">A rough structural mock-up to show you what an Issues Analysis could look like.</p>
+
+  <div class="card">
+    <div class="exemplar-box">
+      <div class="warning">AI MOCK-UP EXEMPLAR &mdash; ROUGH GUIDANCE ONLY</div>
+      <p style="font-style:italic;color:#aaa;font-size:.85rem;margin-bottom:16px">This is a rough structural example only. Your content, arguments, and voice should be entirely your own.</p>
+
+      <p><strong>Title:</strong> Can a life be good even when it involves significant suffering or loss?</p>
+      <div class="divider"></div>
+
+      <p><strong>Introduction (~200 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">The question of whether a good life can coexist with suffering is a central concern in the philosophy of happiness. Hedonists would argue that suffering is inherently opposed to the good life, as it diminishes pleasure. However, Stoic philosophers like Epictetus and Marcus Aurelius argue that suffering is external to the will, and therefore irrelevant to genuine flourishing. This essay will examine both positions, drawing on Epicurean hedonism and Stoic philosophy, before defending the view that suffering can be compatible with a good life when approached with the right disposition...</p>
+
+      <p><strong>Position 1: Hedonism (~350 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">Explain Epicurean hedonism: static vs moving pleasures, natural/necessary desires. Explain how suffering disrupts ataraxia. Reference Feldman's attitudinal hedonism as a refinement. Critically analyse: can attitudinal hedonism accommodate suffering better than sensory hedonism?</p>
+
+      <p><strong>Position 2: Stoicism (~350 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">Explain Stoic indifference to externals. Reference Epictetus on control, Stockdale's POW experience. Explain how suffering becomes an opportunity for virtue. Critically analyse: is the Stoic view psychologically realistic? What about the father who cannot mourn?</p>
+
+      <p><strong>Lived Trial Evidence (~200 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">Draw on at least two observations from your trials. E.g., "During the Stoic 'last-time' meditation trial, I noticed..." and "My hedonism trial revealed..."</p>
+
+      <p><strong>Defence of Own Position (~300 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">State your view clearly. E.g., "I argue that suffering is not inherently opposed to the good life, but only when..." Defend against the strongest objection to your view. Use philosophical reasoning and trial evidence together.</p>
+
+      <p><strong>Conclusion (~100 words)</strong></p>
+      <p style="color:#bbb;font-size:.9rem">Restate your position. Acknowledge what remains uncertain. End with a philosophical reflection.</p>
+
+      <p><strong>Bibliography</strong></p>
+      <p style="color:#bbb;font-size:.9rem">Aristotle, <em>Nicomachean Ethics</em>...<br>Epictetus, <em>Enchiridion</em>...<br>Feldman, F. (2004) <em>Pleasure and the Good Life</em>...<br>etc.</p>
+    </div>
+  </div>
+
+  <button class="btn btn-outline btn-center" onclick="goTo('task')" style="margin-top:16px">&larr; Back to Task</button>
 </div>
 
 <!-- ============================================ -->

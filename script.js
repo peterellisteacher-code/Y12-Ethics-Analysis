@@ -63,6 +63,9 @@ function goTo(pageId) {
   const map = {
     'hub': 'page-hub',
     'task': 'page-task',
+    'task-overview': 'page-task-overview',
+    'task-criteria': 'page-task-criteria',
+    'task-example': 'page-task-example',
     'trials': 'page-trials',
     'theories': 'page-theories',
     'drafting': 'page-drafting',
@@ -81,8 +84,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;
@@ -106,8 +109,7 @@ function submitQuestion() {
   updateBanners();
   document.getElementById('navPills').classList.add('visible');
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-theory-responses').classList.add('active');
-  initStepper('theoryPrompts', 'trDots');
+  document.getElementById('page-hub').classList.add('active');
   window.scrollTo(0, 0);
 }
 
@@ -287,7 +289,7 @@ document.addEventListener('change', function(e) {
 
 // ===== INIT ALL STEPPERS =====
 document.addEventListener('DOMContentLoaded', function() {
-  ['taskSteps','trialSteps','hedSteps','desireSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
+  ['taskOverviewSteps','trialSteps','hedSteps','desireSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
     const el = document.getElementById(id);
     if (el) {
       const page = el.closest('.page');
@@ -296,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   // Init dots
-  initStepper('taskSteps', 'taskDots');
+  initStepper('taskOverviewSteps', 'taskOverviewDots');
   initStepper('trialSteps', 'trialDots');
   initStepper('hedSteps', 'hedDots');
   initStepper('desireSteps', 'desireDots');
@@ -366,7 +368,7 @@ function printAll() {
     // Restore step visibility — re-init steppers
     steps.forEach(s => s.classList.remove('active'));
     // Re-activate current steps
-    ['taskSteps','trialSteps','hedSteps','desireSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
+    ['taskOverviewSteps','trialSteps','hedSteps','desireSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
       const el = document.getElementById(id);
       if (el) {
         const firstStep = el.querySelector('.step');

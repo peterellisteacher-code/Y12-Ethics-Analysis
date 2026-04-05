@@ -4,215 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Philosophy of Happiness - Issues Analysis Guide</title>
-<style>
-/* ===== RESET & BASE ===== */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f0f1a;color:#e0dcd0;line-height:1.7;min-height:100vh}
-
-/* ===== PRINT ===== */
-#printBtn{position:fixed;top:16px;left:16px;z-index:9999;background:linear-gradient(135deg,#c9a84c,#f0d78c);color:#1a1a2e;border:none;padding:10px 22px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 2px 12px rgba(201,168,76,.4);transition:transform .15s}
-#printBtn:hover{transform:scale(1.05)}
-@media print{
-  #printBtn,.nav-pills,.section-nav,button,.quiz-btn,.help-btn,.hub-btn-row,.adventure-card,.stepper-nav,.step-dots{display:none!important}
-  body{background:#fff;color:#111;font-size:11pt}
-  .page{background:#fff!important;border:none!important;box-shadow:none!important;padding:20px!important;margin:0!important;max-width:100%!important}
-  /* Show ALL pages when printing, not just the active one */
-  .page.print-show{display:block!important;page-break-before:always}
-  .page.print-show:first-of-type{page-break-before:auto}
-  /* Show all steps within each page */
-  .page.print-show .step{display:block!important}
-  /* Hide welcome and question-select pages in print (no student content) */
-  #page-welcome.print-show,#page-question.print-show{display:none!important}
-  .user-answer{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;min-height:40px!important}
-  .user-answer:empty::before{content:"(No response entered)";color:#999;font-style:italic}
-  textarea{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;min-height:40px!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  textarea:empty::before{content:"(No response entered)";color:#999;font-style:italic}
-  .question-banner{background:#eee!important;color:#111!important;border-color:#999!important}
-  .question-banner .label{color:#666!important}
-  h1,h2,h3,h4{color:#111!important;-webkit-text-fill-color:#111!important;background:none!important}
-  p,li,td,th,label,span,em,strong{color:#111!important}
-  .gold,.highlight{color:#333!important}
-  img{max-width:150px!important;height:auto!important}
-  .character{width:100px!important;height:100px!important;border-color:#999!important;box-shadow:none!important}
-  .theory-infographic{background:#f5f5f5!important;color:#111!important;border-color:#999!important}
-  .theory-card-mini{background:#f0f0f0!important;color:#111!important;border:1px solid #ccc!important}
-  .card,.card-gold{background:#fff!important;border:1px solid #ccc!important;box-shadow:none!important}
-  .help-content.show{display:block!important;background:#f9f9f9!important;border:1px solid #ccc!important;color:#111!important}
-  .learning-box{background:#f0f8ff!important;border:1px solid #999!important;color:#111!important}
-  .learning-box .gold{color:#333!important}
-  .exemplar-box{background:#fff5f5!important;border-color:#999!important}
-  .flow-diagram{background:#f5f5f5!important;border-color:#999!important}
-  .flow-zone{color:#111!important}
-  .rubric-table th{background:#ddd!important;color:#111!important}
-  .rubric-table td{color:#111!important}
-  .print-section-header{display:block!important;text-align:center;font-size:18pt;font-weight:bold;color:#111;padding:20px 0 10px;border-bottom:2px solid #111;margin-bottom:16px}
-  select{border:1px solid #999!important;background:#f9f9f9!important;color:#111!important;-webkit-appearance:none}
-  input[type="checkbox"]{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  /* Readings section print */
-  .reading-card{background:#f9f9f9!important;border:1px solid #ccc!important;color:#111!important}
-  .reading-card h4{color:#111!important}
-  .reading-tag{background:#eee!important;color:#333!important;border:1px solid #ccc!important}
-}
-
-/* ===== NAVIGATION PILLS ===== */
-.nav-pills{position:fixed;top:16px;right:16px;z-index:9998;display:none;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.nav-pills.visible{display:flex}
-.nav-pill{padding:8px 16px;border-radius:20px;border:2px solid #c9a84c;background:rgba(26,26,46,.9);color:#c9a84c;font-weight:700;font-size:.8rem;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:1px;backdrop-filter:blur(8px)}
-.nav-pill:hover,.nav-pill.active{background:#c9a84c;color:#1a1a2e}
-
-/* ===== PAGES ===== */
-.page{display:none;max-width:800px;margin:0 auto;padding:40px 24px 60px}
-.page.active{display:block}
-
-/* ===== QUESTION BANNER ===== */
-.question-banner{display:none;background:linear-gradient(135deg,#1a1a3e,#2a1a3e);border:2px solid #c9a84c;border-radius:12px;padding:16px 24px;margin-bottom:32px;text-align:center;font-size:1.05rem;font-weight:600;color:#f0d78c;line-height:1.5}
-.question-banner.visible{display:block}
-.question-banner .label{font-size:.75rem;text-transform:uppercase;letter-spacing:2px;color:#8a7a5a;margin-bottom:4px}
-
-/* ===== TYPOGRAPHY ===== */
-h1{font-size:2.4rem;background:linear-gradient(135deg,#c9a84c,#f0d78c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;margin-bottom:8px}
-h2{font-size:1.8rem;color:#c9a84c;margin-bottom:16px;text-align:center}
-h3{font-size:1.3rem;color:#e8c860;margin:24px 0 12px}
-p{margin-bottom:14px}
-
-/* ===== CARDS & CONTAINERS ===== */
-.card{background:linear-gradient(145deg,#1a1a2e,#16213e);border:1px solid rgba(201,168,76,.25);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 4px 20px rgba(0,0,0,.3)}
-.card-gold{border-color:#c9a84c;box-shadow:0 4px 24px rgba(201,168,76,.15)}
-
-/* ===== CHARACTER IMAGES ===== */
-.character{display:block;margin:0 auto 20px;border-radius:50%;width:180px;height:180px;object-fit:cover;border:4px solid #c9a84c;box-shadow:0 0 30px rgba(201,168,76,.3)}
-.character-small{width:120px;height:120px}
-.character-rect{border-radius:16px;width:220px;height:auto}
-
-/* ===== INPUTS ===== */
-textarea,.text-input{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);border-radius:10px;padding:14px;color:#e0dcd0;font-family:inherit;font-size:.95rem;resize:vertical;transition:border-color .2s}
-textarea:focus,.text-input:focus{outline:none;border-color:#c9a84c;box-shadow:0 0 12px rgba(201,168,76,.15)}
-textarea{min-height:100px}
-select{width:100%;background:#1a1a2e;border:2px solid #c9a84c;border-radius:10px;padding:14px;color:#f0d78c;font-size:1rem;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a84c' fill='none' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
-
-/* ===== BUTTONS ===== */
-.btn{display:inline-block;padding:12px 28px;border-radius:10px;border:none;font-weight:700;font-size:1rem;cursor:pointer;transition:all .2s;text-align:center}
-.btn-gold{background:linear-gradient(135deg,#c9a84c,#f0d78c);color:#1a1a2e}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(201,168,76,.4)}
-.btn-outline{background:transparent;border:2px solid #c9a84c;color:#c9a84c}
-.btn-outline:hover{background:#c9a84c;color:#1a1a2e}
-.btn-lg{padding:18px 36px;font-size:1.15rem;border-radius:14px}
-.btn-block{display:block;width:100%;margin-bottom:12px}
-.btn-center{display:block;margin:24px auto 0;width:fit-content}
-
-/* ===== HUB BUTTONS ===== */
-.hub-btn-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
-.hub-btn{background:linear-gradient(145deg,#1a1a3e,#22224e);border:2px solid #c9a84c;border-radius:16px;padding:24px 20px;text-align:center;cursor:pointer;transition:all .25s;color:#f0d78c;font-weight:700;font-size:1.05rem}
-.hub-btn:hover{background:linear-gradient(145deg,#2a2a4e,#32326e);transform:translateY(-3px);box-shadow:0 6px 24px rgba(201,168,76,.25)}
-.hub-btn .icon{font-size:2rem;display:block;margin-bottom:8px}
-
-/* ===== ADVENTURE HEADER ===== */
-.adventure-title{font-size:2.8rem;text-align:center;font-weight:900;letter-spacing:3px;color:#f0d78c!important;text-shadow:0 2px 8px rgba(201,168,76,.6),0 0 40px rgba(201,168,76,.3);margin-bottom:16px;text-transform:uppercase;position:relative;padding-bottom:8px;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:#f0d78c!important;background:none!important}
-.adventure-title::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:3px;background:linear-gradient(90deg,transparent,#c9a84c,transparent)}
-
-/* ===== QUIZ ===== */
-.quiz-options{display:flex;flex-direction:column;gap:10px;margin:12px 0 16px}
-.quiz-opt{background:rgba(255,255,255,.05);border:2px solid rgba(201,168,76,.2);border-radius:10px;padding:14px 18px;cursor:pointer;transition:all .2s;font-size:.95rem;text-align:left}
-.quiz-opt:hover{border-color:#c9a84c;background:rgba(201,168,76,.08)}
-.quiz-opt.correct{border-color:#4caf50;background:rgba(76,175,80,.15);color:#a5d6a7}
-.quiz-opt.incorrect{border-color:#ef5350;background:rgba(239,83,80,.12);color:#ef9a9a}
-.quiz-opt.disabled{pointer-events:none;opacity:.7}
-.quiz-feedback{padding:12px 16px;border-radius:8px;margin:8px 0 16px;font-size:.9rem;display:none}
-.quiz-feedback.show{display:block}
-.quiz-feedback.correct{background:rgba(76,175,80,.12);border:1px solid rgba(76,175,80,.3);color:#a5d6a7}
-.quiz-feedback.incorrect{background:rgba(239,83,80,.1);border:1px solid rgba(239,83,80,.25);color:#ef9a9a}
-
-/* ===== THEORY INFOGRAPHIC ===== */
-.theory-infographic{background:linear-gradient(145deg,#1a1a3e,#0f0f2a);border:2px solid #c9a84c;border-radius:20px;padding:32px;margin:24px 0}
-.theory-card-mini{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:18px;margin-bottom:14px;transition:all .2s}
-.theory-card-mini:hover{border-color:#c9a84c;background:rgba(201,168,76,.06)}
-.theory-card-mini h4{color:#f0d78c;margin-bottom:6px;font-size:1rem}
-.theory-card-mini .counter{color:#ef9a9a;font-size:.85rem;font-style:italic;margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)}
-
-/* ===== BULLET INPUTS ===== */
-.bullet-group{margin:16px 0}
-.bullet-group label{display:block;color:#c9a84c;font-weight:700;margin-bottom:10px;font-size:1rem}
-.bullet-input{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
-.bullet-input::before{content:'\2022';color:#c9a84c;font-size:1.4rem;line-height:1.8}
-.bullet-input textarea{min-height:50px;flex:1}
-
-/* ===== STEPS / STEPPER ===== */
-.step{display:none}
-.step.active{display:block}
-.stepper-nav{display:flex;justify-content:space-between;margin-top:20px;gap:12px}
-.step-dots{display:flex;justify-content:center;gap:8px;margin:16px 0}
-.step-dot{width:10px;height:10px;border-radius:50%;background:rgba(201,168,76,.2);transition:all .2s}
-.step-dot.active{background:#c9a84c;box-shadow:0 0 8px rgba(201,168,76,.4)}
-.step-dot.completed{background:#4caf50}
-
-/* ===== HELP BUTTON ===== */
-.help-btn{background:rgba(201,168,76,.1);border:1px dashed #c9a84c;border-radius:10px;padding:12px 20px;cursor:pointer;color:#c9a84c;font-weight:600;text-align:center;margin:12px 0;transition:all .2s}
-.help-btn:hover{background:rgba(201,168,76,.2)}
-.help-content{display:none;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:10px;padding:16px;margin-top:8px;font-size:.9rem}
-.help-content.show{display:block}
-
-/* ===== EXEMPLAR ===== */
-.exemplar-box{background:rgba(239,83,80,.05);border:2px dashed #ef5350;border-radius:12px;padding:24px;margin:20px 0}
-.exemplar-box .warning{text-align:center;color:#ef5350;font-weight:900;font-size:1.1rem;margin-bottom:16px;letter-spacing:1px}
-
-/* ===== FLOW DIAGRAM ===== */
-.flow-diagram{background:linear-gradient(145deg,#1a1a3e,#0f0f2a);border:2px solid #c9a84c;border-radius:16px;padding:24px;margin:20px 0;text-align:center}
-.flow-axis{display:flex;justify-content:center;align-items:center;gap:8px;margin:12px 0;flex-wrap:wrap}
-.flow-zone{padding:10px 18px;border-radius:8px;font-weight:700;font-size:.85rem}
-.flow-zone.anxiety{background:rgba(239,83,80,.15);color:#ef9a9a;border:1px solid rgba(239,83,80,.3)}
-.flow-zone.flow{background:rgba(201,168,76,.15);color:#f0d78c;border:2px solid #c9a84c}
-.flow-zone.boredom{background:rgba(100,100,200,.15);color:#9a9aef;border:1px solid rgba(100,100,200,.3)}
-
-/* ===== SUBTITLES ===== */
-.subtitle{text-align:center;color:#8a7a5a;font-size:.9rem;margin-bottom:28px}
-.speech-bubble{background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:16px;padding:20px 24px;margin:16px 0;font-size:1.05rem;line-height:1.6;position:relative;text-align:center}
-
-/* ===== SECTION DIVIDERS ===== */
-.divider{height:2px;background:linear-gradient(90deg,transparent,#c9a84c,transparent);margin:32px 0}
-
-/* ===== RUBRIC TABLE ===== */
-.rubric-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.82rem}
-.rubric-table th{background:#c9a84c;color:#1a1a2e;padding:10px 8px;text-align:left;font-size:.8rem}
-.rubric-table td{padding:10px 8px;border:1px solid rgba(201,168,76,.2);vertical-align:top}
-.rubric-table tr:nth-child(even){background:rgba(255,255,255,.03)}
-
-/* ===== HIGHLIGHT ===== */
-.highlight{color:#f0d78c;font-weight:600}
-.gold{color:#c9a84c}
-em{color:#ccc;font-style:italic}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.page.active{animation:fadeIn .4s ease-out}
-
-/* ===== READING CARDS ===== */
-.reading-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.15);border-radius:12px;padding:20px;margin:14px 0;transition:all .2s}
-.reading-card:hover{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.04)}
-.reading-card h4{color:#f0d78c;margin-bottom:8px;font-size:1.05rem}
-.reading-card p{font-size:.92rem;margin-bottom:8px;color:#ccc}
-.reading-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-.reading-tag{display:inline-block;padding:3px 10px;border-radius:12px;background:rgba(201,168,76,.12);color:#c9a84c;font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;border:1px solid rgba(201,168,76,.2)}
-.reading-use{background:rgba(76,175,80,.06);border-left:3px solid #4caf50;padding:8px 12px;border-radius:0 8px 8px 0;font-size:.88rem;margin-top:8px}
-.reading-use strong{color:#a5d6a7}
-.reading-link{display:inline-block;margin-top:10px;padding:8px 18px;background:rgba(201,168,76,.12);border:1px solid #c9a84c;border-radius:8px;color:#f0d78c;font-weight:600;font-size:.88rem;text-decoration:none;transition:all .2s}
-.reading-link:hover{background:#c9a84c;color:#1a1a2e}
-
-/* ===== LEARNING INTENTION BOX ===== */
-.learning-box{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:18px 22px;margin:16px 0 24px}
-
-/* ===== USER ANSWER DISPLAY (for print) ===== */
-.user-answer{min-height:30px;padding:8px 12px;background:rgba(255,255,255,.04);border-radius:6px;margin:4px 0 12px;white-space:pre-wrap;word-wrap:break-word}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:600px){
-  h1{font-size:1.8rem}
-  .hub-btn-row{grid-template-columns:1fr}
-  .nav-pills{top:auto;bottom:8px;left:8px;right:8px;justify-content:center}
-  #printBtn{top:auto;bottom:60px}
-  .adventure-title{font-size:2rem}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -225,29 +17,17 @@ em{color:#ccc;font-style:italic}
   <button class="nav-pill" onclick="goTo('trials')">TRIALS</button>
   <button class="nav-pill" onclick="goTo('theories')">THEORIES</button>
   <button class="nav-pill" onclick="goTo('drafting')">DRAFTING</button>
-  <button class="nav-pill" onclick="goTo('readings')">READINGS</button>
 </div>
 
 <!-- ============================================ -->
 <!-- PAGE 1: WELCOME -->
 <!-- ============================================ -->
-<div class="page active" id="page-welcome">
-  <img src="gorilla_pondering.png" alt="Wise pondering gorilla" class="character">
-  <h1>The Good Life</h1>
-  <p class="subtitle">A Philosophical Inquiry</p>
-  <div class="speech-bubble">
-    What is <em>your</em> definition of a good life?
-  </div>
-  <div class="card">
-    <textarea id="goodLifeDef" placeholder="Take a moment to reflect... What does a good life mean to you?" rows="5"></textarea>
-    <button class="btn btn-gold btn-center" onclick="submitGoodLife()">Share My Thoughts</button>
-  </div>
-</div>
+<!-- Welcome page removed — site now starts at question selection -->
 
 <!-- ============================================ -->
 <!-- PAGE 2: QUESTION SELECTION -->
 <!-- ============================================ -->
-<div class="page" id="page-question">
+<div class="page active" id="page-question">
   <img src="gorilla_winking.png" alt="Wise winking gorilla" class="character">
   <h2>Welcome Back, Old Friend</h2>
   <div class="speech-bubble">
@@ -334,6 +114,7 @@ em{color:#ccc;font-style:italic}
     <div class="step-dots" id="trDots"></div>
     <button class="btn btn-gold" id="trNext" onclick="theoryRespNav(1)">Next Theory &rarr;</button>
   </div>
+  <button class="btn btn-outline btn-center" onclick="goTo('hub')" style="margin-top:12px">SKIP TO MENU</button>
 </div>
 
 <!-- ============================================ -->
@@ -345,14 +126,7 @@ em{color:#ccc;font-style:italic}
     <span id="bannerTextHub"></span>
   </div>
 
-  <div class="adventure-title">
-    <span class="shimmer">CHOOSE YOUR OWN ADVENTURE!</span>
-  </div>
-  <p class="subtitle" style="margin-top:20px">Your philosophical journey awaits. Where will you begin?</p>
-
-  <img src="dr_e_donkey.png" alt="Dr E as a cartoon donkey" class="character character-rect" style="width:200px;margin:20px auto">
-
-  <div class="hub-btn-row">
+  <div class="hub-btn-row" style="margin-top:16px">
     <div class="hub-btn" onclick="goTo('task')">
       <span class="icon">&#x1F4CB;</span>
       Explain the Task Sheet to Me
@@ -641,57 +415,21 @@ em{color:#ccc;font-style:italic}
     <span id="bannerTextTheories"></span>
   </div>
 
-  <h2>Preparing Your Theories</h2>
-  <p class="subtitle">The most important part of your preparation. Understand each theory deeply.</p>
-  <div class="card" style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);margin-bottom:24px;padding:16px 20px">
-    <p style="margin:0;font-size:.9rem"><strong class="gold">Learning intention:</strong> Develop clear, accurate knowledge of each theory's claims, key philosophers, and core arguments (KU), and critically evaluate their strengths and weaknesses (CA).</p>
-    <p style="margin:8px 0 0;font-size:.85rem;color:#aaa"><strong>Success:</strong> For each theory you study, you can (1) explain what it claims and why, (2) name the key philosophers and their arguments, and (3) identify at least one strength and one weakness with reasoning.</p>
-  </div>
+  <h2>Theories</h2>
+  <p class="subtitle">Select a theory to explore its key ideas, watch videos, and access required readings.</p>
 
-  <!-- INFOGRAPHIC -->
-  <div class="theory-infographic">
-    <h3 style="text-align:center;margin-bottom:16px">What Each Theory Offers to the Good Life</h3>
-
-    <div class="theory-card-mini">
-      <h4>Hedonism</h4>
-      <p>A good life requires <strong>pleasure</strong>. The best version (Epicurus) focuses on tranquillity and simple satisfactions rather than intense sensation.</p>
-      <div class="counter"><strong>Counter (Nozick):</strong> The Experience Machine shows we clearly want more than basic pleasure &mdash; we want reality, agency, and to be a certain kind of person.</div>
-    </div>
-
-    <div class="theory-card-mini">
-      <h4>Desire-Satisfaction Theory</h4>
-      <p>We need to <strong>want things</strong> to have meaningful achievement. To be satisfied is to reach those desires and have a good life.</p>
-      <div class="counter"><strong>Counter:</strong> The problem of the psychopath &mdash; they can have desires and satisfy them, but we could not say they have a good life.</div>
-    </div>
-
-    <div class="theory-card-mini">
-      <h4>Spontaneity &amp; Wu Wei</h4>
-      <p><strong>Spontaneity</strong> allows us to avoid drudgery and stagnancy while <strong>improvisation</strong> allows us to be in the flow state &mdash; a good life has constant variation and experiences of flow across many areas.</p>
-      <div class="counter"><strong>Counter:</strong> A good life can also require drudgery to care for others (e.g., a parent nursing a sick child through the night). This is surely also a good life, even without spontaneity or flow.</div>
-    </div>
-
-    <div class="theory-card-mini">
-      <h4>Virtue Ethics</h4>
-      <p>It's not about your experience but the <strong>sort of person you are</strong>. The good life means cultivating virtues &mdash; excellences of character &mdash; that you know are good.</p>
-      <div class="counter"><strong>Counter:</strong> This seems to suggest children cannot have good lives, since they haven't yet cultivated the virtues.</div>
-    </div>
-
-    <div class="theory-card-mini">
-      <h4>Stoicism</h4>
-      <p>A good life is one where <strong>emotions are mastered</strong> so they don't influence behaviour irrationally, leading to well-reasoned decisions and flourishing.</p>
-      <div class="counter"><strong>Counter:</strong> The monk who does not respond to even a friend's death &mdash; is this really a good life, or has something human been lost?</div>
-    </div>
-  </div>
-
-  <h3 style="text-align:center;margin:28px 0 16px">Dive Into Each Theory</h3>
-  <div class="hub-btn-row">
+  <div class="hub-btn-row" style="grid-template-columns:1fr 1fr;margin-top:16px">
     <div class="hub-btn" onclick="goTo('theory-hedonism')">
       <span class="icon">&#x1F347;</span>
-      Hedonism &amp; Desire Theory
+      Hedonism
+    </div>
+    <div class="hub-btn" onclick="goTo('theory-desire')">
+      <span class="icon">&#x1F4A1;</span>
+      Desire-Satisfaction
     </div>
     <div class="hub-btn" onclick="goTo('theory-spontaneity')">
       <span class="icon">&#x1F30A;</span>
-      Spontaneity &amp; Flow
+      Spontaneity
     </div>
     <div class="hub-btn" onclick="goTo('theory-virtue')">
       <span class="icon">&#x1F3DB;</span>
@@ -705,742 +443,991 @@ em{color:#ccc;font-style:italic}
 </div>
 
 <!-- ============================================ -->
-<!-- PAGE 8: HEDONISM & DESIRE THEORY -->
+<!-- HEDONISM -->
 <!-- ============================================ -->
-<div class="page" id="page-theory-hedonism">
+<div class="page page-wide" id="page-theory-hedonism">
   <div class="question-banner visible" id="bannerHed">
     <div class="label">Your Question</div>
     <span id="bannerTextHed"></span>
   </div>
+  <h2>Hedonism</h2>
 
-  <img src="advisor_epicurus.png" alt="Epicurus advisor" class="character">
-  <h2>Hedonism &amp; Desire-Satisfaction Theory</h2>
-  <p class="subtitle">Your guide: Epicurus &mdash; philosopher of the Garden</p>
+  <div class="theory-two-col">
+    <div class="theory-left">
 
-  <div id="hedSteps">
-    <!-- Comprehension Quiz -->
-    <div class="step active" data-step="0">
+      <!-- VIDEOS -->
       <div class="card">
-        <h3>Comprehension Check: Hedonism</h3>
-
-        <p><strong>Q1:</strong> What does hedonism claim about the good life?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q1')">A good life contains as much pleasure and as little pain as possible</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires following strict moral rules</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life means being indifferent to all experiences</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires cultivating virtues above all else</div>
+        <h3>Video Resources</h3>
+        <div class="video-embed">
+          <h4>Epicurean Hedonism</h4>
+          <iframe src="https://www.youtube.com/embed/pIETGDgMdtg" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="hed-q1"></div>
-
-        <p><strong>Q2:</strong> What is Epicurus's distinction between types of pleasure?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Physical pleasure vs. mental pleasure</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q2')">Moving pleasures (active sensation) vs. static pleasures (tranquillity)</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Short-term pleasure vs. long-term pleasure</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Individual pleasure vs. collective pleasure</div>
+        <div class="video-embed">
+          <h4>Hedonism and the Experience Machine</h4>
+          <iframe src="https://www.youtube.com/embed/yJ1dsNauhGE" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="hed-q2"></div>
-
-        <p><strong>Q3:</strong> Why does Nozick's Experience Machine challenge hedonism?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because pleasure is always bad</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because machines cannot produce real pleasure</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q3')">Because most people would refuse to enter, suggesting we value more than just experience</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because Nozick was a hedonist himself</div>
-        </div>
-        <div class="quiz-feedback" id="hed-q3"></div>
-
-        <p><strong>Q4:</strong> What is the core claim of desire-satisfaction theory?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">We should eliminate all desires</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q4')">A good life is one where your desires are fulfilled</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Only natural desires should be pursued</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Desire is the root of all suffering</div>
-        </div>
-        <div class="quiz-feedback" id="hed-q4"></div>
       </div>
-    </div>
 
-    <!-- Hedonism Deep Dive -->
-    <div class="step" data-step="1">
-      <div class="card">
-        <h3>Types of Hedonism</h3>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Sensory Hedonism (Bentham)</h4>
-        <p>Jeremy Bentham argued that pleasure is purely about <strong>sensation</strong>. "Prejudice apart, the game of push-pin is of equal value with the arts and sciences of music and poetry." All that matters is the quantity of pleasure &mdash; not its source or type.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Epicurean Hedonism</h4>
-        <p>Epicurus saw that if certain pleasures lead to disaster, they don't maximise pleasure overall. He distinguished:</p>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li><strong>Natural &amp; necessary desires</strong> (food, shelter) &mdash; satisfy these</li>
-          <li><strong>Natural but non-necessary</strong> (luxuries) &mdash; enjoy when available</li>
-          <li><strong>Vain &amp; empty desires</strong> (power, wealth, fame) &mdash; avoid these</li>
-        </ul>
-        <p>The goal is <span class="highlight">ataraxia</span> &mdash; tranquillity. As Philodemus summarised: <em>"God is not to be feared, death should cause no anxiety, easily obtained is the good, and easily endured is the bad."</em></p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Attitudinal Hedonism (Feldman) &mdash; Key Focus</h4>
-        <p>Fred Feldman argued that pleasure is not a <strong>sensation</strong> but an <strong>attitude</strong> toward states of affairs. Finding a philosophy paper enlightening is enjoyment, even without sensory pleasure.</p>
-        <p><strong>Intrinsic Attitudinal Hedonism (IAH):</strong> Life value = total intrinsic attitudinal pleasure minus pain.</p>
-        <p>Feldman gives the example of <span class="highlight">Stoicus</span> &mdash; imagine a man whose only desire is to live a quiet, peaceful life. He sits in his garden, reads, and thinks. He has no intense sensory pleasures, yet he genuinely enjoys his peaceful existence. Sensory hedonism would say his life is bad (no sensory thrills); attitudinal hedonism says it's good (he takes pleasure in his state of affairs).</p>
-        <p><strong>Refinements</strong> (each handles a classic objection):</p>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li><strong>Veridical IAH (VIAH):</strong> Imagine a businessman who feels satisfied with his life, but his family secretly despises him and his colleagues laugh behind his back. VIAH says pleasure based on false beliefs counts for less &mdash; truth matters.</li>
-          <li><strong>Desert-Adjusted IAH (DAIAH):</strong> A sadist takes pleasure in others' suffering. DAIAH says pleasure in <em>worthy</em> objects counts more, while sadistic pleasure counts less &mdash; the object of your pleasure matters.</li>
-          <li><strong>Double Desert-Adjusted (DDAIAH):</strong> Also considers whether the <em>person</em> deserves the pleasure &mdash; a virtuous person's pleasure counts more than a vicious person's.</li>
-        </ul>
-        <p>This is the most sophisticated form of hedonism and can handle many classic objections.</p>
-      </div>
-    </div>
-
-    <!-- Desire-Satisfaction Deep Dive -->
-    <div class="step" data-step="2">
-      <div class="card">
-        <h3>Desire-Satisfaction Theory in Depth</h3>
-
-        <p>The basic idea: as we develop, we arrange our values into a priority order. What's best for us is whatever <strong>maximally conforms to our priorities</strong>.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Key Strengths</h4>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li>Not vulnerable to Nozick's Experience Machine (if you desire reality, the machine fails you)</li>
-          <li>Respects individual autonomy &mdash; your good life is defined by <em>your</em> priorities</li>
-          <li>Parfit's "Success Theory": what matters is informed desire fulfilment</li>
-        </ul>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Key Problems</h4>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li><strong>Trivial desires:</strong> Rawls imagines someone who, despite having ordinary intelligence, desires nothing more than to count every blade of grass they can find. They spend their life doing this and are satisfied. Can a life of grass-blade counting really be a good life, even if the desire is fulfilled?</li>
-          <li><strong>Distant desires:</strong> Suppose you meet a stranger who is ill, and you briefly desire that they recover. Later you completely forget about them. If they are cured, is this really part of your welfare? You'll never even know.</li>
-          <li><strong>Awful people:</strong> Genghis Khan reportedly said: "It is not enough that I succeed; everyone else must fail." If a sadist satisfies their desires, does the theory really say they have a good life?</li>
-          <li><strong>Brave New World:</strong> In Huxley's novel, people are genetically engineered and conditioned from birth to be perfectly content with their assigned role. They have simple desires and all are satisfied. But are they really living well, or have they simply been programmed to want less?</li>
-          <li><strong>Akrasia (weakness of will):</strong> Which desires count &mdash; impulsive ones or reflective ones?</li>
-        </ul>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Informed Desire Theory (Parfit's Success Theory)</h4>
-        <p>What we want <strong>when fully informed</strong> of all the facts. This handles some problems (the impulsive desire) but not others (the informed sadist).</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Toward Objectivism: MacIntyre's Practices</h4>
-        <p>MacIntyre argues some activities have <span class="highlight">internal goods</span> that make them worth pursuing for their own sake. These are complex activities that sustain our interest, raise challenges, and develop our faculties. This bridges desire theory and virtue ethics.</p>
-      </div>
-    </div>
-
-    <!-- Strengths & Weaknesses -->
-    <div class="step" data-step="3">
+      <!-- WHAT THIS THEORY OFFERS -->
       <div class="card card-gold">
-        <h3>Your Analysis: Hedonism</h3>
-        <div class="card" style="background:rgba(76,175,80,.06);border:1px solid rgba(76,175,80,.2);padding:14px 18px;margin-bottom:16px">
-          <p style="margin:0;font-size:.85rem;color:#a5d6a7"><strong>Example of a strong strength/weakness:</strong></p>
-          <p style="margin:6px 0 0;font-size:.85rem;color:#ccc"><strong>Strength:</strong> "Hedonism provides a clear, measurable criterion for the good life &mdash; pleasure is something we can all recognise, making it a practical standard for evaluating well-being."</p>
-          <p style="margin:6px 0 0;font-size:.85rem;color:#ccc"><strong>Weakness:</strong> "Nozick's Experience Machine shows that most people value contact with reality over mere pleasant experience, suggesting pleasure alone is insufficient for a good life."</p>
-          <p style="margin:6px 0 0;font-size:.8rem;color:#888"><em>Notice: each point states the claim AND gives a reason why.</em></p>
+        <h3>What This Theory Offers The Good Life</h3>
+        <p>A good life requires <strong>pleasure</strong>. The best version (Epicurus) focuses on tranquillity and simple satisfactions rather than intense sensation.</p>
+        <div class="counter"><strong>Counter (Nozick):</strong> The Experience Machine shows we clearly want more than basic pleasure &mdash; we want reality, agency, and to be a certain kind of person.</div>
+      </div>
+
+      <!-- IN DEPTH -->
+      <div id="hedSteps">
+        <div class="step active" data-step="0">
+          <div class="card">
+            <h3>Comprehension Check: Hedonism</h3>
+            <p><strong>Q1:</strong> What does hedonism claim about the good life?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q1')">A good life contains as much pleasure and as little pain as possible</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires following strict moral rules</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life means being indifferent to all experiences</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires cultivating virtues above all else</div>
+            </div>
+            <div class="quiz-feedback" id="hed-q1"></div>
+
+            <p><strong>Q2:</strong> What is Epicurus's distinction between types of pleasure?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Physical pleasure vs. mental pleasure</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q2')">Moving pleasures (active sensation) vs. static pleasures (tranquillity)</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Short-term pleasure vs. long-term pleasure</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Individual pleasure vs. collective pleasure</div>
+            </div>
+            <div class="quiz-feedback" id="hed-q2"></div>
+
+            <p><strong>Q3:</strong> Why does Nozick's Experience Machine challenge hedonism?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because pleasure is always bad</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because machines cannot produce real pleasure</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q3')">Because most people would refuse to enter, suggesting we value more than just experience</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because Nozick was a hedonist himself</div>
+            </div>
+            <div class="quiz-feedback" id="hed-q3"></div>
+          </div>
         </div>
-        <div class="bullet-group">
-          <label>Strengths of Hedonism</label>
-          <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+
+        <div class="step" data-step="1">
+          <div class="card">
+            <h3>Types of Hedonism</h3>
+            <h4 style="color:#f0d78c;margin-top:16px">Sensory Hedonism (Bentham)</h4>
+            <p>Jeremy Bentham argued that pleasure is purely about <strong>sensation</strong>. "Prejudice apart, the game of push-pin is of equal value with the arts and sciences of music and poetry." All that matters is the quantity of pleasure &mdash; not its source or type.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Epicurean Hedonism</h4>
+            <p>Epicurus saw that if certain pleasures lead to disaster, they don't maximise pleasure overall. He distinguished:</p>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li><strong>Natural &amp; necessary desires</strong> (food, shelter) &mdash; satisfy these</li>
+              <li><strong>Natural but non-necessary</strong> (luxuries) &mdash; enjoy when available</li>
+              <li><strong>Vain &amp; empty desires</strong> (power, wealth, fame) &mdash; avoid these</li>
+            </ul>
+            <p>The goal is <span class="highlight">ataraxia</span> &mdash; tranquillity. As Philodemus summarised: <em>"God is not to be feared, death should cause no anxiety, easily obtained is the good, and easily endured is the bad."</em></p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Attitudinal Hedonism (Feldman) &mdash; Key Focus</h4>
+            <p>Fred Feldman argued that pleasure is not a <strong>sensation</strong> but an <strong>attitude</strong> toward states of affairs. Finding a philosophy paper enlightening is enjoyment, even without sensory pleasure.</p>
+            <p><strong>Intrinsic Attitudinal Hedonism (IAH):</strong> Life value = total intrinsic attitudinal pleasure minus pain.</p>
+            <p>Feldman gives the example of <span class="highlight">Stoicus</span> &mdash; imagine a man whose only desire is to live a quiet, peaceful life. He sits in his garden, reads, and thinks. He has no intense sensory pleasures, yet he genuinely enjoys his peaceful existence. Sensory hedonism would say his life is bad (no sensory thrills); attitudinal hedonism says it's good (he takes pleasure in his state of affairs).</p>
+            <p><strong>Refinements</strong> (each handles a classic objection):</p>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li><strong>Veridical IAH (VIAH):</strong> Imagine a businessman who feels satisfied with his life, but his family secretly despises him and his colleagues laugh behind his back. VIAH says pleasure based on false beliefs counts for less &mdash; truth matters.</li>
+              <li><strong>Desert-Adjusted IAH (DAIAH):</strong> A sadist takes pleasure in others' suffering. DAIAH says pleasure in <em>worthy</em> objects counts more, while sadistic pleasure counts less &mdash; the object of your pleasure matters.</li>
+              <li><strong>Double Desert-Adjusted (DDAIAH):</strong> Also considers whether the <em>person</em> deserves the pleasure &mdash; a virtuous person's pleasure counts more than a vicious person's.</li>
+            </ul>
+            <p>This is the most sophisticated form of hedonism and can handle many classic objections.</p>
+          </div>
         </div>
-        <div class="bullet-group">
-          <label>Weaknesses of Hedonism</label>
-          <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
-        </div>
-        <div class="divider"></div>
-        <h3>Your Analysis: Desire-Satisfaction Theory</h3>
-        <div class="bullet-group">
-          <label>Strengths of Desire-Satisfaction Theory</label>
-          <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
-        </div>
-        <div class="bullet-group">
-          <label>Weaknesses of Desire-Satisfaction Theory</label>
-          <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
-        </div>
-        <div class="help-btn" onclick="toggleHelp('hed-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
-        <div class="help-content" id="hed-help">
-          <p><strong>Hedonism strengths to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Pleasure is universally recognisable &mdash; everyone knows what it feels like</li>
-            <li>Attitudinal hedonism (Feldman) is sophisticated enough to handle most objections</li>
-            <li>Epicurean hedonism is modest and achievable &mdash; you don't need wealth or status</li>
-            <li>Pleasure seems to be the default motivator &mdash; even infants pursue it</li>
-          </ul>
-          <p><strong>Hedonism weaknesses to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Nozick's Experience Machine &mdash; we seem to want more than just pleasant experiences</li>
-            <li>The heroin addict gets intense pleasure but is clearly not living well</li>
-            <li>Brave New World &mdash; a society designed purely for pleasure seems to lack something important</li>
-          </ul>
-          <p><strong>Desire theory strengths:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Respects individual autonomy &mdash; your good life is defined by your own priorities</li>
-            <li>Handles the Experience Machine (if you desire reality, the machine fails you)</li>
-            <li>Connects well-being to real-world outcomes, not just subjective experience</li>
-          </ul>
-          <p><strong>Desire theory weaknesses:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>The psychopath/sadist problem &mdash; satisfying evil desires doesn't make a good life</li>
-            <li>Rawls' grass-blade counter &mdash; trivial desires shouldn't define well-being</li>
-            <li>We can condition people to want less (Brave New World problem applies here too)</li>
-            <li>Akrasia &mdash; which of our conflicting desires is the "real" one?</li>
-          </ul>
+
+        <div class="step" data-step="2">
+          <div class="card card-gold">
+            <h3>Your Analysis: Hedonism</h3>
+            <div class="card" style="background:rgba(76,175,80,.06);border:1px solid rgba(76,175,80,.2);padding:14px 18px;margin-bottom:16px">
+              <p style="margin:0;font-size:.85rem;color:#a5d6a7"><strong>Example of a strong strength/weakness:</strong></p>
+              <p style="margin:6px 0 0;font-size:.85rem;color:#ccc"><strong>Strength:</strong> "Hedonism provides a clear, measurable criterion for the good life &mdash; pleasure is something we can all recognise, making it a practical standard for evaluating well-being."</p>
+              <p style="margin:6px 0 0;font-size:.85rem;color:#ccc"><strong>Weakness:</strong> "Nozick's Experience Machine shows that most people value contact with reality over mere pleasant experience, suggesting pleasure alone is insufficient for a good life."</p>
+              <p style="margin:6px 0 0;font-size:.8rem;color:#888"><em>Notice: each point states the claim AND gives a reason why.</em></p>
+            </div>
+            <div class="bullet-group">
+              <label>Strengths of Hedonism</label>
+              <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+            </div>
+            <div class="bullet-group">
+              <label>Weaknesses of Hedonism</label>
+              <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+            </div>
+            <div class="help-btn" onclick="toggleHelp('hed-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
+            <div class="help-content" id="hed-help">
+              <p><strong>Hedonism strengths to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Pleasure is universally recognisable &mdash; everyone knows what it feels like</li>
+                <li>Attitudinal hedonism (Feldman) is sophisticated enough to handle most objections</li>
+                <li>Epicurean hedonism is modest and achievable &mdash; you don't need wealth or status</li>
+                <li>Pleasure seems to be the default motivator &mdash; even infants pursue it</li>
+              </ul>
+              <p><strong>Hedonism weaknesses to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Nozick's Experience Machine &mdash; we seem to want more than just pleasant experiences</li>
+                <li>The heroin addict gets intense pleasure but is clearly not living well</li>
+                <li>Brave New World &mdash; a society designed purely for pleasure seems to lack something important</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="stepper-nav">
-    <button class="btn btn-outline" onclick="stepNav('hedSteps',-1)">&larr; Previous</button>
-    <div class="step-dots" id="hedDots"></div>
-    <button class="btn btn-gold" onclick="stepNav('hedSteps',1)">Next &rarr;</button>
-  </div>
+      <div class="stepper-nav">
+        <button class="btn btn-outline" onclick="stepNav('hedSteps',-1)">&larr; Previous</button>
+        <div class="step-dots" id="hedDots"></div>
+        <button class="btn btn-gold" onclick="stepNav('hedSteps',1)">Next &rarr;</button>
+      </div>
+
+    </div><!-- /theory-left -->
+
+    <div class="theory-right">
+      <div class="card card-gold">
+        <h3>Required Sources for Study</h3>
+        <div class="reading-card">
+          <h4>Robert Nozick &mdash; &ldquo;The Experience Machine&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Critique</span></div>
+          <p>The classic thought experiment challenging hedonism: if you could plug into a machine that simulates a perfect life of pleasure, would you?</p>
+          <p class="reading-use"><strong>Use for:</strong> Arguing against hedonism (CA).</p>
+          <a href="readings/Hedonism%20-%20Opposed%20-%20Nozick%20-%20The%20Experience%20Machine.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>Fred Feldman &mdash; &ldquo;The Good Life: A Defence of Attitudinal Hedonism&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Defence</span></div>
+          <p>Feldman defends attitudinal hedonism &mdash; pleasure as attitude, not sensation. Introduces DAIAH.</p>
+          <p class="reading-use"><strong>Use for:</strong> Defending hedonism against objections (RA, CA).</p>
+          <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Fred%20Feldman%20-%20The%20Good%20Life%20a%20Defence%20of%20Hedonism.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+      </div>
+    </div><!-- /theory-right -->
+  </div><!-- /theory-two-col -->
+
   <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
 </div>
+<!-- ============================================ -->
+<!-- DESIRE-SATISFACTION THEORY -->
+<!-- ============================================ -->
+<div class="page page-wide" id="page-theory-desire">
+  <div class="question-banner visible" id="bannerDesire">
+    <div class="label">Your Question</div>
+    <span id="bannerTextDesire"></span>
+  </div>
+  <h2>Desire-Satisfaction Theory</h2>
 
+  <div class="theory-two-col">
+    <div class="theory-left">
+
+      <!-- VIDEOS -->
+      <div class="card">
+        <h3>Video Resources</h3>
+        <div class="video-embed">
+          <h4>Desire and Satisfaction Explained and Analysed</h4>
+          <iframe src="https://www.youtube.com/embed/duawXqnpRGE" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-embed">
+          <h4>Explaining Desire and Satisfaction Theory</h4>
+          <iframe src="https://www.youtube.com/embed/4l-1CZj5yBs" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-embed">
+          <h4>Desire and Satisfaction Understanding</h4>
+          <iframe src="https://www.youtube.com/embed/6066G6qx_Q8" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- WHAT THIS THEORY OFFERS -->
+      <div class="card card-gold">
+        <h3>What This Theory Offers The Good Life</h3>
+        <p>We need to <strong>want things</strong> to have meaningful achievement. To be satisfied is to reach those desires and have a good life.</p>
+        <div class="counter"><strong>Counter:</strong> The problem of the psychopath &mdash; they can have desires and satisfy them, but we could not say they have a good life.</div>
+      </div>
+
+      <!-- IN DEPTH -->
+      <div id="desireSteps">
+        <div class="step active" data-step="0">
+          <div class="card">
+            <h3>Comprehension Check</h3>
+            <p><strong>Q1:</strong> What is the core claim of desire-satisfaction theory?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">We should eliminate all desires</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q4')">A good life is one where your desires are fulfilled</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Only natural desires should be pursued</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Desire is the root of all suffering</div>
+            </div>
+            <div class="quiz-feedback" id="hed-q4"></div>
+          </div>
+        </div>
+
+        <div class="step" data-step="1">
+          <div class="card">
+            <h3>Desire-Satisfaction Theory in Depth</h3>
+            <p>The basic idea: as we develop, we arrange our values into a priority order. What's best for us is whatever <strong>maximally conforms to our priorities</strong>.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Key Strengths</h4>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li>Not vulnerable to Nozick's Experience Machine (if you desire reality, the machine fails you)</li>
+              <li>Respects individual autonomy &mdash; your good life is defined by <em>your</em> priorities</li>
+              <li>Parfit's "Success Theory": what matters is informed desire fulfilment</li>
+            </ul>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Key Problems</h4>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li><strong>Trivial desires:</strong> Rawls imagines someone who desires nothing more than to count every blade of grass. Can a life of grass-blade counting really be a good life?</li>
+              <li><strong>Distant desires:</strong> Suppose you meet a stranger who is ill, and you briefly desire that they recover. Later you completely forget about them. If they are cured, is this really part of your welfare?</li>
+              <li><strong>Awful people:</strong> Genghis Khan reportedly said: "It is not enough that I succeed; everyone else must fail." If a sadist satisfies their desires, does the theory really say they have a good life?</li>
+              <li><strong>Brave New World:</strong> In Huxley's novel, people are conditioned to be perfectly content with their assigned role. But are they really living well, or have they simply been programmed to want less?</li>
+              <li><strong>Akrasia (weakness of will):</strong> Which desires count &mdash; impulsive ones or reflective ones?</li>
+            </ul>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Informed Desire Theory (Parfit's Success Theory)</h4>
+            <p>What we want <strong>when fully informed</strong> of all the facts. This handles some problems (the impulsive desire) but not others (the informed sadist).</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Toward Objectivism: MacIntyre's Practices</h4>
+            <p>MacIntyre argues some activities have <span class="highlight">internal goods</span> that make them worth pursuing for their own sake. These are complex activities that sustain our interest, raise challenges, and develop our faculties. This bridges desire theory and virtue ethics.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="2">
+          <div class="card card-gold">
+            <h3>Your Analysis: Desire-Satisfaction Theory</h3>
+            <div class="bullet-group">
+              <label>Strengths of Desire-Satisfaction Theory</label>
+              <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+            </div>
+            <div class="bullet-group">
+              <label>Weaknesses of Desire-Satisfaction Theory</label>
+              <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+            </div>
+            <div class="help-btn" onclick="toggleHelp('desire-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
+            <div class="help-content" id="desire-help">
+              <p><strong>Desire theory strengths:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Respects individual autonomy &mdash; your good life is defined by your own priorities</li>
+                <li>Handles the Experience Machine (if you desire reality, the machine fails you)</li>
+                <li>Connects well-being to real-world outcomes, not just subjective experience</li>
+              </ul>
+              <p><strong>Desire theory weaknesses:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>The psychopath/sadist problem &mdash; satisfying evil desires doesn't make a good life</li>
+                <li>Rawls' grass-blade counter &mdash; trivial desires shouldn't define well-being</li>
+                <li>We can condition people to want less (Brave New World problem applies here too)</li>
+                <li>Akrasia &mdash; which of our conflicting desires is the "real" one?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stepper-nav">
+        <button class="btn btn-outline" onclick="stepNav('desireSteps',-1)">&larr; Previous</button>
+        <div class="step-dots" id="desireDots"></div>
+        <button class="btn btn-gold" onclick="stepNav('desireSteps',1)">Next &rarr;</button>
+      </div>
+
+    </div><!-- /theory-left -->
+
+    <div class="theory-right">
+      <div class="card card-gold">
+        <h3>Required Sources for Study</h3>
+        <div class="reading-card">
+          <h4>Derek Parfit &mdash; &ldquo;What Makes Someone&rsquo;s Life Go Best&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Objective List</span></div>
+          <p>Parfit&rsquo;s influential overview of three theories of well-being: hedonism, desire-fulfilment, and objective list theory.</p>
+          <p class="reading-use"><strong>Use for:</strong> Comparing theories directly (KU, RA).</p>
+          <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Parfit%20-%20What%20Makes%20Someones%20Life%20Go%20Best.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>Aldous Huxley &mdash; <em>Brave New World</em>, Ch. 16 &amp; 17</h4>
+          <div class="reading-tags"><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Critique</span></div>
+          <p>The Savage confronts World Controller Mustapha Mond about a society where everyone&rsquo;s desires are satisfied by design.</p>
+          <p class="reading-use"><strong>Use for:</strong> Critiquing desire-satisfaction theory (CA).</p>
+          <a href="readings/Desire%20Satisfaction%20Critique%20-%20Ch%2016%20and%2017%20Brave%20New%20World.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+      </div>
+    </div><!-- /theory-right -->
+  </div><!-- /theory-two-col -->
+
+  <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
+</div>
 <!-- ============================================ -->
-<!-- PAGE 9: SPONTANEITY & FLOW -->
+<!-- SPONTANEITY & FLOW -->
 <!-- ============================================ -->
-<div class="page" id="page-theory-spontaneity">
+<div class="page page-wide" id="page-theory-spontaneity">
   <div class="question-banner visible" id="bannerSpont">
     <div class="label">Your Question</div>
     <span id="bannerTextSpont"></span>
   </div>
-
-  <img src="advisor_zhuangzi.png" alt="Zhuangzi advisor" class="character">
   <h2>Spontaneity &amp; Flow</h2>
-  <p class="subtitle">Your guide: Zhuangzi &mdash; philosopher of effortless action</p>
 
-  <div id="spontSteps">
-    <!-- Comprehension -->
-    <div class="step active" data-step="0">
+  <div class="theory-two-col">
+    <div class="theory-left">
+
+      <!-- VIDEOS -->
       <div class="card">
-        <h3>Comprehension Check</h3>
-
-        <p><strong>Q1:</strong> What does 'wu wei' literally translate to?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Perfect action</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q1')">No doing / effortless action</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Moral virtue</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Rational contemplation</div>
+        <h3>Video Resources</h3>
+        <div class="video-embed">
+          <h4>Csikszentmihalyi and Flow Theory</h4>
+          <iframe src="https://www.youtube.com/embed/oGJi7i1Ife0" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="spont-q1"></div>
-
-        <p><strong>Q2:</strong> How does the Confucian approach to wu wei differ from the Daoist approach?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q2')">Confucians master ritual to eventually transcend it; Daoists start by avoiding rules</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">They are identical approaches</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Confucians reject wu wei entirely</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Daoists emphasise strict discipline more than Confucians</div>
+        <div class="video-embed">
+          <h4>'Trying Not To Try' &mdash; Slingerland's Philosophy of Spontaneity</h4>
+          <iframe src="https://www.youtube.com/embed/GIdrptTwzQY" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="spont-q2"></div>
-
-        <p><strong>Q3:</strong> What are the two principles Zhuangzi draws from his expert examples (Butcher Ding, the swimmer)?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Strength and speed</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Planning and execution</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q3')">Collection (calm focus on the domain) and Shedding (eliminating distractions)</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Competition and domination</div>
+        <div class="video-embed">
+          <h4>Wu Wei</h4>
+          <iframe src="https://www.youtube.com/embed/NvZi7ZV-SWI" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="spont-q3"></div>
-
-        <p><strong>Q4:</strong> What does 'de' mean in the context of wu wei?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Physical strength</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q4')">Virtue or charismatic power &mdash; the natural authority of someone acting without ulterior motives</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Monetary wealth</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Political authority through force</div>
-        </div>
-        <div class="quiz-feedback" id="spont-q4"></div>
-
-        <p><strong>Q5:</strong> Who coined the psychological concept of 'flow'?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Zhuangzi</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Edward Slingerland</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q5')">Mihaly Csikszentmihalyi</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Keith Sawyer</div>
-        </div>
-        <div class="quiz-feedback" id="spont-q5"></div>
-
-        <p><strong>Q6:</strong> What is the key condition for entering a flow state?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Being in a quiet environment</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Having no goals at all</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q6')">A balance between the challenge of the task and your skill level</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Competing against others</div>
-        </div>
-        <div class="quiz-feedback" id="spont-q6"></div>
       </div>
-    </div>
 
-    <!-- Deep Dive -->
-    <div class="step" data-step="1">
-      <div class="card">
-        <h3>The Philosophy of Spontaneity</h3>
-
-        <p>The tension between <strong>routine</strong> and <strong>impulse</strong> is a core issue for the good life. Routine reduces cognitive load and manifests competence, but can be soul-deadening. Impulse brings freedom and excitement but can lead to bad decisions.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Wu Wei &amp; De</h4>
-        <p>In Chinese philosophy, <span class="highlight">wu wei</span> is the ideal of perfectly effortless action. Someone in wu wei has <span class="highlight">de</span> &mdash; a charismatic power. People want to follow them because they act without ulterior motives, appearing honest and trustworthy.</p>
-        <p>In wu wei, one is in a state of <strong>grace</strong>: values are harmoniously combined, there is no inner tension, and interpersonally one is in alignment.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Two Paths to Wu Wei</h4>
-        <p><strong>Confucian path:</strong> Master ritual until it becomes second nature. Confucius said at seventy he could "follow my heart's desires without transgressing propriety." Like learning an instrument &mdash; practice until the rules disappear.</p>
-        <p><strong>Daoist path:</strong> Start by foregrounding spontaneity and avoiding plans and rules. Like improvisation in music &mdash; responding in the moment with psychological receptivity.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Zhuangzi's Examples</h4>
-        <p><strong>Butcher Ding:</strong> Follows the natural structure of the ox so perfectly his knife never dulls. He says: <em>"I follow the Heavenly pattern of the ox, thrusting into the big hollows."</em></p>
-        <p><strong>The Swimmer:</strong> Goes under with the whirlpool and emerges with the spring. <em>"I follow the way of the water and do not impose myself upon it."</em></p>
-        <p><strong>Woodcarver Qing:</strong> After seven days of fasting and clearing his mind, he creates masterworks because he has shed all distractions.</p>
-      </div>
-    </div>
-
-    <!-- Flow State -->
-    <div class="step" data-step="2">
-      <div class="card">
-        <h3>Flow: The 9 Defining Features</h3>
-        <p>Csikszentmihalyi (1990) identified these nine conditions of the flow state:</p>
-        <ol style="margin:12px 0 16px 20px;color:#ccc;line-height:2.2">
-          <li><span class="highlight">Challenge-skill balance</span> &mdash; the task matches your ability level</li>
-          <li><span class="highlight">Action-awareness merging</span> &mdash; you stop feeling separate from what you're doing</li>
-          <li><span class="highlight">Clear goals</span> &mdash; either set in advance or discovered through engagement</li>
-          <li><span class="highlight">Unambiguous feedback</span> &mdash; you know how well you're performing in real time</li>
-          <li><span class="highlight">Concentration on the task</span> &mdash; attention narrows to a limited stimulus field</li>
-          <li><span class="highlight">Sense of control</span> &mdash; feeling in control without trying to be</li>
-          <li><span class="highlight">Loss of self-consciousness</span> &mdash; concern for the self disappears</li>
-          <li><span class="highlight">Transformation of time</span> &mdash; time feels distorted (usually faster)</li>
-          <li><span class="highlight">Autotelic experience</span> &mdash; the activity is intrinsically rewarding</li>
-        </ol>
-
-        <div class="flow-diagram">
-          <h4 style="color:#f0d78c;margin-bottom:12px">The Flow Channel</h4>
-          <p style="font-size:.85rem;color:#aaa;margin-bottom:12px">Flow occurs when challenge and skill are balanced. Too much challenge = anxiety. Too little = boredom.</p>
-          <div class="flow-axis">
-            <div class="flow-zone anxiety">HIGH CHALLENGE<br>LOW SKILL<br>= ANXIETY</div>
-            <div style="font-size:1.5rem;color:#c9a84c">&rarr;</div>
-            <div class="flow-zone flow">BALANCED<br>CHALLENGE &amp; SKILL<br>= FLOW</div>
-            <div style="font-size:1.5rem;color:#c9a84c">&rarr;</div>
-            <div class="flow-zone boredom">LOW CHALLENGE<br>HIGH SKILL<br>= BOREDOM</div>
-          </div>
-          <p style="font-size:.85rem;color:#aaa;margin-top:12px">As your skills improve, you need greater challenges to stay in flow. This drives <strong>competence and mastery</strong>.</p>
-        </div>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Flow &amp; Wu Wei: Connections and Differences</h4>
-        <p>Slingerland agrees there are definite connections, but notes differences:</p>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li>Wu wei has a <strong>moral/spiritual dimension</strong> &mdash; it's about perfect virtue, not just performance</li>
-          <li>Wu wei may not require a skill-challenge balance &mdash; simple activities (walking in nature, talking to friends) can give wu wei</li>
-          <li>But flow is about aligning intention with performance at any level, so strong sensitivity to nature could also afford flow</li>
-        </ul>
-        <p>What matters for both: <strong>absorption in service of something bigger than yourself</strong>. The flow state leads to <span class="highlight">competence and mastery</span>, driving us to continually grow.</p>
-      </div>
-    </div>
-
-    <!-- Strengths & Weaknesses -->
-    <div class="step" data-step="3">
+      <!-- WHAT THIS THEORY OFFERS -->
       <div class="card card-gold">
-        <h3>Your Analysis: Spontaneity &amp; Flow</h3>
-        <div class="bullet-group">
-          <label>Strengths</label>
-          <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+        <h3>What This Theory Offers The Good Life</h3>
+        <p><strong>Spontaneity</strong> allows us to avoid drudgery and stagnancy while <strong>improvisation</strong> allows us to be in the flow state &mdash; a good life has constant variation and experiences of flow across many areas.</p>
+        <div class="counter"><strong>Counter:</strong> A good life can also require drudgery to care for others (e.g., a parent nursing a sick child through the night). This is surely also a good life, even without spontaneity or flow.</div>
+      </div>
+
+      <!-- IN DEPTH -->
+      <div id="spontSteps">
+        <div class="step active" data-step="0">
+          <div class="card">
+            <h3>Comprehension Check</h3>
+            <p><strong>Q1:</strong> What does 'wu wei' literally translate to?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Perfect action</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q1')">No doing / effortless action</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Moral virtue</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Rational contemplation</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q1"></div>
+
+            <p><strong>Q2:</strong> How does the Confucian approach to wu wei differ from the Daoist approach?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q2')">Confucians master ritual to eventually transcend it; Daoists start by avoiding rules</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">They are identical approaches</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Confucians reject wu wei entirely</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Daoists emphasise strict discipline more than Confucians</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q2"></div>
+
+            <p><strong>Q3:</strong> What are the two principles Zhuangzi draws from his expert examples (Butcher Ding, the swimmer)?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Strength and speed</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Planning and execution</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q3')">Collection (calm focus on the domain) and Shedding (eliminating distractions)</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Competition and domination</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q3"></div>
+
+            <p><strong>Q4:</strong> What does 'de' mean in the context of wu wei?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Physical strength</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q4')">Virtue or charismatic power &mdash; the natural authority of someone acting without ulterior motives</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Monetary wealth</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Political authority through force</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q4"></div>
+
+            <p><strong>Q5:</strong> Who coined the psychological concept of 'flow'?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Zhuangzi</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Edward Slingerland</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q5')">Mihaly Csikszentmihalyi</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Keith Sawyer</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q5"></div>
+
+            <p><strong>Q6:</strong> What is the key condition for entering a flow state?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Being in a quiet environment</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Having no goals at all</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q6')">A balance between the challenge of the task and your skill level</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Competing against others</div>
+            </div>
+            <div class="quiz-feedback" id="spont-q6"></div>
+          </div>
         </div>
-        <div class="bullet-group">
-          <label>Weaknesses</label>
-          <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+
+        <div class="step" data-step="1">
+          <div class="card">
+            <h3>The Philosophy of Spontaneity</h3>
+            <p>The tension between <strong>routine</strong> and <strong>impulse</strong> is a core issue for the good life. Routine reduces cognitive load and manifests competence, but can be soul-deadening. Impulse brings freedom and excitement but can lead to bad decisions.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Wu Wei &amp; De</h4>
+            <p>In Chinese philosophy, <span class="highlight">wu wei</span> is the ideal of perfectly effortless action. Someone in wu wei has <span class="highlight">de</span> &mdash; a charismatic power. People want to follow them because they act without ulterior motives, appearing honest and trustworthy.</p>
+            <p>In wu wei, one is in a state of <strong>grace</strong>: values are harmoniously combined, there is no inner tension, and interpersonally one is in alignment.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Two Paths to Wu Wei</h4>
+            <p><strong>Confucian path:</strong> Master ritual until it becomes second nature. Confucius said at seventy he could "follow my heart's desires without transgressing propriety." Like learning an instrument &mdash; practice until the rules disappear.</p>
+            <p><strong>Daoist path:</strong> Start by foregrounding spontaneity and avoiding plans and rules. Like improvisation in music &mdash; responding in the moment with psychological receptivity.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Zhuangzi's Examples</h4>
+            <p><strong>Butcher Ding:</strong> Follows the natural structure of the ox so perfectly his knife never dulls. He says: <em>"I follow the Heavenly pattern of the ox, thrusting into the big hollows."</em></p>
+            <p><strong>The Swimmer:</strong> Goes under with the whirlpool and emerges with the spring. <em>"I follow the way of the water and do not impose myself upon it."</em></p>
+            <p><strong>Woodcarver Qing:</strong> After seven days of fasting and clearing his mind, he creates masterworks because he has shed all distractions.</p>
+          </div>
         </div>
-        <div class="help-btn" onclick="toggleHelp('spont-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
-        <div class="help-content" id="spont-help">
-          <p><strong>Strengths to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Captures something genuine about peak human experience (flow is well-researched)</li>
-            <li>Explains why routine and predictability can feel unfulfilling</li>
-            <li>Connects to real expertise and mastery in meaningful activities</li>
-            <li>Allows for both Confucian (disciplined) and Daoist (free) approaches</li>
-          </ul>
-          <p><strong>Weaknesses to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>A good life can require drudgery &mdash; caring for others, tedious but meaningful work</li>
-            <li>Not everyone can access flow (disability, circumstance, responsibility)</li>
-            <li>Risk of selfishness &mdash; prioritising personal flow over obligations to others</li>
-            <li>Difficult to build a whole ethical system on just spontaneity</li>
-          </ul>
+
+        <div class="step" data-step="2">
+          <div class="card">
+            <h3>Flow: The 9 Defining Features</h3>
+            <p>Csikszentmihalyi (1990) identified these nine conditions of the flow state:</p>
+            <ol style="margin:12px 0 16px 20px;color:#ccc;line-height:2.2">
+              <li><span class="highlight">Challenge-skill balance</span> &mdash; the task matches your ability level</li>
+              <li><span class="highlight">Action-awareness merging</span> &mdash; you stop feeling separate from what you're doing</li>
+              <li><span class="highlight">Clear goals</span> &mdash; either set in advance or discovered through engagement</li>
+              <li><span class="highlight">Unambiguous feedback</span> &mdash; you know how well you're performing in real time</li>
+              <li><span class="highlight">Concentration on the task</span> &mdash; attention narrows to a limited stimulus field</li>
+              <li><span class="highlight">Sense of control</span> &mdash; feeling in control without trying to be</li>
+              <li><span class="highlight">Loss of self-consciousness</span> &mdash; concern for the self disappears</li>
+              <li><span class="highlight">Transformation of time</span> &mdash; time feels distorted (usually faster)</li>
+              <li><span class="highlight">Autotelic experience</span> &mdash; the activity is intrinsically rewarding</li>
+            </ol>
+
+            <div class="flow-diagram">
+              <h4 style="color:#f0d78c;margin-bottom:12px">The Flow Channel</h4>
+              <p style="font-size:.85rem;color:#aaa;margin-bottom:12px">Flow occurs when challenge and skill are balanced. Too much challenge = anxiety. Too little = boredom.</p>
+              <div class="flow-axis">
+                <div class="flow-zone anxiety">HIGH CHALLENGE<br>LOW SKILL<br>= ANXIETY</div>
+                <div style="font-size:1.5rem;color:#c9a84c">&rarr;</div>
+                <div class="flow-zone flow">BALANCED<br>CHALLENGE &amp; SKILL<br>= FLOW</div>
+                <div style="font-size:1.5rem;color:#c9a84c">&rarr;</div>
+                <div class="flow-zone boredom">LOW CHALLENGE<br>HIGH SKILL<br>= BOREDOM</div>
+              </div>
+              <p style="font-size:.85rem;color:#aaa;margin-top:12px">As your skills improve, you need greater challenges to stay in flow. This drives <strong>competence and mastery</strong>.</p>
+            </div>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Flow &amp; Wu Wei: Connections and Differences</h4>
+            <p>Slingerland agrees there are definite connections, but notes differences:</p>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li>Wu wei has a <strong>moral/spiritual dimension</strong> &mdash; it's about perfect virtue, not just performance</li>
+              <li>Wu wei may not require a skill-challenge balance &mdash; simple activities (walking in nature, talking to friends) can give wu wei</li>
+              <li>But flow is about aligning intention with performance at any level, so strong sensitivity to nature could also afford flow</li>
+            </ul>
+            <p>What matters for both: <strong>absorption in service of something bigger than yourself</strong>. The flow state leads to <span class="highlight">competence and mastery</span>, driving us to continually grow.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="3">
+          <div class="card card-gold">
+            <h3>Your Analysis: Spontaneity &amp; Flow</h3>
+            <div class="bullet-group">
+              <label>Strengths</label>
+              <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+            </div>
+            <div class="bullet-group">
+              <label>Weaknesses</label>
+              <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+            </div>
+            <div class="help-btn" onclick="toggleHelp('spont-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
+            <div class="help-content" id="spont-help">
+              <p><strong>Strengths to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Captures something genuine about peak human experience (flow is well-researched)</li>
+                <li>Explains why routine and predictability can feel unfulfilling</li>
+                <li>Connects to real expertise and mastery in meaningful activities</li>
+                <li>Allows for both Confucian (disciplined) and Daoist (free) approaches</li>
+              </ul>
+              <p><strong>Weaknesses to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>A good life can require drudgery &mdash; caring for others, tedious but meaningful work</li>
+                <li>Not everyone can access flow (disability, circumstance, responsibility)</li>
+                <li>Risk of selfishness &mdash; prioritising personal flow over obligations to others</li>
+                <li>Difficult to build a whole ethical system on just spontaneity</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="stepper-nav">
-    <button class="btn btn-outline" onclick="stepNav('spontSteps',-1)">&larr; Previous</button>
-    <div class="step-dots" id="spontDots"></div>
-    <button class="btn btn-gold" onclick="stepNav('spontSteps',1)">Next &rarr;</button>
-  </div>
+      <div class="stepper-nav">
+        <button class="btn btn-outline" onclick="stepNav('spontSteps',-1)">&larr; Previous</button>
+        <div class="step-dots" id="spontDots"></div>
+        <button class="btn btn-gold" onclick="stepNav('spontSteps',1)">Next &rarr;</button>
+      </div>
+
+    </div><!-- /theory-left -->
+
+    <div class="theory-right">
+      <div class="card card-gold">
+        <h3>Required Sources for Study</h3>
+        <div class="reading-card">
+          <h4>Mihaly Csikszentmihalyi &mdash; &ldquo;Flow: The Psychology of Optimal Experience&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Flow</span></div>
+          <p>The foundational text on flow states &mdash; moments of complete absorption where challenge perfectly matches skill.</p>
+          <p class="reading-use"><strong>Use for:</strong> Explaining the psychological basis for spontaneity (KU, RA).</p>
+          <a href="readings/Spontaneity%20-%20Csikszentmihalyi%20-%20Flow%20-%20the%20psych%20of%20optimal%20experience.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>Edward Slingerland &mdash; &ldquo;Wu Wei as Conceptual Metaphor&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Wu Wei</span></div>
+          <p>Slingerland analyses wu wei across Chinese philosophical traditions, exploring the paradox of trying to not-try.</p>
+          <p class="reading-use"><strong>Use for:</strong> Understanding the philosophical depth of wu wei (KU, RA).</p>
+          <a href="readings/Spontaneity%20-%20Slingerland%20-%20Wu%20Wei%20as%20Conceptual%20Metaphor.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+      </div>
+    </div><!-- /theory-right -->
+  </div><!-- /theory-two-col -->
+
   <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
 </div>
-
 <!-- ============================================ -->
-<!-- PAGE 10: VIRTUE ETHICS -->
+<!-- VIRTUE ETHICS -->
 <!-- ============================================ -->
-<div class="page" id="page-theory-virtue">
+<div class="page page-wide" id="page-theory-virtue">
   <div class="question-banner visible" id="bannerVirt">
     <div class="label">Your Question</div>
     <span id="bannerTextVirt"></span>
   </div>
-
-  <img src="advisor_aristotle.png" alt="Aristotle advisor" class="character">
   <h2>Virtue Ethics</h2>
-  <p class="subtitle">Your guide: Aristotle &mdash; philosopher of the golden mean</p>
 
-  <div id="virtSteps">
-    <!-- Comprehension: Aristotle -->
-    <div class="step active" data-step="0">
+  <div class="theory-two-col">
+    <div class="theory-left">
+
+      <!-- VIDEOS -->
       <div class="card">
-        <h3>Comprehension Check: Aristotle</h3>
-
-        <p><strong>Q1:</strong> What is Aristotle's 'function argument'?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q1')">Humans have a distinctive function (reasoning), and flourishing means doing this well</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Humans function best when they follow their instincts</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">The function of humans is to maximise pleasure</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Each person has their own unique function to discover</div>
+        <h3>Video Resources</h3>
+        <div class="video-embed">
+          <h4>Aristotle and Virtue Ethics</h4>
+          <iframe src="https://www.youtube.com/embed/PrvtOWEXDIQ" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="virt-q1"></div>
-
-        <p><strong>Q2:</strong> What is the Doctrine of the Mean?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Virtue means being average at everything</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q2')">Virtue is the disposition to act at the right point between excess and deficiency</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">The mathematical middle between two numbers</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Being kind to everyone equally</div>
+        <div class="video-embed">
+          <h4>After Death: Virtue Ethics and Alasdair MacIntyre</h4>
+          <iframe src="https://www.youtube.com/embed/kGaJH15S4zk" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="virt-q2"></div>
-
-        <p><strong>Q3:</strong> According to Aristotle, how does virtue relate to pleasure?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Virtue requires denying all pleasure</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is irrelevant to virtue</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q3')">The virtuous person takes pleasure in doing the right thing</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is the ultimate goal of being virtuous</div>
-        </div>
-        <div class="quiz-feedback" id="virt-q3"></div>
       </div>
-    </div>
 
-    <!-- Comprehension: Nussbaum -->
-    <div class="step" data-step="1">
-      <div class="card">
-        <h3>Comprehension Check: Nussbaum's Capabilities Approach</h3>
-
-        <p><strong>Q4:</strong> What is Nussbaum's main response to the relativism objection against virtue ethics?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She abandons virtue ethics entirely</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She argues only Western virtues are valid</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q4')">Virtues are grounded in universal human experiences (spheres) that all cultures share</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She denies that different cultures have different virtues</div>
-        </div>
-        <div class="quiz-feedback" id="virt-q4"></div>
-
-        <p><strong>Q5:</strong> What does Nussbaum mean by 'thin' vs 'thick' definitions of virtue?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q5')">Thin = the virtue is "whatever it is to choose well in this sphere"; Thick = the specific account of what choosing well involves</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = basic virtues; Thick = complex virtues</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = Eastern virtues; Thick = Western virtues</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = individual virtues; Thick = communal virtues</div>
-        </div>
-        <div class="quiz-feedback" id="virt-q5"></div>
-
-        <p><strong>Q6:</strong> According to Nussbaum, what are 'grounding experiences'?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Experiences that ground us emotionally</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q6')">Universal spheres of human experience (death, appetite, property, etc.) that anchor virtues across cultures</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Childhood experiences that shape character</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Religious experiences that form the basis of ethics</div>
-        </div>
-        <div class="quiz-feedback" id="virt-q6"></div>
-      </div>
-    </div>
-
-    <!-- Deep Dive: Aristotle -->
-    <div class="step" data-step="2">
-      <div class="card">
-        <h3>Aristotle's Virtue Ethics</h3>
-
-        <h4 style="color:#f0d78c">The Function Argument</h4>
-        <p>Just as a good knife is one that cuts well (fulfils its function), a good human is one who <strong>reasons well</strong>. The flourishing life is lived in accordance with reason.</p>
-        <p>Aristotle asks: <em>"Do the carpenter and the leatherworker have their functions and actions, while a human being has none, and is by nature idle, without any function?"</em> (1097b)</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">The Doctrine of the Mean</h4>
-        <p>Every virtue sits between two vices &mdash; an excess and a deficiency:</p>
-        <table class="rubric-table">
-          <thead><tr><th>Deficiency</th><th>Virtue (Mean)</th><th>Excess</th></tr></thead>
-          <tbody>
-            <tr><td>Cowardice</td><td><strong>Courage</strong></td><td>Rashness</td></tr>
-            <tr><td>Insensibility</td><td><strong>Temperance</strong></td><td>Intemperance</td></tr>
-            <tr><td>Meanness</td><td><strong>Liberality</strong></td><td>Prodigality</td></tr>
-          </tbody>
-        </table>
-        <p>The mean is <strong>relative to us</strong>, not arithmetic. A trained athlete needs more food than a beginner.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Emotions &amp; Virtue</h4>
-        <p>Virtues involve having feelings <em>"at the right time, about the right things, towards the right people, for the right end, and in the right way"</em> (1106b). Virtue is not suppressing emotion but <strong>educating</strong> it.</p>
-
-        <p><strong>Quick check:</strong> In Aristotle's framework, courage is the mean between which two extremes?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Cruelty and kindness</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q7')">Cowardice and rashness</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Laziness and overwork</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Anger and apathy</div>
-        </div>
-        <div class="quiz-feedback" id="virt-q7"></div>
-      </div>
-    </div>
-
-    <!-- Deep Dive: Nussbaum -->
-    <div class="step" data-step="3">
-      <div class="card">
-        <h3>Nussbaum's Defence: Non-Relative Virtues</h3>
-
-        <p>A major criticism of Aristotle is <strong>relativism</strong>: if virtues are just "what our culture says is good," then torturers can claim to be virtuous within their practice. Nussbaum's response:</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">The Sphere-Based Approach</h4>
-        <p>Every human being, regardless of culture, faces universal <span class="highlight">spheres of experience</span>:</p>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li>Fear of death and danger &rarr; <strong>Courage</strong></li>
-          <li>Bodily appetites &rarr; <strong>Moderation</strong></li>
-          <li>Distribution of property &rarr; <strong>Justice</strong></li>
-          <li>Managing anger and slights &rarr; <strong>Mildness of temper</strong></li>
-          <li>One's own worth and claims &rarr; <strong>Greatness of soul</strong></li>
-          <li>Social interaction &rarr; <strong>Truthfulness, friendliness</strong></li>
-          <li>Planning one's conduct &rarr; <strong>Practical wisdom</strong></li>
-        </ul>
-        <p>The 'thin' definition says a virtue is "whatever it is to choose well in this sphere." Different cultures may give different 'thick' answers, but they're all answering the <strong>same question</strong>. And some answers are better than others.</p>
-
-        <p style="margin-top:12px"><strong>Short answer:</strong> In your own words, explain how Nussbaum's approach handles the relativism problem.</p>
-        <textarea placeholder="Nussbaum argues that..."></textarea>
-      </div>
-    </div>
-
-    <!-- Strengths & Weaknesses -->
-    <div class="step" data-step="4">
+      <!-- WHAT THIS THEORY OFFERS -->
       <div class="card card-gold">
-        <h3>Your Analysis: Virtue Ethics</h3>
-        <div class="bullet-group">
-          <label>Strengths</label>
-          <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+        <h3>What This Theory Offers The Good Life</h3>
+        <p>It's not about your experience but the <strong>sort of person you are</strong>. The good life means cultivating virtues &mdash; excellences of character &mdash; that you know are good.</p>
+        <div class="counter"><strong>Counter:</strong> This seems to suggest children cannot have good lives, since they haven't yet cultivated the virtues.</div>
+      </div>
+
+      <!-- IN DEPTH -->
+      <div id="virtSteps">
+        <div class="step active" data-step="0">
+          <div class="card">
+            <h3>Comprehension Check: Aristotle</h3>
+            <p><strong>Q1:</strong> What is Aristotle's 'function argument'?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q1')">Humans have a distinctive function (reasoning), and flourishing means doing this well</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Humans function best when they follow their instincts</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">The function of humans is to maximise pleasure</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Each person has their own unique function to discover</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q1"></div>
+
+            <p><strong>Q2:</strong> What is the Doctrine of the Mean?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Virtue means being average at everything</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q2')">Virtue is the disposition to act at the right point between excess and deficiency</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">The mathematical middle between two numbers</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Being kind to everyone equally</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q2"></div>
+
+            <p><strong>Q3:</strong> According to Aristotle, how does virtue relate to pleasure?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Virtue requires denying all pleasure</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is irrelevant to virtue</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q3')">The virtuous person takes pleasure in doing the right thing</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is the ultimate goal of being virtuous</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q3"></div>
+          </div>
         </div>
-        <div class="bullet-group">
-          <label>Weaknesses</label>
-          <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+
+        <div class="step" data-step="1">
+          <div class="card">
+            <h3>Comprehension Check: Nussbaum's Capabilities Approach</h3>
+            <p><strong>Q4:</strong> What is Nussbaum's main response to the relativism objection against virtue ethics?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She abandons virtue ethics entirely</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She argues only Western virtues are valid</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q4')">Virtues are grounded in universal human experiences (spheres) that all cultures share</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She denies that different cultures have different virtues</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q4"></div>
+
+            <p><strong>Q5:</strong> What does Nussbaum mean by 'thin' vs 'thick' definitions of virtue?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q5')">Thin = the virtue is "whatever it is to choose well in this sphere"; Thick = the specific account of what choosing well involves</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = basic virtues; Thick = complex virtues</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = Eastern virtues; Thick = Western virtues</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = individual virtues; Thick = communal virtues</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q5"></div>
+
+            <p><strong>Q6:</strong> According to Nussbaum, what are 'grounding experiences'?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Experiences that ground us emotionally</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q6')">Universal spheres of human experience (death, appetite, property, etc.) that anchor virtues across cultures</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Childhood experiences that shape character</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Religious experiences that form the basis of ethics</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q6"></div>
+          </div>
         </div>
-        <div class="help-btn" onclick="toggleHelp('virt-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
-        <div class="help-content" id="virt-help">
-          <p><strong>Strengths to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Focuses on character development, not just individual actions &mdash; offers a holistic view of the good life</li>
-            <li>The function argument provides a non-arbitrary basis for human excellence</li>
-            <li>Nussbaum shows virtues can be universal without being culturally imposed</li>
-            <li>Connects happiness to virtue &mdash; the virtuous person enjoys doing good</li>
-          </ul>
-          <p><strong>Weaknesses to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Suggests children or those with intellectual disabilities cannot have good lives</li>
-            <li>The "function argument" assumes humans have a single essential function &mdash; this is debatable</li>
-            <li>Aristotle admitted external goods (health, wealth) are needed &mdash; so virtue may not be sufficient</li>
-            <li>The Unity of Virtue thesis seems unrealistic &mdash; can someone not be brave but lack temperance?</li>
-          </ul>
+
+        <div class="step" data-step="2">
+          <div class="card">
+            <h3>Aristotle's Virtue Ethics</h3>
+            <h4 style="color:#f0d78c">The Function Argument</h4>
+            <p>Just as a good knife is one that cuts well (fulfils its function), a good human is one who <strong>reasons well</strong>. The flourishing life is lived in accordance with reason.</p>
+            <p>Aristotle asks: <em>"Do the carpenter and the leatherworker have their functions and actions, while a human being has none, and is by nature idle, without any function?"</em> (1097b)</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">The Doctrine of the Mean</h4>
+            <p>Every virtue sits between two vices &mdash; an excess and a deficiency:</p>
+            <table class="rubric-table">
+              <thead><tr><th>Deficiency</th><th>Virtue (Mean)</th><th>Excess</th></tr></thead>
+              <tbody>
+                <tr><td>Cowardice</td><td><strong>Courage</strong></td><td>Rashness</td></tr>
+                <tr><td>Insensibility</td><td><strong>Temperance</strong></td><td>Intemperance</td></tr>
+                <tr><td>Meanness</td><td><strong>Liberality</strong></td><td>Prodigality</td></tr>
+              </tbody>
+            </table>
+            <p>The mean is <strong>relative to us</strong>, not arithmetic. A trained athlete needs more food than a beginner.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Emotions &amp; Virtue</h4>
+            <p>Virtues involve having feelings <em>"at the right time, about the right things, towards the right people, for the right end, and in the right way"</em> (1106b). Virtue is not suppressing emotion but <strong>educating</strong> it.</p>
+
+            <p><strong>Quick check:</strong> In Aristotle's framework, courage is the mean between which two extremes?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Cruelty and kindness</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q7')">Cowardice and rashness</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Laziness and overwork</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Anger and apathy</div>
+            </div>
+            <div class="quiz-feedback" id="virt-q7"></div>
+          </div>
+        </div>
+
+        <div class="step" data-step="3">
+          <div class="card">
+            <h3>Nussbaum's Defence: Non-Relative Virtues</h3>
+            <p>A major criticism of Aristotle is <strong>relativism</strong>: if virtues are just "what our culture says is good," then torturers can claim to be virtuous within their practice. Nussbaum's response:</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">The Sphere-Based Approach</h4>
+            <p>Every human being, regardless of culture, faces universal <span class="highlight">spheres of experience</span>:</p>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li>Fear of death and danger &rarr; <strong>Courage</strong></li>
+              <li>Bodily appetites &rarr; <strong>Moderation</strong></li>
+              <li>Distribution of property &rarr; <strong>Justice</strong></li>
+              <li>Managing anger and slights &rarr; <strong>Mildness of temper</strong></li>
+              <li>One's own worth and claims &rarr; <strong>Greatness of soul</strong></li>
+              <li>Social interaction &rarr; <strong>Truthfulness, friendliness</strong></li>
+              <li>Planning one's conduct &rarr; <strong>Practical wisdom</strong></li>
+            </ul>
+            <p>The 'thin' definition says a virtue is "whatever it is to choose well in this sphere." Different cultures may give different 'thick' answers, but they're all answering the <strong>same question</strong>. And some answers are better than others.</p>
+
+            <p style="margin-top:12px"><strong>Short answer:</strong> In your own words, explain how Nussbaum's approach handles the relativism problem.</p>
+            <textarea placeholder="Nussbaum argues that..."></textarea>
+          </div>
+        </div>
+
+        <div class="step" data-step="4">
+          <div class="card card-gold">
+            <h3>Your Analysis: Virtue Ethics</h3>
+            <div class="bullet-group">
+              <label>Strengths</label>
+              <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+            </div>
+            <div class="bullet-group">
+              <label>Weaknesses</label>
+              <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+            </div>
+            <div class="help-btn" onclick="toggleHelp('virt-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
+            <div class="help-content" id="virt-help">
+              <p><strong>Strengths to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Focuses on character development, not just individual actions &mdash; offers a holistic view of the good life</li>
+                <li>The function argument provides a non-arbitrary basis for human excellence</li>
+                <li>Nussbaum shows virtues can be universal without being culturally imposed</li>
+                <li>Connects happiness to virtue &mdash; the virtuous person enjoys doing good</li>
+              </ul>
+              <p><strong>Weaknesses to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Suggests children or those with intellectual disabilities cannot have good lives</li>
+                <li>The "function argument" assumes humans have a single essential function &mdash; this is debatable</li>
+                <li>Aristotle admitted external goods (health, wealth) are needed &mdash; so virtue may not be sufficient</li>
+                <li>The Unity of Virtue thesis seems unrealistic &mdash; can someone not be brave but lack temperance?</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="stepper-nav">
-    <button class="btn btn-outline" onclick="stepNav('virtSteps',-1)">&larr; Previous</button>
-    <div class="step-dots" id="virtDots"></div>
-    <button class="btn btn-gold" onclick="stepNav('virtSteps',1)">Next &rarr;</button>
-  </div>
+      <div class="stepper-nav">
+        <button class="btn btn-outline" onclick="stepNav('virtSteps',-1)">&larr; Previous</button>
+        <div class="step-dots" id="virtDots"></div>
+        <button class="btn btn-gold" onclick="stepNav('virtSteps',1)">Next &rarr;</button>
+      </div>
+
+    </div><!-- /theory-left -->
+
+    <div class="theory-right">
+      <div class="card card-gold">
+        <h3>Required Sources for Study</h3>
+        <div class="reading-card">
+          <h4>Aristotle &mdash; &ldquo;The Nature of Moral Virtue&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Primary Source</span></div>
+          <p>From the <em>Nicomachean Ethics</em>. The function argument, Doctrine of the Mean, and practical wisdom.</p>
+          <p class="reading-use"><strong>Use for:</strong> The foundational account of virtue ethics (KU, RA).</p>
+          <a href="readings/Virtue%20Ethics%20-%20Aristotle%20-%20The%20Nature%20of%20Moral%20Virtue.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>Martha Nussbaum &mdash; &ldquo;Non-Relative Virtues&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Defence</span></div>
+          <p>Nussbaum defends Aristotle against cultural relativism using universal &ldquo;grounding experiences.&rdquo;</p>
+          <p class="reading-use"><strong>Use for:</strong> Defending virtue ethics against relativism (CA, RA).</p>
+          <a href="readings/Virtue%20Ethics%20-%20Nussbaum%20-%20Non-Relative%20Virtues%20an%20Aristotelian%20Approach.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>MacIntyre &mdash; &ldquo;The Nature of the Virtues&rdquo; (Ch. 14)</h4>
+          <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Practices</span></div>
+          <p>The concept of &ldquo;practices&rdquo; with internal goods. Bridges desire theory and virtue ethics.</p>
+          <p class="reading-use"><strong>Use for:</strong> A modern defence of virtue ethics (KU, RA).</p>
+          <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2014%20-%20The%20Nature%20of%20the%20Virtues.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>MacIntyre &mdash; &ldquo;The Nature of Human Life&rdquo; (Ch. 15)</h4>
+          <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Narrative</span></div>
+          <p>Human life as narrative. Virtues make sense only within a whole life lived as a quest for the good.</p>
+          <p class="reading-use"><strong>Use for:</strong> Arguing the good life requires narrative coherence (RA, CA).</p>
+          <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2015%20-%20The%20Nature%20of%20Human%20Life.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+      </div>
+    </div><!-- /theory-right -->
+  </div><!-- /theory-two-col -->
+
   <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
 </div>
-
 <!-- ============================================ -->
-<!-- PAGE 11: STOICISM -->
+<!-- STOICISM -->
 <!-- ============================================ -->
-<div class="page" id="page-theory-stoicism">
+<div class="page page-wide" id="page-theory-stoicism">
   <div class="question-banner visible" id="bannerStoic">
     <div class="label">Your Question</div>
     <span id="bannerTextStoic"></span>
   </div>
-
-  <img src="advisor_aurelius.png" alt="Marcus Aurelius advisor" class="character">
   <h2>Stoicism</h2>
-  <p class="subtitle">Your guide: Marcus Aurelius &mdash; philosopher-emperor</p>
 
-  <div id="stoicSteps">
-    <!-- Comprehension -->
-    <div class="step active" data-step="0">
+  <div class="theory-two-col">
+    <div class="theory-left">
+
+      <!-- VIDEOS -->
       <div class="card">
-        <h3>Comprehension Check</h3>
-
-        <p><strong>Q1:</strong> What is the Stoic 'dichotomy of control'?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q1')">Distinguishing between what is 'up to us' (desires, judgements, will) and what is not (health, wealth, reputation)</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Controlling other people's behaviour</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Eliminating all emotions</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Choosing between two equal options</div>
+        <h3>Video Resources</h3>
+        <div class="video-embed">
+          <h4>Introduction to Stoicism</h4>
+          <iframe src="https://www.youtube.com/embed/R9OCA6UFE-0" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="stoic-q1"></div>
-
-        <p><strong>Q2:</strong> According to the Stoics, what is the relationship between emotions and judgements?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions are purely physical reactions we cannot control</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q2')">Emotions are acts of will / judgements, so we are responsible for them</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions and judgements are completely separate</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Only positive emotions involve judgement</div>
+        <div class="video-embed">
+          <h4>The Stoics</h4>
+          <iframe src="https://www.youtube.com/embed/yu7n0XzqtfA" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="quiz-feedback" id="stoic-q2"></div>
-
-        <p><strong>Q3:</strong> What are the four Stoic cardinal virtues?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Faith, Hope, Charity, Prudence</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Strength, Speed, Intelligence, Beauty</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q3')">Wisdom, Courage, Temperance, Justice</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Honesty, Kindness, Humility, Loyalty</div>
-        </div>
-        <div class="quiz-feedback" id="stoic-q3"></div>
-
-        <p><strong>Q4:</strong> How does Stoicism differ from Aristotle on external goods?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are essential for flourishing</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are irrelevant</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q4')">Aristotle says some external goods are needed; Stoics say the will alone determines flourishing</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Stoics value external goods more than Aristotle does</div>
-        </div>
-        <div class="quiz-feedback" id="stoic-q4"></div>
       </div>
-    </div>
 
-    <!-- Deep Dive: Core Stoic Philosophy -->
-    <div class="step" data-step="1">
-      <div class="card">
-        <h3>Core Stoic Philosophy</h3>
-
-        <h4 style="color:#f0d78c">Living According to Nature</h4>
-        <p>The Stoics believed we should live 'according to nature.' Nature put some things under our control &mdash; our <strong>desires, aversions, judgements, and moral purpose</strong>. Everything else (health, wealth, reputation, life, death) is part of an ordered universe that merits our acceptance.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">The Will Is Everything</h4>
-        <p>Epictetus: <em>"A man's master is he who is able to confer or remove whatever that man seeks or shuns. Whoever then would be free, let him wish nothing, let him decline nothing, which depends on others; else must necessarily become a slave."</em></p>
-        <p>Compare Kant: even if a good will achieves nothing, <em>"it would sparkle like a jewel in its own right."</em></p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Emotions as Judgements</h4>
-        <p>Crucially, Stoics view emotions as <strong>acts of will</strong>. We are responsible for our happiness and freedom from suffering. By adjusting our <span class="highlight">concerns</span> (what we care about), we can indirectly control our emotional responses.</p>
-        <p>This is the founding principle of <strong>Cognitive Behavioural Therapy (CBT)</strong>. Albert Ellis identified three unrealistic expectations that cause suffering:</p>
-        <ol style="margin:8px 0 8px 20px;color:#ccc">
-          <li>"I must do well and win approval, or I am no good"</li>
-          <li>"Others must treat me fairly and kindly"</li>
-          <li>"I must get what I want when I want it"</li>
-        </ol>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Stoic Practices</h4>
-        <p>From 'A Week in the Stoa' and the Stoic Daily Routine:</p>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li><strong>Dichotomy of Control:</strong> Sort every worry into "Up to Me" vs "Not Up to Me"</li>
-          <li><strong>Premeditatio Malorum:</strong> Negative visualisation &mdash; imagine what you could lose to appreciate what you have</li>
-          <li><strong>Voluntary Discomfort:</strong> Deliberately experience hardship to build resilience</li>
-          <li><strong>View from Above:</strong> Zoom out to cosmic perspective for proportion</li>
-          <li><strong>Reappraisal/Reframing:</strong> See setbacks as opportunities or tests</li>
-          <li><strong>Evening Review:</strong> Reflect on the day's actions and responses</li>
-        </ul>
-
-        <p><strong>Quick check:</strong> What Stoic practice involves imagining the loss of things you value?</p>
-        <div class="quiz-options">
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Dichotomy of Control</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q5')">Premeditatio Malorum (negative visualisation)</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">View from Above</div>
-          <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Evening Review</div>
-        </div>
-        <div class="quiz-feedback" id="stoic-q5"></div>
-      </div>
-    </div>
-
-    <!-- Deep Dive: Stockdale & Limits -->
-    <div class="step" data-step="2">
-      <div class="card">
-        <h3>Stoicism in Practice &amp; Its Limits</h3>
-
-        <h4 style="color:#f0d78c">Jim Stockdale: Stoicism Under Extreme Conditions</h4>
-        <p>Admiral Stockdale credited Epictetus with helping him survive <strong>7 years as a POW</strong> in Vietnam. He recognised human fragility &mdash; torture can break your body in minutes &mdash; but insisted that what truly matters is <strong>inner self-respect</strong>: not succumbing to fear and guilt.</p>
-        <p>Stockdale always made his captors torture him before giving them anything. He lived by a code even in the most desperate circumstances. Later, he wrote: <em>"Bless you prison, for having been part of my life."</em></p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">The Three Disciplines (Epictetus)</h4>
-        <ul style="margin:8px 0 8px 20px;color:#ccc">
-          <li><strong>Discipline of Desire (Stoic Acceptance):</strong> What to want, what to avoid &mdash; aligns with Courage &amp; Moderation</li>
-          <li><strong>Discipline of Action (Stoic Philanthropy):</strong> How to live in harmony with others &mdash; aligns with Justice</li>
-          <li><strong>Discipline of Assent (Stoic Mindfulness):</strong> Making good judgements &mdash; aligns with Wisdom</li>
-        </ul>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Hierocles' Circles of Concern</h4>
-        <p>Stoics use concentric circles expanding from self &rarr; family &rarr; community &rarr; humanity &rarr; all living beings. The goal is to <strong>draw the outer circles inward</strong>, increasing concern for more people.</p>
-
-        <h4 style="color:#f0d78c;margin-top:16px">Challenges to Stoicism</h4>
-        <p><strong>Attachment to others:</strong> Epictetus describes a father so miserable about his daughter's illness that he runs away. The Stoic response: the natural mode of affection is to <em>care</em>, not to abandon. But can we really remain "indifferent" to our loved ones' suffering?</p>
-        <p><strong>The cold father:</strong> Cicero tells of a father who, told of his child's death, said: "I was already aware that I had begotten a mortal." This seems <em>unnaturally</em> cold.</p>
-        <p><strong>Mental illness:</strong> Stoicism may be unduly optimistic that everyone can regulate emotions equally. In serious cases, deeper problems may resist willpower alone.</p>
-
-        <p><strong>Short answer:</strong> Do you think Stoicism asks too much of people when it comes to emotional control? Why or why not?</p>
-        <textarea placeholder="I think..."></textarea>
-      </div>
-    </div>
-
-    <!-- Strengths & Weaknesses -->
-    <div class="step" data-step="3">
+      <!-- WHAT THIS THEORY OFFERS -->
       <div class="card card-gold">
-        <h3>Your Analysis: Stoicism</h3>
-        <div class="bullet-group">
-          <label>Strengths</label>
-          <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+        <h3>What This Theory Offers The Good Life</h3>
+        <p>A good life is one where <strong>emotions are mastered</strong> so they don't influence behaviour irrationally, leading to well-reasoned decisions and flourishing.</p>
+        <div class="counter"><strong>Counter:</strong> The monk who does not respond to even a friend's death &mdash; is this really a good life, or has something human been lost?</div>
+      </div>
+
+      <!-- IN DEPTH -->
+      <div id="stoicSteps">
+        <div class="step active" data-step="0">
+          <div class="card">
+            <h3>Comprehension Check</h3>
+            <p><strong>Q1:</strong> What is the Stoic 'dichotomy of control'?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q1')">Distinguishing between what is 'up to us' (desires, judgements, will) and what is not (health, wealth, reputation)</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Controlling other people's behaviour</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Eliminating all emotions</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Choosing between two equal options</div>
+            </div>
+            <div class="quiz-feedback" id="stoic-q1"></div>
+
+            <p><strong>Q2:</strong> According to the Stoics, what is the relationship between emotions and judgements?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions are purely physical reactions we cannot control</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q2')">Emotions are acts of will / judgements, so we are responsible for them</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions and judgements are completely separate</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Only positive emotions involve judgement</div>
+            </div>
+            <div class="quiz-feedback" id="stoic-q2"></div>
+
+            <p><strong>Q3:</strong> What are the four Stoic cardinal virtues?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Faith, Hope, Charity, Prudence</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Strength, Speed, Intelligence, Beauty</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q3')">Wisdom, Courage, Temperance, Justice</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Honesty, Kindness, Humility, Loyalty</div>
+            </div>
+            <div class="quiz-feedback" id="stoic-q3"></div>
+
+            <p><strong>Q4:</strong> How does Stoicism differ from Aristotle on external goods?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are essential for flourishing</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are irrelevant</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q4')">Aristotle says some external goods are needed; Stoics say the will alone determines flourishing</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Stoics value external goods more than Aristotle does</div>
+            </div>
+            <div class="quiz-feedback" id="stoic-q4"></div>
+          </div>
         </div>
-        <div class="bullet-group">
-          <label>Weaknesses</label>
-          <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
-          <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+
+        <div class="step" data-step="1">
+          <div class="card">
+            <h3>Core Stoic Philosophy</h3>
+            <h4 style="color:#f0d78c">Living According to Nature</h4>
+            <p>The Stoics believed we should live 'according to nature.' Nature put some things under our control &mdash; our <strong>desires, aversions, judgements, and moral purpose</strong>. Everything else (health, wealth, reputation, life, death) is part of an ordered universe that merits our acceptance.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">The Will Is Everything</h4>
+            <p>Epictetus: <em>"A man's master is he who is able to confer or remove whatever that man seeks or shuns. Whoever then would be free, let him wish nothing, let him decline nothing, which depends on others; else must necessarily become a slave."</em></p>
+            <p>Compare Kant: even if a good will achieves nothing, <em>"it would sparkle like a jewel in its own right."</em></p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Emotions as Judgements</h4>
+            <p>Crucially, Stoics view emotions as <strong>acts of will</strong>. We are responsible for our happiness and freedom from suffering. By adjusting our <span class="highlight">concerns</span> (what we care about), we can indirectly control our emotional responses.</p>
+            <p>This is the founding principle of <strong>Cognitive Behavioural Therapy (CBT)</strong>. Albert Ellis identified three unrealistic expectations that cause suffering:</p>
+            <ol style="margin:8px 0 8px 20px;color:#ccc">
+              <li>"I must do well and win approval, or I am no good"</li>
+              <li>"Others must treat me fairly and kindly"</li>
+              <li>"I must get what I want when I want it"</li>
+            </ol>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Stoic Practices</h4>
+            <p>From 'A Week in the Stoa' and the Stoic Daily Routine:</p>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li><strong>Dichotomy of Control:</strong> Sort every worry into "Up to Me" vs "Not Up to Me"</li>
+              <li><strong>Premeditatio Malorum:</strong> Negative visualisation &mdash; imagine what you could lose to appreciate what you have</li>
+              <li><strong>Voluntary Discomfort:</strong> Deliberately experience hardship to build resilience</li>
+              <li><strong>View from Above:</strong> Zoom out to cosmic perspective for proportion</li>
+              <li><strong>Reappraisal/Reframing:</strong> See setbacks as opportunities or tests</li>
+              <li><strong>Evening Review:</strong> Reflect on the day's actions and responses</li>
+            </ul>
+
+            <p><strong>Quick check:</strong> What Stoic practice involves imagining the loss of things you value?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Dichotomy of Control</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q5')">Premeditatio Malorum (negative visualisation)</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">View from Above</div>
+              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Evening Review</div>
+            </div>
+            <div class="quiz-feedback" id="stoic-q5"></div>
+          </div>
         </div>
-        <div class="help-btn" onclick="toggleHelp('stoic-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
-        <div class="help-content" id="stoic-help">
-          <p><strong>Strengths to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>Highly practical &mdash; Stoic techniques are the foundation of modern CBT</li>
-            <li>Empowering: places your happiness entirely in your own hands</li>
-            <li>Stockdale's example shows it works under extreme conditions</li>
-            <li>The dichotomy of control reduces anxiety about things we can't change</li>
-          </ul>
-          <p><strong>Weaknesses to consider:</strong></p>
-          <ul style="margin:8px 0 8px 16px;color:#ccc">
-            <li>May demand emotional suppression that costs us rich human connections</li>
-            <li>The father who doesn't mourn his child &mdash; has something human been lost?</li>
-            <li>Assumes equal capacity for emotional regulation (ignores mental illness)</li>
-            <li>A tyrant could technically be a 'good Stoic' &mdash; no clear prohibition on harming others</li>
-          </ul>
+
+        <div class="step" data-step="2">
+          <div class="card">
+            <h3>Stoicism in Practice &amp; Its Limits</h3>
+            <h4 style="color:#f0d78c">Jim Stockdale: Stoicism Under Extreme Conditions</h4>
+            <p>Admiral Stockdale credited Epictetus with helping him survive <strong>7 years as a POW</strong> in Vietnam. He recognised human fragility &mdash; torture can break your body in minutes &mdash; but insisted that what truly matters is <strong>inner self-respect</strong>: not succumbing to fear and guilt.</p>
+            <p>Stockdale always made his captors torture him before giving them anything. He lived by a code even in the most desperate circumstances. Later, he wrote: <em>"Bless you prison, for having been part of my life."</em></p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">The Three Disciplines (Epictetus)</h4>
+            <ul style="margin:8px 0 8px 20px;color:#ccc">
+              <li><strong>Discipline of Desire (Stoic Acceptance):</strong> What to want, what to avoid &mdash; aligns with Courage &amp; Moderation</li>
+              <li><strong>Discipline of Action (Stoic Philanthropy):</strong> How to live in harmony with others &mdash; aligns with Justice</li>
+              <li><strong>Discipline of Assent (Stoic Mindfulness):</strong> Making good judgements &mdash; aligns with Wisdom</li>
+            </ul>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Hierocles' Circles of Concern</h4>
+            <p>Stoics use concentric circles expanding from self &rarr; family &rarr; community &rarr; humanity &rarr; all living beings. The goal is to <strong>draw the outer circles inward</strong>, increasing concern for more people.</p>
+
+            <h4 style="color:#f0d78c;margin-top:16px">Challenges to Stoicism</h4>
+            <p><strong>Attachment to others:</strong> Epictetus describes a father so miserable about his daughter's illness that he runs away. The Stoic response: the natural mode of affection is to <em>care</em>, not to abandon. But can we really remain "indifferent" to our loved ones' suffering?</p>
+            <p><strong>The cold father:</strong> Cicero tells of a father who, told of his child's death, said: "I was already aware that I had begotten a mortal." This seems <em>unnaturally</em> cold.</p>
+            <p><strong>Mental illness:</strong> Stoicism may be unduly optimistic that everyone can regulate emotions equally. In serious cases, deeper problems may resist willpower alone.</p>
+
+            <p><strong>Short answer:</strong> Do you think Stoicism asks too much of people when it comes to emotional control? Why or why not?</p>
+            <textarea placeholder="I think..."></textarea>
+          </div>
+        </div>
+
+        <div class="step" data-step="3">
+          <div class="card card-gold">
+            <h3>Your Analysis: Stoicism</h3>
+            <div class="bullet-group">
+              <label>Strengths</label>
+              <div class="bullet-input"><textarea placeholder="Strength 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Strength 3..."></textarea></div>
+            </div>
+            <div class="bullet-group">
+              <label>Weaknesses</label>
+              <div class="bullet-input"><textarea placeholder="Weakness 1..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 2..."></textarea></div>
+              <div class="bullet-input"><textarea placeholder="Weakness 3..."></textarea></div>
+            </div>
+            <div class="help-btn" onclick="toggleHelp('stoic-help')">HELP ME OUT &mdash; Tips for Strengths &amp; Weaknesses</div>
+            <div class="help-content" id="stoic-help">
+              <p><strong>Strengths to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>Highly practical &mdash; Stoic techniques are the foundation of modern CBT</li>
+                <li>Empowering: places your happiness entirely in your own hands</li>
+                <li>Stockdale's example shows it works under extreme conditions</li>
+                <li>The dichotomy of control reduces anxiety about things we can't change</li>
+              </ul>
+              <p><strong>Weaknesses to consider:</strong></p>
+              <ul style="margin:8px 0 8px 16px;color:#ccc">
+                <li>May demand emotional suppression that costs us rich human connections</li>
+                <li>The father who doesn't mourn his child &mdash; has something human been lost?</li>
+                <li>Assumes equal capacity for emotional regulation (ignores mental illness)</li>
+                <li>A tyrant could technically be a 'good Stoic' &mdash; no clear prohibition on harming others</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="stepper-nav">
-    <button class="btn btn-outline" onclick="stepNav('stoicSteps',-1)">&larr; Previous</button>
-    <div class="step-dots" id="stoicDots"></div>
-    <button class="btn btn-gold" onclick="stepNav('stoicSteps',1)">Next &rarr;</button>
-  </div>
+      <div class="stepper-nav">
+        <button class="btn btn-outline" onclick="stepNav('stoicSteps',-1)">&larr; Previous</button>
+        <div class="step-dots" id="stoicDots"></div>
+        <button class="btn btn-gold" onclick="stepNav('stoicSteps',1)">Next &rarr;</button>
+      </div>
+
+    </div><!-- /theory-left -->
+
+    <div class="theory-right">
+      <div class="card card-gold">
+        <h3>Required Sources for Study</h3>
+        <div class="reading-card">
+          <h4>Jim Stockdale &mdash; &ldquo;Arrian&rsquo;s Enchiridion and the Discourses of Epictetus&rdquo;</h4>
+          <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Applied</span></div>
+          <p>Stockdale&rsquo;s account of applying Stoic philosophy during seven years as a prisoner of war in Vietnam.</p>
+          <p class="reading-use"><strong>Use for:</strong> Evidence that Stoicism sustains a good life through suffering (RA).</p>
+          <a href="readings/Stoicism%20-%20Stockdale%20-%20Arrians%20Enchiridion%20and%20the%20Discourses%20of%20Epictetus.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+        <div class="reading-card">
+          <h4>Marcus Aurelius &mdash; <em>Meditations</em>, Book 2</h4>
+          <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Primary Source</span></div>
+          <p>The private journal of the Roman Emperor &mdash; reflections on mortality, control, and seeing things as they truly are.</p>
+          <p class="reading-use"><strong>Use for:</strong> Primary source quotations from a key Stoic philosopher (KU, RA).</p>
+          <a href="readings/Stoicism%20-Marcus-Aurelius-Meditations-Book-2-pdf.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
+        </div>
+      </div>
+    </div><!-- /theory-right -->
+  </div><!-- /theory-two-col -->
+
   <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
 </div>
 
@@ -1598,523 +1585,10 @@ em{color:#ccc;font-style:italic}
 </div>
 
 <!-- ============================================ -->
-<!-- PAGE: READINGS & RESOURCES -->
-<!-- ============================================ -->
-<div class="page" id="page-readings">
-  <div class="question-banner visible" id="bannerReadings">
-    <div class="label">YOUR QUESTION</div>
-    <div id="bannerTextReadings"></div>
-  </div>
-
-  <img src="gorilla_reading.png" alt="Wise Gorilla reading" class="character character-small">
-  <h2>Readings &amp; Resources</h2>
-  <p class="subtitle">Primary sources to strengthen your Issues Analysis. Use these to deepen your understanding and find direct quotes for your essay.</p>
-
-  <!-- HEDONISM & DESIRE-SATISFACTION -->
-  <div class="card card-gold">
-    <h3>Hedonism &amp; Desire-Satisfaction Theory</h3>
-
-    <div class="reading-card">
-      <h4>Robert Nozick &mdash; &ldquo;The Experience Machine&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Critique</span></div>
-      <p>The classic thought experiment challenging hedonism: if you could plug into a machine that simulates a perfect life of pleasure, would you? Nozick argues most people wouldn&rsquo;t &mdash; suggesting we value things beyond mere pleasant experience, such as actually doing things, being a certain kind of person, and contact with reality.</p>
-      <p class="reading-use"><strong>Use for:</strong> Arguing against hedonism (CA). This is the single most important counter-argument to hedonism in your course.</p>
-      <a href="readings/Hedonism%20-%20Opposed%20-%20Nozick%20-%20The%20Experience%20Machine.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Fred Feldman &mdash; &ldquo;The Good Life: A Defence of Attitudinal Hedonism&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Defence</span></div>
-      <p>Feldman defends a refined version of hedonism &mdash; attitudinal hedonism &mdash; where pleasure is not a sensation but an attitude of enjoyment toward states of affairs. He uses thought experiments like &ldquo;Stoicus&rdquo; (a Stoic who claims to be happy despite suffering) and the &ldquo;deceived businessman&rdquo; to test both hedonism and desire-satisfaction theory. He also introduces DAIAH (Desert-Adjusted Intrinsic Attitudinal Hedonism).</p>
-      <p class="reading-use"><strong>Use for:</strong> Defending hedonism against standard objections (RA), or critiquing simpler versions of hedonism (CA). Shows how hedonism can be more sophisticated than &ldquo;just seek pleasure.&rdquo;</p>
-      <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Fred%20Feldman%20-%20The%20Good%20Life%20a%20Defence%20of%20Hedonism.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Derek Parfit &mdash; &ldquo;What Makes Someone&rsquo;s Life Go Best&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Hedonism</span><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Objective List</span></div>
-      <p>Parfit&rsquo;s influential overview of three theories of well-being: hedonism, desire-fulfilment, and objective list theory. He introduces the &ldquo;Success Theory&rdquo; (informed desire satisfaction) and uses the case of the deceived businessman to show how desire theories can give counterintuitive results. A clear, analytical comparison of the major approaches.</p>
-      <p class="reading-use"><strong>Use for:</strong> Comparing theories directly (KU, RA). Excellent source for framing your overall argument and identifying the strengths and weaknesses of each approach.</p>
-      <a href="readings/Hedonism%20and%20Desire%20Satisfaction%20-%20Parfit%20-%20What%20Makes%20Someones%20Life%20Go%20Best.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Aldous Huxley &mdash; <em>Brave New World</em>, Chapters 16 &amp; 17</h4>
-      <div class="reading-tags"><span class="reading-tag">Desire-Satisfaction</span><span class="reading-tag">Critique</span></div>
-      <p>In these pivotal chapters, the Savage (John) confronts World Controller Mustapha Mond about the engineered society where everyone&rsquo;s desires are satisfied by design. The dialogue raises fundamental questions: if people are conditioned to want only what they can have, are their desires truly &ldquo;satisfied&rdquo;? Can a life without struggle, art, or authentic choice be a good life?</p>
-      <p class="reading-use"><strong>Use for:</strong> Critiquing desire-satisfaction theory (CA). A powerful literary case study showing that satisfied desires aren&rsquo;t sufficient for a good life if the desires themselves are manipulated.</p>
-      <a href="readings/Desire%20Satisfaction%20Critique%20-%20Ch%2016%20and%2017%20Brave%20New%20World.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-  </div>
-
-  <!-- SPONTANEITY & WU WEI -->
-  <div class="card card-gold">
-    <h3>Spontaneity &amp; Wu Wei</h3>
-
-    <div class="reading-card">
-      <h4>Mihaly Csikszentmihalyi &mdash; &ldquo;Flow: The Psychology of Optimal Experience&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Flow</span></div>
-      <p>The foundational text on flow states &mdash; moments of complete absorption where challenge perfectly matches skill. Csikszentmihalyi argues that the best moments in life aren&rsquo;t passive or relaxing, but occur when we are stretched to our limits in a voluntary effort to accomplish something difficult and worthwhile. Covers the nine conditions of flow and the autotelic personality.</p>
-      <p class="reading-use"><strong>Use for:</strong> Explaining the psychological basis for spontaneity&rsquo;s contribution to the good life (KU, RA). Provides empirical evidence to support philosophical claims about wu wei.</p>
-      <a href="readings/Spontaneity%20-%20Csikszentmihalyi%20-%20Flow%20-%20the%20psych%20of%20optimal%20experience.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Edward Slingerland &mdash; &ldquo;Wu Wei as Conceptual Metaphor&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Spontaneity</span><span class="reading-tag">Wu Wei</span></div>
-      <p>Slingerland analyses wu wei (effortless action) across Chinese philosophical traditions, exploring how Confucians and Daoists both value spontaneous, unselfconscious action but disagree about how to achieve it. He examines the paradox of trying to not-try and the concept of <em>de</em> (charismatic power) that accompanies genuine wu wei.</p>
-      <p class="reading-use"><strong>Use for:</strong> Understanding the philosophical depth of wu wei beyond simple &ldquo;go with the flow&rdquo; (KU). Excellent for showing the tension between cultivation and naturalness in achieving the good life (RA).</p>
-      <a href="readings/Spontaneity%20-%20Slingerland%20-%20Wu%20Wei%20as%20Conceptual%20Metaphor.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-  </div>
-
-  <!-- VIRTUE ETHICS -->
-  <div class="card card-gold">
-    <h3>Virtue Ethics</h3>
-
-    <div class="reading-card">
-      <h4>Aristotle &mdash; &ldquo;The Nature of Moral Virtue&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Primary Source</span></div>
-      <p>From the <em>Nicomachean Ethics</em>. Aristotle explains that virtue is a state of character developed through habituation, not simply taught. He introduces the Doctrine of the Mean &mdash; virtue as the intermediate between excess and deficiency, determined by practical wisdom (<em>phronesis</em>). Includes the function argument: the good life is one where we fulfil our distinctly human function of rational activity.</p>
-      <p class="reading-use"><strong>Use for:</strong> The foundational account of virtue ethics (KU). Essential for explaining what eudaimonia actually means and how Aristotle thinks we achieve it (RA).</p>
-      <a href="readings/Virtue%20Ethics%20-%20Aristotle%20-%20The%20Nature%20of%20Moral%20Virtue.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Martha Nussbaum &mdash; &ldquo;Non-Relative Virtues: An Aristotelian Approach&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Defence</span></div>
-      <p>Nussbaum defends Aristotle against the charge of cultural relativism by arguing that virtues respond to universal human experiences (&ldquo;grounding experiences&rdquo;) &mdash; every culture faces mortality, distributes resources, and manages bodily appetites. She distinguishes between &ldquo;thin&rdquo; (universal) and &ldquo;thick&rdquo; (culturally specific) descriptions of virtues.</p>
-      <p class="reading-use"><strong>Use for:</strong> Defending virtue ethics against the objection that virtues are culturally relative (CA, RA). Shows how Aristotelian ethics can be universal without being rigid.</p>
-      <a href="readings/Virtue%20Ethics%20-%20Nussbaum%20-%20Non-Relative%20Virtues%20an%20Aristotelian%20Approach.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Alasdair MacIntyre &mdash; &ldquo;The Nature of the Virtues&rdquo; (Ch. 14, <em>After Virtue</em>)</h4>
-      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Practices</span></div>
-      <p>MacIntyre develops the concept of &ldquo;practices&rdquo; &mdash; complex cooperative activities with internal goods that can only be achieved by participating in the practice itself. He argues that virtues are the qualities needed to achieve these internal goods. This bridges desire-satisfaction theory (what we want) with virtue ethics (what kind of person we become).</p>
-      <p class="reading-use"><strong>Use for:</strong> A modern defence and development of virtue ethics (KU, RA). Particularly useful for connecting virtue ethics with other theories in your analysis.</p>
-      <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2014%20-%20The%20Nature%20of%20the%20Virtues.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Alasdair MacIntyre &mdash; &ldquo;The Nature of Human Life&rdquo; (Ch. 15, <em>After Virtue</em>)</h4>
-      <div class="reading-tags"><span class="reading-tag">Virtue Ethics</span><span class="reading-tag">Narrative</span></div>
-      <p>MacIntyre argues that human life is best understood as a narrative &mdash; a story with a beginning, middle, and end. Virtues make sense only within the context of a whole life lived as a quest for the good. He critiques the modern tendency to fragment life into disconnected episodes and argues that the good life requires understanding yourself as part of ongoing traditions and communities.</p>
-      <p class="reading-use"><strong>Use for:</strong> Arguing that the good life requires narrative coherence, not just moment-to-moment satisfaction (RA, CA). A powerful counter to hedonism&rsquo;s focus on individual experiences.</p>
-      <a href="readings/Virtue%20Ethics%20-%20Alasdair%20Macintyre%20-%20Ch%2015%20-%20The%20Nature%20of%20Human%20Life.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-  </div>
-
-  <!-- STOICISM -->
-  <div class="card card-gold">
-    <h3>Stoicism</h3>
-
-    <div class="reading-card">
-      <h4>Jim Stockdale &mdash; &ldquo;Arrian&rsquo;s Enchiridion and the Discourses of Epictetus&rdquo;</h4>
-      <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Applied</span></div>
-      <p>Admiral Stockdale&rsquo;s remarkable account of applying Stoic philosophy during seven years as a prisoner of war in Vietnam. He describes how Epictetus&rsquo; distinction between what is &ldquo;up to us&rdquo; and what is not literally saved his life and sanity. A powerful real-world test case for whether Stoic principles actually work under extreme conditions.</p>
-      <p class="reading-use"><strong>Use for:</strong> Providing vivid evidence that Stoicism can sustain a good life even through severe suffering (RA). Particularly relevant for Question 2 about suffering and the good life, and for your lived trials.</p>
-      <a href="readings/Stoicism%20-%20Stockdale%20-%20Arrians%20Enchiridion%20and%20the%20Discourses%20of%20Epictetus.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-
-    <div class="reading-card">
-      <h4>Marcus Aurelius &mdash; <em>Meditations</em>, Book 2</h4>
-      <div class="reading-tags"><span class="reading-tag">Stoicism</span><span class="reading-tag">Primary Source</span></div>
-      <p>The private journal of the Roman Emperor &mdash; written not for publication but as a daily Stoic exercise. Book 2 includes reflections on mortality, the importance of focusing on what is within our control, and the discipline of seeing things as they truly are. A rare window into a philosopher actually practising what he preaches.</p>
-      <p class="reading-use"><strong>Use for:</strong> Primary source quotations from a key Stoic philosopher (KU). Shows Stoicism as a lived practice, not just abstract theory &mdash; connects well to your lived trials (RA).</p>
-      <a href="readings/Stoicism%20-Marcus-Aurelius-Meditations-Book-2-pdf.pdf" target="_blank" class="reading-link">Open Reading (PDF)</a>
-    </div>
-  </div>
-
-  <div class="card" style="text-align:center;margin-top:24px">
-    <img src="gorilla_teaching.png" alt="Wise Gorilla" class="character character-small" style="margin-bottom:12px">
-    <p><strong class="gold">Tip from the Wise Gorilla:</strong> You don&rsquo;t need to read every reading &mdash; focus on the two theories you&rsquo;re writing about. But dipping into a third theory&rsquo;s readings can give you excellent counter-arguments for your Critical Analysis (CA).</p>
-  </div>
-
-  <button class="btn btn-outline btn-center" onclick="goTo('hub')">&larr; Back to Hub</button>
-</div>
-
-<!-- ============================================ -->
 <!-- JAVASCRIPT -->
 <!-- ============================================ -->
-<script>
-// ===== STATE =====
-let chosenQuestion = '';
-const questionTexts = {
-  Q1: 'What helps us live well, and what pulls us away from a good life?',
-  Q2: 'Can a life be good even when it involves significant suffering or loss?',
-  Q3: 'Does pursuing a good life get in the way of actually achieving a good life?',
-  Q4: 'Is character more important than experience in judging whether a life is good?',
-  Q5: 'Is the good life about what happens to us, what we do, or how we perceive life?'
-};
-
-const philosopherData = {
-  'Hedonism': {
-    title: 'Hedonism',
-    philosophers: [
-      { name: 'Epicurus (341-270 BCE)', desc: 'Key figure. Static vs moving pleasures, natural/necessary desires, ataraxia.' },
-      { name: 'Jeremy Bentham (1748-1832)', desc: 'Sensory/quantitative hedonism. All pleasures equal in kind.' },
-      { name: 'Fred Feldman (contemporary)', desc: 'Attitudinal Hedonism. Pleasure as attitude, not sensation. DAIAH refinement.' },
-      { name: 'Robert Nozick (1938-2002)', desc: 'Critic. Experience Machine thought experiment.' }
-    ]
-  },
-  'Desire-Satisfaction': {
-    title: 'Desire-Satisfaction Theory',
-    philosophers: [
-      { name: 'Derek Parfit (1942-2017)', desc: 'Success Theory (informed desire). Three theories of well-being.' },
-      { name: 'John Rawls (1921-2002)', desc: 'Grass-blade counter objection to unrestricted desire theory.' },
-      { name: 'Alasdair MacIntyre (b. 1929)', desc: 'Internal goods and practices. Bridges desire theory and virtue ethics.' },
-      { name: 'David Hume (1711-1776)', desc: 'Calm passions, reason as slave of the passions.' }
-    ]
-  },
-  'Spontaneity': {
-    title: 'Spontaneity & Wu Wei',
-    philosophers: [
-      { name: 'Zhuangzi (370-287 BCE)', desc: 'Daoist. Butcher Ding, collection and shedding, effortless expertise.' },
-      { name: 'Confucius (551-479 BCE)', desc: 'Mastery of ritual as path to spontaneity. Analects 2.4.' },
-      { name: 'Edward Slingerland (contemporary)', desc: 'Scholar of wu wei. Connections to flow, de as charismatic power.' },
-      { name: 'Mihaly Csikszentmihalyi (1934-2021)', desc: 'Flow theory. Nine conditions of flow. Challenge-skill balance.' },
-      { name: 'Keith Sawyer (contemporary)', desc: 'Improvisation theory. Problem-finding vs problem-solving.' }
-    ]
-  },
-  'Virtue Ethics': {
-    title: 'Virtue Ethics',
-    philosophers: [
-      { name: 'Aristotle (384-322 BCE)', desc: 'Function argument, Doctrine of the Mean, eudaimonia, practical wisdom.' },
-      { name: 'Martha Nussbaum (b. 1947)', desc: 'Non-relative virtues. Capabilities approach. Grounding experiences.' },
-      { name: 'Alasdair MacIntyre (b. 1929)', desc: 'Practices with internal goods. Virtue and social roles.' }
-    ]
-  },
-  'Stoicism': {
-    title: 'Stoicism',
-    philosophers: [
-      { name: 'Epictetus (c. 55-135 CE)', desc: 'Enchiridion, Discourses. Dichotomy of control. Three disciplines.' },
-      { name: 'Marcus Aurelius (121-180 CE)', desc: 'Meditations. Philosopher-emperor. Daily Stoic practice.' },
-      { name: 'Seneca (c. 4 BCE-65 CE)', desc: 'Letters to Lucilius. Voluntary discomfort. Practical Stoic advice.' },
-      { name: 'Jim Stockdale (1923-2005)', desc: 'Applied Stoicism under extreme conditions as POW.' },
-      { name: 'Zeno of Citium (c. 334-262 BCE)', desc: 'Founder of Stoicism. Taught at the Stoa Poikile.' }
-    ]
-  }
-};
-
-// ===== NAVIGATION =====
-function goTo(pageId) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const map = {
-    'hub': 'page-hub',
-    'task': 'page-task',
-    'trials': 'page-trials',
-    'theories': 'page-theories',
-    'drafting': 'page-drafting',
-    'readings': 'page-readings',
-    'theory-hedonism': 'page-theory-hedonism',
-    'theory-spontaneity': 'page-theory-spontaneity',
-    'theory-virtue': 'page-theory-virtue',
-    'theory-stoicism': 'page-theory-stoicism'
-  };
-  const el = document.getElementById(map[pageId] || pageId);
-  if (el) {
-    el.classList.add('active');
-    window.scrollTo(0, 0);
-  }
-  updateBanners();
-}
-
-function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerSpont','bannerVirt','bannerStoic','bannerDraft','bannerReadings'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft','bannerTextReadings'];
-  textIds.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = chosenQuestion;
-  });
-}
-
-// ===== PAGE 1: WELCOME =====
-function submitGoodLife() {
-  const val = document.getElementById('goodLifeDef').value.trim();
-  if (!val) { alert('Please share your thoughts before continuing.'); return; }
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-question').classList.add('active');
-  window.scrollTo(0, 0);
-}
-
-// ===== PAGE 2: QUESTION SELECTION =====
-function submitQuestion() {
-  const sel = document.getElementById('questionSelect');
-  if (!sel.value) { alert('Please select a question.'); return; }
-  chosenQuestion = questionTexts[sel.value];
-  updateBanners();
-  document.getElementById('navPills').classList.add('visible');
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-theory-responses').classList.add('active');
-  initStepper('theoryPrompts', 'trDots');
-  window.scrollTo(0, 0);
-}
-
-// ===== STEPPER SYSTEM =====
-function getStepperState(containerId) {
-  const container = document.getElementById(containerId);
-  const steps = container.querySelectorAll('.step');
-  let current = 0;
-  steps.forEach((s, i) => { if (s.classList.contains('active')) current = i; });
-  return { container, steps, current, total: steps.length };
-}
-
-function initStepper(containerId, dotsId) {
-  const { steps, current } = getStepperState(containerId);
-  const dotsEl = document.getElementById(dotsId);
-  if (dotsEl) {
-    dotsEl.innerHTML = '';
-    for (let i = 0; i < steps.length; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'step-dot' + (i === current ? ' active' : '') + (i < current ? ' completed' : '');
-      dotsEl.appendChild(dot);
-    }
-  }
-}
-
-function stepNav(containerId, dir) {
-  const { container, steps, current, total } = getStepperState(containerId);
-  const next = current + dir;
-
-  if (next < 0) return;
-
-  // Handle end of stepper
-  if (next >= total) {
-    if (containerId === 'theoryPrompts') {
-      // Go to hub after theory responses
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      document.getElementById('page-hub').classList.add('active');
-      window.scrollTo(0, 0);
-      return;
-    }
-    // For other steppers at end, just stay
-    return;
-  }
-
-  steps[current].classList.remove('active');
-  steps[next].classList.add('active');
-
-  // Update dots
-  const page = container.closest('.page');
-  const dotsEl = page.querySelector('.step-dots');
-  if (dotsEl) {
-    const dots = dotsEl.querySelectorAll('.step-dot');
-    dots.forEach((d, i) => {
-      d.className = 'step-dot' + (i === next ? ' active' : '') + (i < next ? ' completed' : '');
-    });
-  }
-
-  // Update prev/next buttons visibility
-  const prevBtn = page.querySelector('.stepper-nav .btn-outline');
-  const nextBtn = page.querySelector('.stepper-nav .btn-gold');
-  if (prevBtn) prevBtn.style.visibility = next === 0 ? 'hidden' : 'visible';
-  if (nextBtn) {
-    if (next === total - 1) {
-      if (containerId === 'theoryPrompts') nextBtn.textContent = 'Continue to Adventure! \u2192';
-      else nextBtn.textContent = 'Done!';
-    } else {
-      nextBtn.textContent = 'Next \u2192';
-    }
-  }
-
-  window.scrollTo(0, 0);
-}
-
-// Theory response navigation (special wrapper)
-let trStep = 0;
-function theoryRespNav(dir) {
-  stepNav('theoryPrompts', dir);
-}
-
-// ===== QUIZ FEEDBACK DATA =====
-const quizExplanations = {
-  'task-q1': 'Critical Analysis (CA) is specifically about evaluating the strengths and weaknesses of philosophical positions. KU is about knowing the positions; RA is about building arguments; C is about terminology and referencing.',
-  'task-q2': 'The maximum is 1500 words for a written submission. You can also submit a multimodal piece (up to 10 minutes) or a hybrid.',
-  'task-q3': 'You must explain at least two philosophical positions. You may use more, but two is the minimum required.',
-  'task-q4': 'The oral defence is in addition to your written/multimodal submission, not a replacement. It\'s a 2-3 minute defence of your position.',
-  'hed-q1': 'Hedonism\'s core claim is that a good life maximises pleasure and minimises pain. Everything else (virtue, achievement, knowledge) matters only insofar as it produces pleasure.',
-  'hed-q2': 'Epicurus distinguished moving pleasures (active sensory stimulation) from static pleasures (the calm state of tranquillity or ataraxia). He argued static pleasures are preferable because they are more sustainable.',
-  'hed-q3': 'Nozick asks: would you plug into a machine that gives you any pleasurable experiences you want, but none of it is real? Most people say no \u2014 suggesting we value actually doing things, being a certain kind of person, and contact with reality, not just how life feels.',
-  'hed-q4': 'Desire-satisfaction theory says your life goes well when you get what you want. Unlike hedonism, it\'s not just about how things feel \u2014 it\'s about whether your actual desires are fulfilled in the real world.',
-  'spont-q1': 'Wu wei (\u7121\u70BA) literally means "no doing" or "non-action," but is better understood as perfectly effortless action \u2014 acting so naturally that it feels as if you\'re not trying at all.',
-  'spont-q2': 'The Confucian path masters ritual first (like learning scales before improvising), hoping discipline becomes second nature. The Daoist path starts with spontaneity itself, avoiding rigid rules from the outset.',
-  'spont-q3': 'Collection means calm, broad awareness of the domain of activity. Shedding means eliminating obstacles: distractions, thoughts of reward, selfishness, even concern with your own skill level.',
-  'spont-q4': 'De is the charismatic power or virtue that naturally emanates from someone in wu wei. Because they act without ulterior motives, others perceive them as honest and trustworthy and naturally want to follow them.',
-  'spont-q5': 'Mihaly Csikszentmihalyi coined "flow" in 1990 to describe the state of complete absorption in an activity where challenge and skill are perfectly balanced.',
-  'spont-q6': 'The challenge-skill balance is the key condition: if the challenge is too high for your skill, you feel anxiety; too low and you feel boredom. Flow happens in the sweet spot between the two.',
-  'virt-q1': 'Aristotle argued that just as a good knife is one that cuts well (fulfils its function), a good human is one who reasons well, since reasoning is our distinctive capacity. Flourishing means excelling at this.',
-  'virt-q2': 'The Mean is not about being mediocre \u2014 it\'s about finding the right response for the situation. Courage, for example, is the right amount of response to danger: not too much (rashness) and not too little (cowardice).',
-  'virt-q3': 'For Aristotle, true virtue isn\'t about gritting your teeth and doing the right thing despite wanting to do otherwise. The genuinely virtuous person finds the right action pleasant \u2014 their desires are educated.',
-  'virt-q4': 'Nussbaum argues that certain human experiences (facing death, managing appetites, distributing resources) are universal across all cultures. The virtues are the excellent responses to these shared experiences.',
-  'virt-q5': 'A "thin" definition fixes what the virtue is about (e.g., "courage = whatever it is to respond well to danger") without specifying the details. Different cultures then compete to give the best "thick" account of what responding well actually looks like.',
-  'virt-q6': 'Grounding experiences are the universal spheres of human life \u2014 things like mortality, bodily appetite, property, social relations \u2014 that every person in every culture must navigate. These anchor the virtues across cultures.',
-  'virt-q7': 'Courage is the mean between cowardice (too little response to danger, driven by excessive fear) and rashness (too much, driven by insufficient caution). The courageous person faces the right dangers, for the right reasons, in the right way.',
-  'stoic-q1': 'The dichotomy of control is the foundational Stoic practice: clearly distinguishing what is "up to us" (our judgements, desires, attitudes) from what is not (health, wealth, reputation, other people\'s actions). Focus only on the former.',
-  'stoic-q2': 'Stoics view emotions not as involuntary reactions but as judgements we make about events. If you feel angry, it\'s because you\'ve judged that something bad has happened. Change the judgement, change the emotion. This is why Stoics believe we are responsible for our emotional states.',
-  'stoic-q3': 'The four Stoic cardinal virtues are Wisdom (phronesis), Courage (andreia), Temperance (sophrosyne), and Justice (dikaiosyne). All four are interdependent \u2014 you can\'t have one without the others.',
-  'stoic-q4': 'Aristotle believed some external goods (health, wealth, social support) are needed for virtues to manifest \u2014 you can\'t be generous without resources. Stoics completely reject this: the will alone determines flourishing, regardless of circumstances.',
-  'stoic-q5': 'Premeditatio malorum (premeditation of evils) involves deliberately imagining the loss of things you value \u2014 your health, loved ones, possessions. This isn\'t pessimism; it trains you to appreciate what you have and reduces the shock if loss occurs.'
-};
-
-// ===== QUIZ SYSTEM =====
-function checkQuiz(el, result, feedbackId) {
-  const options = el.parentElement.querySelectorAll('.quiz-opt');
-  options.forEach(o => {
-    o.classList.add('disabled');
-    if (o === el) {
-      o.classList.add(result);
-    }
-  });
-
-  // Highlight correct answer if wrong
-  if (result === 'incorrect') {
-    options.forEach(o => {
-      const onclick = o.getAttribute('onclick');
-      if (onclick && onclick.includes("'correct'")) {
-        o.classList.add('correct');
-      }
-    });
-  }
-
-  const fb = document.getElementById(feedbackId);
-  if (fb) {
-    fb.classList.add('show', result);
-    const prefix = result === 'correct' ? '\u2705 Correct! ' : '\u274C Not quite. ';
-    const explanation = quizExplanations[feedbackId] || '';
-    fb.textContent = prefix + explanation;
-  }
-}
-
-// ===== HELP TOGGLE =====
-function toggleHelp(id) {
-  const el = document.getElementById(id);
-  el.classList.toggle('show');
-}
-
-// ===== THEORY SELECTION (Drafting page) =====
-document.addEventListener('change', function(e) {
-  if (e.target.classList.contains('theory-check')) {
-    const checked = document.querySelectorAll('.theory-check:checked');
-    if (checked.length > 2) {
-      e.target.checked = false;
-      alert('Please select exactly two theories.');
-      return;
-    }
-
-    const container = document.getElementById('theoryPhilosophers');
-    const list = document.getElementById('philosopherList');
-
-    if (checked.length > 0) {
-      container.style.display = 'block';
-      list.innerHTML = '';
-      checked.forEach(cb => {
-        const data = philosopherData[cb.value];
-        if (data) {
-          let html = '<div class="card" style="margin-bottom:16px"><h4 style="color:#f0d78c;margin-bottom:10px">' + data.title + '</h4>';
-          data.philosophers.forEach(p => {
-            html += '<p style="margin-bottom:6px"><strong class="gold">' + p.name + '</strong>: ' + p.desc + '</p>';
-          });
-          html += '</div>';
-          list.innerHTML += html;
-        }
-      });
-    } else {
-      container.style.display = 'none';
-    }
-  }
-});
-
-// ===== INIT ALL STEPPERS =====
-document.addEventListener('DOMContentLoaded', function() {
-  ['taskSteps','trialSteps','hedSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) {
-      const page = el.closest('.page');
-      const dotsEl = page ? page.querySelector('.step-dots') : null;
-      if (dotsEl) initStepper(id, dotsEl.id);
-    }
-  });
-  // Init dots
-  initStepper('taskSteps', 'taskDots');
-  initStepper('trialSteps', 'trialDots');
-  initStepper('hedSteps', 'hedDots');
-  initStepper('spontSteps', 'spontDots');
-  initStepper('virtSteps', 'virtDots');
-  initStepper('stoicSteps', 'stoicDots');
-  initStepper('draftSteps', 'draftDots');
-});
-
-// ===== AUTO-SAVE to localStorage =====
-function saveState() {
-  const data = {};
-  document.querySelectorAll('textarea').forEach((ta, i) => {
-    data['ta_' + i] = ta.value;
-  });
-  document.querySelectorAll('select').forEach((s, i) => {
-    data['sel_' + i] = s.value;
-  });
-  document.querySelectorAll('.theory-check').forEach((cb, i) => {
-    data['cb_' + i] = cb.checked;
-  });
-  data.chosenQuestion = chosenQuestion;
-  localStorage.setItem('philHappiness', JSON.stringify(data));
-}
-
-function loadState() {
-  try {
-    const raw = localStorage.getItem('philHappiness');
-    if (!raw) return;
-    const data = JSON.parse(raw);
-    document.querySelectorAll('textarea').forEach((ta, i) => {
-      if (data['ta_' + i]) ta.value = data['ta_' + i];
-    });
-    document.querySelectorAll('select').forEach((s, i) => {
-      if (data['sel_' + i]) s.value = data['sel_' + i];
-    });
-    document.querySelectorAll('.theory-check').forEach((cb, i) => {
-      if (data['cb_' + i]) cb.checked = data['cb_' + i];
-    });
-    if (data.chosenQuestion) {
-      chosenQuestion = data.chosenQuestion;
-      updateBanners();
-    }
-  } catch(e) {}
-}
-
-// Auto-save every 10 seconds
-setInterval(saveState, 10000);
-// Also save on page unload
-window.addEventListener('beforeunload', saveState);
-// Load on start
-document.addEventListener('DOMContentLoaded', loadState);
-
-// ===== PRINT ALL PAGES =====
-function printAll() {
-  // Show all pages so they all appear in print
-  const pages = document.querySelectorAll('.page');
-  pages.forEach(p => p.classList.add('print-show'));
-  // Show all steps within steppers
-  const steps = document.querySelectorAll('.step');
-  steps.forEach(s => s.classList.add('active'));
-  // Trigger print
-  window.print();
-  // Restore original state after printing
-  setTimeout(() => {
-    pages.forEach(p => p.classList.remove('print-show'));
-    // Restore step visibility — re-init steppers
-    steps.forEach(s => s.classList.remove('active'));
-    // Re-activate current steps
-    ['taskSteps','trialSteps','hedSteps','spontSteps','virtSteps','stoicSteps','draftSteps'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) {
-        const firstStep = el.querySelector('.step');
-        if (firstStep) firstStep.classList.add('active');
-      }
-    });
-  }, 500);
-}
-</script>
+<script src="script.js" defer></script>
+<!-- All JavaScript moved to script.js -->
 
 </body>
 </html>

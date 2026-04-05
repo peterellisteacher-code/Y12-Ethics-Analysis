@@ -66,7 +66,6 @@ function goTo(pageId) {
     'trials': 'page-trials',
     'theories': 'page-theories',
     'drafting': 'page-drafting',
-    'readings': 'page-readings',
     'theory-hedonism': 'page-theory-hedonism',
     'theory-desire': 'page-theory-desire',
     'theory-spontaneity': 'page-theory-spontaneity',
@@ -82,8 +81,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft','bannerReadings'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft','bannerTextReadings'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;

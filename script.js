@@ -1,5 +1,6 @@
 // ===== STATE =====
 let chosenQuestion = '';
+let chosenQuestionKey = '';
 const questionTexts = {
   Q1: 'What helps us live well, and what pulls us away from a good life?',
   Q2: 'Can a life be good even when it involves significant suffering or loss?',
@@ -73,7 +74,8 @@ function goTo(pageId) {
     'theory-desire': 'page-theory-desire',
     'theory-spontaneity': 'page-theory-spontaneity',
     'theory-virtue': 'page-theory-virtue',
-    'theory-stoicism': 'page-theory-stoicism'
+    'theory-stoicism': 'page-theory-stoicism',
+    'quiz': 'page-quiz'
   };
   const el = document.getElementById(map[pageId] || pageId);
   if (el) {
@@ -84,8 +86,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft','bannerQuiz'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft','bannerTextQuiz'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;
@@ -105,6 +107,7 @@ function submitGoodLife() {
 function submitQuestion() {
   const sel = document.getElementById('questionSelect');
   if (!sel.value) { alert('Please select a question.'); return; }
+  chosenQuestionKey = sel.value;
   chosenQuestion = questionTexts[sel.value];
   updateBanners();
   document.getElementById('navPills').classList.add('visible');
@@ -324,6 +327,7 @@ function saveState() {
     data['cb_' + i] = cb.checked;
   });
   data.chosenQuestion = chosenQuestion;
+  data.chosenQuestionKey = chosenQuestionKey;
   localStorage.setItem('philHappiness', JSON.stringify(data));
 }
 
@@ -341,6 +345,7 @@ function loadState() {
     document.querySelectorAll('.theory-check').forEach((cb, i) => {
       if (data['cb_' + i]) cb.checked = data['cb_' + i];
     });
+    if (data.chosenQuestionKey) chosenQuestionKey = data.chosenQuestionKey;
     if (data.chosenQuestion) {
       chosenQuestion = data.chosenQuestion;
       updateBanners();

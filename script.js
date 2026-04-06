@@ -73,7 +73,8 @@ function goTo(pageId) {
     'theory-desire': 'page-theory-desire',
     'theory-spontaneity': 'page-theory-spontaneity',
     'theory-virtue': 'page-theory-virtue',
-    'theory-stoicism': 'page-theory-stoicism'
+    'theory-stoicism': 'page-theory-stoicism',
+    'quiz': 'page-quiz'
   };
   const el = document.getElementById(map[pageId] || pageId);
   if (el) {
@@ -84,8 +85,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerQuiz','bannerDraft'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextQuiz','bannerTextDraft'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;
@@ -249,6 +250,388 @@ function checkQuiz(el, result, feedbackId) {
     const explanation = quizExplanations[feedbackId] || '';
     fb.textContent = prefix + explanation;
   }
+}
+
+// ===== CENTRALIZED QUIZ DATA =====
+const theoryQuizData = {
+  Hedonism: {
+    title: 'Hedonism',
+    questions: [
+      {
+        q: 'What does hedonism claim about the good life?',
+        options: [
+          'A good life contains as much pleasure and as little pain as possible',
+          'A good life requires following strict moral rules',
+          'A good life means being indifferent to all experiences',
+          'A good life requires cultivating virtues above all else'
+        ],
+        correct: 0,
+        explanation: quizExplanations['hed-q1']
+      },
+      {
+        q: "What is Epicurus's distinction between types of pleasure?",
+        options: [
+          'Physical pleasure vs. mental pleasure',
+          'Moving pleasures (active sensation) vs. static pleasures (tranquillity)',
+          'Short-term pleasure vs. long-term pleasure',
+          'Individual pleasure vs. collective pleasure'
+        ],
+        correct: 1,
+        explanation: quizExplanations['hed-q2']
+      },
+      {
+        q: "Why does Nozick's Experience Machine challenge hedonism?",
+        options: [
+          'Because pleasure is always bad',
+          'Because machines cannot produce real pleasure',
+          'Because most people would refuse to enter, suggesting we value more than just experience',
+          'Because Nozick was a hedonist himself'
+        ],
+        correct: 2,
+        explanation: quizExplanations['hed-q3']
+      }
+    ],
+    application: {
+      Q1: 'Using hedonism, explain what helps us live well and what pulls us away from a good life.',
+      Q2: 'Can a hedonist argue that a life involving significant suffering is still good? How?',
+      Q3: 'Does the hedonistic pursuit of pleasure get in the way of actually achieving pleasure?',
+      Q4: 'Is character more important than pleasurable experience in judging whether a life is good, according to hedonism?',
+      Q5: 'For a hedonist, is the good life about what happens to us, what we do, or how we perceive life?'
+    }
+  },
+  Desire: {
+    title: 'Desire-Satisfaction Theory',
+    questions: [
+      {
+        q: 'What is the core claim of desire-satisfaction theory?',
+        options: [
+          'We should eliminate all desires',
+          'A good life is one where your desires are fulfilled',
+          'Only natural desires should be pursued',
+          'Desire is the root of all suffering'
+        ],
+        correct: 1,
+        explanation: quizExplanations['hed-q4']
+      },
+      {
+        q: "What is the problem with 'trivial desires' for desire-satisfaction theory?",
+        options: [
+          'Trivial desires are too easy to satisfy',
+          "Rawls' grass-blade counter shows that satisfying any desire can't be what makes a life good",
+          'Trivial desires don\'t exist',
+          'Only important desires count in the theory'
+        ],
+        correct: 1,
+        explanation: 'Rawls imagines someone whose only desire is to count blades of grass. If desire-satisfaction theory is correct, this person has a good life when counting grass \u2014 but this seems absurd, suggesting not all desire fulfilment contributes to well-being.'
+      },
+      {
+        q: "What does Parfit's 'Success Theory' add to basic desire-satisfaction theory?",
+        options: [
+          'Only desires for success count',
+          'What matters is what we would desire if fully informed of all the facts',
+          'Success in life is independent of desire',
+          'We should only desire things we can achieve'
+        ],
+        correct: 1,
+        explanation: "Parfit's Success Theory refines desire-satisfaction by focusing on informed desires \u2014 what we would want if we knew all the relevant facts. This handles impulsive or ignorant desires but still struggles with the informed sadist."
+      }
+    ],
+    application: {
+      Q1: 'How does desire-satisfaction theory explain what helps us live well and what pulls us away?',
+      Q2: 'Can desire-satisfaction theory account for a good life that involves significant suffering?',
+      Q3: 'Does actively pursuing desire fulfilment get in the way of actually achieving a good life?',
+      Q4: 'Is character more important than getting what you want, according to desire-satisfaction theory?',
+      Q5: 'For desire-satisfaction theory, is the good life about what happens to us, what we do, or how we perceive life?'
+    }
+  },
+  Spontaneity: {
+    title: 'Spontaneity & Wu Wei',
+    questions: [
+      {
+        q: "What does 'wu wei' literally translate to?",
+        options: [
+          'Perfect action',
+          'No doing / effortless action',
+          'Moral virtue',
+          'Rational contemplation'
+        ],
+        correct: 1,
+        explanation: quizExplanations['spont-q1']
+      },
+      {
+        q: 'How does the Confucian approach to wu wei differ from the Daoist approach?',
+        options: [
+          'Confucians master ritual to eventually transcend it; Daoists start by avoiding rules',
+          'They are identical approaches',
+          'Confucians reject wu wei entirely',
+          'Daoists emphasise strict discipline more than Confucians'
+        ],
+        correct: 0,
+        explanation: quizExplanations['spont-q2']
+      },
+      {
+        q: "What are the two principles Zhuangzi draws from his expert examples?",
+        options: [
+          'Strength and speed',
+          'Planning and execution',
+          'Collection (calm focus on the domain) and Shedding (eliminating distractions)',
+          'Competition and domination'
+        ],
+        correct: 2,
+        explanation: quizExplanations['spont-q3']
+      },
+      {
+        q: "Who coined the psychological concept of 'flow'?",
+        options: [
+          'Zhuangzi',
+          'Edward Slingerland',
+          'Mihaly Csikszentmihalyi',
+          'Keith Sawyer'
+        ],
+        correct: 2,
+        explanation: quizExplanations['spont-q5']
+      }
+    ],
+    application: {
+      Q1: 'How does spontaneity/flow help us live well, and what pulls us away from it?',
+      Q2: 'Can a life involving significant suffering still achieve wu wei or flow?',
+      Q3: 'Does deliberately pursuing spontaneity paradoxically prevent you from achieving it?',
+      Q4: 'Is character more important than experience when judging flow and wu wei?',
+      Q5: 'For spontaneity theory, is the good life about what happens to us, what we do, or how we perceive life?'
+    }
+  },
+  Virtue: {
+    title: 'Virtue Ethics',
+    questions: [
+      {
+        q: "What is Aristotle's 'function argument'?",
+        options: [
+          'Humans have a distinctive function (reasoning), and flourishing means doing this well',
+          'Humans function best when they follow their instincts',
+          'The function of humans is to maximise pleasure',
+          'Each person has their own unique function to discover'
+        ],
+        correct: 0,
+        explanation: quizExplanations['virt-q1']
+      },
+      {
+        q: 'What is the Doctrine of the Mean?',
+        options: [
+          'Virtue means being average at everything',
+          'Virtue is the disposition to act at the right point between excess and deficiency',
+          'The mathematical middle between two numbers',
+          'Being kind to everyone equally'
+        ],
+        correct: 1,
+        explanation: quizExplanations['virt-q2']
+      },
+      {
+        q: "What is Nussbaum's main response to the relativism objection?",
+        options: [
+          'She abandons virtue ethics entirely',
+          'She argues only Western virtues are valid',
+          'Virtues are grounded in universal human experiences (spheres) that all cultures share',
+          'She denies that different cultures have different virtues'
+        ],
+        correct: 2,
+        explanation: quizExplanations['virt-q4']
+      },
+      {
+        q: 'In Aristotle\'s framework, courage is the mean between which two extremes?',
+        options: [
+          'Cruelty and kindness',
+          'Cowardice and rashness',
+          'Laziness and overwork',
+          'Anger and apathy'
+        ],
+        correct: 1,
+        explanation: quizExplanations['virt-q7']
+      }
+    ],
+    application: {
+      Q1: 'How does virtue ethics explain what helps us live well and what pulls us away?',
+      Q2: 'Can a virtuous person have a good life despite significant suffering or loss?',
+      Q3: 'Does pursuing virtue get in the way of actually achieving it?',
+      Q4: 'Is character more important than experience in judging whether a life is good, according to Aristotle?',
+      Q5: 'For virtue ethics, is the good life about what happens to us, what we do, or how we perceive life?'
+    }
+  },
+  Stoicism: {
+    title: 'Stoicism',
+    questions: [
+      {
+        q: "What is the Stoic 'dichotomy of control'?",
+        options: [
+          "Distinguishing between what is 'up to us' (desires, judgements, will) and what is not (health, wealth, reputation)",
+          "Controlling other people's behaviour",
+          'Eliminating all emotions',
+          'Choosing between two equal options'
+        ],
+        correct: 0,
+        explanation: quizExplanations['stoic-q1']
+      },
+      {
+        q: 'According to the Stoics, what is the relationship between emotions and judgements?',
+        options: [
+          'Emotions are purely physical reactions we cannot control',
+          'Emotions are acts of will / judgements, so we are responsible for them',
+          'Emotions and judgements are completely separate',
+          'Only positive emotions involve judgement'
+        ],
+        correct: 1,
+        explanation: quizExplanations['stoic-q2']
+      },
+      {
+        q: 'What are the four Stoic cardinal virtues?',
+        options: [
+          'Faith, Hope, Charity, Prudence',
+          'Strength, Speed, Intelligence, Beauty',
+          'Wisdom, Courage, Temperance, Justice',
+          'Honesty, Kindness, Humility, Loyalty'
+        ],
+        correct: 2,
+        explanation: quizExplanations['stoic-q3']
+      },
+      {
+        q: 'What Stoic practice involves imagining the loss of things you value?',
+        options: [
+          'Dichotomy of Control',
+          'Premeditatio Malorum (negative visualisation)',
+          'View from Above',
+          'Evening Review'
+        ],
+        correct: 1,
+        explanation: quizExplanations['stoic-q5']
+      }
+    ],
+    application: {
+      Q1: 'How does Stoicism explain what helps us live well and what pulls us away?',
+      Q2: 'Can a Stoic have a good life despite significant suffering or loss?',
+      Q3: 'Does pursuing Stoic control over emotions get in the way of actually living well?',
+      Q4: 'Is character more important than experience in judging whether a life is good, according to the Stoics?',
+      Q5: 'For the Stoics, is the good life about what happens to us, what we do, or how we perceive life?'
+    }
+  }
+};
+
+let currentQuizTheory = null;
+
+function getChosenQuestionKey() {
+  const sel = document.getElementById('questionSelect');
+  return sel ? sel.value : '';
+}
+
+function startTheoryQuiz(theory) {
+  const data = theoryQuizData[theory];
+  if (!data) return;
+  currentQuizTheory = theory;
+
+  document.getElementById('quizTheorySelect').style.display = 'none';
+  const area = document.getElementById('quizArea');
+  area.style.display = 'block';
+
+  const qKey = getChosenQuestionKey();
+  const appQ = qKey && data.application[qKey] ? data.application[qKey] : null;
+
+  let html = '<div class="card"><h3>' + data.title + ' Quiz</h3>';
+
+  data.questions.forEach(function(q, i) {
+    html += '<div class="quiz-question" data-qi="' + i + '">';
+    html += '<p><strong>Q' + (i + 1) + ':</strong> ' + q.q + '</p>';
+    html += '<div class="quiz-options">';
+    q.options.forEach(function(opt, oi) {
+      html += '<div class="quiz-opt" onclick="selectQuizOption(this,' + i + ',' + oi + ')">' + opt + '</div>';
+    });
+    html += '</div>';
+    html += '<div class="quiz-feedback" id="quiz-fb-' + i + '"></div>';
+    html += '</div>';
+  });
+
+  if (appQ) {
+    html += '<div class="divider"></div>';
+    html += '<h3>Application Question</h3>';
+    html += '<p class="highlight">' + appQ + '</p>';
+    html += '<textarea placeholder="Write your response here..." style="margin-top:8px"></textarea>';
+  }
+
+  html += '</div>';
+  html += '<div style="display:flex;gap:12px;justify-content:center;margin-top:20px">';
+  html += '<button class="btn btn-outline" onclick="showQuizSelect()">&larr; Choose Another Theory</button>';
+  html += '<button class="btn btn-gold" onclick="submitQuizAnswers()">Check My Answers</button>';
+  html += '</div>';
+
+  area.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+function selectQuizOption(el, qi, oi) {
+  const parent = el.parentElement;
+  parent.querySelectorAll('.quiz-opt').forEach(function(o) {
+    o.classList.remove('selected');
+  });
+  el.classList.add('selected');
+  el.dataset.selected = oi;
+}
+
+function submitQuizAnswers() {
+  if (!currentQuizTheory) return;
+  const data = theoryQuizData[currentQuizTheory];
+  let score = 0;
+
+  data.questions.forEach(function(q, i) {
+    const container = document.querySelector('[data-qi="' + i + '"]');
+    const selected = container.querySelector('.quiz-opt.selected');
+    const fb = document.getElementById('quiz-fb-' + i);
+    const opts = container.querySelectorAll('.quiz-opt');
+
+    opts.forEach(function(o) { o.classList.add('disabled'); });
+
+    if (selected) {
+      const chosenIdx = parseInt(selected.dataset.selected);
+      if (chosenIdx === q.correct) {
+        selected.classList.add('correct');
+        score++;
+        if (fb) {
+          fb.className = 'quiz-feedback show correct';
+          fb.textContent = '\u2705 Correct! ' + q.explanation;
+        }
+      } else {
+        selected.classList.add('incorrect');
+        opts[q.correct].classList.add('correct');
+        if (fb) {
+          fb.className = 'quiz-feedback show incorrect';
+          fb.textContent = '\u274C Not quite. ' + q.explanation;
+        }
+      }
+    } else {
+      opts[q.correct].classList.add('correct');
+      if (fb) {
+        fb.className = 'quiz-feedback show incorrect';
+        fb.textContent = '\u274C No answer selected. ' + q.explanation;
+      }
+    }
+  });
+
+  // Show score summary
+  const area = document.getElementById('quizArea');
+  const summary = document.createElement('div');
+  summary.className = 'card card-gold';
+  summary.style.marginTop = '16px';
+  summary.style.textAlign = 'center';
+  summary.innerHTML = '<h3>Score: ' + score + ' / ' + data.questions.length + '</h3>' +
+    '<p>' + (score === data.questions.length ? 'Excellent! You have a strong grasp of this theory.' :
+    score >= data.questions.length / 2 ? 'Good effort! Review the explanations above to strengthen your understanding.' :
+    'Keep studying! Re-read the theory page and try again.') + '</p>';
+  area.appendChild(summary);
+}
+
+function showQuizSelect() {
+  document.getElementById('quizTheorySelect').style.display = 'block';
+  const area = document.getElementById('quizArea');
+  area.style.display = 'none';
+  area.innerHTML = '';
+  currentQuizTheory = null;
+  window.scrollTo(0, 0);
 }
 
 // ===== HELP TOGGLE =====

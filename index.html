@@ -16,6 +16,7 @@
   <button class="nav-pill" onclick="goTo('task')">TASK</button>
   <button class="nav-pill" onclick="goTo('trials')">TRIALS</button>
   <button class="nav-pill" onclick="goTo('theories')">THEORIES</button>
+  <button class="nav-pill" onclick="goTo('quiz')">QUIZ</button>
   <button class="nav-pill" onclick="goTo('drafting')">DRAFTING</button>
 </div>
 
@@ -68,6 +69,10 @@
     <div class="hub-btn" onclick="goTo('theories')">
       <span class="icon">&#x1F4DA;</span>
       Start Preparing Theories
+    </div>
+    <div class="hub-btn" onclick="goTo('quiz')">
+      <span class="icon">&#x1F9E0;</span>
+      Quiz Me on the Theories
     </div>
     <div class="hub-btn" onclick="goTo('drafting')">
       <span class="icon">&#x270D;&#xFE0F;</span>
@@ -465,38 +470,6 @@
       <div id="hedSteps">
         <div class="step active" data-step="0">
           <div class="card">
-            <h3>Comprehension Check: Hedonism</h3>
-            <p><strong>Q1:</strong> What does hedonism claim about the good life?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q1')">A good life contains as much pleasure and as little pain as possible</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires following strict moral rules</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life means being indifferent to all experiences</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q1')">A good life requires cultivating virtues above all else</div>
-            </div>
-            <div class="quiz-feedback" id="hed-q1"></div>
-
-            <p><strong>Q2:</strong> What is Epicurus's distinction between types of pleasure?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Physical pleasure vs. mental pleasure</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q2')">Moving pleasures (active sensation) vs. static pleasures (tranquillity)</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Short-term pleasure vs. long-term pleasure</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q2')">Individual pleasure vs. collective pleasure</div>
-            </div>
-            <div class="quiz-feedback" id="hed-q2"></div>
-
-            <p><strong>Q3:</strong> Why does Nozick's Experience Machine challenge hedonism?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because pleasure is always bad</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because machines cannot produce real pleasure</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q3')">Because most people would refuse to enter, suggesting we value more than just experience</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q3')">Because Nozick was a hedonist himself</div>
-            </div>
-            <div class="quiz-feedback" id="hed-q3"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="1">
-          <div class="card">
             <h3>Types of Hedonism</h3>
             <h4 style="color:#f0d78c;margin-top:16px">Sensory Hedonism (Bentham)</h4>
             <p>Jeremy Bentham argued that pleasure is purely about <strong>sensation</strong>. "Prejudice apart, the game of push-pin is of equal value with the arts and sciences of music and poetry." All that matters is the quantity of pleasure &mdash; not its source or type.</p>
@@ -524,7 +497,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="2">
+        <div class="step" data-step="1">
           <div class="card card-gold">
             <h3>Your Analysis: Hedonism</h3>
             <div class="card" style="background:rgba(76,175,80,.06);border:1px solid rgba(76,175,80,.2);padding:14px 18px;margin-bottom:16px">
@@ -637,20 +610,6 @@
       <div id="desireSteps">
         <div class="step active" data-step="0">
           <div class="card">
-            <h3>Comprehension Check</h3>
-            <p><strong>Q1:</strong> What is the core claim of desire-satisfaction theory?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">We should eliminate all desires</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','hed-q4')">A good life is one where your desires are fulfilled</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Only natural desires should be pursued</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','hed-q4')">Desire is the root of all suffering</div>
-            </div>
-            <div class="quiz-feedback" id="hed-q4"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="1">
-          <div class="card">
             <h3>Desire-Satisfaction Theory in Depth</h3>
             <p>The basic idea: as we develop, we arrange our values into a priority order. What's best for us is whatever <strong>maximally conforms to our priorities</strong>.</p>
 
@@ -678,7 +637,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="2">
+        <div class="step" data-step="1">
           <div class="card card-gold">
             <h3>Your Analysis: Desire-Satisfaction Theory</h3>
             <div class="bullet-group">
@@ -785,65 +744,6 @@
       <div id="spontSteps">
         <div class="step active" data-step="0">
           <div class="card">
-            <h3>Comprehension Check</h3>
-            <p><strong>Q1:</strong> What does 'wu wei' literally translate to?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Perfect action</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q1')">No doing / effortless action</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Moral virtue</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q1')">Rational contemplation</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q1"></div>
-
-            <p><strong>Q2:</strong> How does the Confucian approach to wu wei differ from the Daoist approach?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q2')">Confucians master ritual to eventually transcend it; Daoists start by avoiding rules</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">They are identical approaches</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Confucians reject wu wei entirely</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q2')">Daoists emphasise strict discipline more than Confucians</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q2"></div>
-
-            <p><strong>Q3:</strong> What are the two principles Zhuangzi draws from his expert examples (Butcher Ding, the swimmer)?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Strength and speed</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Planning and execution</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q3')">Collection (calm focus on the domain) and Shedding (eliminating distractions)</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q3')">Competition and domination</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q3"></div>
-
-            <p><strong>Q4:</strong> What does 'de' mean in the context of wu wei?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Physical strength</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q4')">Virtue or charismatic power &mdash; the natural authority of someone acting without ulterior motives</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Monetary wealth</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q4')">Political authority through force</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q4"></div>
-
-            <p><strong>Q5:</strong> Who coined the psychological concept of 'flow'?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Zhuangzi</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Edward Slingerland</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q5')">Mihaly Csikszentmihalyi</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q5')">Keith Sawyer</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q5"></div>
-
-            <p><strong>Q6:</strong> What is the key condition for entering a flow state?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Being in a quiet environment</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Having no goals at all</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','spont-q6')">A balance between the challenge of the task and your skill level</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','spont-q6')">Competing against others</div>
-            </div>
-            <div class="quiz-feedback" id="spont-q6"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="1">
-          <div class="card">
             <h3>The Philosophy of Spontaneity</h3>
             <p>The tension between <strong>routine</strong> and <strong>impulse</strong> is a core issue for the good life. Routine reduces cognitive load and manifests competence, but can be soul-deadening. Impulse brings freedom and excitement but can lead to bad decisions.</p>
 
@@ -862,7 +762,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="2">
+        <div class="step" data-step="1">
           <div class="card">
             <h3>Flow: The 9 Defining Features</h3>
             <p>Csikszentmihalyi (1990) identified these nine conditions of the flow state:</p>
@@ -902,7 +802,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="3">
+        <div class="step" data-step="2">
           <div class="card card-gold">
             <h3>Your Analysis: Spontaneity &amp; Flow</h3>
             <div class="bullet-group">
@@ -1006,70 +906,6 @@
       <div id="virtSteps">
         <div class="step active" data-step="0">
           <div class="card">
-            <h3>Comprehension Check: Aristotle</h3>
-            <p><strong>Q1:</strong> What is Aristotle's 'function argument'?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q1')">Humans have a distinctive function (reasoning), and flourishing means doing this well</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Humans function best when they follow their instincts</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">The function of humans is to maximise pleasure</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q1')">Each person has their own unique function to discover</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q1"></div>
-
-            <p><strong>Q2:</strong> What is the Doctrine of the Mean?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Virtue means being average at everything</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q2')">Virtue is the disposition to act at the right point between excess and deficiency</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">The mathematical middle between two numbers</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q2')">Being kind to everyone equally</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q2"></div>
-
-            <p><strong>Q3:</strong> According to Aristotle, how does virtue relate to pleasure?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Virtue requires denying all pleasure</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is irrelevant to virtue</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q3')">The virtuous person takes pleasure in doing the right thing</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q3')">Pleasure is the ultimate goal of being virtuous</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q3"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="1">
-          <div class="card">
-            <h3>Comprehension Check: Nussbaum's Capabilities Approach</h3>
-            <p><strong>Q4:</strong> What is Nussbaum's main response to the relativism objection against virtue ethics?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She abandons virtue ethics entirely</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She argues only Western virtues are valid</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q4')">Virtues are grounded in universal human experiences (spheres) that all cultures share</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q4')">She denies that different cultures have different virtues</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q4"></div>
-
-            <p><strong>Q5:</strong> What does Nussbaum mean by 'thin' vs 'thick' definitions of virtue?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q5')">Thin = the virtue is "whatever it is to choose well in this sphere"; Thick = the specific account of what choosing well involves</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = basic virtues; Thick = complex virtues</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = Eastern virtues; Thick = Western virtues</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q5')">Thin = individual virtues; Thick = communal virtues</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q5"></div>
-
-            <p><strong>Q6:</strong> According to Nussbaum, what are 'grounding experiences'?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Experiences that ground us emotionally</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q6')">Universal spheres of human experience (death, appetite, property, etc.) that anchor virtues across cultures</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Childhood experiences that shape character</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q6')">Religious experiences that form the basis of ethics</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q6"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="2">
-          <div class="card">
             <h3>Aristotle's Virtue Ethics</h3>
             <h4 style="color:#f0d78c">The Function Argument</h4>
             <p>Just as a good knife is one that cuts well (fulfils its function), a good human is one who <strong>reasons well</strong>. The flourishing life is lived in accordance with reason.</p>
@@ -1090,18 +926,10 @@
             <h4 style="color:#f0d78c;margin-top:16px">Emotions &amp; Virtue</h4>
             <p>Virtues involve having feelings <em>"at the right time, about the right things, towards the right people, for the right end, and in the right way"</em> (1106b). Virtue is not suppressing emotion but <strong>educating</strong> it.</p>
 
-            <p><strong>Quick check:</strong> In Aristotle's framework, courage is the mean between which two extremes?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Cruelty and kindness</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','virt-q7')">Cowardice and rashness</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Laziness and overwork</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','virt-q7')">Anger and apathy</div>
-            </div>
-            <div class="quiz-feedback" id="virt-q7"></div>
           </div>
         </div>
 
-        <div class="step" data-step="3">
+        <div class="step" data-step="1">
           <div class="card">
             <h3>Nussbaum's Defence: Non-Relative Virtues</h3>
             <p>A major criticism of Aristotle is <strong>relativism</strong>: if virtues are just "what our culture says is good," then torturers can claim to be virtuous within their practice. Nussbaum's response:</p>
@@ -1124,7 +952,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="4">
+        <div class="step" data-step="2">
           <div class="card card-gold">
             <h3>Your Analysis: Virtue Ethics</h3>
             <div class="bullet-group">
@@ -1242,47 +1070,6 @@
       <div id="stoicSteps">
         <div class="step active" data-step="0">
           <div class="card">
-            <h3>Comprehension Check</h3>
-            <p><strong>Q1:</strong> What is the Stoic 'dichotomy of control'?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q1')">Distinguishing between what is 'up to us' (desires, judgements, will) and what is not (health, wealth, reputation)</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Controlling other people's behaviour</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Eliminating all emotions</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q1')">Choosing between two equal options</div>
-            </div>
-            <div class="quiz-feedback" id="stoic-q1"></div>
-
-            <p><strong>Q2:</strong> According to the Stoics, what is the relationship between emotions and judgements?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions are purely physical reactions we cannot control</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q2')">Emotions are acts of will / judgements, so we are responsible for them</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Emotions and judgements are completely separate</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q2')">Only positive emotions involve judgement</div>
-            </div>
-            <div class="quiz-feedback" id="stoic-q2"></div>
-
-            <p><strong>Q3:</strong> What are the four Stoic cardinal virtues?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Faith, Hope, Charity, Prudence</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Strength, Speed, Intelligence, Beauty</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q3')">Wisdom, Courage, Temperance, Justice</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q3')">Honesty, Kindness, Humility, Loyalty</div>
-            </div>
-            <div class="quiz-feedback" id="stoic-q3"></div>
-
-            <p><strong>Q4:</strong> How does Stoicism differ from Aristotle on external goods?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are essential for flourishing</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Both agree external goods are irrelevant</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q4')">Aristotle says some external goods are needed; Stoics say the will alone determines flourishing</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q4')">Stoics value external goods more than Aristotle does</div>
-            </div>
-            <div class="quiz-feedback" id="stoic-q4"></div>
-          </div>
-        </div>
-
-        <div class="step" data-step="1">
-          <div class="card">
             <h3>Core Stoic Philosophy</h3>
             <h4 style="color:#f0d78c">Living According to Nature</h4>
             <p>The Stoics believed we should live 'according to nature.' Nature put some things under our control &mdash; our <strong>desires, aversions, judgements, and moral purpose</strong>. Everything else (health, wealth, reputation, life, death) is part of an ordered universe that merits our acceptance.</p>
@@ -1311,18 +1098,10 @@
               <li><strong>Evening Review:</strong> Reflect on the day's actions and responses</li>
             </ul>
 
-            <p><strong>Quick check:</strong> What Stoic practice involves imagining the loss of things you value?</p>
-            <div class="quiz-options">
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Dichotomy of Control</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'correct','stoic-q5')">Premeditatio Malorum (negative visualisation)</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">View from Above</div>
-              <div class="quiz-opt" onclick="checkQuiz(this,'incorrect','stoic-q5')">Evening Review</div>
-            </div>
-            <div class="quiz-feedback" id="stoic-q5"></div>
           </div>
         </div>
 
-        <div class="step" data-step="2">
+        <div class="step" data-step="1">
           <div class="card">
             <h3>Stoicism in Practice &amp; Its Limits</h3>
             <h4 style="color:#f0d78c">Jim Stockdale: Stoicism Under Extreme Conditions</h4>
@@ -1349,7 +1128,7 @@
           </div>
         </div>
 
-        <div class="step" data-step="3">
+        <div class="step" data-step="2">
           <div class="card card-gold">
             <h3>Your Analysis: Stoicism</h3>
             <div class="bullet-group">
@@ -1415,6 +1194,48 @@
   </div><!-- /theory-two-col -->
 
   <button class="btn btn-outline btn-center" onclick="goTo('theories')" style="margin-top:16px">&larr; Back to Theories</button>
+</div>
+
+<!-- ============================================ -->
+<!-- QUIZ PAGE -->
+<!-- ============================================ -->
+<div class="page" id="page-quiz">
+  <div class="question-banner visible" id="bannerQuiz">
+    <div class="label">Your Question</div>
+    <span id="bannerTextQuiz"></span>
+  </div>
+
+  <h2>Quiz Me on the Theories</h2>
+  <p class="subtitle">Test your understanding of each theory before drafting your analysis.</p>
+
+  <div id="quizTheorySelect">
+    <div class="hub-btn-row" style="grid-template-columns:1fr 1fr;margin-top:16px">
+      <div class="hub-btn" onclick="startTheoryQuiz('Hedonism')">
+        <span class="icon">&#x1F347;</span>
+        Hedonism
+      </div>
+      <div class="hub-btn" onclick="startTheoryQuiz('Desire')">
+        <span class="icon">&#x1F4A1;</span>
+        Desire-Satisfaction
+      </div>
+      <div class="hub-btn" onclick="startTheoryQuiz('Spontaneity')">
+        <span class="icon">&#x1F30A;</span>
+        Spontaneity
+      </div>
+      <div class="hub-btn" onclick="startTheoryQuiz('Virtue')">
+        <span class="icon">&#x1F3DB;</span>
+        Virtue Ethics
+      </div>
+      <div class="hub-btn" onclick="startTheoryQuiz('Stoicism')">
+        <span class="icon">&#x1F3DB;&#xFE0F;</span>
+        Stoicism
+      </div>
+    </div>
+  </div>
+
+  <div id="quizArea" style="display:none"></div>
+
+  <button class="btn btn-outline btn-center" onclick="goTo('hub')" style="margin-top:16px">&larr; Back to Hub</button>
 </div>
 
 <!-- ============================================ -->

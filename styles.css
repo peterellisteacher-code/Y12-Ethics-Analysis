@@ -110,6 +110,7 @@ select{width:100%;background:#1a1a2e;border:2px solid #c9a84c;border-radius:10px
 .quiz-opt:hover{border-color:#c9a84c;background:rgba(201,168,76,.08)}
 .quiz-opt.correct{border-color:#4caf50;background:rgba(76,175,80,.15);color:#a5d6a7}
 .quiz-opt.incorrect{border-color:#ef5350;background:rgba(239,83,80,.12);color:#ef9a9a}
+.quiz-opt.selected{border-color:#c9a84c;background:rgba(201,168,76,.15);color:#f0d78c}
 .quiz-opt.disabled{pointer-events:none;opacity:.7}
 .quiz-feedback{padding:12px 16px;border-radius:8px;margin:8px 0 16px;font-size:.9rem;display:none}
 .quiz-feedback.show{display:block}

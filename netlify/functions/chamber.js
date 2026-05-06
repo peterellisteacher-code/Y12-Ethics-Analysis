@@ -22,18 +22,20 @@ const PACKS_DIR = (() => {
 })();
 const VALID_PACKS = new Set(["hedonism", "desire", "spontaneity", "virtue", "stoicism", "all"]);
 const HISTORY_WINDOW = 6;
-const MAX_TOKENS = 600;
+const MAX_TOKENS = 800;
 const MODEL = "claude-haiku-4-5";
 
 const SYSTEM_ROLE = `You are the Chamber — a Socratic interlocutor for a Year 12 student writing a 1500-word Issues Analysis essay on the philosophy of the good life. The student has chosen one of five questions (Q1–Q5) and is exploring philosophical theories through readings, lived trials, and dialogue with you.
+
+Each user message will include the student's ASSIGNED QUESTION (and, if set, their current WORKING QUESTION) as bracketed context lines before their actual message. The assigned question is your north star: when the student wanders into peripheral concepts, ask how they connect back to it; when they articulate a position, ask whether it actually answers the question or sidesteps it.
 
 Your job is to PRESS THEIR THINKING. You ask. They think. You do not write their essay.
 
 You MUST NEVER:
 - Suggest a complete philosophical question, position, or thesis for them
-- Generate paragraphs of philosophical content
+- Paraphrase or summarise a reading's argument as if it were your own (this substitutes for their reading work)
+- Generate paragraphs of original philosophical content
 - Tell them what to think or what conclusion to reach
-- Summarise the readings unprompted
 - Lecture
 - Praise generically ("great question!", "excellent point!")
 - Write any portion of their essay
@@ -44,15 +46,15 @@ You MUST ALWAYS:
 - Convert their topics into questions, and their questions into sharper questions
 - Ask them to articulate multiple positions on a question
 - Ask "What's the strongest objection to that view?" when they commit to a position
-- Point them at specific readings ("Have a look at Feldman's distinction between sensory and attitudinal hedonism") rather than summarising those readings yourself
-- Keep the dialogue oriented to the student's ASSIGNED ESSAY QUESTION (provided below). When they wander into peripheral concepts, ask how they'd connect what they're saying back to that question. When they articulate a position, ask whether it actually answers the question or sidesteps it.
 
-The READINGS PACK below contains the only philosophical sources available to you. When the student misremembers a reading or claims something a reading didn't say, redirect them to the actual text. When you reference a reading, name the author and what they argue, then ask the student to engage with it directly.
+WHEN YOU REFERENCE A READING: QUOTE THE RELEVANT PASSAGE DIRECTLY. Find the most relevant sentence or short paragraph in the readings pack below, quote it verbatim with attribution (author + work), and then ask your question about it. The quote *is* the reading — putting the actual text in front of the student is the whole point. A verbatim quote followed by a sharp question is the gold standard. Do NOT paraphrase the argument and tell the student to go look it up; quote it for them. Reserve "go re-read paragraph X of Y" only for cases where the relevant passage genuinely is too long to fit in your reply.
 
-If asked to do the work for them (write a thesis, draft a paragraph, summarise an argument):
+If a student misremembers a reading or claims something it didn't say, quote what the reading actually says and let them reconcile the discrepancy.
+
+If asked to do the work for them (write a thesis, draft a paragraph, summarise an argument in your own words):
 "That would do the thinking the assessment is asking *you* to do. Let me ask a question instead..."
 
-Keep responses to 2–4 sentences. One question at a time. The student is here to think — your job is to keep them thinking, not to think for them.`;
+Keep your own prose tight (2–4 sentences). Quoted material from the readings does not count toward that limit — quote generously when it serves the student. One question per turn.`;
 
 const packCache = new Map();
 
@@ -64,25 +66,18 @@ function loadPack(packId) {
   return text;
 }
 
-function buildSystem(packIds, chosenQuestion) {
+function buildSystem(packIds) {
   // Sort packIds canonically so cache key is order-independent.
   const sorted = [...packIds].sort();
   const packText = sorted.map(loadPack).join("\n\n");
-  const blocks = [
+  return [
     { type: "text", text: SYSTEM_ROLE },
-    { type: "text", text: `# READINGS PACK\n\n${packText}` },
+    {
+      type: "text",
+      text: `# READINGS PACK\n\n${packText}`,
+      cache_control: { type: "ephemeral" },
+    },
   ];
-  // Chosen question as the final cached block — same student in same session
-  // will reuse cache; different (question, packs) combos get separate entries.
-  const q = (chosenQuestion || "").trim();
-  blocks.push({
-    type: "text",
-    text: q
-      ? `# THE STUDENT'S ASSIGNED ESSAY QUESTION\n\n${q}\n\nKeep the dialogue oriented to this question. It is your north star.`
-      : `# THE STUDENT'S ASSIGNED ESSAY QUESTION\n\n(Not specified — ask the student which of the five questions they chose, then orient the dialogue to it.)`,
-    cache_control: { type: "ephemeral" },
-  });
-  return blocks;
 }
 
 function sanitiseHistory(history) {
@@ -123,8 +118,12 @@ exports.handler = async (event) => {
 
   const trimmedHistory = sanitiseHistory(history);
   const wq = typeof working_question === "string" ? working_question.trim() : "";
-  const userContent = wq
-    ? `[WORKING QUESTION: "${wq}"]\n\n${user_message}`
+  const cq = typeof chosen_question === "string" ? chosen_question.trim() : "";
+  const contextLines = [];
+  if (cq) contextLines.push(`[ASSIGNED QUESTION: "${cq}"]`);
+  if (wq) contextLines.push(`[WORKING QUESTION: "${wq}"]`);
+  const userContent = contextLines.length
+    ? contextLines.join("\n") + "\n\n" + user_message
     : user_message;
 
   const messages = [...trimmedHistory, { role: "user", content: userContent }];
@@ -133,7 +132,7 @@ exports.handler = async (event) => {
     const response = await client.messages.create({
       model: MODEL,
       max_tokens: MAX_TOKENS,
-      system: buildSystem(packs, chosen_question),
+      system: buildSystem(packs),
       messages,
     });
 

@@ -364,13 +364,6 @@ const chamberState = {
 };
 
 function nextPackSelection(toggled, current) {
-  // 'all' is mutually exclusive with everything else
-  if (toggled === 'all') {
-    return current.includes('all') ? [] : ['all'];
-  }
-  if (current.includes('all')) {
-    return [toggled];
-  }
   if (current.includes(toggled)) {
     return current.filter(p => p !== toggled);
   }
@@ -399,8 +392,8 @@ function chamberSelectPack(pack) {
     chip.classList.toggle('active', next.includes(chip.dataset.pack));
   });
   chamberRender();
-  if (next.length === 0) {
-    chamberSetStatus('No pack selected. Pick one to start.');
+  if (next.length < 2) {
+    chamberSetStatus('Pick ' + (2 - next.length) + ' more pack' + (next.length === 1 ? '' : 's') + ' to continue.');
   } else {
     chamberSetStatus('Packs: ' + next.map(chamberPackLabel).join(' + ') + '. Ready when you are.');
   }
@@ -412,8 +405,7 @@ function chamberPackLabel(pack) {
     desire: 'Desire-Satisfaction',
     spontaneity: 'Spontaneity',
     virtue: 'Virtue Ethics',
-    stoicism: 'Stoicism',
-    all: 'All Theories'
+    stoicism: 'Stoicism'
   })[pack] || pack;
 }
 
@@ -426,7 +418,7 @@ function chamberRender() {
   const t = document.getElementById('chamberTranscript');
   if (!t) return;
   if (chamberState.history.length === 0) {
-    t.innerHTML = '<div class="chamber-empty">Pick a theory pack above, then ask your first question. The Chamber will press your thinking.</div>';
+    t.innerHTML = '<div class="chamber-empty">Pick two theory packs above, then ask your first question. The Chamber will press your thinking.</div>';
     return;
   }
   t.innerHTML = '';
@@ -448,8 +440,8 @@ function chamberRender() {
 
 async function chamberSend() {
   if (chamberState.pending) return;
-  if (chamberState.packs.length === 0) {
-    chamberSetStatus('Pick a theory pack first.');
+  if (chamberState.packs.length !== 2) {
+    chamberSetStatus('Pick exactly 2 theory packs first.');
     return;
   }
   const inputEl = document.getElementById('chamberInput');

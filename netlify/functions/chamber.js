@@ -6,19 +6,25 @@ const client = new Anthropic.default({
   apiKey: process.env.ANTHROPIC_KEY || process.env.ANTHROPIC_API_KEY,
 });
 
-// Packs live in chamber/packs/ at the repo root. netlify.toml's `included_files`
-// bundles them with the function; we resolve from the project root so the same
-// path works locally (`netlify dev`) and in production.
-const PACKS_DIR = (() => {
+// Packs and task sheet live under chamber/ at the repo root. netlify.toml's
+// `included_files` bundles them with the function; we resolve from the
+// project root so the same path works locally (`netlify dev`) and in production.
+const CHAMBER_DIR = (() => {
   const candidates = [
-    path.join(process.cwd(), "chamber", "packs"),
-    path.join(__dirname, "..", "..", "chamber", "packs"),
-    path.join(__dirname, "packs"),
+    path.join(process.cwd(), "chamber"),
+    path.join(__dirname, "..", "..", "chamber"),
+    path.join(__dirname),
   ];
   for (const c of candidates) {
-    if (fs.existsSync(c)) return c;
+    if (fs.existsSync(path.join(c, "packs"))) return c;
   }
   return candidates[0];
+})();
+const PACKS_DIR = path.join(CHAMBER_DIR, "packs");
+const TASK_SHEET_PATH = path.join(CHAMBER_DIR, "task-sheet.txt");
+const TASK_SHEET = (() => {
+  try { return fs.readFileSync(TASK_SHEET_PATH, "utf-8"); }
+  catch { return ""; }
 })();
 const VALID_PACKS = new Set(["hedonism", "desire", "spontaneity", "virtue", "stoicism"]);
 const HISTORY_WINDOW = 6;
@@ -28,6 +34,8 @@ const MODEL = "claude-haiku-4-5";
 const SYSTEM_ROLE = `You are the Chamber — a Socratic interlocutor for a Year 12 student writing a 1500-word Issues Analysis essay on the philosophy of the good life. The student has chosen one of five questions (Q1–Q5) and is exploring philosophical theories through readings, lived trials, and dialogue with you.
 
 Each user message will include the student's ASSIGNED QUESTION (and, if set, their current WORKING QUESTION) as bracketed context lines before their actual message. The assigned question is your north star: when the student wanders into peripheral concepts, ask how they connect back to it; when they articulate a position, ask whether it actually answers the question or sidesteps it.
+
+You also have access to the official TASK SHEET (below). It contains the assessment rubric (graded A–D across Knowledge & Understanding, Reasoning & Argument, Critical Analysis, and Communication), the format options (1500 words / 10 min multimodal / hybrid + 2–3 min oral defence), the weekly trial protocols, and the structural requirements (at least two perspectives, at least two trial observations as evidence, a defended answer to the chosen question). Use the rubric to keep students grounded — if a student gives strong *explanation* but no *evaluation*, point out that the rubric distinguishes Reasoning & Argument from Critical Analysis and ask which one their current draft is being assessed under. If they're missing trial evidence, ask which week's trial gave them something they could cite.
 
 Your job is to PRESS THEIR THINKING. You ask. They think. You do not write their essay.
 
@@ -70,14 +78,16 @@ function buildSystem(packIds) {
   // Sort packIds canonically so cache key is order-independent.
   const sorted = [...packIds].sort();
   const packText = sorted.map(loadPack).join("\n\n");
-  return [
-    { type: "text", text: SYSTEM_ROLE },
-    {
-      type: "text",
-      text: `# READINGS PACK\n\n${packText}`,
-      cache_control: { type: "ephemeral" },
-    },
-  ];
+  const blocks = [{ type: "text", text: SYSTEM_ROLE }];
+  if (TASK_SHEET) {
+    blocks.push({ type: "text", text: `# THE TASK SHEET\n\n${TASK_SHEET}` });
+  }
+  blocks.push({
+    type: "text",
+    text: `# READINGS PACK\n\n${packText}`,
+    cache_control: { type: "ephemeral" },
+  });
+  return blocks;
 }
 
 function sanitiseHistory(history) {

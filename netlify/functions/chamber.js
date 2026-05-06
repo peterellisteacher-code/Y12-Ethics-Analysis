@@ -45,6 +45,7 @@ You MUST ALWAYS:
 - Ask them to articulate multiple positions on a question
 - Ask "What's the strongest objection to that view?" when they commit to a position
 - Point them at specific readings ("Have a look at Feldman's distinction between sensory and attitudinal hedonism") rather than summarising those readings yourself
+- Keep the dialogue oriented to the student's ASSIGNED ESSAY QUESTION (provided below). When they wander into peripheral concepts, ask how they'd connect what they're saying back to that question. When they articulate a position, ask whether it actually answers the question or sidesteps it.
 
 The READINGS PACK below contains the only philosophical sources available to you. When the student misremembers a reading or claims something a reading didn't say, redirect them to the actual text. When you reference a reading, name the author and what they argue, then ask the student to engage with it directly.
 
@@ -63,16 +64,25 @@ function loadPack(packId) {
   return text;
 }
 
-function buildSystem(packId) {
-  const packText = loadPack(packId);
-  return [
+function buildSystem(packIds, chosenQuestion) {
+  // Sort packIds canonically so cache key is order-independent.
+  const sorted = [...packIds].sort();
+  const packText = sorted.map(loadPack).join("\n\n");
+  const blocks = [
     { type: "text", text: SYSTEM_ROLE },
-    {
-      type: "text",
-      text: `# READINGS PACK\n\n${packText}`,
-      cache_control: { type: "ephemeral" },
-    },
+    { type: "text", text: `# READINGS PACK\n\n${packText}` },
   ];
+  // Chosen question as the final cached block — same student in same session
+  // will reuse cache; different (question, packs) combos get separate entries.
+  const q = (chosenQuestion || "").trim();
+  blocks.push({
+    type: "text",
+    text: q
+      ? `# THE STUDENT'S ASSIGNED ESSAY QUESTION\n\n${q}\n\nKeep the dialogue oriented to this question. It is your north star.`
+      : `# THE STUDENT'S ASSIGNED ESSAY QUESTION\n\n(Not specified — ask the student which of the five questions they chose, then orient the dialogue to it.)`,
+    cache_control: { type: "ephemeral" },
+  });
+  return blocks;
 }
 
 function sanitiseHistory(history) {
@@ -94,10 +104,18 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "Invalid JSON" }) };
   }
 
-  const { pack, working_question, history, user_message } = body;
+  const { packs, chosen_question, working_question, history, user_message } = body;
 
-  if (!VALID_PACKS.has(pack)) {
-    return { statusCode: 400, body: JSON.stringify({ error: `Unknown pack: ${pack}` }) };
+  if (!Array.isArray(packs) || packs.length === 0 || packs.length > 2) {
+    return { statusCode: 400, body: JSON.stringify({ error: "packs must be an array of 1 or 2 pack IDs" }) };
+  }
+  for (const p of packs) {
+    if (!VALID_PACKS.has(p)) {
+      return { statusCode: 400, body: JSON.stringify({ error: `Unknown pack: ${p}` }) };
+    }
+  }
+  if (packs.includes("all") && packs.length > 1) {
+    return { statusCode: 400, body: JSON.stringify({ error: "'all' must be selected on its own" }) };
   }
   if (typeof user_message !== "string" || user_message.trim() === "") {
     return { statusCode: 400, body: JSON.stringify({ error: "user_message is required" }) };
@@ -115,7 +133,7 @@ exports.handler = async (event) => {
     const response = await client.messages.create({
       model: MODEL,
       max_tokens: MAX_TOKENS,
-      system: buildSystem(pack),
+      system: buildSystem(packs, chosen_question),
       messages,
     });
 

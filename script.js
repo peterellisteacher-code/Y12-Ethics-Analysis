@@ -358,24 +358,52 @@ document.addEventListener('DOMContentLoaded', loadState);
 
 // ===== THE CHAMBER =====
 const chamberState = {
-  pack: null,
+  packs: [],
   history: [],
   pending: false
 };
 
+function nextPackSelection(toggled, current) {
+  // 'all' is mutually exclusive with everything else
+  if (toggled === 'all') {
+    return current.includes('all') ? [] : ['all'];
+  }
+  if (current.includes('all')) {
+    return [toggled];
+  }
+  if (current.includes(toggled)) {
+    return current.filter(p => p !== toggled);
+  }
+  if (current.length < 2) {
+    return [...current, toggled];
+  }
+  // At max — drop the oldest, append the new
+  return [current[1], toggled];
+}
+
+function samePacks(a, b) {
+  if (a.length !== b.length) return false;
+  return a.every((p, i) => p === b[i]);
+}
+
 function chamberSelectPack(pack) {
   if (chamberState.pending) return;
-  if (chamberState.pack === pack) return;
-  if (chamberState.history.length > 0 && !confirm('Switching theory pack will clear this conversation. Continue?')) {
+  const next = nextPackSelection(pack, chamberState.packs);
+  if (samePacks(next, chamberState.packs)) return;
+  if (chamberState.history.length > 0 && !confirm('Changing the theory pack will clear this conversation. Continue?')) {
     return;
   }
-  chamberState.pack = pack;
+  chamberState.packs = next;
   chamberState.history = [];
   document.querySelectorAll('.chamber-chip').forEach(chip => {
-    chip.classList.toggle('active', chip.dataset.pack === pack);
+    chip.classList.toggle('active', next.includes(chip.dataset.pack));
   });
   chamberRender();
-  chamberSetStatus('Pack: ' + chamberPackLabel(pack) + '. Ready when you are.');
+  if (next.length === 0) {
+    chamberSetStatus('No pack selected. Pick one to start.');
+  } else {
+    chamberSetStatus('Packs: ' + next.map(chamberPackLabel).join(' + ') + '. Ready when you are.');
+  }
 }
 
 function chamberPackLabel(pack) {
@@ -420,7 +448,7 @@ function chamberRender() {
 
 async function chamberSend() {
   if (chamberState.pending) return;
-  if (!chamberState.pack) {
+  if (chamberState.packs.length === 0) {
     chamberSetStatus('Pick a theory pack first.');
     return;
   }
@@ -441,7 +469,8 @@ async function chamberSend() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        pack: chamberState.pack,
+        packs: chamberState.packs,
+        chosen_question: chosenQuestion || '',
         working_question: wq,
         history: chamberState.history.slice(0, -1),
         user_message: text
@@ -506,7 +535,7 @@ function chamberTranscriptText() {
   const lines = [];
   lines.push('Chamber transcript');
   if (chosenQuestion) lines.push('Question: ' + chosenQuestion);
-  if (chamberState.pack) lines.push('Theory pack: ' + chamberPackLabel(chamberState.pack));
+  if (chamberState.packs.length) lines.push('Theory pack: ' + chamberState.packs.map(chamberPackLabel).join(' + '));
   const wq = (document.getElementById('workingQuestion') || {}).value || '';
   if (wq.trim()) lines.push('Working question: ' + wq.trim());
   lines.push('Date: ' + new Date().toISOString());

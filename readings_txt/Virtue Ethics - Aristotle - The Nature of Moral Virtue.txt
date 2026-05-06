@@ -1,0 +1,592 @@
+Chapter 37
+
+
+
+
+   Aristotle
+
+   THE NATURE OF MORAL VIRTUE
+
+
+
+
+From Nicomachean Ethics, Book Two                       from repeated acts of hearing. It is the other way
+                                                        round. We had these senses before we used
+Chapter I
+                                                        them, we did not acquire them as a result of
+
+V     irtue, then, is of two kinds, intellectual
+      and moral. Of these the intellectual is in the
+main indebted to teaching for its production
+                                                        using them. But the moral virtues we do acquire
+                                                        by first exercising them. The same is true of the
+                                                        arts and crafts in general. The craftsman has to
+and growth, and this calls for time and experi-         learn how to make things, but he learns in the
+ence. Moral goodness, on the other hand, is the         process of making them. So men become
+child of habit, from which it has got its very          builders by building, harp players by playing
+name, ethics being derived from ethos, ‘habit,’ by      the harp. By a similar process we become just
+a slight alteration in the quantity of the e. This is   by performing just actions, temperate by
+an indication that none of the moral virtues is         performing temperate actions, brave by
+implanted in us by nature, since nothing that           performing brave actions. Look at what happens
+nature creates can be taught by habit to change         in political societies—it confirms our view. We
+the direction of its development. For instance a        find legislators seeking to make good men of
+stone, the natural tendency of which is to fall         their fellows by making good behaviour habitual
+down, could never, however often you threw it           with them. That is the aim of every lawgiver, and
+up in the air, be trained to go in that direction.      when he is unable to carry it out effectively, he
+No more can you train fire to burn downwards.           is a failure; nay, success or failure in this is what
+Nothing in fact, if the law of its being is to          makes the difference between a good constitu-
+behave in one way, can be habituated to behave          tion and a bad.
+in another. The moral virtues, then, are produced           Again, the creation and the destruction of any
+in us neither by Nature nor against Nature. Nature,     virtue are effected by identical causes and iden-
+indeed, prepares in us the ground for their             tical means; and this may be said, too, of every
+reception, but their complete formation is the          art. It is as a result of playing the harp that
+product of habit.                                       harpers become good or bad in their art. The
+    Consider again these powers or faculties with       same is true of builders and all other craftsmen.
+which Nature endows us. We acquire the ability          Men will become good builders as a result of
+to use them before we do use them. The senses           building well, and bad builders as a result of
+provide us with a good illustration of this truth.      building badly. Otherwise what would be the
+We have not acquired the sense of sight from            use of having anyone to teach a trade? Craftsmen
+repeated acts of seeing, or the sense of hearing        would all be born either good or bad. Now this
+434 Aristotle
+
+holds also of the virtues. It is in the course of our   and considerations of what is to our advantage
+dealings with our fellow-men that we become             have no fixity about them any more than matters
+just or unjust. It is our behaviour in a crisis and     affecting our health. And if this be true of moral
+our habitual reactions to danger that make us           philosophy as a whole, it is still more true that
+brave or cowardly, as it may be. So with our            the discussion of particular problems in ethics
+desires and passions. Some men are made                 admits of no exactitude. For they do not fall
+temperate and gentle, others profligate and             under any science or professional tradition, but
+passionate, the former by conducting them-              those who are following some line of conduct
+selves in one way, the latter by conducting them-       are forced in every collocation of circumstances
+selves in another, in situations in which their         to think out for themselves what is suited to
+feelings are involved. We may sum it all up in the      these circumstances, just as doctors and naviga-
+generalization, ‘Like activities produce like           tors have to do in their different métiers. We can
+dispositions.’ This makes it our duty to see that       do no more than give our arguments, inexact as
+our activities have the right character, since the      they necessarily are, such support as is available.
+differences of quality in them are repeated in the          Let us begin with the following observation.
+dispositions that follow in their train. So it is a     It is in the nature of moral qualities that they can
+matter of real importance whether our early             be destroyed by deficiency on the one hand and
+education confirms us in one set of habits or           excess on the other. We can see this in the
+another. It would be nearer the truth to say that       instances of bodily health and strength.2 Physical
+it makes a very great difference indeed, in fact all    strength is destroyed by too much and also by
+the difference in the world.                            too little exercise. Similarly health is ruined by
+                                                        eating and drinking either too much or too
+                                                        little, while it is produced, increased and
+Chapter II
+                                                        preserved by taking the right quantity of drink
+Since the branch of philosophy on which we are          and victuals. Well, it is the same with temper-
+at present engaged differs from the others in not       ance, courage, and the other virtues. The man
+being a subject of merely intellectual interest—I       who shuns and fears everything and can stand
+mean we are not concerned to know what good-            up to nothing becomes a coward. The man who
+ness essentially is, but how we are to become           is afraid of nothing at all, but marches up to
+good men, for this alone gives the study its prac-      every danger, becomes foolhardy. In the same
+tical value—we must apply our minds to the              way the man who indulges in every pleasure
+solution of the problems of conduct. For, as I          without refraining from a single one becomes
+remarked, it is our actions that determine our          incontinent. If, on the other hand, a man behaves
+dispositions.                                           like the Boor in comedy and turns his back on
+    Now that when we act we should do so                every pleasure, he will find his sensibilities
+according to the right principle, is common             becoming blunted. So also temperance and
+ground and I propose to take it as a basis, of          courage are destroyed both by excess and defi-
+discussion.1 But we must begin with the admis-          ciency, and they are kept alive by observance of
+sion that any theory of conduct must be content         the mean.
+with an outline without much precision in                   Let us go back to our statement that the
+details. We noted this when I said at the begin-        virtues are produced and fostered as a result, and
+ning of our discussion of this part of our subject      by the agency, of actions of the same quality as
+that the measure of exactness of statement in any       effect their destruction. It is also true that after
+field of study must be determined by the nature         the virtues have been formed they find expres-
+of the matter studied. Now matters of conduct           sion in actions of that kind. We may see this in a
+                                                                            The nature of moral virtue 435
+
+concrete instance—bodily strength. It results          of pleasures and pains when they seek the wrong
+from taking plenty of nourishment and going in         ones among them, or seek them at the wrong
+for hard training, and it is the strong man who        time, or in the wrong manner, or in any of the
+is best fitted to cope with such conditions. So        wrong forms which such offences may take; and
+with the virtues. It is by refraining from pleas-      in seeking the wrong pleasures and pains they
+ures that we become temperate, and it is when          shun the right. This has led some thinkers to
+we have become temperate that we are most able         identify the moral virtues with conditions of the
+to abstain from pleasures. Or take courage. It is      soul in which passion is eliminated or reduced
+by habituating ourselves to make light of              to a minimum. But this is to make too absolute
+alarming situations and to confront them that          a statement—it needs to be qualified by adding
+we become brave, and it is when we have                that such a condition must be attained ‘in the
+become brave that we shall be most able to face        right manner and at the right time’ together
+an alarming situation.                                 with the other modifying circumstances.
+                                                          So far, then, we have got this result. Moral
+                                                       goodness is a quality disposing us to act in the
+Chapter III
+                                                       best way when we are dealing with pleasures
+We may use the pleasure (or pain) that accom-          and pains, while vice is one which leads us to
+panies the exercise of our dispositions as an          act in the worst way when we deal with them.
+index of how far they have established them-              The point may be brought out more clearly
+selves. A man is temperate who abstaining from         by some other considerations. There are three
+bodily pleasures finds this abstinence pleasant; if    kinds of things that determine our choice in all
+he finds it irksome, he is intemperate. Again, it is   our actions—the morally fine, the expedient,
+the man who encounters danger gladly, or at            the pleasant; and three that we shun—the base,
+least without painful sensations, who is brave;        the harmful, the painful. Now in his dealings
+the man who has these sensations is a coward. In       with all of these it is the good man who is most
+a word, moral virtue has to do with pains and          likely to go right, and the bad man who tends to
+pleasures. There are a number of reasons for           go wrong, and that most notably in the matter
+believing this. (1) Pleasure has a way of making       of pleasure. The sensation of pleasure is felt by
+us do what is disgraceful; pain deters us from         us in common with all animals, accompanying
+doing what is right and fine. Hence the impor-         everything we choose, for even the fine and the
+tance—I quote Plato—of having been brought             expedient have a pleasurable effect upon us. (6)
+up to find pleasure and pain in the right things.      The capacity for experiencing pleasure has
+True education is just such a training. (2) The        grown in us from infancy as part of our general
+virtues operate with actions and emotions, each        development, and human life, being dyed in
+of which is accompanied by pleasure or pain.           grain with it, receives therefrom a colour hard
+This is only another way of saying that virtue has     to scrape off. (7) Pleasure and pain are also the
+to do with pleasures and pains. (3) Pain is used       standards by which with greater or less strict-
+as an instrument of punishment. For in her             ness we regulate our considered actions. Since to
+remedies Nature works by opposites, and pain           feel pleasure and pain rightly or wrongly is an
+can be remedial. (4) When any disposition finds        important factor in human behaviour, it follows
+its complete expression it is, as we noted, in         that we are primarily concerned with these
+dealing with just those things by which it is its      sensations. (8) Heraclitus says it is hard to fight
+nature to be made better or worse, and which           against anger, but it is harder still to fight against
+constitute the sphere of its operations. Now           pleasure. Yet to grapple with the harder has
+when men become bad it is under the influence          always been the business, as of art, so of
+436 Aristotle
+
+goodness, success in a task being proportionate           acquisition of virtue, on the other hand, knowl-
+to its difficulty. This gives us another reason for       edge is of little or no value, but the other
+believing that morality and statesmanship must            requirements are of immense, of sovran, impor-
+concentrate on pleasures and pains, seeing it is          tance, since it is the repeated performance of
+the man who deals rightly with them who will              just and temperate actions that produces virtue.
+be good, and the man who deals with them                  Actions, to be sure, are called just and temperate
+wrongly who will be bad.                                  when they are such as a just or temperate man
+   Here, then, are our conclusions. (a) Virtue is         would do. But the doer is just or temperate not
+concerned with pains and pleasures. (b) The               because he does such things but when he does
+actions which produce virtue are identical in             them in the way of just and temperate persons.
+character with those which increase it. (c) These         It is therefore quite fair to say that a man becomes
+actions differently performed destroy it. (d) The         just by the performance of just, and temperate
+actions which produced it are identical with              by the performance of temperate, actions; nor is
+those in which it finds expression.                       there the smallest likelihood of a man’s becoming
+                                                          good by any other course of conduct. It is not,
+                                                          however, a popular line to take, most men
+Chapter IV
+                                                          preferring theory to practice under the impres-
+A difficulty, however, may be raised as to what           sion that arguing about morals proves them to
+we mean when we say that we must perform                  be philosophers, and that in this way they will
+just actions if we are to become just, and                turn out to be fine characters. Herein they
+temperate actions if we are to be temperate. It           resemble invalids, who listen carefully to all the
+may be argued that, if I do what is just and              doctor says but do not carry out a single one of
+temperate, I am just and temperate already,               his orders. The bodies of such people will never
+exactly as, if I spell words or play music correctly,     respond to treatment—nor will the souls of
+I must already be literate or musical. This I take        such ‘philosophers.’
+to be a false analogy, even in the arts. It is possible
+to spell a word right by accident or because
+                                                          Chapter V
+somebody tips you the answer. But you will be a
+scholar only if your spelling is done as a scholar        We now come to the formal definition of virtue.
+does it, that is thanks to the scholarship in your        Note first, however, that the human soul is
+own mind. Nor will the suggested analogy with             conditioned in three ways. It may have (1) feel-
+the arts bear scrutiny. A work of art is good or          ings, (2) capacities, (3) dispositions; so virtue
+bad in itself—let it possess a certain quality, and       must be one of these three. By ‘feelings’ I mean
+that is all we ask of it. But virtuous actions are        a desire, anger, fear, daring, envy, gratification,
+not done in a virtuous—a just or temperate—               friendliness, hatred, longing, jealousy, pity and
+way merely because they have the appropriate              in general all states of mind that are attended by
+quality. The doer must be in a certain frame of           pleasure or pain. By ‘capacities’ I mean those
+mind when he does them. Three conditions are              faculties in virtue of which we may be described
+involved. (1) The agent must act in full                  as capable of the feelings in question—anger, for
+consciousness of what he is doing. (2) He must            instance, or pain, or pity. By ‘dispositions’ I
+‘will’ his action, and will it for its own sake. (3)      mean states of mind in virtue of which we are
+The act must proceed from a fixed and unchange-           well or ill disposed in respect of the feelings
+able disposition. Now these requirements, if we           concerned. We have, for instance, a bad disposi-
+expect mere knowledge, are not counted among              tion where angry feelings are concerned if we
+the necessary qualifications of an artist. For the        are disposed to become excessively or
+                                                                             The nature of moral virtue 437
+
+insufficiently angry, and a good disposition in         Our proposition, then, seems to be true, and it
+this respect if we consistently feel the due            enables us to say that virtue in a man will be the
+amount of anger, which comes between these              disposition which (a) makes him a good man,
+extremes. So with the other feelings.                   (b) enables him to perform his function well. We
+   Now, neither the virtues nor the vices are           have already touched on this point, but more
+feelings. We are not spoken of as good or bad in        light will be thrown upon it if we consider what
+respect of our feelings but of our virtues and          is the specific nature of virtue.
+vices. Neither are we praised or blamed for the             In anything continuous and divisible it is
+way we feel. A man is not praised for being             possible to take the half, or more than the half,
+frightened or angry, nor is he blamed just for          or less than the half. Now these parts may be
+being angry; it is for being angry in a particular      larger, smaller and equal either in relation to the
+way. But we are praised and blamed for our              thing divided or in relation to us. The equal part
+virtues and vices. Again, feeling angry or fright-      may be described as a mean between too much
+ened is something we can’t help, but our virtues        and too little. By the mean of the thing I under-
+are in a manner expressions of our will; at any         stand a point equidistant from the extremes; and
+rate there is an element of will in their forma-        this is one and the same for everybody. Let me
+tion. Finally, we are said to be ‘moved’ when our       give an illustration. Ten, let us say, is ‘many’ and
+feelings are affected, but when it is a question of     two is ‘few’ of something. We get the mean of
+moral goodness or badness we are not said to be         the thing if we take six;3 that is, six exceeds and
+‘moved’ but to be ‘disposed’ in a particular way.       is exceeded by an equal number. This is the rule
+A similar line of reasoning will prove that the         which gives us the arithmetical mean. But such
+virtues and vices are not capacities either. We are     a method will not give us the mean in relation to
+not spoken of as good or bad, nor are we praised        ourselves. Let ten pounds of food be a large, and
+or blamed, merely because we are capable of             two pounds a small, allowance for an athlete. It
+feeling. Again, what capacities we have, we have        does not follow that the trainer will prescribe six
+by nature; but it is not nature that makes us good      pounds. That might be a large or it might be a
+or bad. . . . So, if the virtues are neither feelings   small allowance for the particular athlete who is
+nor capacities, it remains that they must be            to get it. It would be little for Milo but a lot for
+dispositions . . . .                                    a man who has just begun his training.4 It is the
+                                                        same in all walks of life. The man who knows his
+                                                        business avoids both too much and too little. It
+Chapter VI
+                                                        is the mean he seeks and adopts—not the mean
+It is not, however, enough to give this account of      of the thing but the relative mean.
+the genus of virtue—that it is a disposition; we            Every form, then, of applied knowledge,
+must describe its species. Let us begin, then, with     when it performs its function well, looks to the
+this proposition. Excellence of whatever kind           mean and works to the standard set by that. It is
+affects that of which it is the excellence in two       because people feel this that they apply the cliché,
+ways. (1) It produces a good state in it. (2) It        ‘You couldn’t add anything to it or take anything
+enables it to perform its function well. Take           from it’ to an artistic masterpiece, the implica-
+eyesight. The goodness of your eye is not only          tion being that too much and too little alike
+that which makes your eye good, it is also that         destroy perfection, while the mean preserves it.
+which makes it function well. Or take the case of       Now if this be so, and if it be true, as we say, that
+a horse. The goodness of a horse makes him a            good craftsmen work to the standard of the
+good horse, but it also makes him good at               mean, then, since goodness like nature is more
+running, carrying a rider and facing the enemy.         exact and of a higher character than any art, it
+438 Aristotle
+
+follows that goodness is the quality that hits the      measure in feelings and actions, virtue discovers
+mean. By ‘goodness’ I mean goodness of moral            the mean and deliberately chooses it. Thus,
+character, since it is moral goodness that deals        looked at from the point of view of its essence as
+with feelings and actions, and it is in them that       embodied in its definition, virtue no doubt is a
+we find excess, deficiency and a mean. It is            mean; judged by the standard of what is right
+possible, for example, to experience fear, bold-        and best, it is an extreme.
+ness, desire, anger, pity, and pleasures and pains         But choice of a mean is not possible in every
+generally, too much or too little or to the right       action or every feeling. The very names of some
+amount. If we feel them too much or too little,         have an immediate connotation of evil. Such are
+we are wrong. But to have these feelings at the         malice, shamelessness, envy among feelings, and
+right times on the right occasions towards              among actions adultery, theft, murder. All these
+the right people for the right motive and in the        and more like them have a bad name as being
+right way is to have them in the right measure,         evil in themselves; it is not merely the excess or
+that is somewhere between the extremes; and             deficiency of them that we censure. In their case,
+this is what characterizes goodness. The same           then, it is impossible to act rightly; whatever we
+may be said of the mean and extremes in actions.        do is wrong. Nor do circumstances make any
+Now it is in the field of actions and feelings that     difference in the rightness or wrongness of
+goodness operates; in them we find excess, defi-        them. When a man commits adultery there is no
+ciency and, between them, the mean, the first           point in asking whether it is with the right
+two being wrong, the mean right and praised as          woman or at the right time or in the right way,
+such.5 Goodness, then, is a mean condition in           for to do anything like that is simply wrong. It
+the sense that it aims at and hits the mean.            would amount to claiming that there is a mean
+    Consider, too, that it is possible to go wrong      and excess and defect in unjust or cowardly or
+in more ways than one. (In Pythagorean termi-           intemperate actions. If such a thing were
+nology evil is a form of the Unlimited, good of         possible, we should find ourselves with a mean
+the Limited.) But there is only one way of being        quantity of excess, a mean of deficiency, an
+right. That is why going wrong is easy, and             excess of excess and a deficiency of deficiency.
+going right difficult; it is easy to miss the bull’s-   But just as in temperance and justice there can be
+eye and difficult to hit it. Here, then, is another     no mean or excess or deficiency, because the
+explanation of why the too much and the too             mean in a sense is an extreme, so there can be
+little are connected with evil and the mean with        no mean or excess or deficiency in those
+good. As the poet says,                                 vicious actions—however done, they are wrong.
+                                                        Putting the matter into general language, we
+   Goodness is one, evil is multiform.                  may say that there is no mean in the extremes,
+                                                        and no extreme in the mean, to be observed by
+We may now define virtue as a disposition of the        anybody.
+soul in which, when it has to choose among
+actions and feelings, it observes the mean rela-
+                                                        Chapter VII
+tive to us, this being determined by such a rule
+or principle as would take shape in the mind of         But a generalization of this kind is not enough;
+a man of sense or practical wisdom. We call it a        we must show that our definition fits particular
+mean condition as lying between two forms of            cases. When we are discussing actions particular
+badness, one being excess and the other defi-           statements come nearer the heart of the matter,
+ciency; and also for this reason, that, whereas         though general statements cover a wider field.
+badness either falls short of or exceeds the right      The reason is that human behaviour consists in
+                                                                                 The nature of moral virtue 439
+
+the performance of particular acts, and our              point is never easy. It is not everybody, for instance,
+theories must be brought into harmony with               who can find the centre of a circle—that calls for
+them.                                                    a geometrician. Thus, too, it is easy to fly into a
+    You see here a diagram of the virtues. Let us        passion—anybody can do that—but to be angry
+take our particular instances from that.                 with the right person and to the right extent and
+    In the section confined to the feelings              at the right time and with the right object and in
+inspired by danger you will observe that the             the right way—that is not easy, and it is not
+mean state is ‘courage.’ Of those who go to              everyone who can do it. This is equally true of
+extremes in one direction or the other the man           giving or spending money. Hence we infer that to
+who shows an excess of fearlessness has no               do these things properly is rare, laudable and fine.
+name to describe him, the man who exceeds in                 In view of this we shall find it useful when
+confidence or daring is called ‘rash’ or ‘fool-          aiming at the mean to observe these rules (1)
+hardy,’ the man who shows an excess of fear and          Keep away from that extreme which is the more opposed to the
+a deficiency of confidence is called a ‘coward.’ In      mean. It is Calypso’s advice:
+the pleasures and pains—though not all pleas-
+ures and pains, especially pains—the virtue                 ‘Swing round the ship clear of this surf and
+which observes the mean is ‘temperance,’ the                surge.’
+excess is the vice of ‘intemperance.’ Persons
+defective in the power to enjoy pleasures are a          For one of the extremes is always a more
+somewhat rare class, and so have not had a name          dangerous error than the other; and—since it is
+assigned to them: suppose we call them ‘unim-            hard to hit the bull’s-eye—we must take the next
+pressionable.’ Coming to the giving and                  best course and choose the least of the evils. And
+acquiring of money, we find that the mean is             it will be easiest for us to do this if we follow the
+‘liberality,’ the excess ‘prodigality,’ the deficiency   rule I have suggested. (2) Note the errors into which we
+‘meanness.’ But here we meet a complication.             personally are most liable to fall. (Each of us has his
+The prodigal man and the mean man exceed                 natural bias in one direction or another.) We shall
+and fall short in opposite ways. The prodigal            find out what ours are by noting what gives us
+exceeds in giving and falls short in getting             pleasure and pain. After that we must drag
+money, whereas the mean man exceeds in                   ourselves in the opposite direction. For our best
+getting and falls short in giving it away. Of            way of reaching the middle is by giving a wide
+course this is but a summary account of the              berth to our darling sin. It is the method used by
+matter—a bare outline. But it meets our imme-            a carpenter when he is straightening a warped
+diate requirements. Later on these types of char-        board. (3) Always be particularly on your guard against
+acter will be more accurately delineated.                pleasure and pleasant things. When Pleasure is at the bar
+    • • •                                                the jury is not impartial. So it will be best for us if
+                                                         we feel towards her as the Trojan elders felt
+                                                         towards Helen, and regularly apply their words to
+Chapter IX
+                                                         her. If we are for packing her off, as they were
+I have said enough to show that moral excellence         with Helen, we shall be the less likely to go wrong.
+is a mean, and I have shown in what sense it is so.          To sum up. These are the rules by observation
+It is, namely, a mean between two forms of               of which we have the best chance of hitting the
+badness, one of excess and the other of defect, and      mean. But of course difficulties spring up, espe-
+is so described because it aims at hitting the mean      cially when we are confronted with an excep-
+point in feelings and in actions. This makes virtue      tional case. For example, it is not easy to say
+hard of achievement, because finding the middle          precisely what is the right way to be angry and
+440 Aristotle
+
+with whom and on what grounds and for how              can be resolved and we are left with certain of
+long. In fact we are inconsistent on this point,       these beliefs—those, namely, which have stood
+sometimes praising people who are deficient in         our test—we shall have reached as satisfactory a
+the capacity for anger and calling them ‘gentle,’      conclusion as is possible in cases of the kind. In
+sometimes praising the choleric and calling them       the present case the general beliefs are these. (a)
+‘stout fellows.’ To be sure we are not hard on a       Continence and endurance are good and
+man who goes off the straight path in the direc-       commendable qualities, whereas their oppo-
+tion of too much or too little, if he goes off only    sites, incontinence and softness, are bad and
+a little way. We reserve our censure for the man       blameworthy. (b) The continent man has the
+who swerves widely from the course, because            characteristic of sticking by the conclusions he
+then we are bound to notice it. Yet it is not easy     has been led to draw, whereas the incontinent
+to find a formula by which we may determine            man tends to give his up. (c) The incontinent or
+how far and up to what point a man may go              morally weak man does wrong, knowing it to be
+wrong before he incurs blame. But this difficulty      wrong, because he cannot control his passions,
+of definition is inherent in every object of percep-   whereas the continent man, knowing that his
+tion; such questions of degree are bound up with       lusts are evil, refuses to follow them, because his
+the circumstances of the individual case, where        principles forbid it. (d) The temperate man is
+our only criterion is the perception.                  always continent and enduring, though whether
+    So much, then, has become clear. In all our        the continent man is always temperate is an
+conduct it is the mean state that is to be praised.    open question, some asserting and others
+But one should lean sometimes in the direction         denying that it is so, the former distinguishing
+of the more, sometimes in that of the less,            between the intemperate and the incontinent
+because that is the readiest way of attaining to       man, the latter confounding all distinction
+goodness and the mean.                                 between them. (e) It is sometimes maintained
+                                                       that it is impossible for the prudent man to be
+                                                       incontinent, sometimes that some prudent and
+From Nicomachean Ethics, Book Seven                    clever men are guilty of incontinence. (f) Some
+                                                       men are described as ‘incontinent’ in their anger
+Chapter I
+                                                       and in their pursuit of honour or gain.—Such
+•   • •                                                are the views that have found expression.
+   I cannot, however, omit here some account of
+incontinence and softness of luxuriousness, as
+well as of continence and fortitude or endur-
+                                                       Chapter II
+ance. We should not think of either of these           Now for the difficulties that may be raised. To
+dispositions—the good and the bad—as iden-             take the third (c) of our opinions first, how can
+tical with virtue and vice respectively. Neither       a man be said to show incontinence, if he has a
+must we think of them as different in kind.            correct apprehension of the fact that he is acting
+   The true method for us to follow, here and          wrongly? Some thinkers maintain that he
+elsewhere, is to set forth the views which are         cannot, if he has full knowledge that the action
+held on the subject and then, after discussing         is wrong. It is, as Socrates thought, hard to
+the problems involved in these, to indicate what       believe that, if a man really knows, and has this
+truth lies in all or—if that proves impossible—        knowledge in his soul, it should be mastered by
+in the greatest in number and importance of the        something else which, in Plato’s phrase, ‘hauls it
+beliefs generally entertained about these states       about like a slave.’ Socrates to be sure was out
+of mind. I am convinced that, if the difficulties      and out opposed to the view we are now
+                                                                           The nature of moral virtue 441
+
+criticizing, on the ground that there is no such       nor is it implied merely that he is concerned
+thing as this moral weakness we call ‘inconti-         with those things,6 but that he is concerned
+nence.’ For, said he, nobody acts in opposition to     with them in a certain way. The intemperate man
+what is best—and the best is the goal of all our       deliberately chooses to follow in the train of his
+endeavours—if he has a clear idea of what he is        lusts from a belief that he ought always to pursue
+doing. He can only go wrong out of ignorance.          the pleasure of the moment. The incontinent
+This reasoning, however, is in glaring contrast        man pursues it too, but has no such belief.
+with notorious facts; and that obliges us to look          (1) The theory that when men behave incon-
+more closely into the frame of mind on which it        tinently they are not acting against knowledge
+is based. Conceding that ignorance is the cause        but against true opinion contributes nothing of
+of moral weakness, let us consider what form of        value to our discussion. It never occurs to some
+ignorance. For it is clear that the man who            people to question the truth of their opinions;
+succumbs to temptation is not ignorant of the          indeed, they do not regard them as opinions but
+wrongness of his action before he is involved in       as ascertained truths. Consequently, if we base
+the temptation.                                        an argument on lack of conviction in some men,
+   • • •                                               and say that this is the reason why those who
+                                                       shall be found to act against their conception of
+                                                       what is right must be said to have an opinion
+Chapter III
+                                                       rather than knowledge, the difference between
+We have then to consider these points. (1) When        opinion and knowledge will vanish. For some
+men show moral weakness (or incontinence) do           men are just as sure of the truth of their opin-
+they or do they not know the wrongness of their        ions as are others of what they know. Heraclitus
+actions? If they know it, in what sense do they        alone proves that. And if we say a man ‘knows’
+know it? (2) What are we to posit as the objects       something, we may be using the word in one of
+to which continence and incontinence are               two senses. We may mean that he has the know-
+directed? I mean, are they concerned with every        ledge and acts upon it, or that he has the know-
+kind of pleasures and pains or only with a special     ledge but makes no use of it. This being so, it
+division of them? (3) Is continence the same or        will make a difference whether a man who is
+not the same as endurance? (4) Other questions         doing wrong knows that what he is doing is
+germane to the subject.                                wrong but has this knowledge only in a latent or
+    We may begin our enquiry by asking whether         subconscious form, or whether, having the
+it is the objects or the dispositions of the conti-    knowledge, he has it in an active form. If the
+nent and incontinent man that enter into the           latter, his doing wrong may well surprise us; but
+definition of these types as their differentiating     it will not, if his knowledge is not fully
+qualities. Put it this way. Is a man to be described   realized.
+as incontinent merely because he cannot restrain           (2) When logical reasoning is applied to
+his desires for certain things, or is it because he    actions, the premises will assume two forms.7
+has a certain disposition, or do both causes           Now a man who is acting against knowledge
+operate? Here is a second question. Can incon-         may very well know both premises, yet put into
+tinence and continence be exercised towards            practice only his knowledge of the universal or
+everything? Yes or no? One is aware that when a        imajor premise and not his knowledge of the
+man is described as “incontinent” without              particular or minor premise. Yet it is this minor
+further qualification it is not implied that he is     premise that is decisive for action, because acts
+incontinent in everything, but only in those           are particulars. We have also to note that in
+things in which a man can show intemperance;           reasoning about actions there are two universals
+442 Aristotle
+
+involved. One is predicated of the man, the other    scientist. This involves what we call the practical
+of the thing. For example, he may know, and be       syllogism. In this the major premise is an
+in a position to act on the knowledge, that (a)      opinion, while the minor premise is a statement
+dry food is good for all men,8 and (b) he is         about particulars, the objects of sense-
+himself a man. But he may not know, or may not       perception. When the two premises are
+be prepared to act on his knowledge, whether         combined to form the syllogism, we have a
+the particular food before him is that sort of       result analogous to what we have in pure ratioci-
+food. It will be found then that there is an         nation. As in the latter the mind is forced to
+immeasurable distance between these two ways         affirm the conclusion, so in the practical syllo-
+of knowing, so that we cannot think it odd that      gism we are forced straight-way to do it. Suppose
+the incontinent man should know in one and           you have these premises: ‘All sweet things ought
+not the other. The truly strange thing would be if   to be tasted,’ and ‘That thing is sweet.’9 When
+he did know in the other.                            these premises are brought into relation you are
+   (3) Moreover, it is possible for men to have      bound, if nothing prevents you and you can do
+knowledge—I use the word without preju-              it, to go and taste the thing. Now there may be
+dice—in another way besides those described.         simultaneously present in the mind two
+We have noted the distinction between actual         universal judgments, one saying, ‘You must not
+and potential knowledge. But even in the second      taste,’ the other, ‘Every sweet thing is pleasant.’
+case, which is a condition of having knowledge       When this happens, and then the minor premise,
+without allowing it to operate, we can see a         ‘That thing is sweet,’ presents itself,10 while at
+distinction. For there is a sense in which a man     the same time desire is present, then in spite of
+can both have and not have knowledge—he              the fact that the first universal bids you avoid the
+might, for instance, be asleep or out of his mind,   thing in question, the desire leads you to it.11 It
+or drunk. And what better are people when their      is therefore, we conclude, to some extent an
+feelings are too much for them? Doesn’t every-       intellectual principle or opinion which influ-
+body know that rage and lust and some other          ences the incontinent man to behave as he
+passions actually produce physiological changes,     does—an opinion not in itself contradictory of
+in some cases even insanity? It is evident then      the right principle but only opposed to it by an
+that, if we must say that the incontinent have       accidental conjunction of circumstances.12 This
+knowledge, it can only be like that possessed by     is the reason why the lower animals are not
+the persons, to whom I have referred. The moral      incontinent. They are incapable of understanding
+weakling may say he has knowledge, but that is       a generalization; all they have is mental images
+no proof that he has it. People suffering from the   and the memory of particular objects.
+disabilities I have mentioned will repeat to you         We may ask how the ignorance of the incon-
+the proof of some problem in geometry or a           tinent man is overcome and knowledge restored
+passage from Empedocles. In the same way             to him. The explanation which accounts for the
+people who have begun the study of a subject         so-called knowledge of the drunk or sleeping
+reel off a string of propositions which they do      man will serve in this case also; it applies to
+not as yet understand. For knowledge must be         more than continence. But on this point it is for
+worked into the living texture of the mind, and      the physiologist to instruct us.
+this takes time. So we should think of incon-            There are then these points to be considered.
+tinent men as like actors—mouthpieces of the         (a) The last—that is the minor—premise, that
+sentiments of other people.                          which can influence action, is an opinion which
+   (4) It is also possible to study the cause of     is related to some object of sense-perception. (b)
+incontinence from the point of view of the           This opinion the incontinent man, when he
+                                                                         The nature of moral virtue 443
+
+abandons himself to his emotions, does not           hold in a laugh who bursts out at last into a sten-
+possess or possesses only in such a way as does      torian guffaw.13 But it does surprise us to see a
+not entitle it to be regarded as knowledge, but      man give way to pleasures and pains which
+only enables him to quote its tenor as a drunk       most of us are capable of withstanding. It is
+man quotes Empedocles. (c) The ultimate              different of course if his weakness is due to
+term—that is the particular proposition which        disease or some hereditary taint, such as the
+forms the minor premise—is not a universal           congenital impotence of the Scythian royal
+and is not regarded as an object of knowledge in     family, or the less hardy constitution of the
+the way that a universal judgment is. Since these    female, as compared with the male, sex.
+three statements are evidently true, it does             It is a popular notion that a love of amuse-
+appear that our conclusions must be that which       ment is a sign of intemperance. In reality it is a
+Socrates directed his questions to prove. For the    sign of softness. For amusement is a way of
+knowledge which accompanies the collapse of          enjoying one’s leisure by relaxation.You may say,
+moral resistance is not what is thought to be        then, that the devotee of amusement indulges
+knowledge properly speaking. Neither is it true      too much in relaxation. But relaxation is not
+knowledge that is dragged about by passion, but      pleasure, and it is the man who is insatiable in
+only such as can be supplied by the senses . . . .   his pursuit of pleasure that is intemperate.
+                                                         Incontinence is found in two forms, which
+                                                     we may call (a) impulsiveness and (b) weakness.
+Chapter VII
+                                                     The weak do form a resolution, but they are
+•   • •                                              prevented by their sensibilities from keeping to
+   Opposed to incontinence is continence,            it. The impulsive or headstrong are carried away
+opposed to softness is hardness or endurance.        by their feelings, because they have not thought
+The difference between endurance and conti-          about the matter that excites them at all. If they
+nence is this. Endurance consists in holding out,    had, their behaviour might be different. For
+continence in preserving mastery. They are two       some people can hold out against strong
+very different things, as different as the avoid-    emotion, whether painful or pleasurable, if they
+ance of defeat from victory. We are bound there-     feel or see it coming and have time to rouse
+fore to prefer continence. A man who fails to        themselves—by which I mean their reasoning
+withstand such pains as most people can and do       faculty—beforehand, just as a man can’t tickle
+support is soft or luxury-loving; for luxury is a    you if you have tickled him first. It is high-
+kind of softness. He is the sort of man to let his   strung and excitable people who are most prone
+cloak trail on the ground rather than have the       to the impulsive form of incontinence. The
+bother of lifting it, or to affect the languor of    high-strung are too hasty, and the excitable too
+sickness without reflecting that an assumed          vehement, to wait for reason, since they instinc-
+distress is a real distress. It is much the same     tively follow the suggestions of their own
+with continence and incontinence. If a man           imaginations.
+gives way to violent or excessive pleasure or
+pain, that can surprise nobody. Indeed, he may
+                                                     Chapter VIII
+be forgiven for succumbing, if he does not do it
+without a struggle. One thinks of Philoctetes        It is different with the intemperate man, who, as
+when he is bitten by the viper in the play of        I said, does not repent or feel remorse, since he
+Theodectes, or of Cercyon in the Alope of            abides by his choice. The incontinent man on the
+Carcinus. Or—to take an example of resistance        other hand is always capable of remorse.
+to pleasure—think of a man trying his best to        Consequently the objection we mentioned—that
+444 Aristotle
+
+the intemperate man might be cured—is refuted          prove and which are his starting-point. In moral
+by the fact. It is just the intemperate man who is     as in mathematical science the knowledge of its
+incurable; the incontinent man is not. Vice such       first principles is not reached by a process of
+as is shown by the intemperate man is like dropsy      reasoning. The good man has it in virtue of his
+or tuberculosis, whereas incontinence is like          goodness, whether innate or acquired by the
+epilepsy. For vice is a chronic, incontinence an       habit of thinking rightly about the first prin-
+intermittent, ill. More than that, vice and incon-     ciple. Such a man is temperate, while the man
+tinence are totally different in kind. The vicious     who does not know the primary assumptions of
+man does not realize that he is vicious, but the       all ethics is intemperate. But there is another
+incontinent man is aware of his incontinence.          type—the man who is driven from his
+    With regard to the incontinent themselves,         considered course of action by a flood of
+the impulsive among them are morally superior          emotion contrary to right principle. He is
+to the weak, who are in possession of the right        prevented by overmastering passion from acting
+principle but do not hold fast to it. These are        in accordance with that principle, yet not so
+worse, because they yield to a feebler impulse         completely as to make him the kind of man to
+and after deliberation. Such men resemble              believe that it is right to abandon himself to
+dipsomaniacs, who get drunk quickly and on a           such pleasures as he seeks. Such is the inconti-
+small amount of wine or less than most people.         nent man. He is morally superior to the intem-
+It is obvious in fact that incontinence is not a       perate man and is not to be called bad without
+vice, at least in the strict sense of that word. For   qualification, for he preserves his noblest
+vice is deliberate, and incontinence is not. Yet       element—that conviction on which all morality
+there is a similarity in the actions which result      is founded. Different and at the opposite pole
+from them. Something of the kind is noted in           from him is the man who having made his
+the epigram of Demodocus upon the citizens of          choice holds fast by that, unshaken by the storms
+Miletus.                                               of passion. These considerations prove that
+                                                       continence is a good, and incontinence a bad,
+   Milesians are no fools, you’d swear,                quality.
+   And yet they act as if they were.
+
+To parody Demodocus: The incontinent are not           Notes
+bad, but they act badly.                                1 There will be an opportunity later of considering
+   To resume. While pursuing bodily pleasures             what is meant by this formula, in particular
+of an excessive kind and contrary to right prin-          what is meant by ‘the right principle’ and how,
+ciple, the incontinent man is so constituted that         in its ethical aspect, it is related to the moral
+he pursues them without the conviction that he            virtues.
+is right, whereas the intemperate man has this          2 If we are to illustrate the material, it must be by
+                                                          concrete images.
+conviction, which he has come to feel because it
+                                                        3 6–2 = 10–16.
+is now second nature with him to seek these
+                                                        4 What applies to gymnastics applies also to running
+gratifications. Hence the incontinent man can
+                                                          and wrestling.
+readily be persuaded to change his mode of              5 Being right or successful and being praised are
+behaviour—but not the other. For virtue                   both indicative of excellence.
+preserves, while vice destroys, that intuitive          6 For if that were so, incontinence would be iden-
+perception of the true end of life which is the           tical with intemperance.
+starting point in conduct. We may compare the           7 In other words the application of a ‘practical syllo-
+propositions which the geometer sets out to               gism’ involves two syllogisms.
+                                                                             The nature of moral virtue 445
+
+ 8 We may even know that such and such a food is        11 This is because only desire can set the various
+   dry.                                                    limbs in motion—the body corresponding to the
+ 9 Here the minor premise is a particular instance of      potential major premise, and the desire to the
+   the class of things about which the major premise       active minor.
+   makes a general statement.                           12 It is the desire, not the opinion, that is the true
+10 Remember that it is the minor premise that intro-       opposite.
+   duces the possibility of action.                     13 This actually happened to Xenophantus.
+

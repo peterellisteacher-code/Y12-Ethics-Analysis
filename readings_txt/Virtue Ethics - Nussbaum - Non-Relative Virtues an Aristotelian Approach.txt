@@ -1,0 +1,675 @@
+Chapter 38
+
+
+
+
+    Martha Nussbaum
+
+    NON-RELATIVE VIRTUES: AN ARISTOTELIAN
+    APPROACH
+
+
+
+    A
+    “    LL greeks used to go around armed with
+         swords.”
+           Thucydides, History of the Peloponnesian War
+                                                          remoteness results from the utilitarian’s
+                                                          interest in arriving at a universal calculus of
+                                                          satisfactions or from a Kantian concern with
+                                                          universal principles of broad generality, in
+    “The customs of former times might be said            which the names of particular contexts, his-
+    to be too simple and barbaric. For Greeks             tories, and persons do not occur, remoteness is
+    used to go around armed with swords; and              now being seen by an increasing number of
+    they used to buy wives from one another, and          moral philosophers as a defect in an approach to
+    there are surely other ancient customs that           ethical questions. In the search for an alternative
+    are extremely stupid. (For example, in Cyme           approach, the concept of virtue is playing a
+    there is a law about homicide, that if a man          prominent role. So, too, is the work of Aristotle,
+    prosecuting a charge can produce a certain            the greatest defender of an ethical approach
+    number of witnesses from among his own                based on the concept of virtue. For Aristotle’s
+    relations, the defendant will automatically be        work seems, appealingly, to combine rigor with
+    convicted of murder.) In general, all human           concreteness, theoretical power with sensitivity
+    beings seek not the way of their ancestors,           to the actual circumstances of human life and
+    but the good.”                                        choice in all their multiplicity, variety, and
+                        Aristotle, Politics 1268a39 ff.   mutability.
+                                                             But on one central point there is a striking
+    “One may also observe in one’s travels to             divergence between Aristotle and contemporary
+    distant countries the feelings of recognition         virtue theory. To many current defenders of
+    and affiliation that link every human being to        an ethical approach based on the virtues, the
+    every other human being.”                             return to the virtues is connected with a turn
+           Aristotle, Nicomachean Ethics 1155a21–22       toward relativism—toward, that is, the view
+                                                          that the only appropriate criteria of ethical
+                                                          goodness are local ones, internal to the
+I
+                                                          traditions and practices of each local society
+The virtues are attracting increasing interest            or group that asks itself questions about the
+in contemporary philosophical debate. From                good. The rejection of general algorithms and
+many different sides one hears of a dissatisfac-          abstract rules in favor of an account of the
+tion with ethical theories that are remote                good life based on specific modes of virtuous
+from concrete human experience. Whether this              action is taken, by writers as otherwise diverse
+                                                        Non-relative virtues: an Aristotelian approach 447
+
+as Alasdair MacIntyre, Bernard Williams, and         from local traditions and practices, but rather
+Philippa Foot,1 to be connected with the             from features of humanness that lie beneath all
+abandonment of the project of rationally             local traditions and are there to be seen whether
+justifying a single norm of flourishing life for     or not they are in fact recognized in local tradi-
+and to all human beings and with a reliance,         tions. And one of Aristotle’s most obvious
+instead, on norms that are local both in origin      concerns is the criticism of existing moral tradi-
+and in application.                                  tions, in his own city and in others, as unjust or
+   The positions of all of these writers, where      repressive, or in other ways incompatible with
+relativism is concerned, are complex; none           human flourishing. He uses his account of the
+unequivocally endorses a relativist view. But all    virtues as a basis for this criticism of local tradi-
+connect virtue ethics with a relativist denial       tions: prominently, for example, in Book II of
+that ethics, correctly understood, offers any        the Politics, where he frequently argues against
+trans-cultural norms, justifiable with reference     existing social forms by pointing to ways in
+to reasons of universal human validity, with         which they neglect or hinder the development
+reference to which we may appropriately              of some important human virtue.2 Aristotle
+criticize different local conceptions of the         evidently believes that there is no incompati-
+good. And all suggest that the insights we           bility between basing an ethical theory on the
+gain by pursuing ethical questions in the            virtues and defending the singleness and objec-
+Aristotelian virtue-based way lend support to        tivity of the human good. Indeed, he seems to
+relativism.                                          believe that these two aims are mutually
+   For this reason it is easy for those who          supportive.
+are interested in supporting the rational                Now the fact that Aristotle believes some-
+criticism of local traditions and in articulating    thing does not make it true. (Though I have
+an idea of ethical progress to feel that the         sometimes been accused of holding that posi-
+ethics of virtue can give them little help. If the   tion!) But it does, on the whole, make that
+position of women, as established by local           something a plausible candidate for the truth, one
+traditions in many parts of the world, is to be      deserving our most serious scrutiny. In this case,
+improved, if traditions of slave holding and         it would be odd indeed if he had connected two
+racial inequality, if religious intolerance, if      elements in ethical thought that are self-
+aggressive and warlike conceptions of manli-         evidently incompatible, or in favor of whose
+ness, if unequal norms of material distribution      connectedness and compatibility there is
+are to be criticized in the name of practical        nothing interesting to be said. The purpose of
+reason, this criticizing (one might easily           this paper is to establish that Aristotle does
+suppose) will have to be done from a Kantian or      indeed have an interesting way of connecting
+utilitarian viewpoint, not through the               the virtues with a search for ethical objectivity
+Aristotelian approach.                               and with the criticism of existing local norms, a
+   This is an odd result, where Aristotle is         way that deserves our serious consideration as
+concerned. For it is obvious that he was not only    we work on these questions. Having described
+the defender of an ethical theory based on the       the general shape of the Aristotelian approach,
+virtues, but also the defender of a single objec-    we can then begin to understand some of the
+tive account of the human good, or human             objections that might be brought against such a
+flourishing. This account is supposed to be          non-relative account of the virtues, and to
+objective in the sense that it is justifiable with   imagine how the Aristotelian could respond to
+reference to reasons that do not derive merely       those objections.
+448 Martha Nussbaum
+
+II                                                     and do not perfectly fit the behavior he is trying
+                                                       to describe.4 Of such modes of conduct he
+The relativist, looking at different societies, is     writes, “Most of these are nameless, but we
+impressed by the variety and the apparent non-         must try . . . to give them names in order to
+comparability in the lists of virtues she encoun-      make our account clear and easy to follow” (NE
+ters. Examining the different lists, and observing     1108a16–19). This does not sound like the
+the complex connections between each list and          procedure of someone who is simply studying
+a concrete form of life and a concrete history,        local traditions and singling out the virtue
+she may well feel that any list of virtues must be     names that figure most prominently in those
+simply a reflection of local traditions and values,    traditions.
+and that, virtues being (unlike Kantian princi-            What is going on becomes clearer when we
+ples or utilitarian algorithms) concrete and           examine the way in which he does, in fact,
+closely tied to forms of life, there can in fact be    introduce his list. For he does so, in the
+no list of virtues that will serve as normative for    Nicomachean Ethics,5 by a device whose very
+all these varied societies. It is not only that the    straightforwardness       and    simplicity    has
+specific forms of behavior recommended in              caused it to escape the notice of most writers
+connection with the virtues differ greatly over        on this topic. What he does, in each case, is
+time and place, it is also that the very areas that    to isolate a sphere of human experience that
+are singled out as spheres of virtue, and the          figures in more or less any human life, and
+manner in which they are individuated from             in which more or less any human being will
+other areas, vary so greatly. For someone who          have to make some choices rather than others,
+thinks this way, it is easy to feel that Aristotle’s   and act in some way rather than some other.
+own list, despite its pretensions to universality      The introductory chapter enumerating the
+and objectivity, must be similarly restricted,         virtues and vices begins from an enumeration of
+merely a reflection of one particular society’s        these spheres (NE 2.7); and each chapter on a
+perceptions of salience and ways of distin-            virtue in the more detailed account that
+guishing. At this point, relativist writers are        follows begins with “Concerning X . . .” or
+likely to quote Aristotle’s description of the         words to this effect, where “X” names a
+“great-souled” person, the megalopsuchos, which        sphere of life with which all human beings
+certainly contains many concrete local features        regularly and more or less necessarily have
+and sounds very much like the portrait of a            dealings.6 Aristotle then asks: What is it to
+certain sort of Greek gentleman, in order to           choose and respond well within that sphere?
+show that Aristotle’s list is just as culture-bound    What is it, on the other hand, to choose
+as any other.3                                         defectively? The “thin account” of each virtue
+    But if we probe further into the way in            is that it is whatever it is to be stably disposed
+which Aristotle in fact enumerates and                 to act appropriately in that sphere. There may
+individuates the virtues, we begin to notice           be, and usually are, various competing
+things that cast doubt upon the suggestion             specifications of what acting well, in each
+that he has simply described what is admired in        case, in fact comes to. Aristotle goes on to
+his own society. First of all, we notice that a        defend in each case some concrete specifica-
+rather large number of virtues and vices (vices        tions, producing, at the end, a full or “thick”
+especially) are nameless, and that, among the          definition of the virtue.
+ones that are not nameless, a good many are                Here are the most important spheres of
+given, by Aristotle’s own account, names that          experience recognized by Aristotle, along with
+are somewhat arbitrarily chosen by Aristotle,          the names of their corresponding virtues:7
+                                                               Non-relative virtues: an Aristotelian approach 449
+
+Sphere                                                          Virtue
+
+ 1. Fear of important damages, esp. death                       courage
+ 2. Bodily appetites and their pleasures                        moderation
+ 3. Distribution of limited resources                           justice
+ 4. Management of one’s personal property, where                generosity
+    others are concerned
+ 5. Management of personal property, where hospitality          expansive hospitality
+    is concerned
+ 6. Attitudes and actions with respect to one’s own worth       greatness of soul
+ 7. Attitude to slights and damages                             mildness of temper
+ 8. “Association and living together and the fellowship
+    of words and actions”
+    a. truthfulness in speech                                   truthfulness
+    b. social association of a playful kind                     easy grace (contrasted with coarseness, rudeness,
+                                                                insensitivity)
+    c. social association more generally                        nameless, but a kind of friendliness (contrasted
+                                                                with irritability and grumpiness)
+ 9. Attitude to the good and ill fortune of others              proper judgment (contrasted with enviousness,
+                                                                spitefulness, etc.)
+10. Intellectual life                                           the various intellectual virtues (such as
+                                                                perceptiveness, knowledge, etc.)
+11. The planning of one’s life and conduct                      practical wisdom
+
+
+
+    There is, of course, much more to be said               instead. The point is that everyone makes some
+about this list, its specific members, and the              choices and acts somehow or other in these
+names Aristotle chooses for the virtue in each              spheres: if not properly, then improperly.
+case, some of which are indeed culture bound.               Everyone has some attitude and behavior toward
+What I want, however, to insist is the care with            her own death; toward her bodily appetites and
+which Aristotle articulates his general approach,           their management; toward her property and its
+beginning from a characterization of a sphere of            use; toward the distribution of social goods;
+universal experience and choice, and intro-                 toward telling the truth; toward being kindly or
+ducing the virtue name as the name (as yet                  not kindly to others; toward cultivating or not
+undefined) of whatever it is to choose appropri-            cultivating a sense of play and delight; and so
+ately in that area of experience. On this approach,         on. No matter where one lives one cannot escape
+it does not seem possible to say, as the relativist         these questions, so long as one is living a human
+wishes to, that a given society does not contain            life. But then this means that one’s behavior falls,
+anything that corresponds to a given virtue. Nor            willy nilly, within the sphere of the Aristotelian
+does it seem to be an open question, in the case            virtue, in each case. If it is not appropriate, it is
+of a particular agent, whether a certain virtue             inappropriate; it cannot be off the map alto-
+should or should not be included in his or her              gether. People will of course disagree about
+life—except in the sense that she can always                what the appropriate ways of acting and reacting
+choose to pursue the corresponding deficiency               in fact are. But in that case, as Aristotle has set
+450 Martha Nussbaum
+
+things up, they are arguing about the same            a false account of the very same thing of which
+thing, and advancing competing specifications         the best scientific explanation is a true account.
+of the same virtue. The reference of the virtue       There is just one debate here, with a single
+term in each case is fixed by the sphere of expe-     subject.
+rience—by what we shall from now on call the              So too, Aristotle suggests, with our ethical
+“grounding experiences.” The thin or “nominal         terms. Heraclitus, long before him, already had
+definition” of the virtue will be, in each case,      the essential idea, saying, “They would not have
+that it is whatever it is that being disposed to      known the name of justice, if these things did
+choose and respond well consists in, in that          not take place.”11 “These things,” our source for
+sphere. The job of ethical theory will be to search   the fragment informs us, are experiences of
+for the best further specification corresponding      injustice—presumably of harm, deprivation,
+to this nominal definition, and to produce a full     inequality. These experiences fix the reference of
+definition.                                           the corresponding virtue word. Aristotle
+                                                      proceeds along similar lines. In the Politics he
+                                                      insists that only human beings, and not either
+III
+                                                      animals or gods, will have our basic ethical
+We have begun to introduce considerations             terms and concepts (such as just and unjust,
+from the philosophy of language. We can now           noble and base, good and bad), because the
+make the direction of the Aristotelian account        beasts are unable to form the concepts, and gods
+clearer by considering his own account of             lack the experiences of limit and finitude
+linguistic indicating (referring) and defining,       that give a concept such as justice its point.12 In
+which guides his treatment of both scientific         the Nicomachean Ethics enumeration of the virtues,
+and ethical terms, and of the idea of progress in     he carries the line of thought further, suggesting
+both areas.8                                          that the reference of the virtue terms is fixed by
+    Aristotle’s general picture is as follows. We     spheres of choice, frequently connected with
+begin with some experiences—not necessarily           our finitude and limitation, that we encounter in
+our own, but those of members of our linguistic       virtue of shared conditions of human exist-
+community, broadly construed.9 On the basis of        ence.13 The question about virtue usually arises
+these experiences, a word enters the language of      in areas in which human choice is both non-
+the group, indicating (referring to) whatever it      optional and somewhat problematic. (Thus, he
+is that is the content of those experiences.          stresses, there is no virtue involving the regula-
+Aristotle gives the example of thunder.10 People      tion of listening to attractive sounds or seeing
+hear a noise in the clouds, and they then refer to    pleasing sights.) Each family of virtue and vice
+it, using the word “thunder.” At this point, it       or deficiency words attaches to some such
+may be that nobody has any concrete account of        sphere. And we can understand progress in
+the noise or any idea about what it really is. But    ethics, like progress in scientific understanding,
+the experience fixes a subject for further inquiry.   to be progress in finding the correct fuller speci-
+From now on, we can refer to thunder, ask             fication of a virtue, isolated by its thin or
+“What is thunder?” and advance and assess             “nominal” definition. This progress is aided by a
+competing theories. The thin or, we might say,        perspicuous mapping of the sphere of the
+“nominal definition” of thunder is “That noise        grounding experiences. When we understand
+in the clouds, whatever it is.” The competing         more precisely what problems human beings
+explanatory theories are rival candidates for         encounter in their lives with one another, what
+correct full or thick definition. So the explana-     circumstances they face in which choice of some
+tion story citing Zeus’ activities in the clouds is   sort is required, we will have a way of assessing
+                                                          Non-relative virtues: an Aristotelian approach 451
+
+competing responses to those problems, and we          community, must still be so. To hold tradition
+will begin to understand what it might be to act       fixed is then to prevent ethical progress. What
+well in the face of them.                              human beings want and seek is not conformity
+    Aristotle’s ethical and political writings         with the past, it is the good. So our systems of
+provide many examples of how such progress             law should make it possible for them to progress
+(or, more generally, such a rational debate)           beyond the past, when they have agreed that a
+might go. We find argument against Platonic            change is good. (They should not, however,
+asceticism, as the proper specification of moder-      make change too easy, since it is no easy matter
+ation (appropriate choice and response vis-à-vis       to see one’s way to the good, and tradition is
+the bodily appetites) and the consequent prone-        frequently a sounder guide than current
+ness to anger over slights, that was prevalent in      fashion.)
+Greek ideals of maleness and in Greek behavior,            In keeping with these ideas, the Politics as a
+together with a defense of a more limited and          whole presents the beliefs of the many different
+controlled expression of anger, as the proper          societies it investigates not as unrelated local
+specification of the virtue that Aristotle calls       norms, but as competing answers to questions
+“mildness of temper.” (Here Aristotle evinces          of justice and courage (and so on) with which
+some discomfort with the virtue term he has            all the societies (being human) are concerned,
+chosen, and he is right to do so, since it certainly   and in response to which they are all trying to
+loads the dice heavily in favor of his concrete        find what is good. Aristotle’s analysis of the
+specification and against the traditional one.)14      virtues gives him an appropriate framework for
+And so on for all the virtues.                         these comparisons, which seem perfectly
+    In an important section of Politics II, part of    appropriate inquiries into the ways in which
+which forms one of the epigraphs to this paper,        different societies have solved common human
+Aristotle defends the proposition that laws            problems.
+should be revisable and not fixed by pointing to           In the Aristotelian approach it is obviously of
+evidence that there is progress toward greater         the first importance to distinguish two stages of
+correctness in our ethical conceptions, as also in     the inquiry: the initial demarcation of the sphere
+the arts and sciences. Greeks used to think that       of choice, of the “grounding experiences” that
+courage was a matter of waving swords around;          fix the reference of the virtue term; and the
+now they have (the Ethics informs us) a more           ensuing more concrete inquiry into what appro-
+inward and a more civic and communally                 priate choice, in that sphere, is. Aristotle does
+attuned understanding of proper behavior               not always do this carefully, and the language he
+toward the possibility of death. Women used to         has to work with is often not helpful to him. We
+be regarded as property, bought and sold; now          do not have much difficulty with terms like
+this would be thought barbaric. And in the case        “moderation” and “justice” and even “courage,”
+of justice as well we have, the Politics passage       which seem vaguely normative but relatively
+claims, advanced toward a more adequate                empty, so far, of concrete moral content. As the
+understanding of what is fair and appropriate.         approach requires, they can serve as extension-
+Aristotle gives the example of an existing             fixing labels under which many competing
+homicide law that convicts the defendent auto-         specifications may be investigated. But we have
+matically on the evidence of the prosecutor’s          already noticed the problem with “mildness of
+relatives (whether they actually witnessed             temper,” which seems to rule out by fiat a prom-
+anything or not, apparently). This, Aristotle says,    inent contender for the appropriate disposition
+is clearly a stupid and unjust law; and yet it once    concerning anger. And much the same thing
+seemed appropriate—and, to a tradition-bound           certainly seems to be true of the relativists’
+452 Martha Nussbaum
+
+favorite target, megalopsuchia, which implies in its   of a more inclusive account of the circumstances
+very name an attitude to one’s own worth that is       of human life, and of the needs for human
+more Greek than universal. (For example, a             functioning that these circumstances call forth.
+Christian will feel that the proper attitude to
+one’s own worth requires understanding one’s
+                                                       IV
+lowness, frailty, and sinfulness. The virtue of
+humility requires considering oneself small, not       The proposal will encounter many objections.
+great.) What we ought to get at this point in the      The concluding sections of this paper will
+inquiry is a word for the proper behavior toward       present three of the most serious and will sketch
+anger and offense and a word for the proper            the lines along which the Aristotelian concep-
+behavior toward one’s worth that are more truly        tion might proceed in formulating a reply. To a
+neutral among the competing specifications,            great extent these objections are not imagined
+referring only to the sphere of experience             or confronted by Aristotle himself, but his
+within which we wish to determine what is              position seems capable of confronting them.
+appropriate.Then we could regard the competing            • • •
+conceptions as rival accounts of one and the              The second objection goes deeper. For it
+same thing, so that, for example, Christian            questions the notion of spheres of shared human
+humility would be a rival specification, of the        experience that lies at the heart of the Aristotelian
+same virtue whose Greek specification is given         approach. The approach, says this objector,
+in Aristotle’s account of megalopsuchia, namely, the   seems to treat the experiences that ground the
+proper way to behave toward the question of            virtues as in some way primitive, given, and free
+one’s own worth.                                       from the cultural variation that we find in the
+   And in fact, oddly enough, if one examines          plurality of normative conceptions of virtue.
+the evolution in the use of this word from             Ideas of proper courage may vary, but the fear of
+Aristotle through the Stoics to the Christian          death is shared by all human beings. Ideas
+fathers, one can see that this is more or less what    of moderation may vary, but the experiences of
+happened, as “greatness of soul” became associ-        hunger, thirst, and sexual desire are (so the
+ated, first, with Stoic emphasis on the supremacy      Aristotelian seems to claim) invariant. Normative
+of virtue and the worthlessness of externals,          conceptions introduce an element of cultural
+including the body, and, through this, with the        interpretation that is not present in the
+Christian denial of the body and of the worth of       grounding experiences, which are, for that very
+earthly life.15 So even in this apparently             reason, the Aristotelian’s starting point.
+unpromising case, history shows that the                  But, the objector continues, such assump-
+Aristotelian approach not only provided the            tions are naive. They will not stand up either to
+materials for a single debate but actually             our best account of experience or to a close
+succeeded in organizing such a debate, across          examination of the ways in which these so-called
+enormous differences of both place and time.           grounding experiences have in fact been differ-
+   Here, then, is a sketch for an objective human      ently constructed by different cultures. In
+morality based upon the idea of virtuous               general, first of all, our best accounts of the
+action—that is, of appropriate functioning in          nature of experience, even perceptual experi-
+each human sphere. The Aristotelian claim is           ence, inform us that there is no such thing as an
+that, further developed, it will retain virtue         “innocent eye” that receives an uninterpreted
+morality’s immersed attention to actual human          “given.” Even sense-perception is interpretive,
+experiences, while gaining the ability to criti-       heavily influenced by belief, teaching, language,
+cize local and traditional moralities in the name      and in general by social and contextual features.
+                                                         Non-relative virtues: an Aristotelian approach 453
+
+There is a very real sense in which members of        external to start with, but that enters so deeply
+different societies do not see the same sun and       into the perceptions of the individual that it
+stars, encounter the same plants and animals,         actually forms and transforms the experience of
+hear the same thunder.                                desire.18 Let us take two Epicurean examples.
+    But if this seems to be true of human experi-     People are taught that to be well fed they require
+ence of nature, which was the allegedly unprob-       luxurious fish and meat, that a simple vegetarian
+lematic starting point for Aristotle’s account of     diet is not enough. Over time, the combination
+naming, it is all the more plainly true, the          of teaching with habit produces an appetite for
+objector claims, in the area of the human good.       meat, shaping the individual’s perceptions of the
+Here it is only a very naive and historically         objects before him. Again, people are taught that
+insensitive moral philosopher who would say           what sexual relations are all about is a romantic
+that the experience of the fear of death or the       union or fusion with an object who is seen as
+experience of bodily appetites is a human             exalted in value, or even as perfect. Over time,
+constant. Recent anthropological work on the          this teaching shapes sexual behavior and the
+social construction of the emotions,16 for            experience of desire, so that sexual arousal itself
+example, has shown to what extent the experi-         responds to this culturally learned scenario.19
+ence of fear has learned and culturally variant          This work of social criticism has recently
+elements. When we add that the object of the          been carried further by Michel Foucault in his
+fear in which the Aristotelian takes an interest is   History of Sexuality.20 This work has certain gaps as
+death, which has been so variously interpreted        a history of Greek thought on this topic, but it
+and understood by human beings at different           does succeed in establishing that the Greeks saw
+times and in different places, the conclusion that    the problem of the appetites and their manage-
+the “grounding experience” is an irreducible          ment in an extremely different way from the
+plurality of experiences, highly various and in       way of twentieth-century Westerners. To sum-
+each case deeply infused with cultural interpre-      marize two salient conclusions of his complex
+tation, becomes even more inescapable.                argument, the Greeks did not single out the
+    Nor is the case different with the apparently     sexual appetite for special treatment; they treated
+less complicated experience of the bodily appe-       it alongside hunger and thirst, as a drive that
+tites. Most philosophers who have written about       needed to be mastered and kept within bounds.
+the appetites have treated hunger, thirst, and        Their central concern was with self-mastery, and
+sexual desire as human universals, stemming           they saw the appetites in the light of this concern.
+from our shared animal nature. Aristotle himself      Furthermore, where the sexual appetite is
+was already more sophisticated, since he insisted     concerned, they did not regard the gender of the
+that the object of appetite is “the apparent good”    partner as particularly important in assessing the
+and that appetite is therefore something inter-       moral value of the act. Nor did they identify or
+pretive and selective, a kind of intentional aware-   treat as morally salient a stable disposition to
+ness.17 But he does not seem to have reflected        prefer partners of one sex rather than the other.
+much about the ways in which historical and           Instead, they focused on the general issue of
+cultural differences could shape that awareness.      activity and passivity, connecting it in complex
+The Hellenistic philosophers who immediately          ways with the issue of self-mastery.
+followed him did so reflect, arguing that the            Work like Foucault’s—and there is a lot of it
+experience of sexual desire and of many forms         in various areas, some of it very good—shows
+of the desire for food and drink are, at least in     very convincingly that the experience of bodily
+part, social constructs, built up over time on the    desire, and of the body itself, has elements that
+basis of a social teaching about value that is        vary with cultural and historical change. The
+454 Martha Nussbaum
+
+names that people call their desires and them-         concerning pain. It is all social teaching, they
+selves as subjects of desire, the fabric of belief     claim, though this usually escapes our notice
+and discourse into which they integrate their          because of the early and non-linguistic nature of
+ideas of desiring, all this influences, it is clear,   the teaching.22
+not only their reflection about desire, but also          These and related arguments, the objector
+their experience of desire itself. Thus, for           concludes, show that the Aristotelian idea that
+example, it is naive to treat our modern debates       there is a single non-relative discourse about
+about homosexuality as continuations of the            human experiences such as mortality or desire is
+very same debate about sexual activity that went       a naive idea. There is no such bedrock of shared
+on in the Greek world.21 In a very real sense          experience, and thus no single sphere of choice
+there was no “homosexual experience” in a              within which the virtue is the disposition to
+culture that did not contain our emphasis on the       choose well. So the Aristotelian project cannot
+gender of the object, our emphasis on the              even get off the ground.
+subjectivity of inclination and the permanence            • • •
+of appetitive disposition, our particular ways of
+problematizing certain forms of behavior.
+                                                       V
+   If we suppose that we can get underneath this
+variety and this constructive power of social          Each of these objections is profound. To answer
+discourse in at least one case—namely, with the        any one of them adequately would require a
+universal experience of bodily pain as a bad           treatise. But we can still do something at this
+thing—even here we find subtle arguments               point to map out an Aristotelian response to
+against us. For the experience of pain seems to        each one, pointing the direction in which a
+be embedded in a cultural discourse as surely as       fuller reply might go.
+the closely related experiences of the appetites;         • • •
+and significant variations can be alleged here as
+well. The Stoics already made this claim against
+                                                       VI
+the Aristotelian virtues. In order to establish that
+bodily pain is not bad by its very nature, but         We must now turn to the second objection.
+only by cultural tradition, the Stoics had to          Here, I believe, is the really serious threat to the
+provide some explanation for the ubiquity of           Aristotelian position. Past writers on virtue,
+the belief that pain is bad and of the tendency to     including Aristotle himself, have lacked sensi-
+shun it. This explanation would have to show           tivity to the ways in which different traditions
+that the reaction was learned rather than natural,     of discourse, different conceptual schemes,
+and to explain why, in the light of this fact, it is   articulate the world, and also to the profound
+learned so widely. This they did by pointing to        connections between the structure of discourse
+certain features in the very early treatment of        and the structure of experience itself. Any
+infants. As soon as an infant is born, it cries.       contemporary defense of the Aristotelian posi-
+Adults, assuming that the crying is a response         tion must display this sensitivity, responding
+to its pain at the unaccustomed coldness and           somehow to the data that the relativist historian
+harshness of the place where it finds itself,          or anthropologist brings forward.
+hasten to comfort it. This behavior, often                 The Aristotelian should begin, it seems to me,
+repeated, teaches the infant to regard its pain as     by granting that with respect to any complex
+a bad thing—or, better, teaches it the concept of      matter of deep human importance there is no
+pain, which includes the notion of badness, and        “innocent eye”—no way of seeing the world
+teaches it the forms of life its society shares        that is entirely neutral and free of cultural
+                                                           Non-relative virtues: an Aristotelian approach 455
+
+shaping. The work of philosophers such as                   The “grounding experiences” will not, the
+Putnam, Goodman, and Davidson23—following,              Aristotelian should concede, provide precisely a
+one must point out, from the arguments of Kant          single language—neutral bedrock on which an
+and, I believe, from those of Aristotle himself24—      account of virtue can be straightforwardly and
+have shown convincingly that even where sense-          unproblematically based. The description and
+perception is concerned, the human mind is an           assessment of the ways in which different
+active and interpretive instrument and that its         cultures have constructed these experiences will
+interpretations are a function of its history and       become one of the central tasks of Aristotelian
+its concepts, as well as of its innate structure. The   philosophical criticism. But the relativist has, so
+Aristotelian should also grant, it seems to me,         far, shown no reasons why we could not, at the
+that the nature of human world-interpretations          end of the day, say that certain ways of concep-
+is holistic and that the criticism of them must,        tualizing death are more in keeping with the
+equally well, be holistic. Conceptual schemes,          totality of our evidence and with the totality of
+like languages, hang together as whole struc-           our wishes for flourishing life than others; that
+tures, and we should realize, too, that a change        certain ways of experiencing appetitive desire
+in any single element is likely to have implica-        are for similar reasons more promising than
+tions for the system as a whole.                        others.
+    But these two facts do not imply, as some               Relativists tend, furthermore, to understate
+relativists in literary theory and in anthropology      the amount of attunement, recognition, and
+tend to assume, that all world interpretations are      overlap that actually obtains across cultures,
+equally valid and altogether non-comparable,            particularly in the areas of the grounding expe-
+that there are no good standards of assessment          riences. The Aristotelian in developing her
+and “anything goes.” The rejection of the idea of       conception in a culturally sensitive way, should
+ethical truth as correspondence to an altogether        insist, as Aristotle himself does, upon the
+uninterpreted reality does not imply that the           evidence of such attunement and recognition.
+whole idea of searching for the truth is an old-        Despite the evident differences in the specific
+fashioned error. Certain ways in which people           cultural shaping of the grounding experiences,
+see the world can still be criticized exactly as        we do recognize the experiences of people in
+Aristotle criticized them: as stupid, pernicious,       other cultures as similar to our own. We do
+and false. The standards used in such criticisms        converse with them about matters of deep
+must come from inside human life. (Frequently           importance, understand them, allow ourselves
+they will come from the society in question             to be moved by them. When we read Sophocles’
+itself, from its own rationalist and critical tradi-    Antigone, we see a good deal that seems strange to
+tions.) And the inquirer must attempt, prior to         us; and we have not read the play well if we do
+criticism, to develop an inclusive understanding        not notice how far its conceptions of death,
+of the conceptual scheme being criticized,              womanhood, and so on, differ from our own.
+seeing what motivates each of its parts and how         But it is still possible for us to be moved by the
+they hang together. But there is so far no reason       drama, to care about its people, to regard their
+to think that the critic will not be able to reject     debates as reflections upon virtue that speak to
+the institution of slavery or the homicide law of       our own experience, and their choices as choices
+Cyme as out of line with the conception of              in spheres of conduct in which we too must
+virtue that emerges from reflection on the              choose. Again, when one sits down at a table
+variety of different ways in which human                with people from other parts of the world and
+cultures have had the experiences that ground           debates with them concerning hunger or just
+the virtues.                                            distribution or in general the quality of human
+456 Martha Nussbaum
+
+life, one does find, in spite of evident conceptual    conceptualization of the grounding experiences.
+differences, that it is possible to proceed as if we   Frequently the effect of work like Foucault’s,
+are all talking about the same human problem;          which reminds us of the non-necessary and
+and it is usually only in a context in which one       non-universal character of one’s own ways of
+or more of the parties is intellectually committed     seeing in some such area, is precisely to prompt
+to a theoretical relativist position that this         a critical debate in search of the human good. It
+discourse proves impossible to sustain. This           is difficult, for example, to read Foucault’s obser-
+sense of community and overlap seems to be             vations about the history of our sexual ideas
+especially strong in the areas that we have called     without coming to feel that certain ways in
+the areas of the grounding experiences. And            which the Western contemporary debate on
+this, it seems, supports the Aristotelian claim        these matters has been organized, as a result of
+that those experiences can be a good starting          some combination of Christian morality with
+point for ethical debate.                              nineteenth-century pseudo-science, are espe-
+    Furthermore, it is necessary to stress that        cially silly, arbitrary, and limiting, inimical to a
+hardly any cultural group today is as focused          human search for flourishing. Foucault’s moving
+upon its own internal traditions and as isolated       account of Greek culture, as he himself insists in
+from other cultures as the relativist argument         a preface,26 provides not only a sign that
+presupposes. Cross-cultural communication and          someone once thought differently, but also
+debate are ubiquitous facts of contemporary life.      evidence that it is possible for us to think differ-
+Our experience of cultural interaction indicates       ently. Foucault announced that the purpose of
+that in general the inhabitants of different           his book was to “free thought” so that it could
+conceptual schemes do tend to view their inter-        think differently, imagining new and more
+action in the Aristotelian and not the relativist      fruitful possibilities. And close analysis of
+way. A traditional society, confronted with new        spheres of cultural discourse, which stresses
+technologies and sciences, and the conceptions         cultural differences in the spheres of the
+that go with them, does not, in fact, simply fail      grounding experiences, is being combined,
+to understand them or regard them as totally           increasingly, in current debates about sexuality
+alien incursions upon a hermetically sealed way        and related matters, with the critique of existing
+of life. Instead, it assesses the new item as a        social arrangements and attitudes, and with the
+possible contributor to flourishing life, making       elaboration of a new norm of human flour-
+it comprehensible to itself and incorporating          ishing. There is no reason to think this combina-
+elements that promise to solve problems of             tion incoherent.27
+flourishing. Examples of such assimilation, and            As we pursue these possibilities, the basic
+the debate that surrounds it,25 suggest that the       spheres of experience identified in the
+parties do, in fact, recognize common problems         Aristotelian approach will no longer, we have
+and that the traditional society is perfectly          said, be seen as spheres of uninterpreted experi-
+capable of viewing an external innovation as a         ence. But we have also insisted that there is much
+device to solve a problem that it shares with the      family relatedness and much overlap among
+innovating society. The parties do, in fact, search    societies. And certain areas of relatively greater
+for the good, not the way of their ancestors;          universality can be specified here, on which we
+only traditionalist anthropologists insist, nostal-    should insist as we proceed to areas that are
+gically, on the absolute preservation of the           more varied in their cultural expression. Not
+ancestral.                                             without a sensitive awareness that we are
+    And this is so even when cross-cultural            speaking of something that is experienced
+discourse reveals a difference at the level of the     differently in different contexts, we can
+                                                           Non-relative virtues: an Aristotelian approach 457
+
+nonetheless identify certain features of our                  decreased. This is a further advantage of
+common humanity, closely related to Aristotle’s               the Aristotelian approach, when contrasted
+original list, from which our debate might                    with approaches to choice that stop with
+proceed.                                                      subjective expressions of preference.
+                                                      3.      Pleasure and pain. In every culture, there is a
+1.   Mortality. No matter how death is under-                 conception of pain; and these concep-
+     stood, all human beings face it and (after a             tions, which overlap very largely with one
+     certain age) know that they face it. This                another, can be plausibly seen as grounded
+     fact shapes every aspect of more or less                 in universal and pre-cultural experience.
+     every human life.                                        The Stoic story of infant development is
+2.   The Body. Prior to any concrete-cultural                 highly implausible; the negative response
+     shapings, we are born with human bodies,                 to bodily pain is surely primitive and
+     whose possibilities and vulnerabilities do               universal, rather than learned and optional,
+     not as such belong to one culture rather                 however much its specific “grammar” may
+     than any other. Any given human being                    be shaped by later learning.
+     might have belonged to any culture. The          4.      Cognitive capability. Aristotle’s famous claim
+     experience of the body is culturally influ-              that “all human beings by nature reach out
+     enced; but the body itself, prior to such                for understanding”29 seems to stand up to
+     experience, provides limits and parame-                  the most refined anthropological analysis.
+     ters that ensure a great deal of overlap in              It points to an element in our common
+     what is going to be experienced, where                   humanity that is plausibly seen, again, as
+     hunger, thirst, desire, the five senses are              grounded independently of particular
+     concerned. It is all very well to point to the           acculturation, however much it is later
+     cultural component in these experiences.                 shaped by acculturation.
+     But when one spends time considering             5.      Practical reason. All human beings, whatever
+     issues of huriger and scarcity, and in                   their culture, participate (or try to) in the
+     general of human misery, such differences                planning and managing of their lives,
+     appear relatively small and refined, and                 asking and answering questions about
+     one cannot fail to acknowledge that “there               how one should live and act. This capa-
+     are no known ethnic differences in human                 bility expresses itself differently in
+     physiology with respect to metabolism of                 different societies, but a being who alto-
+     nutrients. Africans and Asians do not burn               gether lacked it would not be likely to be
+     their dietary calories or use their dietary              acknowledged as a human being, in any
+     protein any differently from Europeans                   culture.30
+     and Americans. It follows then that dietary      6.      Early infant development. Prior to the greatest
+     requirements cannot vary widely as                       part of specific cultural shaping, though
+     between different races.”28 This and similar             perhaps not free from all shaping, are
+     facts should surely be focal points for                  certain areas of human experiences and
+     debate about appropriate human behavior                  development that are broadly shared and
+     in this sphere. And by beginning with the                of great importance for the Aristotelian
+     body, rather, than with the subjective                   virtues: experiences of desire, pleasure,
+     experience of desire, we get, furthermore,               loss, one’s own finitude, perhaps also of
+     an opportunity to criticize the situation of             envy, grief, gratitude. One may argue
+     people who are so persistently deprived                  about the merits of one or another psycho-
+     that their desire for good things has actually           analytical account of infancy. But it seems
+458 Martha Nussbaum
+
+      difficult to deny that the work of Freud on        completely uninterpreted “given” data, but we
+      infant desire and of Klein on grief, loss,         do have nuclei of experience around which the
+      and other more complex emotional atti-             construction of different societies proceed. There
+      tudes has identified spheres of human              is no Archimedean point here, and no pure
+      experience that are to a large extent              access to unsullied “nature”—even, here, human
+      common to all humans, regardless of their          nature—as it is in and of itself. There is just
+      particular society. All humans begin as            human life as it is lived. But in life as it is lived,
+      hungry babies, perceiving their own help-          we do find a family of experiences, clustering
+      lessness, their alternating closeness to and       around certain foci, which can provide reason-
+      distance from those on whom they                   able starting points for cross-cultural reflection.
+      depend, and so forth. Melanie Klein
+      records a conversation with an anthropol-
+      ogist in which an event that at first looked       Notes
+      (to Western eyes) bizarre was interpreted           1 A. MacIntyre, After Virtue (Notre Dame, IN, 1981); P.
+      by Klein as the expression of a universal             Foot, Virtues and Vices (Los Angeles, 1978); B.
+      pattern of mourning. The anthropologist               Williams, Ethics and the Limits of Philosophy (Cambridge,
+      accepted her interpretation.31                        MA, 1985) and Tanner Lectures, Harvard, 1983.
+7.    Affiliation. Aristotle’s claim that human             See also M. Walzer, Spheres of Justice (New York,
+      beings as such feel a sense of fellowship             1983) and Tanner Lectures, Harvard, 1985.
+      with other human beings, and that we are            2 For examples of this, see Nussbaum, “Nature,
+      by nature social animals, is an empirical             Function, and Capability: Aristotle on Political
+      claim, but it seems to be a sound one.                Distribution,” circulated as a WIDER working
+                                                            paper, and in Oxford Studies in Ancient Philosophy, 1988,
+      However varied our specific conceptions
+                                                            and also, in an expanded version, in the
+      of friendship and love are, there is a great
+                                                            Proceedings of the 12th Symposium Aristotelicum.
+      point in seeing them as overlapping
+                                                          3 See, for example, Williams, Ethics and the Limits,
+      expressions of the same family of shared              34–36; Stuart Hampshire, Morality and Conflict
+      human needs and desires.                              (Cambridge, MA, 1983), 150 ff.
+8.    Humor. There is nothing more culturally             4 For “nameless” virtues and vices, see NE 1107b1–2,
+      varied than humor, and yet, as Aristotle              1107b8, 1107b30–31, 1108a17, 1119a10–11,
+      insists, some space for humor and play                1126b20, 1127a12, 1127a14; for recognition of the
+      seems to be a need of any human life. The             unsatisfactoriness of names given, see 1107b8,
+      human being was not called the “laughing              1108a5–6, 1108a20 ff.The two categories are largely
+      animal” for nothing; it is certainly one of           overlapping, on account of the general principles
+      our salient differences from almost all               enunciated at 1108a16–19, that where there is no
+                                                            name a name should be given, unsatisfactory or not.
+      animals, and (in some form or other) a
+                                                          5 It should be noted that this emphasis on spheres of
+      shared feature, I somewhat boldly assert,
+                                                            experience is not present in the Eudemian Ethics,
+      of any life that is going to be counted as
+                                                            which begins with a list of virtues and vices. This
+      fully human.                                          seems to me a sign that that treatise expresses a
+                                                            more primitive stage of Aristotle’s thought on the
+This is just a list of suggestions, closely related to      virtues—whether earlier or not.
+Aristotle’s list of common experiences. One               6 For statements with peri, connecting virtues with
+could subtract some of these items and/or add               spheres of life, see 1115a6–7, 1117a29–30,
+others. But it seems plausible to claim that in all         1117b25, 27, 1119b23, 1122a19, 1122b34,
+these areas we have a basis for further work on             1125b26, 1126b13; and NE 2.7 throughout. See
+the human good. We do not have a bedrock of                 also the related usages at 1126b11, 1127b32.
+                                                                   Non-relative virtues: an Aristotelian approach 459
+
+ 7 My list here inserts justice in a place of promi-               Hellenistic Ethics, The Martin Classical Pectures 1986,
+   nence. (In the NE it is treated separately, after all           and forthcoming.
+   the other virtues, and the introductory list defers it       19 The relevant texts are discussed in Nussbaum, The
+   for that later examination.) I have also added at the           Therapy, chaps. 4–6. See also Nussbaum, “Therapeutic
+   end of the list categories corresponding to the                 Arguments: Epicurus and Aristotle,” in The Norms of
+   various intellectual virtues discussed in NE 6, and             Nature, edited by M. Schofield and G. Striker
+   also to phronesis or practical wisdom, discussed in 6           (Cambridge, 1986), 31–74.
+   as well. Otherwise the order and wording of my               20 M. Foucault, Histoire de la sexualité, vols. 2 and 3
+   list closely follows 2.7, which gives the program               (Paris, 1984).
+   for the more detailed analyses of 3.5–4.                     21 See the papers by D. Halperin arid J. Winkler in
+ 8 For a longer account of this, with references to the            Before Sexuality, edited by D. Halperin, J. Winkler, and
+   literature and to related philosophical discussions,            F. Zeitlin, forthcoming (Princeton).
+   see Nussbaum, The Fragility of Goodness (Cambridge,          22 The evidence for this part of the Stoic view is
+   MA, 1986), chap. 8.                                             discussed in Nussbaum, The Therapy.
+ 9 Aristotle does not worry about questions of trans-           23 See H. Putnam, Reason,Truth, and History (Cambridge,
+   lation in articulating this idea; for some worries              1981); The Many Faces of Realism, The Carus Lectures,
+   about this, and an Aristotelian response, see below             forthcoming; and Meaning and the Moral Sciences
+   sections IV and VI.                                             (London, 1979); N. Goodman, Languages of Art
+10 Posterior Analytics, 2.8, 93a21 ff.; see Fragility,             (Indianapolis, 1968) and Ways of World-Making
+   chap. 8.                                                        (Indianapolis, 1978); D. Davidson, Inquiries into Truth
+11 Heraclitus, fragment DK B23; see Nussbaum, “Psuche              and Interpretation (Oxford, 1984).
+   in Heraclitus, II,” Phronesis 17 (1972): 153–70.             24 On his debt to Kant, see Putnam, The Many Faces; on
+12 See Politics 1.2. 1253a1–18; that discussion does not           Aristotle’s “internal realism,” see Nussbaum,
+   deny the virtues to gods explicitly, but this denial is         Fragility, chap. 8.
+   explicit at NE 1145a25–27 and 1178b10 ff.                    25 C. Abeysekera, paper presented at Value and
+13 Aristotle does not make the connection with his                 Technology Conference, WIDER 1986.
+   account of language explicit, but his project is one         26 Foucault, Histoire, vol. 2, preface.
+   of defining the virtues, and we would expect him             27 This paragraph expands remarks made in a
+   to keep his general view of defining in mind in this            commentary on papers by D. Halperin and J.
+   context. A similar idea about the virtues, and                  Winkler at the conference on “Homosexuality in
+   experience of a certain sort as a possible basis for a          History and Culture” at Brown University,
+   non-relative account, is developed, without                     February 1987. The combination of historically
+   reference to Aristotle, in a review of P. Foot’s Virtues        sensitive analysis with cultural criticism was force-
+   and Vices by N. Sturgeon, Journal of Philosophy 81              fully developed at the same conference in Henry
+   (1984): 326–33.                                                 Abelove’s “Is Gay History Possible?,” forthcoming.
+14 1108a5, where Aristotle says that the virtues and            28 C. Gopalan, “Undernutrition: Measurement and
+   the corresponding person are “pretty much name-                 Implications,” paper prepared for the WIDER
+   less,” and says “Let us call . . .” when he introduces          Conference on Poverty, Undernutrition, and Living
+   the names. See also 1125b29, 1126a3–4.                          Standards, Helsinki, 27–31 July 1987, and
+15 See John Procope, Magnanimity (1987); also R.-A.                forthcoming in the volume of Proceedings, edited
+   Gauthier, Magnanimité (Paris, 1951).                            by S. Osmani.
+16 See, for example, The Social Construction of the Emotions,   29 Metaphysics 1.1.
+   edited by Rom Harré (Oxford, 1986).                          30 See Nussbaum, “Nature, Function, and Capability,”
+17 See Nussbaum, Aristotle’s De Motu Animalium (Princeton,         where this Aristotelian view is compared with
+   NJ, 1976), notes on chap. 6, and Fragility, chap. 9.            Marx’s views on human functioning.
+18 A detailed study of the treatment of these ideas in          31 M. Klein, in Postscript to “Our Adult World and Its
+   the three major Hellenistic schools was presented               Roots in Infancy,” in Envy, Gratitude and Other Works
+   in Nussbaum, The Therapy of Desire:Theory and Practice in       1946–1963 (London, 1984), 247–63.
+

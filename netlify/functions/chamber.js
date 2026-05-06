@@ -20,7 +20,7 @@ const PACKS_DIR = (() => {
   }
   return candidates[0];
 })();
-const VALID_PACKS = new Set(["hedonism", "desire", "spontaneity", "virtue", "stoicism", "all"]);
+const VALID_PACKS = new Set(["hedonism", "desire", "spontaneity", "virtue", "stoicism"]);
 const HISTORY_WINDOW = 6;
 const MAX_TOKENS = 800;
 const MODEL = "claude-haiku-4-5";
@@ -101,16 +101,16 @@ exports.handler = async (event) => {
 
   const { packs, chosen_question, working_question, history, user_message } = body;
 
-  if (!Array.isArray(packs) || packs.length === 0 || packs.length > 2) {
-    return { statusCode: 400, body: JSON.stringify({ error: "packs must be an array of 1 or 2 pack IDs" }) };
+  if (!Array.isArray(packs) || packs.length !== 2) {
+    return { statusCode: 400, body: JSON.stringify({ error: "packs must be an array of exactly 2 pack IDs" }) };
+  }
+  if (packs[0] === packs[1]) {
+    return { statusCode: 400, body: JSON.stringify({ error: "the two packs must be different" }) };
   }
   for (const p of packs) {
     if (!VALID_PACKS.has(p)) {
       return { statusCode: 400, body: JSON.stringify({ error: `Unknown pack: ${p}` }) };
     }
-  }
-  if (packs.includes("all") && packs.length > 1) {
-    return { statusCode: 400, body: JSON.stringify({ error: "'all' must be selected on its own" }) };
   }
   if (typeof user_message !== "string" || user_message.trim() === "") {
     return { statusCode: 400, body: JSON.stringify({ error: "user_message is required" }) };

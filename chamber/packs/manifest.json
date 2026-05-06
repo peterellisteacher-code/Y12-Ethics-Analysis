@@ -55,26 +55,5 @@
     "chars": 56028,
     "words": 10061,
     "approx_tokens": 14744
-  },
-  "all": {
-    "label": "All theories",
-    "file": "packs/all.txt",
-    "readings": [
-      "Feldman — The Good Life: A Defence of Hedonism",
-      "Nozick — The Experience Machine",
-      "Parfit — What Makes Someone's Life Go Best",
-      "Huxley — Brave New World, Ch 16 & 17 (critique of desire-satisfaction)",
-      "Csikszentmihalyi — Flow: the psychology of optimal experience",
-      "Slingerland — Wu Wei as Conceptual Metaphor",
-      "Aristotle — The Nature of Moral Virtue (Nicomachean Ethics, Bk II)",
-      "Nussbaum — Non-Relative Virtues: an Aristotelian Approach",
-      "MacIntyre — After Virtue, Ch 14: The Nature of the Virtues",
-      "MacIntyre — After Virtue, Ch 15: The Nature of Human Life",
-      "Marcus Aurelius — Meditations, Book 2",
-      "Stockdale — Arrian's Enchiridion and the Discourses of Epictetus"
-    ],
-    "chars": 579606,
-    "words": 94157,
-    "approx_tokens": 152527
   }
 }

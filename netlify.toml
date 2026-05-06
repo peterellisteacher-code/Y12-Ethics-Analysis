@@ -4,7 +4,7 @@
 
 [functions]
   node_bundler = "esbuild"
-  included_files = ["chamber/packs/*.txt", "chamber/task-sheet.txt"]
+  included_files = ["chamber/packs/*.txt", "chamber/refs/*.txt"]
 
 [[redirects]]
   from = "/api/chamber"

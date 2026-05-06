@@ -1,0 +1,80 @@
+{
+  "hedonism": {
+    "label": "Hedonism",
+    "file": "packs/hedonism.txt",
+    "readings": [
+      "Feldman — The Good Life: A Defence of Hedonism",
+      "Nozick — The Experience Machine"
+    ],
+    "chars": 77330,
+    "words": 10235,
+    "approx_tokens": 20350
+  },
+  "desire": {
+    "label": "Desire-Satisfaction",
+    "file": "packs/desire.txt",
+    "readings": [
+      "Parfit — What Makes Someone's Life Go Best",
+      "Huxley — Brave New World, Ch 16 & 17 (critique of desire-satisfaction)"
+    ],
+    "chars": 64892,
+    "words": 9943,
+    "approx_tokens": 17076
+  },
+  "spontaneity": {
+    "label": "Spontaneity",
+    "file": "packs/spontaneity.txt",
+    "readings": [
+      "Csikszentmihalyi — Flow: the psychology of optimal experience",
+      "Slingerland — Wu Wei as Conceptual Metaphor"
+    ],
+    "chars": 128484,
+    "words": 23702,
+    "approx_tokens": 33811
+  },
+  "virtue": {
+    "label": "Virtue Ethics",
+    "file": "packs/virtue.txt",
+    "readings": [
+      "Aristotle — The Nature of Moral Virtue (Nicomachean Ethics, Bk II)",
+      "Nussbaum — Non-Relative Virtues: an Aristotelian Approach",
+      "MacIntyre — After Virtue, Ch 14: The Nature of the Virtues",
+      "MacIntyre — After Virtue, Ch 15: The Nature of Human Life"
+    ],
+    "chars": 252803,
+    "words": 40204,
+    "approx_tokens": 66527
+  },
+  "stoicism": {
+    "label": "Stoicism",
+    "file": "packs/stoicism.txt",
+    "readings": [
+      "Marcus Aurelius — Meditations, Book 2",
+      "Stockdale — Arrian's Enchiridion and the Discourses of Epictetus"
+    ],
+    "chars": 56028,
+    "words": 10061,
+    "approx_tokens": 14744
+  },
+  "all": {
+    "label": "All theories",
+    "file": "packs/all.txt",
+    "readings": [
+      "Feldman — The Good Life: A Defence of Hedonism",
+      "Nozick — The Experience Machine",
+      "Parfit — What Makes Someone's Life Go Best",
+      "Huxley — Brave New World, Ch 16 & 17 (critique of desire-satisfaction)",
+      "Csikszentmihalyi — Flow: the psychology of optimal experience",
+      "Slingerland — Wu Wei as Conceptual Metaphor",
+      "Aristotle — The Nature of Moral Virtue (Nicomachean Ethics, Bk II)",
+      "Nussbaum — Non-Relative Virtues: an Aristotelian Approach",
+      "MacIntyre — After Virtue, Ch 14: The Nature of the Virtues",
+      "MacIntyre — After Virtue, Ch 15: The Nature of Human Life",
+      "Marcus Aurelius — Meditations, Book 2",
+      "Stockdale — Arrian's Enchiridion and the Discourses of Epictetus"
+    ],
+    "chars": 579606,
+    "words": 94157,
+    "approx_tokens": 152527
+  }
+}

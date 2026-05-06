@@ -16,6 +16,7 @@
   <button class="nav-pill" onclick="goTo('task')">TASK</button>
   <button class="nav-pill" onclick="goTo('trials')">TRIALS</button>
   <button class="nav-pill" onclick="goTo('theories')">THEORIES</button>
+  <button class="nav-pill" onclick="goTo('chamber')">CHAMBER</button>
   <button class="nav-pill" onclick="goTo('drafting')">DRAFTING</button>
 </div>
 
@@ -68,6 +69,10 @@
     <div class="hub-btn" onclick="goTo('theories')">
       <span class="icon">&#x1F4DA;</span>
       Start Preparing Theories
+    </div>
+    <div class="hub-btn" onclick="goTo('chamber')">
+      <span class="icon">&#x1F5E3;&#xFE0F;</span>
+      Enter the Chamber
     </div>
     <div class="hub-btn" onclick="goTo('drafting')">
       <span class="icon">&#x270D;&#xFE0F;</span>
@@ -1567,6 +1572,52 @@
     <button class="btn btn-outline" onclick="stepNav('draftSteps',-1)">&larr; Previous</button>
     <div class="step-dots" id="draftDots"></div>
     <button class="btn btn-gold" onclick="stepNav('draftSteps',1)">Next &rarr;</button>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PAGE: THE CHAMBER -->
+<!-- ============================================ -->
+<div class="page page-wide" id="page-chamber">
+  <div class="question-banner visible" id="bannerChamber">
+    <div class="label">Your Question</div>
+    <span id="bannerTextChamber"></span>
+  </div>
+
+  <h2>The Chamber</h2>
+  <p class="subtitle">A Socratic interlocutor. It asks; you think. It will <em>not</em> write your essay.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">Working Question</h3>
+    <p style="font-size:.9rem;color:#bbb;margin-bottom:8px">What are you wrestling with right now? You can edit this any time — every message you send carries it as context.</p>
+    <textarea id="workingQuestion" rows="2" placeholder="e.g., Can a hedonist accept Nozick's experience machine objection?"></textarea>
+
+    <h3>Theory Pack</h3>
+    <p style="font-size:.9rem;color:#bbb;margin-bottom:8px">Pick which readings the Chamber should draw from. Switching packs starts a fresh conversation.</p>
+    <div class="chamber-chips" id="packChips">
+      <button type="button" class="chamber-chip" data-pack="hedonism">Hedonism</button>
+      <button type="button" class="chamber-chip" data-pack="desire">Desire-Satisfaction</button>
+      <button type="button" class="chamber-chip" data-pack="spontaneity">Spontaneity</button>
+      <button type="button" class="chamber-chip" data-pack="virtue">Virtue Ethics</button>
+      <button type="button" class="chamber-chip" data-pack="stoicism">Stoicism</button>
+      <button type="button" class="chamber-chip" data-pack="all">All Theories</button>
+    </div>
+  </div>
+
+  <div class="card chamber-chat">
+    <div class="chamber-transcript" id="chamberTranscript">
+      <div class="chamber-empty">Pick a theory pack above, then ask your first question. The Chamber will press your thinking.</div>
+    </div>
+    <div class="chamber-composer">
+      <textarea id="chamberInput" rows="3" placeholder="Type your message... (Cmd/Ctrl+Enter to send)"></textarea>
+      <div class="chamber-composer-actions">
+        <button type="button" class="btn btn-outline btn-sm" onclick="chamberCopy()">Copy</button>
+        <button type="button" class="btn btn-outline btn-sm" onclick="chamberDownload()">Download</button>
+        <button type="button" class="btn btn-outline btn-sm" onclick="chamberClear()">Clear</button>
+        <button type="button" class="btn btn-gold" id="chamberSend" onclick="chamberSend()">Send</button>
+      </div>
+    </div>
+    <div class="chamber-status" id="chamberStatus"></div>
   </div>
 </div>
 

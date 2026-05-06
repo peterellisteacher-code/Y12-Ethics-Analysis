@@ -73,7 +73,8 @@ function goTo(pageId) {
     'theory-desire': 'page-theory-desire',
     'theory-spontaneity': 'page-theory-spontaneity',
     'theory-virtue': 'page-theory-virtue',
-    'theory-stoicism': 'page-theory-stoicism'
+    'theory-stoicism': 'page-theory-stoicism',
+    'chamber': 'page-chamber'
   };
   const el = document.getElementById(map[pageId] || pageId);
   if (el) {
@@ -84,8 +85,8 @@ function goTo(pageId) {
 }
 
 function updateBanners() {
-  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft'];
-  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft'];
+  const bannerIds = ['bannerTheoryResp','bannerHub','bannerTask','bannerTaskOverview','bannerTaskCriteria','bannerTaskExample','bannerTrials','bannerTheories','bannerHed','bannerDesire','bannerSpont','bannerVirt','bannerStoic','bannerDraft','bannerChamber'];
+  const textIds = ['bannerTextResp','bannerTextHub','bannerTextTask','bannerTextTaskOverview','bannerTextTaskCriteria','bannerTextTaskExample','bannerTextTrials','bannerTextTheories','bannerTextHed','bannerTextDesire','bannerTextSpont','bannerTextVirt','bannerTextStoic','bannerTextDraft','bannerTextChamber'];
   textIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = chosenQuestion;
@@ -354,6 +355,184 @@ setInterval(saveState, 10000);
 window.addEventListener('beforeunload', saveState);
 // Load on start
 document.addEventListener('DOMContentLoaded', loadState);
+
+// ===== THE CHAMBER =====
+const chamberState = {
+  pack: null,
+  history: [],
+  pending: false
+};
+
+function chamberSelectPack(pack) {
+  if (chamberState.pending) return;
+  if (chamberState.pack === pack) return;
+  if (chamberState.history.length > 0 && !confirm('Switching theory pack will clear this conversation. Continue?')) {
+    return;
+  }
+  chamberState.pack = pack;
+  chamberState.history = [];
+  document.querySelectorAll('.chamber-chip').forEach(chip => {
+    chip.classList.toggle('active', chip.dataset.pack === pack);
+  });
+  chamberRender();
+  chamberSetStatus('Pack: ' + chamberPackLabel(pack) + '. Ready when you are.');
+}
+
+function chamberPackLabel(pack) {
+  return ({
+    hedonism: 'Hedonism',
+    desire: 'Desire-Satisfaction',
+    spontaneity: 'Spontaneity',
+    virtue: 'Virtue Ethics',
+    stoicism: 'Stoicism',
+    all: 'All Theories'
+  })[pack] || pack;
+}
+
+function chamberSetStatus(text) {
+  const el = document.getElementById('chamberStatus');
+  if (el) el.textContent = text || '';
+}
+
+function chamberRender() {
+  const t = document.getElementById('chamberTranscript');
+  if (!t) return;
+  if (chamberState.history.length === 0) {
+    t.innerHTML = '<div class="chamber-empty">Pick a theory pack above, then ask your first question. The Chamber will press your thinking.</div>';
+    return;
+  }
+  t.innerHTML = '';
+  chamberState.history.forEach(turn => {
+    const row = document.createElement('div');
+    row.className = 'chamber-turn chamber-turn-' + turn.role;
+    const label = document.createElement('div');
+    label.className = 'chamber-label';
+    label.textContent = turn.role === 'user' ? 'You' : 'The Chamber';
+    const body = document.createElement('div');
+    body.className = 'chamber-body';
+    body.textContent = turn.content;
+    row.appendChild(label);
+    row.appendChild(body);
+    t.appendChild(row);
+  });
+  t.scrollTop = t.scrollHeight;
+}
+
+async function chamberSend() {
+  if (chamberState.pending) return;
+  if (!chamberState.pack) {
+    chamberSetStatus('Pick a theory pack first.');
+    return;
+  }
+  const inputEl = document.getElementById('chamberInput');
+  const text = inputEl.value.trim();
+  if (!text) return;
+  const wq = document.getElementById('workingQuestion').value.trim();
+
+  chamberState.history.push({ role: 'user', content: text });
+  inputEl.value = '';
+  chamberRender();
+  chamberState.pending = true;
+  document.getElementById('chamberSend').disabled = true;
+  chamberSetStatus('Thinking...');
+
+  try {
+    const res = await fetch('/api/chamber', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        pack: chamberState.pack,
+        working_question: wq,
+        history: chamberState.history.slice(0, -1),
+        user_message: text
+      })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Request failed (' + res.status + ')' }));
+      throw new Error(err.error || 'Request failed');
+    }
+    const data = await res.json();
+    if (data.stop_reason === 'refusal') {
+      chamberState.history.push({ role: 'assistant', content: data.reply || '[The Chamber declined to respond.]' });
+      chamberSetStatus('The Chamber declined to respond to that.');
+    } else {
+      chamberState.history.push({ role: 'assistant', content: data.reply || '' });
+      const u = data.usage || {};
+      chamberSetStatus('cache write ' + (u.cache_creation_input_tokens || 0) + ' / cache read ' + (u.cache_read_input_tokens || 0) + ' / out ' + (u.output_tokens || 0));
+    }
+    chamberRender();
+  } catch (e) {
+    chamberSetStatus('Error: ' + e.message);
+  } finally {
+    chamberState.pending = false;
+    document.getElementById('chamberSend').disabled = false;
+  }
+}
+
+function chamberCopy() {
+  if (chamberState.history.length === 0) return;
+  const text = chamberTranscriptText();
+  navigator.clipboard.writeText(text).then(
+    () => chamberSetStatus('Transcript copied.'),
+    () => chamberSetStatus('Copy failed.')
+  );
+}
+
+function chamberDownload() {
+  if (chamberState.history.length === 0) return;
+  const text = chamberTranscriptText();
+  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  const stamp = new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-');
+  a.download = 'chamber-transcript-' + stamp + '.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function chamberClear() {
+  if (chamberState.pending) return;
+  if (chamberState.history.length === 0) return;
+  if (!confirm('Clear this conversation? You can still copy or download it first.')) return;
+  chamberState.history = [];
+  chamberRender();
+  chamberSetStatus('Cleared.');
+}
+
+function chamberTranscriptText() {
+  const lines = [];
+  lines.push('Chamber transcript');
+  if (chosenQuestion) lines.push('Question: ' + chosenQuestion);
+  if (chamberState.pack) lines.push('Theory pack: ' + chamberPackLabel(chamberState.pack));
+  const wq = (document.getElementById('workingQuestion') || {}).value || '';
+  if (wq.trim()) lines.push('Working question: ' + wq.trim());
+  lines.push('Date: ' + new Date().toISOString());
+  lines.push('');
+  chamberState.history.forEach(turn => {
+    lines.push((turn.role === 'user' ? 'You' : 'The Chamber') + ':');
+    lines.push(turn.content);
+    lines.push('');
+  });
+  return lines.join('\n');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.chamber-chip').forEach(chip => {
+    chip.addEventListener('click', () => chamberSelectPack(chip.dataset.pack));
+  });
+  const input = document.getElementById('chamberInput');
+  if (input) {
+    input.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+        e.preventDefault();
+        chamberSend();
+      }
+    });
+  }
+});
 
 // ===== PRINT ALL PAGES =====
 function printAll() {

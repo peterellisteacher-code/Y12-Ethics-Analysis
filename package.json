@@ -1,0 +1,12 @@
+{
+  "name": "y12-ethics-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Year 12 Ethics Analysis study site with Socratic Chamber",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

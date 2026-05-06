@@ -1,0 +1,998 @@
+                                                                          Chapter 1
+
+
+
+
+            Wu-wei a s Conceptual Metaphor
+
+B    efore elucidatin g the conceptual structur e of wu-wei as metaphor, I will first
+     explain what is meant by "conceptual metaphor, " an d this will require a brief
+introduction to a subfield o f cognitive linguistics l concerne d wit h metaphor the -
+ory.
+
+
+
+The Contemporary Theor y o f Metapho r
+
+Contemporary metapho r theor y i s perhaps mos t familia r t o the general academi c
+public throug h th e work s o f Georg e Lakof f an d Mar k Johnson , wh o se e them -
+selves a s being engage d i n a kind of "descriptiv e o r empirical phenomenology "
+aimed a t sketching out a "geography o f human experience" (Johnso n 1987 : xxx -
+viii). On e of th e basic tenet s o f the contemporary approac h t o metaphor i s that
+human cognition—the production, communication, an d processing o f meaning—
+is heavil y dependen t upo n mapping s between domains , wit h "mapping " under -
+stood a s "a correspondence betwee n two set s that assigns to each element i n the
+first a counterpar t i n th e second " (Fauconnie r 1997:1 ) Anothe r tene t i s that th e
+process o f human cognition is independent of language, and that linguistic mani-
+festations o f cross-domain mappings are merely manifestations of deepe r cogni -
+tive processes. 3 Thes e mapping s tak e severa l forms , bu t perhap s th e mos t
+dramatic form—an d th e for m I will be primaril y concerned wit h here—is wha t
+Fauconnier refer s t o as "projection mappings " (1997 : 9) , where part of the struc-
+ture of a more concrete o r clearly organize d domai n (th e source domain) is used
+to understand and talk about another , usuall y more abstrac t o r less clearl y struc -
+tured, domain (th e target domain). It is this sort of projective mapping that I will
+refer t o as "metaphor," which—understood in this way—encompasses simile and
+analogy a s well as metaphor in the more specific , literar y sense.
+      Our primar y an d mos t highl y structure d experienc e i s wit h th e physica l
+realm, an d the patterns tha t we encounter an d develop throug h the interaction of
+our bodies wit h the physical environment therefore serve as our most basic sourc e
+domains. These sourc e domain s ar e then calle d upo n t o provide structur e when
+our attention turn s to the abstract realm . Probably th e most crucial claim of cog -
+nitive linguistics is thus that sensorimotor structures play a crucial role in shapin g
+
+                                           21
+22    Effortless   Action
+
+
+our concept s an d mode s o f reasoning. 4 Th e mos t basi c o f thes e structure s ar e
+referred t o a s "primar y schemas"—"dynami c analo g representation s o f spatia l
+relations and movements in space" (Gibbs and Colston 1995 : 349)—that come to
+be associate d wit h abstrac t targe t domain s throug h experientia l correlation ,
+resulting in a set of "primary metaphors. " Lakof f an d Johnson 1999 : 50-54 pro-
+vide a short list of representative primary metaphors (derive d fro m Grad y 1997)
+such as AFFECTIO N I S WARMTH,5 IMPORTANT IS BIG, MORE IS UP, and s o on , spec -
+ifying thei r sensorimotor sourc e domains and the primary experience correlation s
+that give rise to them. Two examples that I will invoke are as follows:
+     1. PURPOSES AR E DESTINATIONS
+     Subjective Judgement: achieving a purpose
+     Sensorimotor Experience : reachin g a destination
+     Example: "He'll ultimately be successful, but he isn't there yet."
+     Primary Experience: reachin g a destination i n everyday life and thereby
+         achieving a purpose (e.g. , if you want a drink, yo u need t o go to the
+         water cooler)
+
+     2. ACTION S ARE SELF-PROPELLED MOTION S
+     Subjective Judgement: action
+     Sensorimotor Experience : moving one's body through spac e
+     Example: "I'm moving right along on the project "
+     Primary Experience : commo n actio n o f movin g oneself throug h spac e
+         (Lakoff an d Johnson 1999: 52-53).
+It is important to note that schemas understood i n this way are based upon experi -
+ential correlation, rathe r than pre-existing similarity, 6 and that they represent ana-
+log o r imag e "irreducibl e gestal t structures " (Johnso n 1987 : 44)—including
+entities, properties , an d relations—rathe r tha n propositions . Thus , th e phras e
+PURPOSES ARE DESTINATIONS should be see n a s a shorthand way t o refer t o "the
+complex web of connections i n our experience an d understanding formed by this
+mapping across domains of experience" (Johnso n 1987: 7 ) rather than a preposi-
+tional statement; "the metaphor itself is not reducible to the proposition w e use to
+name it" (Johnson 1987: 7).
+      Traditional theorie s o f metapho r usuall y portra y i t a s a relativel y rar e an d
+somewhat "deviant " mod e o f communicatio n throw n in t o ad d rhetorical spice ,
+but fully reducibl e t o some equivalent literal paraphrase. Metaphor understoo d in
+this wa y i s thu s a purel y optiona l linguisti c device. A n importan t claim o f th e
+cognitive approach t o metaphor is that metaphor is , in fact, primaril y a matter of
+thought, no t language, and that conceptual metapho r i s ubiquitous and unavoid-
+able fo r creature s lik e us. 7 Conceptua l metaphor , i t is claimed, serve s a s one of
+our primary tools fo r reasoning about ourselves and the world—especially about
+relatively abstrac t o r unstructure d domains . Whil e abstrac t concept s suc h a s
+"time" or "death" may hav e a skeleto n structur e that is directly (i.e. , non-meta-
+phorically) represente d conceptually , i n most cases thi s structur e i s no t ric h o r
+detailed enoug h t o allo w u s t o mak e usefu l inferences . Therefore , whe n w e
+attempt t o conceptualiz e an d reaso n abou t abstrac t o r relativel y unstructured
+                                                Wu-wei as Conceptual Metaphor             23
+
+realms, thi s skeleto n structur e i s fleshed out (usuall y automaticall y an d uncon -
+sciously) wit h additiona l structur e provided b y th e primar y metaphor s derive d
+from basi c bodil y experience , ofte n invoke d i n combination wit h other primar y
+schemas t o for m comple x metaphor s o r conceptua l blends. 8 Whe n primar y o r
+complex sourc e domains ar e activated i n such cases an d mapped ont o the targe t
+domain, most aspect s of the source domain conceptua l topology—tha t is , infer -
+ence patterns, imagisti c reasoning pattern, salien t entities, and so forth—are pre-
+served, thereb y importin g a hig h degre e o f structur e int o th e targe t domain .
+Lakoff ha s referred to this as the "invariance principle" (Lakof f 1990) .
+      To give an illustration of this process, conside r the question of how we are to
+comprehend an d reaso n abou t somethin g a s abstract , fo r instance , a s "life. "
+Lakoff an d Johnso n (1999 : 60-62 ) not e that , whe n reasonin g o r talkin g about
+life, Englis h speakers ofte n invok e the comple x metaphor , PURPOSEFU L LIF E AS
+JOURNEY, which provides the m with a schema drawn from embodie d experienc e
+that helps them to reason abou t this abstract concept. Thi s schema derives from a
+folk belief 10 that it is important t o have a purpose i n life , an d i s based upo n the
+two primar y metaphor s mentione d above , PURPOSE S AR E DESTINATIONS an d
+ACTIONS AR E SELF-PROPELLED MOTIONS—tw o schemas that have become a part
+of our conceptual "toolbox" through experiential correlation. When these two pri-
+mary metaphor s ar e combine d wit h the simpl e fac t (derive d fro m ou r commo n
+knowledge of the world ) that a long trip to a series o f destinations constitute s a
+journey, we hav e the comple x metaphor schema, PURPOSEFU L LIFE AS JOURNEY,
+which Lakoff and Johnson map as follows:
+      Journey —            > Purposefu l Life
+      Traveler —           > Perso n Living a Life
+      Destinations —       > Lif e Goals
+      Itinerary —          > Lif e Plan
+
+The PURPOSEFU L LIF E AS JOURNEY metaphor thus arises out o f ou r basi c embod -
+ied experienc e an d give s u s a wa y t o thin k an d reaso n abou t thi s abstrac t
+"entity," whic h "in itself i s fairly unstructure d and therefore difficult t o reason
+about. As Lakoff an d Johnson note, th e ful l practica l import of a metaphor such
+as thi s lies i n it s entailments : tha t is, th e fac t that the metaphori c lin k betwee n
+abstract life and a concrete journey allow s u s t o dra w upo n ou r larg e stoc k o f
+commonplace knowledg e abou t journeys an d appl y thi s knowledge to "life. "
+So, to return to their example, we have in our stock of experience concernin g lit-
+eral journeys some of the following pieces o f knowledge:
+     A journey requires planning a route to a destination.
+     Journeys may have obstacles, an d you should try to anticipate them.
+     You should provide yourself with what you need for your journey.
+     As a prudent traveler, you should have an itinerary indicating where you
+        are supposed to be at what times and where to go to next.
+24    Effortless Action
+
+     You should always know where yo u ar e an d where you ar e going next,
+       and how to get to your next destination. (62 )
+Mapping this knowledge and set of inference patterns onto th e abstract real m of
+"life," we get the following entailments:
+     A purposefu l lif e require s plannin g a mean s fo r achievin g you r pur -
+        poses.
+     Purposeful live s ma y hav e difficulties, an d you shoul d tr y t o anticipat e
+        them.
+     You should provide yoursel f wit h what you need t o pursue a purposeful
+        life.
+     As a prudent person wit h lif e goals, you should have an overall life plan
+        indicating what goals you are supposed t o achieve at what times and
+        what goal to seek to achieve next.
+     You should alway s kno w what you hav e achieved s o far an d wha t you
+        are going to achieve next, and how to go about achieving these goals .
+        (62)
+We thus unconsciously assume that life, like a physical journey, requires planning
+if on e i s t o reac h one' s "destination, " tha t difficultie s wil l b e "encountered "
+"along th e way, " tha t on e shoul d avoi d bein g "sidetracked " or "bogge d down, "
+and s o on . Havin g becom e convince d tha t I hav e becom e "side-tracked, " fo r
+instance, I unconsciousl y impor t reasonin g structure s fro m th e sourc e domai n
+and project them on the target domain: exertin g more effor t (travelin g farther) in
+my current endeavo r (path ) will only make things worse (lead m e father astray) ;
+if I wish things to improve (ge t back on track), it wil l be necessary t o first radi-
+cally chang e m y curren t manne r o f doin g thing s (backtrack , reverse ) unti l they
+resemble th e manner in which I used t o do things a t some particula r tim e i n the
+past (ge t back t o the "point" where I went astray), and then begin making effor t
+again (begin moving forward) in a very different manne r than I am doing now (in
+a new direction). W e can thus see how a single complex metapho r ca n have pro-
+found practica l implications , influencin g decision making an d providing us with
+normative guidance . I n addition , th e shee r awkwardnes s of th e (mostly ) litera l
+paraphrases just give n illustrat e ho w deepl y th e PURPOSEFU L LIFE AS JOURNEY
+schema penetrate s ou r consciousness : i t take s a grea t dea l o f effor t t o avoi d
+invoking it in some way when discussing life-decisions .
+      As w e ca n se e fro m thi s example , a singl e complex , conceptua l metapho r
+ structure ca n infor m a whol e serie s o f specifi c linguisti c expressions , suc h a s
+being "lost " i n life , workin g a t a "dead-end " job, o r "goin g nowhere. " Thes e
+ "families" o f specifi c metaphorica l expression s (whethe r linguisti c o r material )
+ are not random or unrelated but are rather all motivated by a common conceptua l
+ schema. This , indeed , is a crucial proposition o f cognitive linguistics : tha t meta-
+phorical expression s ar e not simply fixed, linguistic conventions but rather repre -
+ sent th e surfac e manifestation s o f deeper , active , an d largel y unconsciou s
+ conceptual structures . Thi s mean s tha t a metaphoric structur e such a s PURPOSE -
+ FUL LIFE AS JOURNEY exists independently of an y specifi c metaphoric expressio n
+                                                Wu-wei as Conceptual Metaphor             25
+
+of it , and ca n thu s continuously generate ne w and unforesee n expressions . Any-
+one familia r with the PURPOSEFU L LIF E A S JOURNEY schema ca n instantl y grasp
+the sense o f such metaphors as "dead-end job " o r "going nowhere " upo n hearing
+them for the first time, an d can also dra w upon th e conceptual schem a t o creat e
+related bu t entirel y nove l metaphori c expressions . Whe n th e nove l expressio n
+"living in the fast lane" was introduced int o American culture, it was immediately
+comprehensible becaus e i t i s base d upo n th e PURPOSEFU L LIF E A S JOURNEY
+schema, an d becam e popula r becaus e i t allowe d American s t o dra w upo n a
+wealth o f reasoning pattern s abou t a concrete sourc e domai n (drivin g in the fas t
+lane of the freeway, whic h is exciting but potentially dangerous) an d use them to
+reason abou t lif e (you r frien d wh o i s "livin g i n th e fas t lane " may b e havin g a
+good tim e a t th e moment , bu t ther e i s a potentia l fo r disaster , s o mayb e sh e
+should "slow down" before she "crashes and burns").
+      Scholars studyin g metaphor fro m a cognitive perspective cit e severa l type s
+of phenomen a a s evidence tha t metaphors i n fac t represen t conceptuall y active ,
+dynamic structures . Th e expressio n "livin g i n th e fas t lane " i s a n exampl e o f
+"novel-case generalization " evidence : th e fac t tha t entirel y nove l linguisti c
+expressions ca n b e generate d tha t are nonetheles s instantl y comprehended b y a
+competent speaker , becaus e the y dra w upo n a share d conceptua l structure .
+Related evidenc e include s polysem y (the fact tha t we find systematically related
+meanings for single words or expressions such as "dead end" o r "lost") and infer-
+ence patterns—tha t is , th e fac t tha t reasonin g pattern s fro m well-structure d
+source domain s (physica l travel, fo r instance ) ar e commonly use d t o draw con -
+clusions abou t abstrac t targe t domain s (e.g. , life) . I n additio n t o suc h linguistic
+evidence, a growin g bod y o f psychological experiment s have demonstrate d th e
+cognitive reality of metaphor schema s as manifested in such processes a s sensory
+perception,13 and several studie s have provided evidence that cognitive mappings
+are actually physiologically instantiated in the brain.14 All of this convergent evi-
+dence suggest s tha t conceptual metaphor is not only a very real phenomenon but
+is an inevitable part of embodied huma n cognition.
+      This lead s u s t o th e "experiential realist " o r "embodie d realist " stance tha t
+informs th e cognitive linguistic approach. Conceptual metaphor s "ar e interactiv e
+. . . structured mode s o f understanding " tha t aris e a s a result o f ou r embodie d
+mind having to adapt to "our physical , cultural, and interpersonal environments "
+(Fesmire 1994 : 152) . Because human bodies ar e quite similar the world over, and
+the types o f environments huma n beings fac e are als o share d i n most important
+respects, on e would expect t o find a high degree o f similarity with regard to con-
+ceptual metaphor s acros s huma n cultures an d languages, especially wit h regar d
+to primary metaphor. For instance, it is not unreasonable t o claim that all human
+beings—regardless of culture, language, or period i n history—have had the expe -
+rience of needing to move from point A to point B in order realize som e purpose ,
+and w e should thus not be surprise d i f the primary metaphor PURPOSE S AR E DES-
+TINATIONS i s universal or near-universal amon g human cultures. I n other words ,
+since huma n experienc e involve s a hug e numbe r o f shared , embodie d gestal t
+structures, w e shoul d expec t thes e share d structures—a s a resul t o f projectiv e
+mapping—to be reflected at the level of abstract thought as well.
+26    Effortless Action
+
+     Of course , sinc e thes e gestal t pattern s aris e throug h th e interaction s o f ou r
+embodied mind s wit h ou r environment , w e woul d als o expec t tha t dramati c
+changes i n environmen t would be reflecte d i n the creatio n o f nove l conceptua l
+metaphors. T o a certai n degre e w e se e thi s happe n wit h th e developmen t o f
+important technologie s tha t hav e a n impac t o n dail y life ; t o cit e onl y a mor e
+recent example , th e adven t o f widesprea d compute r us e ove r th e pas t decade s
+gave rise t o importan t an d influentia l ne w metaphor s fo r th e brai n an d fo r lan-
+guage processing (Boy d 1993 : 486-87; Lakoff an d Johnson 1999: 251-52). Phe-
+nomena such as the Internet are also generating new modes of human interaction,
+which wil l presumabl y resul t i n th e formatio n o f ne w metapho r schemas .
+Although long-term human habitation of space i s still in the realm o f science fic -
+tion speculation , i t woul d b e interestin g t o imagin e wha t woul d happe n i f i t
+became a reality and there wer e generation s o f children raised i n a zero-gravity
+environment. Would they continue to make use of older "gravity-based" schemas
+out o f linguisti c o r cultura l conservatism, o r woul d the y eventuall y tos s thes e
+metaphors aside an d develop their own entirely new—an d to us, quite alien and
+perhaps incomprehensible—sets of conceptual metaphors ?
+     In any case, despite th e great strides in technology that have been made over
+the centuries an d the large impac t these technologie s hav e had on our lives , the
+basic share d huma n environment ha s remained remarkabl y stable. W e still hav e
+to physically move i n order t o ge t something tha t we want, still obtai n mos t of
+our information about the world through our sense of sight (the experiential basis
+of th e commo n primar y metaphor, KNOWIN G I S SEEING), an d overal l th e basi c
+repertoire o f motions and physical interactions possessed b y a modern American
+is not terribly different fro m that possessed by , say, a Chinese person in the fourt h
+century B.C. Despite the advent of electricity, moveable type , computers, an d the
+Internet, then , th e basi c stabilit y of th e huma n body an d th e environmen t wit h
+which i t is forced to interact across culture s and time would lead u s to expect a
+high degre e of universalit y in basi c metapho r schemas . A s w e shal l se e a s w e
+begin to apply the methods of cognitive linguistics to classical Chinese texts, the
+degree o f similarit y we wil l find between moder n Englis h an d ancien t Chines e
+conceptual metaphor s i s quite striking, even when it comes t o quite abstract an d
+presumably culturall y contingent domains . Whil e this might seem surprisin g or
+unlikely fro m th e perspectiv e o f neo-Cartesia n postmoder n theory—wher e lin-
+guistic-cultural system s ar e conceived o f (metaphorically!) a s sui generis, auton -
+omous structures—it is rather to be expected fro m th e standpoint of the cognitive
+theory of metaphor.
+      In the chapters that follow I will use the method of metaphor analysis to dis-
+cover conceptua l link s between thinker s in a more o r less share d linguisti c an d
+cultural environment. As I will discuss again in the conclusion, though, the analy-
+sis o f conceptua l metapho r als o represent s a n excitin g ne w methodolog y fo r
+scholars intereste d i n cross-cultural comparison work , and the principle of expe -
+riential realis m upo n whic h thi s methodolog y i s base d provide s a theoretica l
+grounding fo r comparativ e wor k i n general . Th e exploratio n o f th e conceptua l
+"deep grammar " (t o invok e a Chomskya n metaphor ) tha t underlie s linguisti c
+signs such as metaphor effectively get s us out of the postmodern "priso n house of
+                                                Wu-wei as Conceptual Metaphor            27
+
+language," allowin g us to use the body and bodily experience as a bridge to the
+"other." At the same time, th e recognition tha t share d conceptua l structure s ar e
+contingent upon bodies and physical environment, that no set of conceptual sche-
+mas provide s unmediated acces s t o th e "thing s i n themselves, " an d tha t som e
+degree o f cultural variation in schemas is to be expected allows us t o avoi d the
+sort o f rigi d universalis m that characterizes Enlightenment-inspire d approaches
+to the study of thought and culture. The method of conceptual metaphor analysis
+might b e presente d a s a sor t o f "middl e way " betwee n mor e traditiona l
+approaches to comparative work that focus mor e exclusively upon, respectively,
+specific technica l terms (linguisti c signs) or genera l philosophica l theories. M y
+hope is that this book will help to popularize this approach among scholars in the
+humanities and social sciences .
+
+
+
+Applying Metaphor Theory to Classical Chinese:
+Wu-wei as Conceptual Metaphor
+
+In th e followin g sections I wil l attempt t o sho w ho w th e theor y o f conceptua l
+metaphor can help us to elucidate the concept of "wu-wei" or "effortless action."
+As we shall see, the metaphor of wu-wei is strongly tied up with metaphoric con-
+ceptions o f th e sel f an d agenc y tha t are share d cross-culturally , a fac t tha t will
+help us greatly in exploring its cognitive structure. Therefore, before I can discuss
+the metaphoric structure of wu-wei, I must first discuss th e schema s commonly
+used to conceptualize the self.
+
+     Conceptualizing the "Self
+Perhaps one of the most common abstractions we need to conceptualize and deal
+with in everyday decision making is ourselves (our "selves"). Lakoff an d Johnson
+have mapped out some of the basic schemas we employ in English to conceptual-
+ize and reason about the Self, and—as we will see later—almost all of these sche-
+mas are found a s well in Warring States classical Chinese .
+     With regard t o conceptions o f the self i n modern American English, Lakoff
+and Johnson note that there is no single monolithic way that speakers of English
+invoke in order to conceptualize inner life. We rely upon a variety of metaphoric
+conceptions t o understand ourselves. These various metaphors do, however, draw
+upon a fairly smal l number of source domains such as space, objec t possession ,
+exertion o f physical force, an d social relationship s (1999 : 267). Although these
+various schemas are at times literally contradictory, they are generally not incom-
+patible—that is, they serve to supplement one another and thereby fit together to
+form a coheren t conceptio n o f self . I n elucidatin g th e structur e o f th e wu-wei
+metaphor, we will have reason to discuss several of these schemas .
+     To begin with, it is necessary t o examine the most general metaphori c struc-
+ture fo r conceptualizin g th e self , firs t identifie d b y Andre w Lakof f an d Mile s
+28    Effortless Action
+
+Becker 199 2 an d elaborated i n Lakoff and Johnson 1999 : 268-70 : the SUBJECT -
+SELF schema. After examining a wide variety o f metaphors for the self i n modern
+American English , Lakoff an d Becke r conclude d tha t English speaker s funda -
+mentally experience themselve s in terms of a metaphoric split between a Subject
+and one or more Selves. In this SUBJECT-SELF schema, the Subject is always con-
+ceived o f a s person-lik e an d wit h a n existenc e independent fro m th e Sel f o r
+Selves; i t i s th e locu s o f consciousness , subjectiv e experience , an d ou r
+"essence"—everything that makes us who we are. The Self encompasse s every -
+thing else about the individual, and can be represented b y a person, object , loca -
+tion, faculty, physical organ, body, emotion, socia l role, persona l history , and so
+on. The basic SUBJECT-SELF schem a can be mapped as follows:
+      A Person —                          > Th     e Subject
+      A Person, Thing, or Place — > Th             e Self
+      A Relationship —>                    • Th    e Subject-Self Relationshi p
+
+Consider, fo r example , th e expression , " I ha d t o forc e mysel f t o d o it. " Wha t
+Lakoff an d Becker are arguing is that this phrase is based upo n a conceptual split
+between a metaphoric Subjec t ("I")—th e ever-present locu s o f consciousness—
+and a separat e Sel f ("myself ) tha t has t o b e "forced " t o d o wha t the Subjec t
+wants i t to do . Thi s i s the Subject-Sel f spli t a t it s most basic. I n a n expressio n
+such as, "My fear overwhelme d me," th e Self i s an emotion ("my fear") , distinc t
+from th e Subjec t ("me") an d conceptualize d a s a physica l force no t unde r th e
+Subject's control , whereas in the phrase " I wa s able to ste p outsid e o f myself, "
+the Sel f i s conceptualized a s a metaphoric locatio n ( a kind of container ) wher e
+the Subject normall y resides, bu t whic h the Subjec t ca n leave whe n it needs t o
+"observe itself." Wha t makes al l of these expressions metaphori c is the fac t tha t
+1) they are not literally true (e.g., ther e i s no "me" tha t is literally separate fro m
+an "I" tha t can be physically "forced" t o do something), and 2) (as I will explain
+shortly) the y dra w upo n concret e sourc e domains—objec t relations , physica l
+forces, physica l locations o r containers—i n orde r t o describ e an d reaso n abou t
+the abstract realm of "the self. "
+     Many o f th e metaphor s fo r sel f I wil l describ e ar e merel y specia l case s o f
+this singl e general metapho r system. 15 Phenomenologically, thi s is very signifi -
+cant; as Lakoff an d Johnson note, "this schem a reveal s not only something dee p
+about ou r conceptua l system s bu t als o somethin g dee p abou t ou r inne r experi -
+ence, mainl y that we experience ourselve s a s a split" (269). Th e precise manner
+in which this split is conceptualized, as well as the specifics of the "Relationship "
+element mentione d i n th e mapping , then , depend s upo n th e concret e sourc e
+domain tha t i s invoked . Som e o f th e mor e commo n sourc e domains—an d th e
+more specifie d version s o f th e SUBJECT-SEL F metapho r tha t g o alon g wit h
+them—will be described a s I relate the generic SUBJECT-SELF schema to the met-
+aphor of wu-wei.
+     Manipulating physical objects i s one o f the first things we learn ho w t o d o
+and i s als o somethin g w e continu e t o d o frequentl y throughou t ou r lives . We
+                                                Wu-wei as Conceptual Metaphor            29
+
+should thus not be surprised that object manipulation serves as the source domain
+for man y o f th e SUBJECT-SEL F metaphors , includin g that o f wu-we i itself. Th e
+basic schema i s SELF-CONTROL IS OBJECT CONTROL, and sinc e th e mos t commo n
+way t o control a n object is to exert force upon it, this schema i s often formulate d
+as SELF-CONTRO L I S TH E FORCE D MOVEMEN T O F A N OBJECT , whic h ca n b e
+mapped a s follows:
+
+      SELF-CONTROL IS THE FORCED MOVEMENT OF AN OBJECT
+
+      A Person —                          > Th e Subject
+      A Physical Object —                 > Th e Self
+
+      Forced Movement —                   > Contro l of Self by Subject
+
+      Lack of Forced Movement — > Noncontro l of Self by Subject
+
+Examples from English given by Lakoff an d Johnson include:
+     I lifted m y arm. The yogi bent his body into a pretzel. I dragged myself
+     out of bed. I held myself back from hittin g him. (1999: 271)
+As w e shal l see , thi s schem a o f self-contro l an d objec t movemen t inform s th e
+most basic metaphorical conception o f wu-wei, that of "effortlessness. "
+
+     Primary Wu-wei Metaphor: Lack of Exertion
+Generally, contro l o f th e objec t Sel f b y th e Subjec t i s desirable , bu t eve n i n
+English w e sometime s spea k o f noncontro l o f th e Sel f i n a positiv e sense , a s
+when a person who—perhap s afte r muc h effort an d no progress in learning how
+to dance—at last succeeds an d explains, "I was finally able to let myself go." This
+is the sense in which we are to understand the basic metaphor of wu-wei: literally
+meaning "n o doing/effort/exertion, " i t refers metaphoricall y t o a stat e i n which
+action is occurring even though the Subject is no longer exerting force. "Wu-wei"
+itself thu s serve s a s th e mos t genera l metaphori c expressio n o f th e concep t o f
+effortlessness o r lack of exertion. Sharing its conceptual schema structure are two
+main "families" of metaphoric expressions, both of which fall under this rubric of
+"effortlessness" bu t differ fro m eac h other slightly in conceptual structure.
+The "Following" Family Th e schema upon which metaphors in this family are
+based i s that of the Subject surrendering control and physical impetus to the Self.
+The most common of these are as follows:
+     following (cong $£ )
+     following/adapting to (yin H )
+     leaning on (yi ffi.)
+     flowing alon g with (shun )§} )
+In these metaphoric expressions, th e Subject is able to be free o f exertion becaus e
+the Sel f i s allowe d t o d o al l o f th e work . Perhaps th e earlies t an d mos t famous
+30    Effortless Action
+
+example of such a metaphor is Confucius at age seventy as described i n Analects
+2.4, able to "follow [cong] [his ] heart's desires withou t transgressing th e bounds."
+Here Confucius, after a lifetime of exertion, i s able to relax and allow an aspect of
+the Sel f — the desires of his heart —to take ove r the initiatio n of action , wit h the
+Subject merely following along behind.
+The "At Ease " Family A n alternat e famil y o f metaphor s expresse s th e sam e
+concept o f effortlessness, bu t in a slightly different form . The structure of the "a t
+ease" metaphors i s focuse d solel y upo n a unitary Subject , wh o i s portraye d a s
+simply restin g o r no t exertin g force , wit h no mention of th e Self . Metaphor s i n
+this family include th e following:
+     at ease/at rest (an §:)
+     relaxed (jlan fffi ; shu ff )
+     still (/ing HO
+     at rest (xi ,& ; she llf ; xiu ifc)
+     wandering/rambling (xiaoyao jH^^anghuang tfrtH )
+     playing/wandering (you S?)
+Here there i s no explicit inclusio n of th e Sel f a s an agen t of action , althoug h of
+course i t would be a logical entailment —based upon our knowledge o f physical
+objects an d movement — that the Subject i s able to "rest" only because someon e
+or something else has taken over. This entailment is actually spelled out explicitly
+in a set of idiosyncratic metaphors foun d i n the Zhuangzi, where the unitary Sub-
+ject can "rest," passively b e "housed" or "lodged," or be able to simply "go for a
+ride," because th e normative order is doing the work:
+     resting [xiu ffi- ] on the Potter's Whee l o f Heaven [tianjun 5^ ] (W41/
+        G70)
+     housed [zhai ^ E ] i n onenes s an d lodgin g [yu i S ] i n wha t canno t b e
+        stopped [budeyi ^tf E] (W58/G148 )
+     riding [cheng H i ] th e Tightnes s o f Heave n an d Eart h an d takin g th e
+        reigns [yu ffll ] of th e discrimination s o f th e si x form s o f qi (W32 /
+        G17)
+Conceptually, then , the differenc e i n structur e betwee n th e "following " an d "a t
+ease" families i s slight. We will se e that, as a consequence, th e "following " an d
+"at ease " metaphors ar e ofte n use d i n combinatio n an d in a more o r les s inter -
+changeable fashion .
+     These tw o families of metaphors, both having to do with lack of exertion or
+effortlessness, for m the core o f the wu-wei constellation an d determine it s basi c
+conceptual structure. I n turn, though, the entailments of this basic structure moti -
+vate other sets of conceptually related metaphors .
+
+     Secondary Wu-wei Metaphor: Unself-consciousness
+Object manipulatio n is no t th e onl y wa y t o conceptualiz e self-control . Anothe r
+common way , found i n English (Lakof f an d Johnso n 1999 : 272-73 ) a s wel l a s
+                                               Wu-wei as Conceptual Metaphor            31
+
+classical Chinese , i s in terms o f object possession, which can be mapped a s fol-
+lows:
+
+      SELF-CONTROL IS OBJECT POSSESSION
+
+      A Person —                 > Th e Subject
+      A Physical Object —        > Th e Self
+      Possession —               > Contro l o f Self
+      Loss of Possession — > Los s of Control of Self
+
+Examples from Englis h include "losing yoursel f o r "getting carried away, " and
+this is generally understood i n a negative sense. We find such negative portrayals
+of los s o f objec t possessio n i n classica l Chines e a s well . I n th e Zhuangzi, fo r
+instance, we read of the second-rate shama n who is confronted with a true Daoist
+master tha t "before h e [i.e. , th e shaman ] had eve n full y com e t o a hal t h e los t
+himself [zishi § ^; i.e., lost his nerve] and ran away" (W96/G304).
+     Nonetheless, thi s phenomenon i s not always given a negative valuation, for
+"losing oneself i n the enjoyment of a book or work of art, for instance, is a desir-
+able and pleasurable experience. I n cases suc h as this, the ordinary state of meta-
+phorically "possessing" the self is conceived of as a restriction or burden, and the
+elimination o f possessio n understoo d a s a kin d of release . W e might therefore
+remap the schema in the following way to reflect this alternate valuation of object
+possession:
+
+      SUBJECT ESCAPES CONTROL OF SELF THROUGH OBJECT LOSS
+
+      A Person —                  > Th e Subject
+      A Physical Object —         > Th e Self
+      Possession —                > Contro l of Subject by Self
+      Loss of Possession —        > Subjec t Freed from Contro l by Self
+
+Applying th e SUBJECT-SEL F an d OBJEC T POSSESSION schemas t o Warrin g States
+texts suc h as the Zhuangzi allow s us to understan d more clearly suc h stories a s
+that of Zi Q i of Southwall, who—after makin g his body like dead woo d an d his
+mind like dead ashes through some sort of meditative technique—declares that "I
+have lost myself (wu sang wo H SS^c) (W36/G45). Muc h has been made of this
+passage b y scholar s suc h as Wu Guangming and David Hall, wh o see i t as evi-
+dence o f two differen t type s of self in the Zhuangzi: the ww-sel f an d the wo-sel f
+(Wu 1990 ; Hal l 1994) . As Paul Kjellberg has noted, however, the phrase wu sang
+wo is simply proper classical Chinese, wu being the standard first-person subject
+pronoun an d wo usuall y servin g a s th e first-perso n objec t pronou n (Kjellberg
+1993a). I n thi s respect , th e sens e o f wu sang wo coul d hav e equall y bee n
+expressed wit h interchangeable first-person reflexive pronouns (a s in wu sang ji
+32    Effortless Action
+
+iS1 5§ S o r ww zisang ^ § 5§ ), and the phrase itsel f i s neither mor e nor less
+freighted wit h philosophical significanc e than the English phrase, "I lost myself."
+As w e have noted, however , even this English expression i s significant i n that it
+gives expression t o th e SUBJECT-SEL F an d OBJEC T POSSESSIO N conceptual sche -
+mas, an d this is no les s true o f classica l Chinese . Metaphorically , then, Zi Qi' s
+meditative technique has allowed hi m (the Subject) to escape th e contro l o f th e
+Self—which, a s we shal l see, i s a common wa y to understan d Zhuangzian wu -
+wei.
+      Although th e litera l structur e o f th e OBJEC T LOS S schem a ca n b e distin -
+guished fro m th e "effortless " metaphor s describe d above , th e tw o schema s ar e
+closely linke d conceptuall y a s a result o f ou r experienc e o f th e world . That is ,
+since physical effort require s concentration and focus, an entailment of effortless -
+ness—one tha t follow s quit e naturall y for anyon e familia r with th e domai n of
+physical exertion—is a n accompanyin g stat e o f unself-consciousness . I t i s thus
+not surprisin g tha t the two schema s are ofte n associate d wit h one anothe r in
+English. We see this phenomenon, fo r example, in the conceptual equivalenc e of
+the concepts o f "letting yoursel f go [in enjoying an activity]" and "losing/forget -
+ting yourself [i n an activity]." Here, the Subject ceasing to exert force on the Self
+ ("letting yoursel f go") i s conceptually equivalent to the Subject "losing" or "for-
+getting" (i.e., losing from consciousness) the Self . T o choose some examples
+from th e Zhuangzi (ou r richest source for wu-wei metaphors), we can see forget-
+ ting/losing linked to effortlessness in several passages :
+     [He] forgets [wang] hi s liver and spleen, forgets/loses [yi 31 ] his ears and
+     eyes, an d unself-consciously [mangran T?^] roams \fanghuang C^tM ]
+     outside the dusty realm, wandering easily [xiaoyao IHSi ] in the service
+     of wu-wei. (W207/G663 )
+     Harmonize [righ t and wrong] with Heavenly equality and follow along
+     with [yin H ] them by means of vastness, and in this way live out your
+     years. Forget [wang] th e year s an d forge t Tightness , and lea p int o th e
+     boundless. (W49/G108 )
+A basi c entailmen t o f "forgetting " i s that , onc e yo u hav e forgotten something ,
+you n o longe r kno w it . Thi s entailmen t allow s u s t o brin g the commo n litera l
+expression o f unself-consciousness, buzhi ^%U ("unaware") , int o the losing/for -
+getting family. Another association i s provided b y the fact tha t the experience of
+strong emotion s ofte n induce s a kind o f unself-consciousness , a s the Subjec t is
+overwhelmed by the Self (i n the form of an emotion). W e thus find strong emo-
+tion being linked to the losing/forgetting famil y throughout Warring States texts ,
+as in the example cite d fro m th e Zhuangzi above, where powerful fear causes th e
+second-rate shama n to "lose himself an d run away. The strong emotion can also
+be a positive one, though, as in the case of Confucian "joy" (le ^ ). In Analects
+7.19 w e se e the conceptua l lin k between joy , forgetting , and litera l unself-con -
+sciousness ver y elegantly illustrate d i n a single lin e wher e Confuciu s describe s
+himself a s "th e typ e o f person wh o becomes s o absorbed i n his studie s tha t he
+                                               Wu-wei as Conceptual Metaphor            33
+
+forgets [wang] t o eat , whos e joy [le H I ] render s hi m fre e o f worries , an d wh o
+grows old without being aware [buzhi] o f the passage of the years."
+The "Forgetting" Family W e can thus classify al l of these metaphor s o r litera l
+expressions a s being members o f what we will call the "forgetting" family :
+    forgetting (wang 7s)
+    losing (shi f e y i 5a; sang H )
+    not knowing/unaware (buzhi ^%Q)
+    joy (le HI) or other overpowering emotion.
+Understood metaphoricall y i n term s o f th e OBJEC T LOS S schema , unself-con -
+sciousness i s thus closely linke d to th e LAC K OF EXERTION schem a a s one o f it s
+entailments, an d i s expresse d throughou t th e text s w e wil l b e examinin g b y
+means of the "forgetting" famil y o f metaphors an d literal expressions . Together ,
+effortlessness an d unself-consciousness represen t th e two conceptual, metaphori -
+cal hallmarks of what we will be calling "wu-wei" activity.
+
+     Related Metaphors
+I cannot conclude my discussion of the metaphoric structure of wu-wei, however,
+without mentioning some other familie s of metaphors tha t are often associated i n
+Warring State s text s wit h effortlessnes s an d unself-consciousness . Thes e meta -
+phors wor k together wit h th e primary an d secondar y wu-we i metaphors t o help
+clarify the m or spell out more clearly their entailments.
+The "Emptiness" Family Th e metapho r of emptiness or tenuousness (xu MI ) is
+often associate d with wu-wei in writings that might be identified as "Daoist," as
+well as in the writings of Xunzi, and serves t o supplement the "forgetting" famil y
+of metaphors i n conveying the ide a of unself-consciousness. I t is based upo n an
+alternate schem a fo r conceivin g o f the Subject-Self relationship , tha t of the SEL F
+AS CONTAINER . This schem a derive s fro m ou r interaction s wit h bounded space s
+and containers, an d can be mapped as follows:
+
+      SELF AS CONTAINER
+
+      A Person —                  > Th e Subject
+
+      A Container —                > Th e Self
+
+      Objects in Container — > Qualitie s of the Self
+
+Virtues, vices , tendencies , characte r traits , an d knowledg e o f variou s sort s ar e
+understood, through a basic ontological metaphor, as substances tha t can be "pu t
+into" or "taken out of th e container of the Self. The CONTAINER SELF can be the
+Self i n the most general sense, or merely a part of the self, such as the heart/mind
+(xin 'L N) or the qi H, ("vital essence").
+      In text s suc h a s th e Laozi o r Zhuangzi, th e container o f the Sel f bein g ren-
+dered empt y or tenuous (xu) allows th e Subject to enjoy a state of effortlessnes s
+34   Effortless Action
+
+and unself-consciousness. A n interesting exampl e o f this is found in the "fastin g
+of the mind" passag e fro m chapte r 4 of the Zhuangzi, wher e the mind is likene d
+to a stomach that can be made empty through metaphorical fasting. Once the fast-
+ing is complete, th e only thing left "inside" is the qi, which is described a s being
+so tenuous a substance tha t it has space t o "receive things" an d serve a s a reser-
+voir wher e the Way will naturally gather. The resul t of this psychic purge o f the
+container o f the mind is said to be a Subject who can "play" (you 12) in a previ-
+ously dangerou s cag e an d "lodge" itsel f i n "wha t canno t b e stopped " (budeyi)
+(W58/G147)—thus linkin g the emptines s metapho r wit h metaphor s fro m the
+effortlessness family .
+Inner-Outer Family Th e metaphor s i n this famil y ar e base d upo n the SEL F AS
+CONTAINER schem a but combin e thi s schema wit h anothe r metaphor , tha t of th e
+ESSENTIAL SELF . As described i n Lakoff an d Johnson (1999 : 282-84), the ESSEN -
+TIAL SEL F metaphor i s based upo n wha t they cal l th e "fol k theor y of essences":
+that is, the idea that every object has "within it" an essence tha t makes it the kind
+of thing it is and that this essence is the causal source o f every object' s "natural "
+behavior (1999 : 214-15) . Applie d t o huma n beings , ou r "essence " i s usuall y
+vaguely associate d wit h th e Subject . Ther e are , however , situation s whe n "ou r
+concept o f who we are essentially . . . is incompatible with what we actually do"
+(1999: 282), an d suc h situation s ar e explaine d b y invokin g th e ESSENTIA L SEL F
+metaphor
+
+      ESSENTIAL SELF
+
+      Person 1 —>               • Th e Subject, with the Essenc e
+      Person 2 —               > Sel f 1 , the Real Self (Fit s the Essence )
+      Person o r Thing 3 — > Sel f 2, Not the Real Self (Doe s No t Fit the
+                              Essence)
+
+Consider th e phrase, " I a m not myself today." A s an apology o r explanation fo r
+undesirable behavior , thi s metaphor posit s a desirable relationship—th e Subjec t
+("I") bein g coterminous wit h Self 1 (the "real" self)—that ha s failed or been dis-
+rupted. I n this expression, Sel f 2 is not mentioned explicitly , but this is presum -
+ably "who" th e Subject "was" whe n the undesirable behavior was going on. Self
+2 is , however, mentioned explicitl y i n such simila r phrases as , "That wasn't th e
+real me talking." Here, Self 2 has taken over control of the Subject, with the exist-
+ence of Self 1 being implied: the existence o f a self that is not the "real" me pre-
+sumes the existence of self that is the real me, who has presumably taken contro l
+now that the Subject is apologizing.
+      Lakoff an d Johnso n not e thre e differen t specia l case s o f this metaphor , bu t
+the one that is the most relevant for my project i s the metaphor of the INNER SELF ,
+                                               Wu-wei as Conceptual Metaphor            35
+
+which involve s combining th e ESSENTIA L SEL F metaphor wit h the SEL F A S CON-
+TAINER schema :
+
+      ESSENTIAL SELF + SELF AS CONTAINER
+
+      Inside of Container —                > Sel f 1 (Fits Subject/Essence )
+
+      Outside Surface of Con- —            > Sel f 2 (Does Not Fit Subject/
+      tainer Essence                                  )
+
+This is a very common an d immediately comprehensible metapho r i n both mod -
+ern English and classical Chinese . "Sh e seem s friendly, " we might say, "but tha t
+is jus t a facad e [concealin g he r rea l (i.e. , internal ) self]. " Similarly , Ya n Hu i
+explains a scheme i n chapter 4 of the Zhuangzi where he intends to be "inwardly
+straight [zhi f i ] while outwardl y bendin g [qu ff i —lit . crooked]" 19 (W56-57 /
+G143)—that is, seeming o n the (false) outside t o be agreeing with a wicked ruler
+while (really) on the inside maintaining his correctness .
+     The combinatio n o f ESSENTIA L SELF + SEL F AS CONTAINER becomes crucia l
+for ou r understandin g of wu-we i when it i s adopted a s the structura l basis fo r a
+metaphor popularized b y the Laozi: that of the "natural" (ziran § ^ ). Meaning
+literally "so-of-itself," ziran refers t o the way a thing i s when it follows it s own
+internal Essence. Metaphorically, the image evoked b y the term ziran is of actions
+emerging "naturally" ou t o f th e container of th e Self—a n exampl e o f th e NATU-
+RAL CAUSATIO N IS MOTION OU T metaphor note d b y Lakof f an d Johnso n (1999 :
+214) i n their discussion o f events an d causes. W e will see that this ziran meta -
+phor i s associate d throughou t Daois t text s wit h both effortlessnes s an d unself-
+consciousness.
+The "Fitting " Family Thi s famil y o f metaphors concern s th e unitary Subject' s
+relationship t o the world , wit h bot h Subject an d World conceived o f as physical
+objects. I t can be mapped a s follows:
+
+     The Subject —                        > Objec t A
+
+     The World —                          > Objec t B
+
+     Proper Relation
+
+     Between Subject and World —> • Objec t A physically fitting or
+                                     matching up with Object B
+
+Conceptual metaphor s i n this family includ e the following:
+    yi It (fitting, appropriate)
+    he H " (fitting, matching)
+    he f n (harmonizing )
+    dang H (appropriate, matching )
+    shi J8 S (appropriate , fitting )
+    pel IB (accompanying, fitting together)
+36    Effortless   Action
+
+An extension o f thi s metaphor give s u s th e popular metaphor s o f "timely " (shi
+Bf ) , wher e th e Subject' s action s ar e conceive d o f a s someho w "matchin g up "
+with the situation, and "responsiveness" (ying HI) , where the Subject is conceptu-
+alized a s a thing being stimulated or move d (gan OH ) by th e WORL D A S OBJECT .
+All o f thes e metaphor s ar e relate d t o effortlessnes s an d unself-consciousnes s
+through our shared experience o f the world—that is, our knowledge that no exer-
+tion o r consciou s struggl e i s necessar y whe n part s fit , clothe s fit , th e season s
+come o n time , o r on e i s provoke d b y a n appropriat e stimulus . This conceptua l
+connection is nicely illustrated by a passage from th e Zhuangzi, where we see the
+"fitting" metaphor woven together wit h metaphors from both the "forgetting" an d
+"inner-outer" families:
+     You forget your feet when the sho e fit s [shi M ], and forge t your waist
+     when th e bel t fits . [Similarly] , yo u forge t righ t an d wron g whe n th e
+     mind fits, and remain unwavering on the inside and unmoved by the out-
+     side when events come together in a fitting fashion. You begin with what
+     is fitting and never experienc e wha t is not fitting when you experienc e
+     the comfort [shi M] of forgetting what is comfortable. (W206-7/G662 )
+
+     Metaphorical Coherence
+One might note at this point that the various metaphor schemas are in many cases
+mutually inconsisten t a t the litera l level. For instance , it is difficul t t o reconcil e
+the fact that the Subject is alternately conceptualized a s a unitary object (as in the
+"fitting" o r "at ease" metaphors) o r as divided i n terms of the Subject-Sel f split .
+As Lakoff an d Johnson hav e noted, however , literal consistency i s not somethin g
+that w e require o f ou r metaphors , a s lon g a s the y wor k togethe r i n a coheren t
+fashion. Lakoff and Johnson (1980: 87-105) describe th e manner in which mutu-
+ally inconsistent metaphors for suc h abstractions as an argumen t (ARGUMENT AS
+WAR, ARGUMENT AS JOURNEY, ARGUMENT AS CONTAINER) Wor k togethe r t o for m
+a coheren t metaphorica l conceptio n o f argument . Basically, sinc e n o one meta -
+phorical image is sufficient t o generate all of the entailments necessary to concep-
+tualize and deal with the complex, abstract phenomenon of "argument," different
+schemas ar e invoked in various situations to highlight the entailments relevant to
+that situation. What makes thes e literall y inconsisten t schema s coher e conceptu -
+ally i s th e fac t that, althoug h eac h ha s it s own se t o f uniqu e entailments , thes e
+entailments partially overlap and supplement one another.21
+      We will see that this is the case as well with the metaphors having to do with
+wu-wei and the attainment of wu-wei. 22 A good example of multiple-structurings
+of single concepts is the se t of metaphors used to conceptualize xing 1 4 (huma n
+nature) tha t are invoked by Xunzi in his essa y entitle d "Huma n Natur e Is Bad"
+(Kill: 150-62/W434^9) . The metaphor schemas invoke d are literally inconsis-
+tent, but nonetheless conceptually coherent, because each o f the m targets a par-
+ticular entailment:
+                                               Wu-wei as Conceptual Metaphor           37
+
+      1. Human natur e is an interna l force tha t we ca n follo w (cong) o r flow
+         along with (shun).
+         Targeted entailment: do not let this force carry the Subject away.
+     2. Human nature is a physical location, like the starting point o f a jour-
+         ney, tha t we leave (li SI) and to which do not return (gui If) .
+         Targeted entailment : wha t we have at birth is only the starting point
+         for the long "journey" of self-cultivation; we would be "regressing" if
+         we wished to return to our inborn state.
+     3. Human natur e i s an object w e lose (shi ^ , sang 5§ ) an d canno t
+         recover.
+         Targeted entailment : ou r inbor n natur e i s somethin g quickl y grown
+         out of; we cannot attain this state again, even if it were desirable t o do
+         so.
+     4. Human nature is a warped materia l to which we must apply external
+         force if we wish it to be straight.
+         Targeted entailment : self-cultivatio n (makin g ou r Sel f "straight" )
+         requires a great deal of effort an d fundamental reformation.
+     5. Human nature is a thing shared with others.
+         Targeted entailment : w e ar e al l equa l a t birth , an d thu s al l equally
+         capable of becoming sages .
+The fact that some of these metaphoric schemas are literally inconsistent does not
+present a problem fo r Xunzi or the reader because they are conceptually coherent
+by virtu e of thei r simila r o r complementar y entailments . Fo r instance , whethe r
+our inborn nature i s a "place" that we leave and to which we do not return or a
+"thing" that we lose and cannot recover, the basic entailment is the same: that, as
+we might say in English, "there i s no goin g back." Similarly, although the por -
+trayal of human nature as a substance alway s shared b y everyone contradicts th e
+metaphor o f it s being somethin g that we irrevocably lose , thes e schemas d o not
+come int o direc t conceptua l conflic t becaus e the y hav e ver y differen t target s
+(equal opportunit y vs . canno t regress) , whic h mean s tha t non e o f thei r entail -
+ments directly contradic t each other . That is, we could understand huma n nature
+as something share d a t birth while still realizing that it is "lost" as we mature. In
+this sense, the HUMA N NATUR E AS SHARED MATERIAL metapho r makes explicit an
+entailment tha t i s a t least consisten t with , and perhap s implie d by , som e of th e
+other metaphors: w e all "leave" from th e same place or have the same "raw mate -
+rial" to work with.
+     With this said, we must also note that not all literally inconsistent metaphor s
+are necessaril y conceptuall y coherent . A s w e shal l see , som e o f th e metapho r
+schemas relate d t o wu-we i i n Warrin g State s thought—particularl y metaphor s
+having t o d o wit h self-cultivatio n aimed a t producing wu-wei—posses s centra l
+entailments tha t are mutually contradictory. To return to the Xunzian example, we
+find in the "Human Nature Is Bad" chapte r a further metaphori c characterizatio n
+of huma n natur e tha t does no t si t wel l conceptuall y wit h th e fiv e alread y dis -
+cussed:
+38    Effortless Action
+
+     6. Human nature is a human agent that is bad, and we know that it is bad
+         because i t desires (yu W() o r wishes (yuan ffi ) t o be good .
+         Targeted entailment : huma n nature is bad
+         Problematic side-entailment : huma n natur e ha s interna l tendencies
+         toward being good, precisely becaus e it is bad.
+As we shall see in chapter 7, this is an example o f the sort of internalist elemen t
+that creeps into the Xunzi fro m tim e t o time an d serve s a s a see d o f conceptua l
+dissonance. W e shall se e many such example s throughou t the texts. I n the Ana-
+lects, for instance, ther e i s a conceptual tensio n betwee n th e two primary meta -
+phors fo r self-cultivation , SELF-CULTIVATIO N A S ADORNMEN T an d SELF -
+CULTIVATION A S CRAF T REFORMATION . A n importan t entailmen t o f th e firs t
+schema is that a suitable substrat e must be present i f adornment i s to take place ,
+while the secon d schem a involve s a complete reformatio n o f th e origina l mate -
+rial—its origina l structur e being mor e o r less irrelevant . Similarly, we see a ten-
+sion i n th e Menciu s betwee n th e SELF-CULTIVATIO N A S AGRICULTUR E
+metaphor—an entailmen t o f whic h i s th e nee d fo r externa l effor t ove r a lon g
+period of time in order to guide and help nourish one's innate endowment—and a
+schema whereby one's nature is conceived o f as a wild force (such as a flood or
+stampede of animals) that can simply be released i n an instant.
+     Indeed, part of the point of this project i s to show that all of the metaphoric
+portrayals of self-cultivation aimed at producing wu-wei found i n the mainstream
+Warring States text s involve schemas withi n the same tex t that are both literally
+incompatible an d conceptually incoheren t because the y contain contradictory (o r
+at least competing) entailments. Thes e instance s o f conceptual dissonanc e wil l
+be particularly interestin g t o us, because the y serve a s the most visible symptom s
+of th e tensio n buil t into th e goa l o f mainstrea m Warring State s self-cultivation :
+the so-calle d "parado x o f wu-wei " mentione d i n th e introduction . Generall y
+speaking, wha t we will find is that all of the thinkers examined employ a mix of
+externalist an d internalist metaphors fo r self-cultivation, which engenders a ten-
+sion wit h regard t o entailments between "trying" and "not trying. " That is, if self-
+cultivation requires th e fundamental reformation of the "stuff' o f one's nature or
+the fasting away of some inbor n "essence" (as in the Zhuangzi), a n entailment is
+that w e mus t tr y rathe r har d no t t o try . On th e othe r hand , i f self-cultivatio n is
+conceived o f metaphorically as the simple release of some innate force or superfi-
+cial adornment of some innate quality, the entailment is that we do not really have
+to try too har d not to try—wu-we i wil l happen , as a Laozia n metapho r woul d
+have it, "so-of-itself' (ziran).
+     The continuing tension between thes e tw o basic types of metaphors i s quite
+significant phenomenologically . Th e religious goa l o f the thinker s I will discuss
+later is to achieve th e ease of wu-wei, and therefore th e idea of "no effort" needs
+to b e metaphoricall y conveyed . A t th e sam e time , wu-we i i s understoo d a s a n
+achieved state , an d eac h thinke r therefor e ha s t o specif y som e sor t o f effort-fu l
+program fo r attaining this state. What we will see in the development o f pre-Qin
+thought is a kind of movement back and forth between an emphasis on external or
+internal metaphor s fo r self-cultivation, with each thinke r being characterized b y
+which side he chooses t o emphasize. No matter which side is dominant, however,
+                                               Wu-wei as Conceptual Metaphor           39
+
+we shall see that the opposing typ e of metaphor—bringing along with it all of its
+incompatible entailments—stil l manages t o creep bac k in somehow, settin g u p a
+field of conceptual dissonance . Wha t follows in the next chapters i s an attempt to
+portray th e development o f pre-Qin though t as a continuing effort t o invoke new
+sorts o f metaphors fo r th e sel f an d self-cultivation—draw n fro m th e domain s o f
+human technolog y o r th e functionin g of th e natura l world—i n a n attemp t t o
+resolve thi s conceptua l dissonance . A s w e shal l see , non e o f thes e attempt s
+proves entirel y successful , and this failure itself (a s I will discuss i n the conclu -
+sion) has significant phenomenological implications.
+
+
+
+Wu-wei in the Pre-Confucian Traditio n
+
+Although th e ter m wu-we i itself doe s no t come int o widesprea d us e until fairly
+late i n the Warring States period , th e metaphoric idea l tha t it describes—acting
+effortlessly an d unself-consciousl y i n perfec t harmon y wit h th e cosmos , an d
+thereby acquirin g a n almos t magica l efficac y i n moving through th e worl d an d
+attracting people to oneself—can b e identified as a central theme in Chinese reli -
+gious thought in texts as early as the Book of Odes (Shijing f t M) and the Book of
+History (Shujing ftM) . Thes e texts ar e relatively vague and not nearly as con-
+ceptually developed a s "writings o f the masters" we will be looking at , but eve n
+here one can see instances o f metaphors that will later become central to the War-
+ring States conceptualization o f wu-wei.
+      The theme of personal perfectio n being reflected in both harmonious, effica -
+cious actio n and in one's physical appearance ca n be found throughou t the Book
+of Odes.25 The aristocratic lor d or gentleman (junzi fllP) 26 i s often described a s
+embodying the martial an d socia l virtue s that become hi s station wit h an effort -
+less ease that reveals itself in his efficacious skil l as much as his personal bearing .
+Metaphorically, thi s is understood a s a kind of "fitting" (yi Jt ) wit h the world.
+Consider, fo r instance, the description b y an admiring poetess o f the object of her
+affection i n ode 214:
+     Magnificent are the flowers, gorgeous their yellow;
+     I have seen this young one,
+     And how glorious he is!
+     How glorious he is!
+     This is why he enjoys good fortune... .
+     Magnificent are the flowers, their yellow, their white;
+     I have seen thi s young one,
+     Driving white horses wit h black manes,
+     Four white horses wit h black manes,
+     And six reins all glossy.
+     He rides to the left, to the left ,
+     My lord does it fittingly [yi![];
+     He rides to the right, the right,
+40    Effortless Action
+
+     My lord has the knack \youzhi W*I].
+     And because h e has the knack,
+     it shows in his deportment [sizhi fK/£.] .
+A similar picture of consummate mastery and effortless accordanc e wit h what is
+"proper" or what "fits" th e situation is rendered in ode 106 :
+     Lo! How splendid he is!
+     How grand and tall.
+     How fine, the brow,
+     His lovely eyes s o bright.
+     He runs agilely, moving in a stately way;
+     When he shoots, he is skilled.
+     Lo! How illustrious he is!
+     The beautiful eye s so clear,
+     Perfect i n propriety [yi fit],
+     Can shoot all day at a target,
+     And never miss the mark [bu chu zheng 'FtBlE].
+     Truly a proper kinsman of mine!
+     Lo! How handsome he is!
+     His clear brow well-rounded ,
+     When he dances, he is in perfect step, 28
+     When he shoots, alway s piercing the target.
+     His four arrow s all find their mark, 29
+     In this way he guards against disorder [luan SI]. 30
+The idea of being able to shoot all day while "never missin g the mark" ha s defi -
+nite metaphorical , mora l overtone s —zheng I E signifyin g "proper" o r morall y
+"upright" a s well as the central mark of a target —and it is in this sense tha t this
+ode has been read by later commentators. Nonetheless , th e wu-wei "lord" or gen-
+tleman i n the ode s primaril y represents a martial , aristocratic idea l —the hand -
+some and physically powerful warrior .
+     A more explicitly moral idea l of wu-wei is to be found displayed b y another
+exemplary typ e in the Odes: th e virtuous sage-ruler o f old. Here both effortless -
+ness an d unself-consciousness ar e emphasized. I n ode 241, for instance, w e find
+the Lord on High (shangdi _h^ ) praising King Wen:
+     I cherish you r bright Virtue;
+     Despite you r great reknown, you do not flaunt it,
+     Despite your enduring prominence, i t remains unchanged.
+     Without recognizing o r being conscious o f it [bushibuzhi ^ts^^D]
+     You go along with [shun IS] my model.31
+King Wen is able to effortlessly "flow along with" the normative standar d embod -
+ied by the Lord o n High in a completely unself-consciou s manner . Although this
+accordance wit h the cosmos endow s him with a powerful moral Virtue, King Wen
+does no t dwell upon it or parade i t in front o f others, no r allow it to become cor-
+rupted b y arroganc e o r pride . H e enjoy s hi s Virtu e naturall y an d unself-con -
+                                                Wu-wei as Conceptual Metaphor            41
+
+sciously. The description of the perfectly tuned moral skill of King Xuan in od e
+304 is similar:
+     King Xuan martially established order:
+     When he received a small state, it prospered ,
+     When he received a large state, it prospered;
+     He followed in the footsteps [of his ancestors] [shuailii $ ® ] without
+       straying/transgressing \yue 18],
+     And everywhere he gazed [suishi H^Jl ; lit. following his gaze] the stan-
+       dards were realized....
+     He received th e blessing [xiu ffi; lit . ease, rest] of Heaven.
+     He was not forceful, no t pressing,
+     Not hard, nor soft ;
+     He spread his government in gentle harmony,
+     And all the blessings [o f Heaven] he combined in his person.33
+Here Kin g Xuan's effortlessness is portrayed as a consequence o f allowing him-
+self to be simply drawn along by the example of his ancestors ("following in their
+footsteps"), wit h th e resul t bein g a kin d o f spontaneou s efficacy— a sig n tha t
+Xuan possesses Heavenl y "ease" (xiu ffi.). We also see a reference to this kind of
+ease in the description o f the great sage-king Yao that is part of the opening pas-
+sage of the Book of History: "H e wa s reverent, intelligent, cultured and thought-
+ful, al l with a gracious ease [an'an Sit^S c ]" (Legge 1991b : 15) . As we shall see ,
+this metapho r o f being "a t ease" (an) will become a favorite Confucia n expres -
+sion for wu-wei.
+       We noted abov e tha t th e effortles s moral skil l possessed b y Kin g Xuan in
+ode 304 is portrayed a s a result of a special relationship to Heaven. This i s als o
+the case with the other sage-ruler exemplars that we find in the Odes?6" Consider ,
+for example, the lin k between effortles s "fitting " (yi 3lC ) and th e favo r o f Heaven
+that is described i n ode 166 :
+     Heaven protects and settles you,
+     It causes your grain to flourish
+     So that there is nothing that is not proper/fitting [yi].
+     You receive from Heaven the hundred emoluments;
+     It sends down to you enduring good fortune.
+     Only the days are not sufficient (t o hold so much blessing).
+In this ode, thi s fortunate ruler is said also to have accumulated a powerful Virtue
+by mean s o f "auspiciou s an d pure " offering s an d flawles s ritua l behavior . Thi s
+concept of Virtue provides another (albei t indirect) link between Heaven and wu-
+wei. Recall that , in the descriptio n o f the noble arche r i n ode 106 , i t is sai d that
+his harmonize d skil l i s th e resul t o f havin g "perfected propriety, " an d tha t hi s
+effortless abilit y to hit th e mar k (zheng I E ) serves to guar d agains t "disorder. "
+Virtue i s portraye d throughou t th e Odes a s a sor t o f charismati c powe r tha t
+accrues t o thos e wh o ar e rituall y correct—tha t is , thos e wh o accor d wit h
+Heaven's order . Attaining a state of wu-we i harmony with Heaven's order, they
+are thus rewarded wit h a power that not only brings them personal benefit but also
+42    Effortless Action
+
+allows them to more effectively realize Heaven's wil l in the world.35 The idea of
+Virtue as a power granted by Heaven to one who accords wit h its will is not only
+found throughou t the Odes and History bu t is also one of the earliest identifi -
+able religiou s theme s i n China , bein g traceabl e t o th e mos t ancien t writte n
+records i n China, the Shang oracle bones and Zhou bronze inscriptions.
+     We can eve n fin d i n th e Odes prefigurements o f th e ide a tha t conventional
+morality a s expresse d i n th e rite s an d th e classic s no t onl y ha s it s origi n i n
+Heaven but is also somethin g grounde d in the affectiv e an d biological natur e of
+human beings themselves. In ode 260, we read that Heaven has created people in
+such a way that they respond instinctively to Virtue:
+     In giving birth to the multitude of the common people,
+     Heaven created things and created models [ze ill] .
+     That the people hold to the norms
+     Is because they love this beautiful Virtue. 38
+In ode 239, the "joyous and pleased lord " is described as taking great pleasure in
+his virtuous , ritually correc t action—feelin g a s a t hom e an d a t eas e wit h th e
+demands o f ritual as " a haw k soaring throug h the skie s o r a fish leaping i n th e
+deep"; in ode 252, w e even find a similar "joyous an d pleased lord " enjoying a
+state of wu-wei ease and social virtue that is explicitly linked to the fulfillment o f
+his xing t t o r "natural course of development" :
+     There is a curving slope,
+     The whirlwind comes from th e south;
+     The joyous and pleased lor d
+     Comes t o play [you J&], comes to sing,
+     And so inspires my song:
+     "Relaxed i s your play,
+     Pleasant and easy is your rest [xiu ffi.}.
+     Joyous and pleased lor d
+     May you fulfill you r xing 14,
+     And like the former princes (you r ancestors) brin g it to completion .
+As we shall see in the chapters tha t follow, this connection betwee n wu-wei , Vir-
+tue, human nature, and the normative order i s inherited by later mainstream Chi-
+nese thinkers.
+

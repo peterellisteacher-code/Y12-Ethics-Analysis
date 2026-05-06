@@ -1,0 +1,598 @@
+                                                                                31
+                                            The Good Life: A Defense
+                                             of Attitudinal Hedonism
+
+                                                                    Fred Feldman
+
+
+           1. The Good Life                                                           Before turning to the theories and arguments,
+                                                                                    however, I need to say a few words about some of the
+           […]                                                                      concepts that figure centrally in what follows.
+           Let us say that any view is a form of “hedonism” if,
+           according to that view, what makes a life go well for the
+           one who lives it is fundamentally a matter of enjoy-                     2. Pleasure as a “Feeling” vs.
+           ment.The one who lives the life enjoys, or “takes pleas-                 Pleasure as an Attitude
+           ure in”, the things that befall him in that life. That’s the
+           sort of view I will be discussing here.                                  2a. Pleasure as a “feeling”. Discussions of hedonism often
+              I have several goals. One is to distinguish among sev-                proceed on the assumption that pleasure is some sort of
+           eral forms of hedonism. Another is to consider some of                   “feeling”, or sensation. Perhaps it is thought that pleasure
+           the classic objections to hedonism. I want to show that                  is distinctive sort of sensation – one that we invariably
+           while some of these objections might be effective against                enjoy, or seek, or try to prolong. Perhaps (on the other
+           some naive forms of hedonism, they are irrelevant to                     hand) it is thought that there is no such distinctive feeling
+           other forms. I will be suggesting that one particular form               of pleasure. On this view, the word “pleasure” properly
+           of hedonism survives all the main objections. For those                  applies to feelings of various sorts. All that is required is
+           who do not share my axiological intuitions, I will describe              that the one who experiences the feeling enjoys it, or
+           other forms of hedonism that they may find more attrac-                  takes pleasure in it. For present purposes I can be neutral
+           tive. I will close by discussing some unfinished business.               on this question about the nature of pleasure as a feeling.
+           I will mention some problems that remain even if one                     Nevertheless, I will need to say a few more things about it.
+           of my preferred forms of hedonism can overcome the                           It seems to me that if we use the word “feeling” strictly
+           classic objections here considered.                                      and literally, we use it in such a way that something
+                                                                                    counts as a feeling only if it is something we can really
+                                                                                    feel, or sense. Consider, for example, a feeling of pressure
+           Fred Feldman, “The Good Life: A Defence of Attitudinal Hedonism,”
+                                                                                    on your back when getting a massage. In such a case
+           Philosophy and Phenomenological Research, 65 (2002), 605–27. Reprinted   there is an immediate sensory quality – the feeling of
+           with permission of John Wiley & Sons, Inc.                               pressure on the back. That’s a paradigm case of a feeling.
+
+
+
+
+           Ethical Theory: An Anthology, Second Edition. Edited by Russ Shafer-Landau.
+           © 2013 John Wiley & Sons, Inc. Published 2013 by John Wiley & Sons, Inc.
+
+
+
+
+0001513592.INDD 266                                                                                                                           5/15/2012 1:28:45 AM
+                                         the good life: a de f e nse of attitudinal h e donism                                       267
+
+              Consider, for another example, the feeling of heat in your      is that it is a matter of degree: I might enjoy reading
+              foot when you first step into a hot bath. That feeling of       several of the term papers, but I might enjoy some of
+              heat is another paradigm example of a feeling. If pleasure      them more than others. For simplicity in exposition,
+              were strictly and literally a feeling, it would be relevantly   we can assume that these intensities can be represented
+              like these feelings of heat and cold and pressure.              with numbers. Thus, we can say that at about 8:00 pm
+                  […]                                                         I was enjoying to intensity +12 the reading of this
+                  While of course I acknowledge that there are things         paper, but that at about 10:30 pm I was enjoying to
+              properly called “feelings of pleasure”, they are not            intensity +2 the reading of this other paper. Papers read
+              central to my project here. I discuss them primarily to         after midnight were not enjoyed at all.1
+              get them out of the way. The sorts of hedonism that                Can we enjoy, or take pleasure in, a state of affairs
+              fascinate me are not based on the idea that it is the           that does not occur? Our ordinary ways of talking
+              presence of any such sensory feeling of pleasure that           about enjoyment might suggest that this is impossible,
+              helps to enhance the quality of a person’s life. My sorts       but further reflection suggests that things are more
+              of hedonism are based on the different idea that it is the      complicated. [Roderick] Chisholm has provided a
+              presence of “enjoyment” – not a feeling – that makes a          good example.2 Suppose a candidate for office mistak-
+              life better. Let’s consider what enjoyment is.                  enly thinks he won the election. Chisholm suggests that
+                  2b. Enjoyment. Enjoyment is not a feeling. It is an         this candidate could be pleased about winning the elec-
+              attitude. Like so many other attitudes, it takes proposi-       tion even though in fact he didn’t win it. Here’s another
+              tional entities (or states of affairs) as its objects. Thus,    case that might seem even more convincing: suppose I
+              suppose I am reading an insightful and amusing philoso-         mistakenly think that I will be meeting G. E. Moore
+              phy paper. Suppose I find the paper to be enlightening          soon. Suppose I am delighted about this. Clearly, I am
+              and entertaining. In such a case, it makes sense to say         pleased about something. It seems wrong to say that what
+              that I am enjoying various facts about the paper. More          I am pleased about is the fact that I think I will meet
+              ponderously, we might say that as I read the paper, I take      Moore. It seems better to say that I am pleased that I am
+              attitudinal pleasure in the fact that the paper is so well      going to meet him (even though I am not going to meet
+              written, or in the fact that it is filled with such interest-   him). In what follows I will not assume that attitudinal
+              ing arguments and insights. Perhaps I take pleasure in          pleasure is always directed toward truths. Perhaps the
+              the fact that the examples are so apt.To enjoy some state       most we can say is that if you take pleasure in some state
+              of affairs is to take attitudinal pleasure in this way in it.   of affairs, then you must at least think that it’s true.
+                  Attitudinal pleasure is a mode of consciousness. It is         Another aspect of the epistemology of enjoyment is
+              a way of being aware of a state of affairs. It takes its        puzzling, too. In an earlier era, philosophers sometimes
+              place among such attitudes as hope and fear, belief and         said that such states as enjoyment are “transparent” or
+              doubt, and recollection and anticipation. In order to           “self-revealing”. Some of them may have meant to sug-
+              take up any of these attitudes toward some state of             gest that if you are enjoying something, then you must
+              affairs, one must be able to conceive that state of affairs.    know immediately that you are enjoying it. I have my
+              This is not to suggest that one must be able to express         doubts. I think we can deceive ourselves about our enjoy-
+              the state in words – even an inarticulate person can            ments. A person might think he is enjoying the taste and
+              hope for a drink of water, or fear that there might be          aroma of the wine when in fact he is really enjoying being
+              something under the bed. As I see it, it does not take          seen in possession of a bottle with an impressive label.
+              tremendous intellectual sophistication to have such                Enjoyment has its opposite number.We might call this
+              attitudes. By the wagging of her little tail, my dog            “disenjoyment” but it is easier to call it attitudinal pain.
+              Pippin indicates that she takes pleasure in the fact that       Just as we say that someone takes pleasure in some things,
+              we are about to take a ride in the truck.                       we can say that he “takes pain” in others. To take pain in
+                  Some features of enjoyment will play a role in the          something is to disenjoy it. If we represent amounts of
+              theories to be discussed. One of these is that enjoy-           enjoyment with numbers, then we can introduce a sim-
+              ments happen at times. Thus, it makes sense to say that         plifying assumption: to disenjoy something to some
+              I was enjoying the paper for a while, but eventually I          extent, n, is to enjoy it to some negative extent, −n.
+              came to some parts that were too complicated. Then I               Some people are convinced that there is a deep
+              didn’t enjoy it so much. Another feature of enjoyment           conceptual link between the attitude of enjoyment
+
+
+
+
+0001513592.INDD 267                                                                                                                 5/15/2012 1:28:45 AM
+           268                                                 f r e d f e l dm a n
+
+           and the feeling of sensory pleasure. For example, they          value of a life is determined by the total amount of
+           may tell us that to enjoy something is to feel pleasure         sensory pleasure it contains, minus the total amount
+           as a result of it (or as a result of thinking of it). I am      of sensory pain it contains. Views of this sort may be
+           convinced that this view is false3 but I will not debate        said to be forms of ‘Sensory Hedonism’.
+           it here. For present purposes it is sufficient that the             I am not interested in defending Sensory Hedonism.
+           distinction between attitudinal pleasure and sensory            It is not my view. I reject it for a variety of reasons. For
+           pleasure is clear. After a brief discussion of sensory hedo-    one thing, I reject it because it gives what I take to be
+           nism, I will not be talking much about sensory pleas-           the wrong evaluation of a life such as the life of Stoicus.
+           ure. Most of the views to be discussed here concern             According to the story, Stoicus just wants peace and
+           attitudinal pleasure.                                           quiet. He wants to live an unruffled life. We must be
+                                                                           clear about Stoicus’s desires: it’s not that he wants peace
+                                                                           and quiet because he thinks these will give him sensory
+           3. The Evaluation of Lives                                      pleasure. He wants peace and quiet as ends in them-
+                                                                           selves. In fact, he prefers not to have sensory pleasure.
+           […]                                                             He prefers not to have sensory pleasure in part because
+           My questions here concern neither extrinsic goodness            he fears that if he had some sensory pleasure, it would
+           nor moral goodness. I am interested in the value of a life      ruffle his life. He feels the same way about sensory pain:
+           for the one who lives it. Some like to say that this scale      he does not want it.
+           measures “welfare”. Others would say it measures “qual-             Suppose Stoicus gets exactly what he wants – peace,
+           ity of life”. Aristotle seems to have this scale in mind        quiet, no sensory pleasure, and no sensory pain. Suppose
+           when he wonders what makes a person “happy”, and                that as he receives his daily dose of peace and quiet,
+           seriously considers the question whether things that            Stoicus is pleased. That is, suppose he enjoys the peace
+           happen after death might affect this score.4 Parfit some-       and quiet. Suppose he takes attitudinal pleasure in vari-
+           times talks of “a life well worth living”.5 I think he is       ous facts about his life, including the fact that he is not
+           alluding to this same scale of measurement. This is the         experiencing any sensory pleasure. Suppose Stoicus
+           sort of evaluation with which we will be concerned here.        eventually dies a happy man. He lived 90 years of some-
+              When students and colleagues think back with                 what boring but on the whole quite enjoyable peace
+           affection on Chisholm and hope that his life went well          and quiet. Stoicus thinks (right before he dies) that his
+           for him, we are hoping that his life ranked high on this        has been an outstandingly good life.
+           third scale. We are hoping that he led a life that was              Sensory Hedonism implies that Stoicus did not have
+           good for him. (Of course, some of us might also be              a good life. This follows from the fact that the life of
+           concerned to know whether his life was good for oth-            Stoicus did not contain any episodes of sensory pleas-
+           ers, and some might be curious about whether his life           ure. But if Stoicus was happy with his life, and enjoyed
+           was morally good. However interesting such inquiries            the experiences that came his way, and got precisely
+           might be, they are not my topic here.)                          what he wanted at every moment, it seems strange to
+              From now on when I speak of “the value of a per-             say that there was nothing good about his life. Although
+           son’s life”, I will be referring to that person’s score on      it is not the sort of life I would like to lead, I must con-
+           this third scale. Thus, I mean to be discussing the ques-       fess that it seems quite a nice life for someone with
+           tion whether the value of a person’s life is determined         Stoicus’s tastes. Dull perhaps, but at the same time
+           by the extent to which he enjoys the things that happen         pleasant enough (in its non-sensory way).
+           to him in that life.                                                I mention the example of Stoicus for several reasons.
+                                                                           For one, it is supposed to show that Sensory Hedonism
+                                                                           is false. It does this by showing that it is possible for a
+           4. A Simple Form of Hedonism;                                   person to have quite a good life (as measured on the
+           Why it Fails                                                    third scale) even though he experiences no sensory
+                                                                           pleasure. Another reason to mention the life of Stoicus
+           Some people (especially critics) insist on understanding        is that it is supposed to drive home the difference
+           hedonism as a view about sensory pleasure and sensory           between sensory pleasure and attitudinal pleasure.
+           pain. They insist that the hedonist must mean that the          Stoicus had none of the former, but plenty of the latter.
+
+
+
+
+0001513592.INDD 268                                                                                                                 5/15/2012 1:28:45 AM
+                                         the good life: a de f e nse of attitudinal h e donism                                          269
+
+              And the third reason to mention Stoicus is that                because he realizes that if he drinks it, he will not be
+              reflection on his case may highlight the plausibility of       thirsty, and he will be pleased to degree +10 to avoid
+              attitudinal hedonism.6                                         thirst. Finally, imagine that he is pleased that he will
+                  Attitudinal hedonism is the view that what makes a         avoid thirst because he believes that thirst would be
+              life good for the one who lives it is that it contains a lot   unpleasant.
+              of enjoyment, or attitudinal pleasure, and relatively lit-         I think it would be wrong to give Stoicus a score of
+              tle disenjoyment, or attitudinal pain. I now turn to a         + 40 in such a case. To do so would be to give extra
+              discussion of this sort of view.                               credit merely for having longer chains of belief. I cannot
+                                                                             see that having such extra-long chains makes a person’s
+                                                                             life any better. I propose instead to count only the pleas-
+              5. Attitudinal Hedonism                                        ures at the ends of the chains. Thus, in the present case,
+                                                                             Stoicus should get only 10 points for his water-in-the
+              One form of attitudinal hedonism can be constructed            pitcher/drinking-it/avoiding thirst pleasure.
+              as follows: first we assume that whenever a person takes           Thus, I propose that we say that S is intrinsically atti-
+              attitudinal pleasure in any state of affairs, he does so for   tudinally pleased to degree n about p at t if S is attitudinally
+              some period of time and at some average intensity.             pleased to degree n about p at t, but not in virtue of the
+              Of course, in real-life cases it may be difficult or even      fact that he is attitudinally pleased about something
+              impossible to determine the intensity of a person’s            else at t. Intrinsic pleasure is pleasure taken in a thing
+              pleasure, and there may be some difficulty in determin-        “for its own sake”. I assume that there is also intrinsic
+              ing precisely when the pleasure begins and when it             attitudinal displeasure.
+              ends. But I will assume that such problems are not                 Another sort of double-counting must be avoided,
+              deeply conceptual – they are merely practical difficul-        too. Consider the case in which Stoicus is intrinsically
+              ties. Thus, I assume that whenever a person is pleased         pleased about three things at once: that he feels no
+              about something, there is some amount of attitudinal           thirst, that he feels no sensory pain, and that he feels no
+              pleasure he takes in this something. Let’s assume at the       sensory pleasure. Suppose he takes exactly 10 units of
+              outset that this amount is determined by the intensity         attitudinal pleasure in each of these states. But he also
+              and duration of his pleasure.                                  takes pleasure in the various conjunctions and disjunc-
+                  I make similar assumptions about attitudinal pain.         tions of these states. For example, he takes pleasure
+                  Let us imagine a numerical scale on which these            (perhaps 20 units of it) in the fact that he feels neither
+              attitudinal pleasures can be measured. Assume that the         sensory pleasure nor sensory pain. Surely we would be
+              scale assigns positive numbers to pleasures, with higher       guilty of an overcount if we added all these 20s and 30s
+              number representing more intense and longer lasting            to the score already assigned to Stoicus.
+              pleasures. Assume that it assigns negative numbers, with           Let us assume that whenever a person takes pleasure
+              lower (absolutely greater) negative numbers represent-         in some complex state of affairs such as the conjunc-
+              ing more intense and longer lasting pains.                     tions just illustrated, that he takes this pleasure in virtue
+                  We might suppose that the value of a person’s life         of the fact that he takes pleasure in the simpler compo-
+              according to attitudinal hedonism would be the sum,            nents of which these are composed. Thus, there is a
+              for all the attitudinal pleasures and pains that person        non-causal way in which you can take pleasure in p in
+              ever experiences in that life, of these numbers. Alas,         virtue of the fact that you take pleasure in q. Let us under-
+              things are not quite so simple.                                stand “in virtue of ” in this broader way, so that the
+                  We must recognize basic attitudinal pleasures and pains.   proposed account of intrinsic attitudinal pleasure is
+              Otherwise, we will run into some nagging problems              sensitive to both ways of being intrinsic.
+              about double-counting. To see this in a concrete case,             For purposes of discussion, then, let us understand
+              imagine that Stoicus is pleased to degree +10 that there       Intrinsic Attitudinal Hedonism (IAH) to be the view
+              is fresh water in the pitcher. Imagine further that he is      that the value of a person’s life is determined by the
+              pleased that there is fresh water because he realizes that     total amount of intrinsic attitudinal pleasure the person
+              he will be able to drink it, and he is pleased to degree       enjoys during that life (counting intrinsic attitudinal
+              +10 that he will be able to drink it. Still further, imag-     pain as “negative pleasure”). This theory implies that
+              ine that he is pleased that he will be able to drink it        someone like Stoicus leads a pretty good life. That’s
+
+
+
+
+0001513592.INDD 269                                                                                                                    5/15/2012 1:28:45 AM
+           270                                                 f r e d f e l dm a n
+
+           because Stoicus was described as enjoying his peace             will serve to make attitudinal hedonism clearer. It will
+           and quiet and his lack of sensory pain and pleasure, and        also eventually lead me to introduce some alternatives
+           as not disenjoying anything. I assume that these enjoy-         to the theory.
+           ments are either themselves intrinsic, or depend upon               6a. Shelly Kagan discusses one of the most common
+           some other intrinsic enjoyments lying deeper in the             and forceful objections to hedonism in his “Me and
+           psyche of Stoicus. So Stoicus gets quite a few positive         My Life.”8 According to Kagan, hedonism implies that
+           points, and no negative points. His life is good, just as       what determines the quality of a person’s life is some-
+           he declared it to be.                                           thing completely internal to the person – in this case a
+              It’s interesting to see what IAH implies about the life      certain mental state. Kagan thus says that hedonism is
+           of a garden-variety sensory hedonist. Suppose Hugh              a form of “mental statism.” Hedonism, like all forms of
+           enjoys sex, drugs, and rock ‘n’ roll. Suppose he has many       mental statism, implies that if two lives are alike with
+           delightful sensory experiences. He takes great intrinsic        respect to mental states, they must also be alike
+           attitudinal pleasure in the various states of affairs con-      with respect to value. In particular, hedonism implies
+           sisting of his feeling this sensory pleasure, or his feeling    that if two lives are alike with respect to pleasures and
+           that sensory pleasure. As a result of the sheerest good         pains, then those lives are of equal value. This remains
+           fortune, Hugh never suffers much pain beyond the                true even if one of the individuals takes his pleasures
+           occasional hangover, or mild bout of indigestion. IAH           from correctly perceived interactions with real human
+           implies that Hugh’s life was excellent.7 This seems rea-        beings, and the other individual is a mere brain in a vat,
+           sonable to me. Furthermore, it is the sort of thing some        utterly unconnected with other people but taking
+           sensory hedonists would want to say. And IAH yields             himself to be living a life like the first person’s. Kagan
+           precisely this result.                                          thinks that this is a source of trouble for hedonism.
+              It’s interesting to note that IAH does not imply that            Rather than letting the issue turn on farfetched cases
+           the goodness of Hugh’s life is ultimately determined by         involving brains in vats, Kagan, following Tom Nagel,
+           the fact that he experienced a lot of sensory pleasures.        considers the fairly realistic case of a happy businessman.
+           (That would be the basis on which typical forms of              The businessman is happy because, as he thinks, his
+           Sensory Hedonism would evaluate his life.) Rather,              career is going well, he is respected in his community,
+           IAH bases its judgment upon the fact that Hugh took             and he has a loving family. In the example, all of his
+           intrinsic attitudinal pleasure in the fact that he was          assumptions are false. The businessman is in fact held in
+           having these experiences. If another person (Stoicus            utter contempt by his colleagues, deeply deceived by his
+           perhaps) were forced to endure precisely these experi-          adulterous wife, and hated by his children. Each has his
+           ences, but didn’t enjoy them, IAH would declare                 or her reasons for engaging in the deception, but the
+           (correctly in my view) that his life was worthless. And         result is the same: the businessman’s happiness is
+           IAH would reach this conclusion in spite of the fact that       completely dependent upon his widespread misappre-
+           the sensory experiences were, sensedatum for sense-             hension of his circumstances. If he knew the truth
+           datum, indiscernible from those enjoyed by Hugh.                about his colleagues, his wife, and his children, he would
+                                                                           be miserable. Kagan concludes the discussion of this
+                                                                           example by saying, “In thinking about this man’s life, it
+                                                                           is difficult to believe that it is all a life could be, that this
+           6. Some Classic Objections                                      life has gone about as well as a life could go. Yet this
+           to Hedonism                                                     seems to be the very conclusion mental state theories
+                                                                           must reach … . So mental state theories must be wrong.” 9
+           I hope at this point that the general outlines of                   Since we are considering a form of attitudinal
+           attitudinal hedonism are clear enough to permit criti-          hedonism, let us be sure to understand the case appro-
+           cal discussion. I now turn to consideration of some             priately for present purposes. Let us stipulate that the
+           classic objections to hedonism. It is not clear that the        businessman takes immediate attitudinal pleasure in
+           philosophers who presented these objections intended            many states of affairs, taking them all to be true. But
+           to be attacking a view precisely like IAH. But I will           they are all false. So, for example, this businessman is
+           take the liberty of interpreting these objections as            intrinsically pleased that he is respected by his colleagues,
+           objections to the view I have sketched. Perhaps this            but in fact he is not respected by his colleagues. He is
+
+
+
+
+0001513592.INDD 270                                                                                                                      5/15/2012 1:28:45 AM
+                                         the good life: a de f e nse of attitudinal h e donism                                       271
+
+              intrinsically pleased that he his loved by children, but in    same, but whose family and colleagues are in reality as
+              fact he is not loved by his children, and so on.               they appear to him to be.
+                  The objection should be clear. Attitudinal hedonism            It’s not clear that the revised axiology is a form of
+              implies that the businessman’s life is a good one, yet         mental statism, since it implies that it’s possible for there
+              none of us would want such a life; none of us would            to be two lives exactly alike (“from the inside”) with
+              wish such a life for our loved ones; such a life is not        respect to mental states, but unlike in value. But on the
+              easily thought to be ideal.                                    other hand, it’s interesting to note that even the revised
+                  Variants of this objection have been presented by a        theory makes the value of a life depend on mental
+              number of anti-hedonists and some of them may seem             states – enjoyments after all are mental states – it’s just
+              pretty persuasive.10 Nevertheless, the attitudinal hedon-      that the question how much a certain state counts
+              ist need not be utterly crushed. Some such hedonists           depends in part upon whether the object of that state
+              might reply by saying that the life of the deceived            is true. So I don’t know whether Kagan would catego-
+              businessman is not so bad after all. Perhaps we can            rize this as a form of mental statism or not. Since the
+              explain away our sense that something is amiss in the          view itself is fairly clear, I see no reason to worry about
+              businessman’s life by pointing out that we would not           whether it is a form of mental statism. In any case, it is
+              like to be deceived, and we would be pained to learn           clearly a form of hedonism. Let us call the revised the-
+              that our colleagues and family have been holding us in         ory “Veridical Intrinsic Attitudinal Hedonism”, or
+              contempt for all these years. This helps to explain the        “VIAH”.
+              fact that none of us would voluntarily choose the life             My point here is to show that attitudinal hedonism
+              of the deceived businessman.We know things about his           has the resources to deal with the example of the
+              life that he does not know. Since we know these things,        deceived businessman. If you think that the deceived
+              we would not enjoy the experiences he enjoys. Hence,           businessman’s life is less valuable than the life of his
+              his life seems unattractive to us.                             undeceived internal duplicate, then I offer VIAH for
+                  Furthermore, if any of his deceivers should slip up,       you. If you think that the twin businessmen lead lives
+              the businessman might discover his real situation.             of equal value – that where pleasure is concerned, truth
+              Then he would be miserable. We would not like to               does not matter – then I offer IAH for you. Either way,
+              have a life constantly on the brink of misery. However,        there should be some form of hedonism that will yield
+              in the case as described, it is stipulated that he does not    results consistent with your axiological intuitions about
+              discover his real situation, and is not miserable. If we       these cases.
+              were to ask him how his life is going, he would surely             6b. The Argument from Worthless Pleasures. A number
+              insist that he is living a fine life. Some would say that      of philosophers have claimed that certain kinds of
+              since the businessman does not know about the                  pleasure are not good, and do not serve to enhance the
+              deception, it does not hurt him. Hence, it is not              value of any life. They have appealed to such pleasures
+              entirely clear that hedonism’s implications are inde-          in their attacks on hedonism.
+              fensible. Perhaps considerations such as these help to             Aristotle hints at this in the Nicomachean Ethics (X.3)
+              explain away our intuitive sense that his life is not all      where he speaks of “disgraceful” and “base” pleasures.
+              a life could be.                                               Broad makes the case quite persuasively in Five Types of
+                  But the defender of Attitudinal Hedonism does not          Ethical Theory. He more or less defines malice in such a
+              have to take this “bite the bullet” line. He can move to       way that a person enjoys malicious pleasure iff s/he
+              higher ground. He can slightly revise the axiology. As         takes pleasure in some other person’s suffering.11 Brandt
+              before, he can say that the fundamental goods are tak-         makes a similar point in his argument against hedonism
+              ings of intrinsic pleasure in various states of affairs, but   in Ethical Theory. He describes some women who
+              he can modify this by saying that such takings of pleas-       attended beheadings in evening dress in Germany.12 He
+              ures enhance the value of a life more when they are            suggests that if they enjoyed the occasion, their enjoy-
+              takings of pleasures in true states of affairs. This single    ment was not intrinsically desirable. Moore does not
+              modification yields a view according to which the life         (so far as I know) make explicit use of precisely this
+              of the deceived businessman is not very good, even if          argument, but he apparently accepts the main premise.
+              internally indiscernible from the life of his cousin the       He speaks of cruelty, and he says that one essential
+              undeceived businessman whose mental life is just the           component of it is the enjoyment of pain in other
+
+
+
+
+0001513592.INDD 271                                                                                                                 5/15/2012 1:28:46 AM
+           272                                                     f r e d f e l dm a n
+
+           people.13 He says that cruelty is a great mixed evil,               in this context he speaks of “a perpetual indulgence in
+           containing a good part (enjoyment, which is a sort of               bestiality”. He says (roughly) that if hedonism were
+           pleasure) and a bad part (the pain of the other person).            true, then this perpetual indulgence in bestiality would
+           The whole thus formed is judged to be intrinsically                 be “heaven indeed, and all human endeavors should be
+           bad. Brentano makes a similar claim, although his                   devoted to its realisation. I venture to think [says
+           discussion is open to various interpretations.                      Moore] that this view is as false as it is paradoxical”.
+              In “Two Unique Cases of Preferability”, Brentano says:              Let us try to visualize the life to which Moore here
+                                                                               alludes, adjusted so as to be directly relevant to VIAH.
+               What of pleasure in the bad? Is it itself something that is     Imagine a person – we can call him “Porky” – who
+               good? Aristotle says that it is not … . The hedonists           spends all his time in the pigsty, engaging in the most
+               expressed the contrary view, … But their view is to be          obscene sexual activities imaginable. I stipulate that
+               rejected … . Pleasure in the bad is, as pleasure, something     Porky takes great intrinsic attitudinal pleasure in these
+               that is good, but at the same time, as an incorrect emotion,    activities and the feelings they stimulate. In the exam-
+               it is something that is bad.14                                  ple, he really does engage in the activities and feel the
+                                                                               feelings. Thus, his pleasures are veridical, too. Let’s
+           I will attempt to formulate the argument clearly, so that           imagine that Porky happily carries on like this for
+           useful discussion may ensue. And as I formulate, I will             many years. Imagine also that Porky has no human
+           try to construe the argument in such a way as to make               friends; has no other sources of pleasure; has no inter-
+           it directly relevant to the forms of intrinsic attitudinal          esting knowledge.
+           hedonism I have introduced. Thus, I will not be speak-                 Moore’s point (as modified to apply here) is that
+           ing of “feelings of pleasure”. I will be speaking of atti-          VIAH implies that Porky’s life is one of the best we can
+           tudinal pleasures whose objects are bad, or unworthy of             imagine – “heaven indeed”. Yet, as Moore indicates,
+           pleasurable contemplation.                                          that implication is a bit hard to swallow.
+              Suppose some terrorist really hates children. Suppose               Objectors claim that Porky’s life is not very good in
+           he sets off a bomb at a playground, and then watches the            spite of the stipulated fact that it contains a lot of verid-
+           news on TV. When he sees the suffering children choking             ical intrinsic attitudinal pleasure. This example is
+           and gasping and bleeding, and learns of the many injuries           thought to illustrate a second way in which pleasure
+           and deaths, this terrorist is delighted. He takes pleasure in       can be worthless. As Aristotle said, base pleasures do
+           the misery of his victims. More precisely, he takes veridical       not enhance the value of a life.
+           intrinsic attitudinal pleasure of a high degree in the fact
+           that the innocent children are suffering.
+              Suppose the terrorist does this many times over, and
+           each time thoroughly enjoys the fruits of his labor.                7. A More Complex Form
+           Suppose at the same time that his life is not filled with           of Hedonism
+           counterbalancing pains. If VIAH were true, the life of
+           this terrorist would be a good one. We would have to                I think it is possible to modify our attitudinal hedonism
+           agree that things turned out well for him, and the qual-            so as to make it generate the desired results in these
+           ity of his life was high. Many of us, I suspect, would be           cases, too. Moore, Brentano, and Chisholm have
+           inclined to reject this evaluation, and with it attitudinal         pointed the way. Roughly, the idea is to say that the
+           hedonism. The problem here is that while the life of                intrinsic value of an attitudinal pleasure is determined
+           the terrorist was filled with large doses of veridical              not simply by the intensity and duration and truthful-
+           intrinsic attitudinal pleasure, these pleasures were the            ness of that pleasure, but by these in combination with
+           pleasures of cruelty. Pleasures such as these might seem            the appropriateness of the object of that pleasure.
+           to make a life worse, rather than better.15                         (Similarly for attitudinal pains.) More exactly, the value
+              Other philosophers have reminded us of other                     of a pleasure is enhanced when it is pleasure taken in a
+           worthless pleasures. In a memorable passage, Moore                  worthy object, such as something good, or beautiful.
+           says: “It is commonly held that certain of what would               The value of a pleasure is mitigated when it is pleasure
+           be called the lowest forms of sexual enjoyment” might               taken in an unworthy object, such as something evil, or
+           be “the most pleasant states we ever experience.”16 And             ugly. The disvalue of a pain is mitigated (made less bad)
+
+
+
+
+0001513592.INDD 272                                                                                                                      5/15/2012 1:28:46 AM
+                                         the good life: a de f e nse of attitudinal h e donism                                        273
+
+              when it is pain taken in an object worthy of pain, such        the one true form of hedonism. Rather, my point is
+              as something evil, or ugly. The value of a pain is             merely to show that it is possible to formulate a kind of
+              enhanced (made yet worse) when it is pain taken in an          hedonism that is immune to the objections presented by
+              object unworthy of this attitude, such as something            Aristotle, Broad, Moore and the others based on the
+              good or beautiful.17                                           possibility of misdirected pleasure. We can be hedonists
+                  I think it’s reasonable to describe certain objects by     without saying that base and malicious pleasures improve
+              saying that they “deserve to be objects of pleasure”. In       a life as much as pleasures taken in worthier objects.
+              the case of such objects it is fitting, or appropriate, that      Yet a further classic objection to hedonism remains.
+              someone take pleasure in them.Thus, for example, if an         A number of anti-hedonists have made use of this
+              object is genuinely beautiful, then it deserves to be          argument, and I make no claims about priority. I cite
+              appreciated. If an object is good, then it deserves to be      the version to be found in Ross mainly because I think
+              admired. So we can identify the objects worthy of              it is a neat and persuasive formulation of the
+              pleasure as those that deserve to have pleasure taken in       argument.
+              them. (And similarly for pain and its objects.) In this           Ross says:
+              way we make essential use of the concept of desert in
+              the formulation of our hedonistic axiology.                       If we compare two imaginary states of the universe, alike
+                  While we are making this adjustment for pleasure-             in the total amounts of virtue and vice and of pleasure and
+              worthiness, we might as well incorporate the adjust-              pain present in the two, but in one of which the virtuous
+                                                                                were all happy and the vicious miserable, while in the
+              ment for truth.That is, we can view the veridicalness of
+                                                                                other the virtuous were miserable and the vicious happy,
+              the object of a pleasure as yet another factor that
+                                                                                very few people would hesitate to say that the first was a
+              enhances its worthiness of pleasure. We therefore can             much better state of the universe than the second. It
+              say that when someone takes pleasure in a true state of           would seem then that, besides virtue and pleasure, we
+              affairs, his pleasure is more valuable, other things being        must recognize, as a third independent good, the appor-
+              equal, than it would have been if the object of his               tionment of pleasure and pain to the virtuous and the
+              pleasure had been false.                                          vicious respectively.19
+                  One version of the resulting theory may be called
+              “Desert-Adjusted Intrinsic Attitudinal Hedonism” (or              Although Ross says it quite well himself, I’d like to
+              DAIAH). It is structurally similar to views discussed by       say it again in my own words to ensure that the objec-
+              Moore, Brentano, Chisholm, […] and others.18 It is             tion bears directly on the forms of attitudinal hedon-
+              intended to generate the desired results in the cases          ism under consideration here. I think Ross wants us to
+              involving malicious and base pleasures. Since the              imagine two possible worlds. The worlds are supposed
+              objects of those pleasures are respectively evil and dis-      to be exactly alike with respect to several important
+              gusting, DAIAH declares the pleasures to be much less          features – virtue and vice, pleasure and pain. So let us
+              valuable. If the life of the terrorist is filled with pleas-   stipulate that each world contains a million virtuous
+              ures of this first worthless sort, and the life of Porky is    people and a million vicious people, and let us stipulate
+              filled with pleasures of the second worthless sort, then       that each world contains a million people who enjoy
+              DAIAH declares those lives to be of little value. I claim –    lives filled with object-appropriate intrinsic attitudinal
+              though I cannot take the time to show it in detail here –      pleasure, and each world also contains a million people
+              that the view also deals adequately with what we may           who live lives filled with object-inappropriate intrinsic
+              dub “worthwhile pains”, such as intrinsic attitudinal          attitudinal pain. So the worlds are very similar. The
+              pain taken in evil or ugly objects.                            central difference concerns who gets what. In W1, the
+                                                                             virtuous people get to live the lives filled with object
+                                                                             appropriate pleasure and the vicious people get to live
+              8. Yet Another Objection                                       the lives filled with pain. It’s the reverse in W2. There
+                                                                             “bad things happen to good people” and “good things
+              I like DAIAH. I think I know some of its implications,         happen to bad people”.
+              and I am happy to accept them. I think I am in a state            I want to be clear about what goes on in W2.
+              approaching reflective equilibrium while believing it.         Imagine a life filled with pleasures taken in appropriate
+              However, my point here is not to show that DAIAH is            objects. Here the pleasure-seeker is no Porky or
+
+
+
+
+0001513592.INDD 273                                                                                                                  5/15/2012 1:28:46 AM
+           274                                                  f r e d f e l dm a n
+
+           perverted terrorist.This is an educated, tasteful aesthete.      theory should also give an account of what makes a
+           He takes deep pleasure in such things as genuinely               world worth creating, or aiming for. If we jettison the
+           beautiful works of art, and the innocent frolicking of           idea that the value of a world is the sum of the values
+           healthy, happy children. The only problem is that this           of the lives lived there, then DAIAH says nothing about
+           aesthete is also a thief who has stolen the art from those       this question. We should address this issue.
+           to whom it rightly belongs, and a kidnapper who has
+           kidnapped the frolicking children. So while the objects
+           deserve to be enjoyed, this thief and kidnapper does not
+           deserve to be enjoying them.                                     9. Double Desert-Adjusted
+               The crucial thing to note about these worlds is that         Hedonism
+           they are exactly alike with respect to veridical intrinsic
+           attitudinal pleasures and pains. Ross’s point (modified          We have adjusted the value of a pleasure to reflect the
+           to apply to the theory currently under consideration) is         extent to which the object of that pleasure deserves to
+           that DAIAH implies that these worlds are equally valu-           be enjoyed.This (I claim) solves the problem of worth-
+           able. Yet Ross thinks (and I think too) that the just            less pleasures (and worthwhile pains) and gives the
+           world,W1, is much better than the equally pleasant but           proper basis for the evaluation of lives. I propose that
+           unjust world, W2. This might seem to refute DAIAH.               we adjust this value again, this time to reflect the extent
+               Ross’s example is interesting and insightful. It draws       to which the subject – the one who experiences the
+           our attention to an important consideration.                     pleasure – deserves to be experiencing it. This “double
+           Nevertheless, I think it does not refute DAIAH. Note             desert-adjustment” will give the proper basis for the
+           that DAIAH as so far stated says nothing about values            evaluation of worlds and will solve the problem set
+           of worlds. It speaks only about the values of lives. Yet         by Ross.
+           Ross’s argument is not based on any alleged misevalu-               Suppose a person takes intrinsic attitudinal pleasure
+           ation of lives. He did not say that the lives of the happy       in some object. To find the double desert-adjusted
+           vicious people were misevaluated by hedonism. Indeed,            value of his pleasure, we need to take several steps. First,
+           it seems to me that DAIAH might get this right. Rather,          we need to determine the intensity and duration and
+           Ross’s claim concerns the evaluation of worlds. Since            truthfulness of the pleasure. Other things being equal,
+           DAIAH gives no evaluation of worlds, it cannot be                longer and stronger and true pleasures are more
+           guilty of giving the wrong evaluation of the worlds              valuable. Next we need to determine the extent to
+           described by Ross.                                               which the object of the pleasure deserves to be enjoyed.
+               If we add a certain assumption to DAIAH, we will             We ask if the object is a worthy object of pleasure.
+           get the conclusion Ross attacks. The assumption is that          Other things being equal, pleasure taken in more wor-
+           the value of a world is equal to the sum of the values of        thy objects is more valuable. (This is the first adjust-
+           the lives lived there. Since DAIAH gives equivalent              ment in value for desert, taken to ensure that the object
+           evaluations of the lives in W1 and W2, it would then             of the pleasure deserves to be enjoyed.) Then finally we
+           yield the conclusion that W1 is equal in value to W2.            need to determine the extent to which the subject of
+           Ross could then launch his attack. But perhaps the               the pleasure deserves to be taking that particular pleas-
+           defender of DAIAH would not endorse this aggrega-                ure. Other things being equal, pleasures enjoyed by
+           tive principle. Perhaps he would acknowledge that a              more deserving subjects are more valuable than other-
+           world could be filled with good lives, and yet be a bad          wise similar pleasures enjoyed by less deserving sub-
+           world because the wrong people get to live those good            jects. This is the second adjustment in value for desert,
+           lives. Then Ross’s argument would lose its target.               taken to ensure that the subject of the pleasure deserves
+               It seems to me that an axiological theory should give        to be enjoying it.
+           an account of what makes a life worth living. DAIAH                 Similar adjustments in value would be made to epi-
+           does this. It tells us that the value of a life is determined    sodes of intrinsic attitudinal pain. Roughly, the idea
+           by the net extent to which the liver of that life experi-        here would be that when a person who fully deserves
+           ences object appropriate veridical intrinsic attitudinal         to be taking pain in a certain object does take pain in
+           pleasures. Ross’s example does not raise any serious             that object, then the badness of his pain is mitigated.
+           trouble for DAIAH on these grounds. But an axiological           Other things being equal, such pains are less bad for the
+
+
+
+
+0001513592.INDD 274                                                                                                                  5/15/2012 1:28:46 AM
+                                         the good life: a de f e nse of attitudinal h e donism                                              275
+
+              world than similar pains suffered by people who do not           problem for an extension of DAIAH. You have shown
+              deserve to be undergoing them. Pains suffered by peo-            that we would go wrong if we evaluated worlds strictly
+              ple who deserve not to be suffering them are worse,              in terms of single desertadjusted intrinsic attitudinal
+              other things being equal, than similar pains suffered by         pleasures and pains. But we are not forced to endorse
+              people who do deserve to be suffering them. As a result          that extension. Instead, we can endorse DDAIAH.”
+              of all this, we can see that the worst pains (on this               My view as a whole is roughly this:
+              double-adjusted scale) are intense, long-lasting pains
+              taken in objects that deserve not to be objects of pain,         1.    The fundamental bearers of value are complex
+              suffered by people who deserve not to be suffering them.               states of affairs of this form: S takes intrinsic attitudi-
+                 Considerations of space and time do not permit me                   nal pleasure (pain) of intensity n and duration m in
+              to give a full account of the nature, sources, and struc-              object P at time t, when S deserves to degree r to be tak-
+              ture of desert. (I have discussed these issues elsewhere,              ing that pleasure (pain) and P deserves to degree s to be
+              and hope to say more in the future.) Such things as                    the object of that pleasure (pain).
+              excessive or deficient prior receipt, legal or moral             2.    The desert-adjusted value of such a state is a func-
+              “rights” to pleasure, hard work, virtue and vice, etc.                 tion of intensity, duration, truth, and pleasure
+              probably influence the extent to which someone                         (pain) worthiness of its object.
+              deserves some pleasure. I recognize that more needs to           3.    The double desert-adjusted value of such a state is
+              be said, but this is not the place to say it.                          a function of intensity, duration, truth, pleasure
+                 The resulting value may be called the Double                        (pain) worthiness of its object, and the pleasure (pain)
+              Desert-Adjusted Value of the pleasure. Similar proce-                  worthiness of its subject.
+              dures would yield the DDAV of any intrinsic attitudi-            4.    The value (on the third scale) of a life is the sum
+              nal pains. Double Desert-Adjusted Intrinsic Attitudinal                of the desert-adjusted values of the fundamental
+              Hedonism (DDAIAH) is the view that the value of a                      intrinsic attitudinal pleasure (pain) states in
+              world (or outcome, or other complex state of affairs) is               that life.
+              the sum of the Double Desert-Adjusted Values of the              5.    The value (on the third scale) of a world is the sum
+              intrinsic attitudinal pleasures enjoyed and pains suf-                 of the double desert-adjusted values of the funda-
+              fered in that world (or outcome, or whatever). My                      mental intrinsic attitudinal pleasure (pain) states in
+              answer to Ross is this: “Yes, Ross, you have presented a               that world.
+
+
+
+              Notes
+              1. The intensity of enjoyment must not be confused with                filled with satisfied desires. I am convinced that this sort
+                 the “strength” or “intensity” of any feeling. One can take          of view is indefensible. This is not the place to present
+                 great pleasure in some state of affairs even though one             arguments. For an impressive critical discussion, see
+                 does not experience any intense sensations while thinking           Section 1 of Chapter 3 of Adams’ Finite and Infinite Goods.
+                 about that state of affairs. Indeed, Stoicus (whose case is    7.   Excellent on the third scale. This sort of hedonism makes
+                 discussed below) might be very pleased that he is not               no evaluation of Hugh’s life on any other scale. So it is
+                 feeling any intense feelings at all.                                consistent with what I have said to say in addition that
+              2. In Brentano and Intrinsic Value, pp. 28–9.                          Hugh’s life ranks low in terms of value to others as well
+              3. And I presented a variety of arguments against it in “Two           as in terms of moral value.
+                 Questions about Pleasure”.                                     8.   Proceedings of the Aristotelian Society (1984): 309–24.
+              4. Nicomachean Ethics, Book I, Chapters 10–11.                    9.   Normative Ethics, 35.
+              5. Reasons and Persons, passim. For an especially insightful     10.   Robert Nozick’s example of the ‘experience machine’
+                 discussion of various views on these topics, see Parfit’s           comes to mind here. See his Anarchy, State, and Utopia,
+                 Appendix I, “What Makes Someone’s Life Go Best”.                    pp. 42–5.
+                 pp. 493–502.                                                  11.   Broad, Five Types of Ethical Theory, pp. 53–4 in the excerpt
+              6. It might appear that the real moral of the story of Stoicus         included in Brandt’s Value and Obligation.
+                 is that we should consider some form of satisfactionism –     12.   Brandt, Ethical Theory, p. 316.
+                 the idea that what makes a life worth living is that it is    13.   Moore, Principia Ethica Chapter VI, Section 125.
+
+
+
+
+0001513592.INDD 275                                                                                                                        5/15/2012 1:28:46 AM
+           276                                                        f r e d f e l dm a n
+
+           14. The Origin of Our Knowledge of Right and Wrong, p. 90.                 mean is that the fundamental bearers of intrinsic value
+           15. It is important, in considering a case such as this, to be             should be taken to be complex states of affairs
+               sure to keep in mind the fact that we are talking about                involving not only the intensity and duration and
+               evaluation on the third scale.We are not asking whether the            truthfulness of a pleasure, but something also about
+               terrorist led a morally good life, or whether he led a life            the worthiness of its object – the extent to which that
+               that was good for others. Nor are we asking whether his                object deserves to be enjoyed. Thus, a basic value state,
+               pleasures were ‘admirable’. We are asking whether he led               on this axiology, would be something of this form:
+               a life that was “good for him”.Though his pleasures were               S takes intrinsic attitudinal pleasure of intensity n1 and
+               directed toward wholly inappropriate objects, one could                duration m1 in state of affairs P, while P is worthy of
+               still insist that if he enjoyed these things, his life was good        pleasure of intensity n2 and duration m2.
+               for him. Many antihedonists prefer not to say this.                18. Moore endorses something like this in Chapter VI of
+           16. Moore, Principia Ethica Chapter III, Section 56.                       Principia Ethica. Brentano did it in The Origin of Our
+           17. I speak loosely here. I do not mean to suggest that                    Knowledge of Right and Wrong. Chisholm does it in
+               pleasures have variable intrinsic values – values that                 Chapter 5 of Brentano and Intrinsic Value.
+               can be increased or decreased depending upon                       19. From The Right and the Good, p. 138.
+               changes in the nature of their objects. Rather, what I
+
+
+
+           References
+           Adams, Robert, Finite and Infinite Goods: A Framework for              Feldman, Fred, “Two Questions about Pleasure”, in David
+             Ethics (New York and Oxford: Oxford University Press,                  Austin, (ed.) Philosophical Analysis (Dordrecht: Kluwer
+             1999).                                                                 Academic Publishers, 1988), pp. 59–81. Reprinted in
+           Brandt, Richard, Ethical Theory: The Problems of Normative and           Utilitarianism, Hedonism and Desert.
+             Critical Ethics (Englewood Cliffs: Prentice-Hall, Inc., 1959).       Kagan, Shelly, ‘Me and My Life’ Proceedings of the Aristotelian
+           Brandt, Richard, Value and Obligation: Systematic Readings in            Society 94 (1994), pp. 309–24.
+             Ethics (New York: Harcourt, Brace & World, Inc., 1961).              Kagan, Shelly, Normative Ethics (Boulder, Colorado: Westview
+           Brentano, Franz, The Origin of Our Knowledge of Right and                Press, 1998).
+             Wrong, ed. by Oskar Kraus, English edition edited by                 Moore, G. E., Principia Ethica (Cambridge: Cambridge
+             Roderick M. Chisholm, translated by Roderick                           University Press, 1962; first published 1903).
+             M. Chisholm and Elizabeth Schneewind (London:                        Nozick, Robert, Anarchy, State and Utopia (New York: Basic
+             Routledge & Kegan Paul, 1969).                                         Books, 1974).
+           Broad, C. D., Five Types of Ethical Theory (London: Kegan, Paul,       Parfit, Derek, Reasons and Persons (Oxford: Oxford University
+             1930).                                                                 Press, 1984).
+           Chisholm, Roderick M., Brentano and Intrinsic Value                    Ross, Sir William David, The Right and the Good (Oxford:
+             (Cambridge: Cambridge University Press, 1986).                         Oxford University Press, 1930).
+
+
+
+
+0001513592.INDD 276                                                                                                                           5/15/2012 1:28:46 AM
+

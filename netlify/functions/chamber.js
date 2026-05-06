@@ -2,7 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const Anthropic = require("@anthropic-ai/sdk");
 
-const client = new Anthropic.default();
+const client = new Anthropic.default({
+  apiKey: process.env.ANTHROPIC_KEY || process.env.ANTHROPIC_API_KEY,
+});
 
 // Packs live in chamber/packs/ at the repo root. netlify.toml's `included_files`
 // bundles them with the function; we resolve from the project root so the same
